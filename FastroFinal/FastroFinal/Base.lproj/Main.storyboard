@@ -35,8 +35,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FastroFinalWelcomeView" translatesAutoresizingMaskIntoConstraints="NO" id="aO4-DG-Hbv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-ax-Q18">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-ax-Q18">
                                 <rect key="frame" x="197" y="166" width="206" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="YJz-pw-Ssa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" title="New Game">
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,8 +49,11 @@
                                     <segue destination="voh-kA-OXA" kind="show" id="5r7-QA-Qrl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-b5-LRU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-b5-LRU">
                                 <rect key="frame" x="208" y="272" width="185" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="dfT-zV-Yoi"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" title="Levels">
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,7 +69,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jKQ-b5-LRU" firstAttribute="top" secondItem="qpg-ax-Q18" secondAttribute="bottom" constant="57" id="0MC-4J-MG2"/>
                             <constraint firstAttribute="trailing" secondItem="aO4-DG-Hbv" secondAttribute="trailing" id="8mS-pv-mds"/>
+                            <constraint firstItem="w6q-Zs-bBw" firstAttribute="top" secondItem="qpg-ax-Q18" secondAttribute="bottom" constant="30" id="Ge7-Mc-28j"/>
+                            <constraint firstItem="qpg-ax-Q18" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="102" id="M1D-ZD-AlC"/>
+                            <constraint firstItem="jKQ-b5-LRU" firstAttribute="centerX" secondItem="w6q-Zs-bBw" secondAttribute="centerX" id="NZM-nc-Bye"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jKQ-b5-LRU" secondAttribute="bottom" constant="273" id="Wc4-Rj-sie"/>
+                            <constraint firstItem="jKQ-b5-LRU" firstAttribute="centerX" secondItem="qpg-ax-Q18" secondAttribute="centerX" id="eOP-RJ-ksy"/>
                             <constraint firstItem="w6q-Zs-bBw" firstAttribute="centerX" secondItem="aO4-DG-Hbv" secondAttribute="centerX" id="eXN-AV-Blv"/>
                             <constraint firstItem="aO4-DG-Hbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fB4-Mt-03I"/>
                             <constraint firstItem="aO4-DG-Hbv" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hTU-26-z4Y"/>
