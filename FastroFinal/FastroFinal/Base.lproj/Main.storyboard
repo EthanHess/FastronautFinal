@@ -35,20 +35,70 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FastroFinalWelcomeView" translatesAutoresizingMaskIntoConstraints="NO" id="aO4-DG-Hbv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-ax-Q18">
+                                <rect key="frame" x="197" y="166" width="206" height="49"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="voh-kA-OXA" kind="show" id="5r7-QA-Qrl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-b5-LRU">
+                                <rect key="frame" x="208" y="272" width="185" height="55"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Levels">
+                                    <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6mI-nW-S3u" kind="show" id="8uc-CV-QIL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastronaut-Final" translatesAutoresizingMaskIntoConstraints="NO" id="w6q-Zs-bBw">
+                                <rect key="frame" x="265" y="245" width="70" height="110"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aO4-DG-Hbv" secondAttribute="trailing" id="8mS-pv-mds"/>
+                            <constraint firstItem="w6q-Zs-bBw" firstAttribute="centerX" secondItem="aO4-DG-Hbv" secondAttribute="centerX" id="eXN-AV-Blv"/>
                             <constraint firstItem="aO4-DG-Hbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fB4-Mt-03I"/>
                             <constraint firstItem="aO4-DG-Hbv" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="hTU-26-z4Y"/>
+                            <constraint firstItem="w6q-Zs-bBw" firstAttribute="centerY" secondItem="aO4-DG-Hbv" secondAttribute="centerY" id="swF-HL-86K"/>
                             <constraint firstItem="aO4-DG-Hbv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yZX-as-fdk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tvw-Uw-FrI"/>
+                    <connections>
+                        <outlet property="fastronaut" destination="w6q-Zs-bBw" id="fvB-rQ-pvH"/>
+                        <outlet property="levelButton" destination="jKQ-b5-LRU" id="c5E-CJ-j54"/>
+                        <outlet property="startNewGame" destination="qpg-ax-Q18" id="Rks-V0-m9A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="312" y="271"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ry4-Uc-3IM">
+            <objects>
+                <viewController id="6mI-nW-S3u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fbq-GA-83q"/>
+                        <viewControllerLayoutGuide type="bottom" id="MrN-oI-lpB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tSc-Ey-7dP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMy-tc-KdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="953"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="Rim-qV-TW5">
@@ -89,5 +139,6 @@
     </scenes>
     <resources>
         <image name="FastroFinalWelcomeView" width="335" height="550"/>
+        <image name="Fastronaut-Final" width="70" height="110"/>
     </resources>
 </document>

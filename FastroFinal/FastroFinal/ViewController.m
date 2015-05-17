@@ -11,6 +11,10 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *startNewGame;
+@property (weak, nonatomic) IBOutlet UIButton *levelButton;
+@property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+
 @end
 
 @implementation ViewController
@@ -20,11 +24,15 @@
     
     self.navigationController.navigationBarHidden = YES;
 
-    
+    [self placeFastronaut]; 
     
 }
 
-
+- (void)placeFastronaut {
+    
+    
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
