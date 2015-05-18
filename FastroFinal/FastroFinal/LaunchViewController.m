@@ -11,6 +11,8 @@
 @interface LaunchViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *rocketView;
+@property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (nonatomic, strong) NSTimer *rocketTimer;
 
 @end
 
@@ -18,8 +20,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.proceedButton.hidden = YES;
+    
+    self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.002 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
+    
 }
+
+- (void)rocketUp {
+    
+    self.rocketView.center = CGPointMake(self.rocketView.center.x, self.rocketView.center.y - 1);
+    
+    if (self.rocketView.center.y < 143 + self.rocketView.frame.size.height / 2) {
+        self.rocketView.image = [UIImage imageNamed:@"rocketBlastOffFinal"];
+    }
+    
+    if (self.rocketView.center.y < - 500) {
+        self.proceedButton.hidden = NO;
+        [self.rocketTimer invalidate];
+    }
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
