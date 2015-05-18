@@ -209,12 +209,52 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="N1y-Un-OAE">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieN-55-qH6">
+                                <rect key="frame" x="204" y="137" width="192" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="9WX-dl-5wK"/>
+                                    <constraint firstAttribute="width" constant="192" id="ZxV-lw-AKe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Begin!">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXj-7Z-0cw">
+                                <rect key="frame" x="135" y="219" width="330" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="nPo-1m-jMy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da4-2M-Nfe">
+                                <rect key="frame" x="178" y="301" width="244" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="JJN-Wv-IRh"/>
+                                    <constraint firstAttribute="width" constant="244" id="Z0n-F2-Har"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ieN-55-qH6" firstAttribute="centerX" secondItem="GXj-7Z-0cw" secondAttribute="centerX" id="A4J-n3-CXG"/>
+                            <constraint firstItem="da4-2M-Nfe" firstAttribute="top" secondItem="GXj-7Z-0cw" secondAttribute="bottom" constant="8" symbolic="YES" id="DWK-yN-JNz"/>
+                            <constraint firstItem="Pcy-TK-So1" firstAttribute="top" secondItem="da4-2M-Nfe" secondAttribute="bottom" constant="232" id="RJs-X8-FRp"/>
                             <constraint firstItem="N1y-Un-OAE" firstAttribute="leading" secondItem="FxO-5h-E2W" secondAttribute="leading" id="SKc-XS-3sJ"/>
+                            <constraint firstItem="da4-2M-Nfe" firstAttribute="centerX" secondItem="N1y-Un-OAE" secondAttribute="centerX" id="ShA-yr-VNc"/>
+                            <constraint firstItem="ieN-55-qH6" firstAttribute="top" secondItem="juk-6T-4Je" secondAttribute="bottom" constant="73" id="W4f-Pg-q2t"/>
                             <constraint firstAttribute="trailing" secondItem="N1y-Un-OAE" secondAttribute="trailing" id="XLe-vz-smN"/>
+                            <constraint firstItem="da4-2M-Nfe" firstAttribute="centerX" secondItem="GXj-7Z-0cw" secondAttribute="centerX" id="ZUv-8G-NJ1"/>
                             <constraint firstItem="N1y-Un-OAE" firstAttribute="top" secondItem="FxO-5h-E2W" secondAttribute="top" id="mjc-kc-bXf"/>
+                            <constraint firstItem="GXj-7Z-0cw" firstAttribute="top" secondItem="ieN-55-qH6" secondAttribute="bottom" constant="8" symbolic="YES" id="pC0-cg-B94"/>
                             <constraint firstItem="N1y-Un-OAE" firstAttribute="bottom" secondItem="Pcy-TK-So1" secondAttribute="top" id="pzP-5S-ql7"/>
                         </constraints>
                     </view>
