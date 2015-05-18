@@ -205,7 +205,18 @@
                     <view key="view" contentMode="scaleToFill" id="FxO-5h-E2W">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="N1y-Un-OAE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N1y-Un-OAE" firstAttribute="leading" secondItem="FxO-5h-E2W" secondAttribute="leading" id="SKc-XS-3sJ"/>
+                            <constraint firstAttribute="trailing" secondItem="N1y-Un-OAE" secondAttribute="trailing" id="XLe-vz-smN"/>
+                            <constraint firstItem="N1y-Un-OAE" firstAttribute="top" secondItem="FxO-5h-E2W" secondAttribute="top" id="mjc-kc-bXf"/>
+                            <constraint firstItem="N1y-Un-OAE" firstAttribute="bottom" secondItem="Pcy-TK-So1" secondAttribute="top" id="pzP-5S-ql7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmP-ot-x6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,6 +227,7 @@
     <resources>
         <image name="FastroFinalWelcomeView" width="335" height="550"/>
         <image name="Fastronaut-Final" width="70" height="110"/>
+        <image name="FirstLevelFastro" width="335" height="550"/>
         <image name="blastOffScene" width="335" height="550"/>
         <image name="rocketShipFinal" width="100" height="350"/>
     </resources>
