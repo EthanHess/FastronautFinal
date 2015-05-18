@@ -17,6 +17,7 @@
 		270E52311B082D83001CDF3C /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E52301B082D83001CDF3C /* LaunchViewController.m */; };
 		270E52341B0834FE001CDF3C /* LevelOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E52331B0834FE001CDF3C /* LevelOneViewController.m */; };
 		270E52381B095F20001CDF3C /* LevelsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E52371B095F20001CDF3C /* LevelsListController.m */; };
+		270E523C1B098D35001CDF3C /* SoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E523B1B098D35001CDF3C /* SoundController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		270E52331B0834FE001CDF3C /* LevelOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOneViewController.m; sourceTree = "<group>"; };
 		270E52361B095F20001CDF3C /* LevelsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelsListController.h; sourceTree = "<group>"; };
 		270E52371B095F20001CDF3C /* LevelsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelsListController.m; sourceTree = "<group>"; };
+		270E523A1B098D35001CDF3C /* SoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundController.h; sourceTree = "<group>"; };
+		270E523B1B098D35001CDF3C /* SoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,9 @@
 				270E52351B08350A001CDF3C /* Levels */,
 				270E52321B0834FE001CDF3C /* LevelOneViewController.h */,
 				270E52331B0834FE001CDF3C /* LevelOneViewController.m */,
+				270E52391B098D12001CDF3C /* Controllers */,
+				270E523A1B098D35001CDF3C /* SoundController.h */,
+				270E523B1B098D35001CDF3C /* SoundController.m */,
 				270E52161B082986001CDF3C /* Images.xcassets */,
 				270E52181B082986001CDF3C /* LaunchScreen.xib */,
 				270E52091B082986001CDF3C /* Supporting Files */,
@@ -140,6 +146,13 @@
 			children = (
 			);
 			name = Levels;
+			sourceTree = "<group>";
+		};
+		270E52391B098D12001CDF3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +261,7 @@
 				270E520F1B082986001CDF3C /* AppDelegate.m in Sources */,
 				270E520C1B082986001CDF3C /* main.m in Sources */,
 				270E52311B082D83001CDF3C /* LaunchViewController.m in Sources */,
+				270E523C1B098D35001CDF3C /* SoundController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

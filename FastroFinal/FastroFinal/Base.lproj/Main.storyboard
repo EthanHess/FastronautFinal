@@ -151,7 +151,23 @@
                     <view key="view" contentMode="scaleToFill" id="PSr-mb-hMJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blastOffScene" translatesAutoresizingMaskIntoConstraints="NO" id="Pkc-Bh-bvs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocketShipFinal" translatesAutoresizingMaskIntoConstraints="NO" id="GWe-BJ-XGX">
+                                <rect key="frame" x="250" y="144" width="100" height="350"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pkc-Bh-bvs" firstAttribute="top" secondItem="PSr-mb-hMJ" secondAttribute="top" id="8H5-eT-rOB"/>
+                            <constraint firstAttribute="trailing" secondItem="Pkc-Bh-bvs" secondAttribute="trailing" id="9kr-Ag-vmD"/>
+                            <constraint firstItem="Pkc-Bh-bvs" firstAttribute="bottom" secondItem="qyI-g6-SF6" secondAttribute="top" id="JeA-S7-1Zj"/>
+                            <constraint firstItem="Pkc-Bh-bvs" firstAttribute="leading" secondItem="PSr-mb-hMJ" secondAttribute="leading" id="T9r-Uk-7Ss"/>
+                            <constraint firstItem="GWe-BJ-XGX" firstAttribute="centerX" secondItem="Pkc-Bh-bvs" secondAttribute="centerX" id="nMg-as-kP8"/>
+                            <constraint firstItem="qyI-g6-SF6" firstAttribute="top" secondItem="GWe-BJ-XGX" secondAttribute="bottom" constant="106" id="sii-LJ-1gq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voz-CO-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -180,5 +196,7 @@
     <resources>
         <image name="FastroFinalWelcomeView" width="335" height="550"/>
         <image name="Fastronaut-Final" width="70" height="110"/>
+        <image name="blastOffScene" width="335" height="550"/>
+        <image name="rocketShipFinal" width="100" height="350"/>
     </resources>
 </document>
