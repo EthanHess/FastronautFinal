@@ -10,6 +10,8 @@
 
 @interface LaunchViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *rocketView;
+
 @end
 
 @implementation LaunchViewController

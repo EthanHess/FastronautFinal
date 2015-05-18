@@ -169,15 +169,18 @@
                             <constraint firstItem="qyI-g6-SF6" firstAttribute="top" secondItem="GWe-BJ-XGX" secondAttribute="bottom" constant="106" id="sii-LJ-1gq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rocketView" destination="GWe-BJ-XGX" id="4Vf-aO-gIf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voz-CO-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959" y="271"/>
         </scene>
-        <!--View Controller-->
+        <!--Level One View Controller-->
         <scene sceneID="u6t-o5-G69">
             <objects>
-                <viewController id="4CQ-5W-qcX" sceneMemberID="viewController">
+                <viewController id="4CQ-5W-qcX" customClass="LevelOneViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="juk-6T-4Je"/>
                         <viewControllerLayoutGuide type="bottom" id="Pcy-TK-So1"/>
