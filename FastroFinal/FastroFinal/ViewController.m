@@ -53,7 +53,7 @@ int astroFall;
         astroFall = 0;
         self.startNewGame.hidden = NO;
         self.levelButton.hidden = NO;
-        self.fastronaut.image = [UIImage imageNamed:@"FastronautLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"greenFastroLanded"];
     }
     
 }
