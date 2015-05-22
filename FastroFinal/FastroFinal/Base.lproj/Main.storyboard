@@ -284,12 +284,57 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SecondLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="fsx-HQ-CLk">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqd-Nq-kos">
+                                <rect key="frame" x="178" y="345" width="244" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="cRE-Ex-RGu"/>
+                                    <constraint firstAttribute="height" constant="67" id="eha-It-2r4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mTc-Yw-9Xc" kind="show" id="Ftg-NE-82F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-3g-mg5">
+                                <rect key="frame" x="204" y="138" width="192" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="GYQ-A8-oyw"/>
+                                    <constraint firstAttribute="width" constant="192" id="sWk-8k-vgd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Begin!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oep-iY-3XO">
+                                <rect key="frame" x="135" y="256" width="330" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="8X3-zE-GED"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fsx-HQ-CLk" firstAttribute="leading" secondItem="yCl-28-2Ga" secondAttribute="leading" id="4pV-xX-Wle"/>
+                            <constraint firstItem="oep-iY-3XO" firstAttribute="centerX" secondItem="dCw-3g-mg5" secondAttribute="centerX" id="7Lu-t1-fHt"/>
+                            <constraint firstItem="Pqd-Nq-kos" firstAttribute="top" secondItem="oep-iY-3XO" secondAttribute="bottom" constant="15" id="HDH-6h-aAE"/>
+                            <constraint firstItem="Pqd-Nq-kos" firstAttribute="centerX" secondItem="oep-iY-3XO" secondAttribute="centerX" id="WwB-tn-fyk"/>
+                            <constraint firstItem="dCw-3g-mg5" firstAttribute="top" secondItem="L5I-4l-b2f" secondAttribute="bottom" constant="74" id="ZYg-nL-a7u"/>
                             <constraint firstItem="fsx-HQ-CLk" firstAttribute="bottom" secondItem="ziF-aZ-LD7" secondAttribute="top" id="b8k-Hm-r3i"/>
+                            <constraint firstItem="oep-iY-3XO" firstAttribute="top" secondItem="dCw-3g-mg5" secondAttribute="bottom" constant="44" id="gZ3-K3-hUS"/>
+                            <constraint firstItem="Pqd-Nq-kos" firstAttribute="centerX" secondItem="fsx-HQ-CLk" secondAttribute="centerX" id="i4E-OO-Xbv"/>
                             <constraint firstAttribute="trailing" secondItem="fsx-HQ-CLk" secondAttribute="trailing" id="lsu-zB-GGj"/>
+                            <constraint firstItem="ziF-aZ-LD7" firstAttribute="top" secondItem="Pqd-Nq-kos" secondAttribute="bottom" constant="188" id="oWE-UH-teq"/>
                             <constraint firstItem="fsx-HQ-CLk" firstAttribute="top" secondItem="yCl-28-2Ga" secondAttribute="top" id="sQW-xB-o0T"/>
                         </constraints>
                     </view>
@@ -297,6 +342,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77w-uG-GX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959" y="1623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jiN-jd-vuZ">
+            <objects>
+                <viewController id="mTc-Yw-9Xc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cJH-SL-TnG"/>
+                        <viewControllerLayoutGuide type="bottom" id="sG0-Av-PZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3wH-4P-P2F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thirdLevelView" translatesAutoresizingMaskIntoConstraints="NO" id="tKt-Jo-PFX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tKt-Jo-PFX" firstAttribute="bottom" secondItem="sG0-Av-PZn" secondAttribute="top" id="Ew2-4b-hlo"/>
+                            <constraint firstItem="tKt-Jo-PFX" firstAttribute="top" secondItem="3wH-4P-P2F" secondAttribute="top" id="MRH-0X-n86"/>
+                            <constraint firstAttribute="trailing" secondItem="tKt-Jo-PFX" secondAttribute="trailing" id="wld-99-O78"/>
+                            <constraint firstItem="tKt-Jo-PFX" firstAttribute="leading" secondItem="3wH-4P-P2F" secondAttribute="leading" id="ykr-2r-5H0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zP6-Jt-D8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="2288"/>
         </scene>
     </scenes>
     <resources>
@@ -307,5 +381,6 @@
         <image name="blastOffScene" width="335" height="550"/>
         <image name="levelOneObstacle" width="100" height="100"/>
         <image name="rocketShipFinal" width="100" height="350"/>
+        <image name="thirdLevelView" width="335" height="550"/>
     </resources>
 </document>
