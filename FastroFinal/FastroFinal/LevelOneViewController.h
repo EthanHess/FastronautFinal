@@ -10,4 +10,6 @@
 
 @interface LevelOneViewController : UIViewController
 
+@property (nonatomic) BOOL *isComplete;
+
 @end

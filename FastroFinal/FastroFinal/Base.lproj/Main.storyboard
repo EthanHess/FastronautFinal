@@ -220,6 +220,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="4CQ-5W-qcX" eventType="touchUpInside" id="zUf-8T-dXY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXj-7Z-0cw">
                                 <rect key="frame" x="135" y="219" width="330" height="74"/>
@@ -230,6 +233,9 @@
                                 <state key="normal" title="You died! Try again">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="4CQ-5W-qcX" eventType="touchUpInside" id="Cwa-p4-xKe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="da4-2M-Nfe">
                                 <rect key="frame" x="178" y="301" width="244" height="67"/>
@@ -248,6 +254,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="levelOneObstacle" translatesAutoresizingMaskIntoConstraints="NO" id="HvU-Rp-lmD">
                                 <rect key="frame" x="413" y="184" width="100" height="100"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenFastroLanded" translatesAutoresizingMaskIntoConstraints="NO" id="A1D-gR-W03">
+                                <rect key="frame" x="265" y="201" width="70" height="110"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -264,6 +273,13 @@
                             <constraint firstItem="N1y-Un-OAE" firstAttribute="bottom" secondItem="Pcy-TK-So1" secondAttribute="top" id="pzP-5S-ql7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beginButton" destination="ieN-55-qH6" id="PsP-ph-Lci"/>
+                        <outlet property="fastronaut" destination="A1D-gR-W03" id="6yv-3C-x0m"/>
+                        <outlet property="obstacleView" destination="HvU-Rp-lmD" id="mtf-Wo-CQg"/>
+                        <outlet property="proceedButton" destination="da4-2M-Nfe" id="MCC-Zg-fnd"/>
+                        <outlet property="youDiedButton" destination="GXj-7Z-0cw" id="jm0-kE-ucP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HmP-ot-x6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -379,6 +395,7 @@
         <image name="GreenFastro" width="70" height="110"/>
         <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="blastOffScene" width="335" height="550"/>
+        <image name="greenFastroLanded" width="70" height="110"/>
         <image name="levelOneObstacle" width="100" height="100"/>
         <image name="rocketShipFinal" width="100" height="350"/>
         <image name="thirdLevelView" width="335" height="550"/>
