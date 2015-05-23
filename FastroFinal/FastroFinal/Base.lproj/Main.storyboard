@@ -251,10 +251,10 @@
                                     <segue destination="qqO-el-oaD" kind="show" id="z3w-Zn-qYl"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="levelOneObstacle" translatesAutoresizingMaskIntoConstraints="NO" id="HvU-Rp-lmD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelOneObstacle" translatesAutoresizingMaskIntoConstraints="NO" id="HvU-Rp-lmD">
                                 <rect key="frame" x="413" y="184" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenFastroLanded" translatesAutoresizingMaskIntoConstraints="NO" id="A1D-gR-W03">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenFastroLanded" translatesAutoresizingMaskIntoConstraints="NO" id="A1D-gR-W03">
                                 <rect key="frame" x="265" y="201" width="70" height="110"/>
                             </imageView>
                         </subviews>
@@ -262,6 +262,8 @@
                         <constraints>
                             <constraint firstItem="ieN-55-qH6" firstAttribute="centerX" secondItem="GXj-7Z-0cw" secondAttribute="centerX" id="A4J-n3-CXG"/>
                             <constraint firstItem="da4-2M-Nfe" firstAttribute="top" secondItem="GXj-7Z-0cw" secondAttribute="bottom" constant="8" symbolic="YES" id="DWK-yN-JNz"/>
+                            <constraint firstItem="A1D-gR-W03" firstAttribute="centerX" secondItem="GXj-7Z-0cw" secondAttribute="centerX" id="Meb-FK-Vrd"/>
+                            <constraint firstItem="A1D-gR-W03" firstAttribute="centerY" secondItem="GXj-7Z-0cw" secondAttribute="centerY" id="QFJ-SX-sOJ"/>
                             <constraint firstItem="Pcy-TK-So1" firstAttribute="top" secondItem="da4-2M-Nfe" secondAttribute="bottom" constant="232" id="RJs-X8-FRp"/>
                             <constraint firstItem="N1y-Un-OAE" firstAttribute="leading" secondItem="FxO-5h-E2W" secondAttribute="leading" id="SKc-XS-3sJ"/>
                             <constraint firstItem="da4-2M-Nfe" firstAttribute="centerX" secondItem="N1y-Un-OAE" secondAttribute="centerX" id="ShA-yr-VNc"/>
@@ -271,6 +273,8 @@
                             <constraint firstItem="N1y-Un-OAE" firstAttribute="top" secondItem="FxO-5h-E2W" secondAttribute="top" id="mjc-kc-bXf"/>
                             <constraint firstItem="GXj-7Z-0cw" firstAttribute="top" secondItem="ieN-55-qH6" secondAttribute="bottom" constant="8" symbolic="YES" id="pC0-cg-B94"/>
                             <constraint firstItem="N1y-Un-OAE" firstAttribute="bottom" secondItem="Pcy-TK-So1" secondAttribute="top" id="pzP-5S-ql7"/>
+                            <constraint firstItem="da4-2M-Nfe" firstAttribute="top" secondItem="HvU-Rp-lmD" secondAttribute="bottom" constant="17" id="qTW-E1-IuG"/>
+                            <constraint firstItem="HvU-Rp-lmD" firstAttribute="leading" secondItem="A1D-gR-W03" secondAttribute="trailing" constant="78" id="tKH-rc-p0L"/>
                         </constraints>
                     </view>
                     <connections>

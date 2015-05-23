@@ -7,6 +7,9 @@
 //
 
 #import "LevelOneViewController.h"
+#import <math.h>
+
+static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 int obstaclePosition;
 int fastroFlight;
@@ -48,13 +51,14 @@ int score;
     
     [self placeObstacle];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
 }
 
 
 - (void)obstacleMoving {
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
+    [self animateView:self.obstacleView duration:10];
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -164,6 +168,24 @@ int score;
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
 }
+
+- (void)animateView:(UIView *)view duration:(float)duration {
+    
+   
+    CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
+//    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
+//    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
+    
+    [UIView animateWithDuration:duration animations:^{
+        
+        view.transform = rotate;
+//        view.transform = bigger;
+//        view.transform = smaller;
+        
+    }];
+    
+}
+
 
 
 - (void)playAudio {
