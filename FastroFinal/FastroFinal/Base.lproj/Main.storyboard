@@ -289,10 +289,10 @@
             </objects>
             <point key="canvasLocation" x="959" y="953"/>
         </scene>
-        <!--View Controller-->
+        <!--Level Two View Controller-->
         <scene sceneID="LDa-to-fPn">
             <objects>
-                <viewController id="qqO-el-oaD" sceneMemberID="viewController">
+                <viewController id="qqO-el-oaD" customClass="LevelTwoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L5I-4l-b2f"/>
                         <viewControllerLayoutGuide type="bottom" id="ziF-aZ-LD7"/>
