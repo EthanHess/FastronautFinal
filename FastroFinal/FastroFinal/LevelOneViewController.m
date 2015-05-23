@@ -7,6 +7,7 @@
 //
 
 #import "LevelOneViewController.h"
+#import "SoundController.h"
 #import <math.h>
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
@@ -26,8 +27,8 @@ int score;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
-
 @property (nonatomic, strong) NSTimer *obstacleTimer;
+@property (nonatomic, strong) SoundController *soundController;
 
 
 @end
@@ -37,9 +38,13 @@ int score;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.soundController = [SoundController new];
+    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
+    
+    [self playAudio];
 }
 
 
@@ -145,12 +150,15 @@ int score;
     score = score + 1;
     
     if (score > 5) {
+        
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
         
         self.proceedButton.hidden = NO;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
+        
+        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playAudio) object:nil];
         
         self.isComplete = YES;
     }
@@ -191,7 +199,9 @@ int score;
 
 - (void)playAudio {
     
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"songDaTechno" withExtension:@"mp3"];
     
+    [self.soundController playFileAtURL:url];
     
 }
 

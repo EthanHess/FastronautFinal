@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LaunchViewController.h"
+#import "SoundController.h"
 
 int astroFall; 
 
@@ -17,6 +18,7 @@ int astroFall;
 @property (weak, nonatomic) IBOutlet UIButton *levelButton;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (nonatomic, strong) NSTimer *astroTimer;
+@property (nonatomic, strong) SoundController *soundController;
 
 @end
 
@@ -24,6 +26,8 @@ int astroFall;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.soundController = [SoundController new];
     
     self.navigationController.navigationBarHidden = YES;
     
@@ -35,6 +39,8 @@ int astroFall;
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, - frame);
     
     self.astroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastronautMoving) userInfo:nil repeats:YES];
+    
+    [self playAudio];
     
 }
 
@@ -58,6 +64,13 @@ int astroFall;
     
 }
 
+- (void)playAudio {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"timeTravel" withExtension:@"mp3"];
+    
+    [self.soundController playFileAtURL:url];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
