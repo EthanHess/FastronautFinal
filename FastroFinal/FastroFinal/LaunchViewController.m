@@ -7,12 +7,14 @@
 //
 
 #import "LaunchViewController.h"
+#import "SoundController.h"
 
 @interface LaunchViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *rocketView;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
 @property (nonatomic, strong) NSTimer *rocketTimer;
+@property (nonatomic, strong) SoundController *soundController;
 
 @end
 
@@ -21,13 +23,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.soundController = [SoundController new];
+    
     self.proceedButton.hidden = YES;
     
     self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.002 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
     
+    [self launchSound]; 
+    
 }
 
 - (void)rocketUp {
+    
     
     self.rocketView.center = CGPointMake(self.rocketView.center.x, self.rocketView.center.y - 1);
     
@@ -44,7 +51,9 @@
 
 - (void)launchSound {
     
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"spaceshipTakeoff" withExtension:@"mp3"];
     
+    [self.soundController playFileAtURL:url];
     
 }
 

@@ -151,8 +151,9 @@ int score;
         self.proceedButton.hidden = NO;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
+        
+        self.isComplete = YES;
     }
-    
     
     
 }
