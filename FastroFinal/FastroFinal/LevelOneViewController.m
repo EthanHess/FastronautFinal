@@ -56,14 +56,14 @@ int score;
     
     [self placeObstacle];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0038 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
 }
 
 
 - (void)obstacleMoving {
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
-    [self animateView:self.obstacleView duration:10];
+//    [self animateView:self.obstacleView duration:10];
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -99,6 +99,8 @@ int score;
     obstaclePosition = arc4random() %frame;
     
     self.obstacleView.center = CGPointMake(380, obstaclePosition);
+    
+    [self animateView:self.obstacleView duration:HUGE_VALF];
     
 }
 
@@ -199,7 +201,7 @@ int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"songDaTechno" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"startSomethingNew" withExtension:@"mp3"];
     
     [self.soundController playFileAtURL:url];
     

@@ -319,6 +319,20 @@
                                     <segue destination="mTc-Yw-9Xc" kind="show" id="Ftg-NE-82F"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oep-iY-3XO">
+                                <rect key="frame" x="135" y="256" width="330" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="8X3-zE-GED"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="vGE-Ky-MTw"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-3g-mg5">
                                 <rect key="frame" x="204" y="138" width="192" height="74"/>
                                 <constraints>
@@ -330,34 +344,43 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="AGl-Pn-5mA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oep-iY-3XO">
-                                <rect key="frame" x="135" y="256" width="330" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="330" id="8X3-zE-GED"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="You died! Try again">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FastronautLanded" translatesAutoresizingMaskIntoConstraints="NO" id="GBe-To-EFO">
+                                <rect key="frame" x="265" y="245" width="70" height="110"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwoObstacle" translatesAutoresizingMaskIntoConstraints="NO" id="OIt-h2-XB0">
+                                <rect key="frame" x="343" y="129" width="200" height="125"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OIt-h2-XB0" firstAttribute="leading" secondItem="GBe-To-EFO" secondAttribute="trailing" constant="8" symbolic="YES" id="2Eq-71-SsR"/>
                             <constraint firstItem="fsx-HQ-CLk" firstAttribute="leading" secondItem="yCl-28-2Ga" secondAttribute="leading" id="4pV-xX-Wle"/>
                             <constraint firstItem="oep-iY-3XO" firstAttribute="centerX" secondItem="dCw-3g-mg5" secondAttribute="centerX" id="7Lu-t1-fHt"/>
                             <constraint firstItem="Pqd-Nq-kos" firstAttribute="top" secondItem="oep-iY-3XO" secondAttribute="bottom" constant="15" id="HDH-6h-aAE"/>
+                            <constraint firstItem="GBe-To-EFO" firstAttribute="centerY" secondItem="fsx-HQ-CLk" secondAttribute="centerY" id="RFT-6F-BwV"/>
                             <constraint firstItem="Pqd-Nq-kos" firstAttribute="centerX" secondItem="oep-iY-3XO" secondAttribute="centerX" id="WwB-tn-fyk"/>
                             <constraint firstItem="dCw-3g-mg5" firstAttribute="top" secondItem="L5I-4l-b2f" secondAttribute="bottom" constant="74" id="ZYg-nL-a7u"/>
                             <constraint firstItem="fsx-HQ-CLk" firstAttribute="bottom" secondItem="ziF-aZ-LD7" secondAttribute="top" id="b8k-Hm-r3i"/>
                             <constraint firstItem="oep-iY-3XO" firstAttribute="top" secondItem="dCw-3g-mg5" secondAttribute="bottom" constant="44" id="gZ3-K3-hUS"/>
                             <constraint firstItem="Pqd-Nq-kos" firstAttribute="centerX" secondItem="fsx-HQ-CLk" secondAttribute="centerX" id="i4E-OO-Xbv"/>
                             <constraint firstAttribute="trailing" secondItem="fsx-HQ-CLk" secondAttribute="trailing" id="lsu-zB-GGj"/>
+                            <constraint firstItem="oep-iY-3XO" firstAttribute="top" secondItem="OIt-h2-XB0" secondAttribute="bottom" constant="2" id="mG2-81-VH2"/>
+                            <constraint firstItem="GBe-To-EFO" firstAttribute="centerX" secondItem="oep-iY-3XO" secondAttribute="centerX" id="oVW-JH-soc"/>
                             <constraint firstItem="ziF-aZ-LD7" firstAttribute="top" secondItem="Pqd-Nq-kos" secondAttribute="bottom" constant="188" id="oWE-UH-teq"/>
                             <constraint firstItem="fsx-HQ-CLk" firstAttribute="top" secondItem="yCl-28-2Ga" secondAttribute="top" id="sQW-xB-o0T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beginButton" destination="dCw-3g-mg5" id="qHX-xH-tOR"/>
+                        <outlet property="fastronaut" destination="GBe-To-EFO" id="5pF-4R-wdF"/>
+                        <outlet property="obstacleView" destination="OIt-h2-XB0" id="SE6-JE-LXp"/>
+                        <outlet property="proceedButton" destination="Pqd-Nq-kos" id="xPT-wQ-vvo"/>
+                        <outlet property="youDiedButton" destination="oep-iY-3XO" id="dzY-6p-6rW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77w-uG-GX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,12 +418,14 @@
     </scenes>
     <resources>
         <image name="FastroFinalWelcomeView" width="335" height="550"/>
+        <image name="FastronautLanded" width="70" height="110"/>
         <image name="FirstLevelFastro" width="335" height="550"/>
         <image name="GreenFastro" width="70" height="110"/>
         <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="blastOffScene" width="335" height="550"/>
         <image name="greenFastroLanded" width="70" height="110"/>
         <image name="levelOneObstacle" width="100" height="100"/>
+        <image name="levelTwoObstacle" width="200" height="125"/>
         <image name="rocketShipFinal" width="100" height="350"/>
         <image name="thirdLevelView" width="335" height="550"/>
     </resources>

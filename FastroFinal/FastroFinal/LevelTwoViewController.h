@@ -10,4 +10,6 @@
 
 @interface LevelTwoViewController : UIViewController
 
+@property (nonatomic) BOOL isComplete; 
+
 @end
