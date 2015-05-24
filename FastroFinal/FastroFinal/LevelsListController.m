@@ -8,6 +8,9 @@
 
 #import "LevelsListController.h"
 #import "ViewController.h"
+#import "LevelOneViewController.h"
+#import "LevelTwoViewController.h"
+#import "LevelThreeViewController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -63,8 +66,35 @@
             
             break; }
             
+        case 1: {
+            
+            LevelOneViewController *oneVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelOne"];
+            
+            [self.navigationController pushViewController:oneVC animated:YES];
+            
+            break; }
+            
+        case 2: {
+            
+            LevelTwoViewController *twoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwo"];
+            
+            [self.navigationController pushViewController:twoVC animated:YES];
+            
+            break; }
+            
+        case 3: {
+            
+            LevelThreeViewController *threeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelThree"];
+            
+            [self.navigationController pushViewController:threeVC animated:YES];
+            
+            break;
+        }
     }
 }
+            
+
+
 
 /*
 #pragma mark - Navigation
