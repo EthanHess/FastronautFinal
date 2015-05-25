@@ -10,4 +10,6 @@
 
 @interface LevelFourViewController : UIViewController
 
+@property (nonatomic) BOOL isComplete;
+
 @end

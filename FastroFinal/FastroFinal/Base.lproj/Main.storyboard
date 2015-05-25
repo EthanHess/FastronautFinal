@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gCf-qh-xWd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -486,7 +487,7 @@
         <!--Level Four View Controller-->
         <scene sceneID="qbV-af-QPW">
             <objects>
-                <viewController id="n2P-IK-mkA" customClass="LevelFourViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelFour" id="n2P-IK-mkA" customClass="LevelFourViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d06-WH-bhE"/>
                         <viewControllerLayoutGuide type="bottom" id="z2X-W1-m27"/>
@@ -521,6 +522,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="resetGame:" destination="n2P-IK-mkA" eventType="touchUpInside" id="FeS-Y3-2iN"/>
                                     <action selector="resetGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="V4R-FR-zYm"/>
                                     <action selector="resetGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="j3o-RM-7Av"/>
                                 </connections>
@@ -538,30 +540,49 @@
                                 <connections>
                                     <action selector="startGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="5U9-Is-X9n"/>
                                     <action selector="startGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="DaR-o6-w87"/>
+                                    <action selector="startGame:" destination="n2P-IK-mkA" eventType="touchUpInside" id="R3v-BC-RBD"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFastro" translatesAutoresizingMaskIntoConstraints="NO" id="Ffg-aC-aJL">
                                 <rect key="frame" x="265" y="245" width="70" height="110"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftObstacleFour" translatesAutoresizingMaskIntoConstraints="NO" id="ZTL-PX-FfI">
+                                <rect key="frame" x="397" y="172" width="180" height="85"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightObstacleFour" translatesAutoresizingMaskIntoConstraints="NO" id="MyZ-hm-uaR">
+                                <rect key="frame" x="16" y="389" width="180" height="85"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZTL-PX-FfI" firstAttribute="leading" secondItem="PcY-TP-qkf" secondAttribute="trailing" constant="1" id="JIi-iI-mwl"/>
                             <constraint firstItem="YWz-s3-YT8" firstAttribute="centerX" secondItem="6Di-m2-5l5" secondAttribute="centerX" id="MbH-kS-vc0"/>
                             <constraint firstItem="z2X-W1-m27" firstAttribute="top" secondItem="YWz-s3-YT8" secondAttribute="bottom" constant="182" id="PWt-sr-FR4"/>
                             <constraint firstAttribute="trailing" secondItem="f0Z-7O-eDg" secondAttribute="trailing" id="RmT-Uc-J2B"/>
                             <constraint firstItem="6Di-m2-5l5" firstAttribute="top" secondItem="PcY-TP-qkf" secondAttribute="bottom" constant="25" id="Tyt-gv-MQD"/>
+                            <constraint firstItem="YWz-s3-YT8" firstAttribute="top" secondItem="ZTL-PX-FfI" secondAttribute="bottom" constant="94" id="UBM-9F-2Vq"/>
                             <constraint firstItem="f0Z-7O-eDg" firstAttribute="top" secondItem="3Eo-Dn-XzS" secondAttribute="top" id="aii-ap-cjj"/>
                             <constraint firstItem="f0Z-7O-eDg" firstAttribute="centerY" secondItem="Ffg-aC-aJL" secondAttribute="centerY" id="esP-Fg-SZN"/>
                             <constraint firstItem="Ffg-aC-aJL" firstAttribute="centerX" secondItem="6Di-m2-5l5" secondAttribute="centerX" id="fI5-0C-bsQ"/>
                             <constraint firstItem="f0Z-7O-eDg" firstAttribute="leading" secondItem="3Eo-Dn-XzS" secondAttribute="leading" id="fN4-Jg-Umz"/>
+                            <constraint firstItem="MyZ-hm-uaR" firstAttribute="top" secondItem="6Di-m2-5l5" secondAttribute="bottom" constant="59" id="fZt-oG-Zih"/>
                             <constraint firstItem="PcY-TP-qkf" firstAttribute="centerX" secondItem="6Di-m2-5l5" secondAttribute="centerX" id="gtQ-ie-TDF"/>
                             <constraint firstItem="f0Z-7O-eDg" firstAttribute="centerX" secondItem="6Di-m2-5l5" secondAttribute="centerX" id="hTI-2J-f8R"/>
+                            <constraint firstItem="MyZ-hm-uaR" firstAttribute="leading" secondItem="3Eo-Dn-XzS" secondAttribute="leadingMargin" id="kHY-9e-IOO"/>
                             <constraint firstItem="Ffg-aC-aJL" firstAttribute="top" secondItem="PcY-TP-qkf" secondAttribute="bottom" constant="14" id="rS9-wM-8xx"/>
                             <constraint firstItem="f0Z-7O-eDg" firstAttribute="bottom" secondItem="z2X-W1-m27" secondAttribute="top" id="rWT-Ey-E9D"/>
                             <constraint firstItem="PcY-TP-qkf" firstAttribute="top" secondItem="d06-WH-bhE" secondAttribute="bottom" constant="93" id="u6T-9k-FiW"/>
                             <constraint firstItem="YWz-s3-YT8" firstAttribute="top" secondItem="6Di-m2-5l5" secondAttribute="bottom" constant="21" id="yj2-dI-Ws2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beginButton" destination="PcY-TP-qkf" id="bnB-Lp-ex4"/>
+                        <outlet property="fastronaut" destination="Ffg-aC-aJL" id="L2a-rf-eD6"/>
+                        <outlet property="leftObstacleView" destination="MyZ-hm-uaR" id="dDf-ag-woW"/>
+                        <outlet property="proceedButton" destination="YWz-s3-YT8" id="3G8-gN-Cdu"/>
+                        <outlet property="rightObstacleView" destination="ZTL-PX-FfI" id="OX7-zY-zSX"/>
+                        <outlet property="youDiedButton" destination="6Di-m2-5l5" id="LDe-RH-v6K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBK-4V-Ecp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -578,10 +599,12 @@
         <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="blastOffScene" width="335" height="550"/>
         <image name="greenFastroLanded" width="70" height="110"/>
+        <image name="leftObstacleFour" width="180" height="85"/>
         <image name="levelOneObstacle" width="100" height="100"/>
         <image name="levelThreeObstacle" width="185" height="185"/>
         <image name="levelTwoObstacle" width="200" height="125"/>
         <image name="redFastro" width="70" height="110"/>
+        <image name="rightObstacleFour" width="180" height="85"/>
         <image name="rocketShipFinal" width="100" height="350"/>
         <image name="thirdLevelView" width="335" height="550"/>
     </resources>
