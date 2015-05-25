@@ -12,6 +12,7 @@
 #import "LevelTwoViewController.h"
 #import "LevelThreeViewController.h"
 #import "LevelFourViewController.h"
+#import "LevelFiveViewController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -97,8 +98,18 @@
             
             [self.navigationController pushViewController:fourVC animated:YES];
             
-            break;
-        }
+            break; }
+            
+        case 5: {
+            
+            LevelFiveViewController *fiveVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelFive"];
+            
+            [self.navigationController pushViewController:fiveVC animated:YES];
+            
+            break; }
+        
+        
+        
     }
 }
             

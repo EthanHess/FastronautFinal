@@ -25,6 +25,7 @@
 		275B50AB1B1180CB00E6896A /* startSomethingNew.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 275B50AA1B1180CB00E6896A /* startSomethingNew.mp3 */; };
 		275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50AD1B12442800E6896A /* LevelThreeViewController.m */; };
 		275B50B11B12AF8800E6896A /* LevelFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50B01B12AF8800E6896A /* LevelFourViewController.m */; };
+		275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50E71B13AD4100E6896A /* LevelFiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		275B50AD1B12442800E6896A /* LevelThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelThreeViewController.m; sourceTree = "<group>"; };
 		275B50AF1B12AF8800E6896A /* LevelFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFourViewController.h; sourceTree = "<group>"; };
 		275B50B01B12AF8800E6896A /* LevelFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFourViewController.m; sourceTree = "<group>"; };
+		275B50E61B13AD4100E6896A /* LevelFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFiveViewController.h; sourceTree = "<group>"; };
+		275B50E71B13AD4100E6896A /* LevelFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				275B50AD1B12442800E6896A /* LevelThreeViewController.m */,
 				275B50AF1B12AF8800E6896A /* LevelFourViewController.h */,
 				275B50B01B12AF8800E6896A /* LevelFourViewController.m */,
+				275B50E61B13AD4100E6896A /* LevelFiveViewController.h */,
+				275B50E71B13AD4100E6896A /* LevelFiveViewController.m */,
 				270E52391B098D12001CDF3C /* Controllers */,
 				270E523A1B098D35001CDF3C /* SoundController.h */,
 				270E523B1B098D35001CDF3C /* SoundController.m */,
@@ -291,6 +296,7 @@
 				270E52381B095F20001CDF3C /* LevelsListController.m in Sources */,
 				275B50B11B12AF8800E6896A /* LevelFourViewController.m in Sources */,
 				270E520F1B082986001CDF3C /* AppDelegate.m in Sources */,
+				275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */,
 				275B50771B10FDE900E6896A /* LevelTwoViewController.m in Sources */,
 				270E520C1B082986001CDF3C /* main.m in Sources */,
 				275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */,

@@ -591,10 +591,10 @@
             </objects>
             <point key="canvasLocation" x="959" y="2949"/>
         </scene>
-        <!--View Controller-->
+        <!--Level Five View Controller-->
         <scene sceneID="nzF-zP-JTR">
             <objects>
-                <viewController id="EBU-tc-KFs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelFive" id="EBU-tc-KFs" customClass="LevelFiveViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r7p-J9-EDl"/>
                         <viewControllerLayoutGuide type="bottom" id="ffh-Z6-cu8"/>
@@ -606,15 +606,92 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fifthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-hg-pxb">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osb-gO-OyP">
+                                <rect key="frame" x="178" y="388" width="244" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="8qG-Nh-QBA"/>
+                                    <constraint firstAttribute="width" constant="244" id="BBZ-qd-d08"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="0.15919974000000001" green="1" blue="0.94836995310000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-Ls-z0C">
+                                <rect key="frame" x="135" y="272" width="330" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="ge1-2v-vuW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleColor" red="0.15919974000000001" green="1" blue="0.94836995310000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="ObJ-u2-edy"/>
+                                    <action selector="resetGame:" destination="n2P-IK-mkA" eventType="touchUpInside" id="Pd0-It-GM3"/>
+                                    <action selector="resetGame:" destination="EBU-tc-KFs" eventType="touchUpInside" id="mX1-Ds-b2E"/>
+                                    <action selector="resetGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="t3S-wP-NQO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqH-Hp-JDm">
+                                <rect key="frame" x="204" y="139" width="192" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="OyE-Xo-Dug"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Begin!">
+                                    <color key="titleColor" red="0.15919974000000001" green="1" blue="0.94836995310000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="n2P-IK-mkA" eventType="touchUpInside" id="RDf-kQ-vGm"/>
+                                    <action selector="startGame:" destination="EBU-tc-KFs" eventType="touchUpInside" id="gR1-UC-Slf"/>
+                                    <action selector="startGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="ypK-us-Z9s"/>
+                                    <action selector="startGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="zDm-EC-dOa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFastro" translatesAutoresizingMaskIntoConstraints="NO" id="xMq-Bq-12O">
+                                <rect key="frame" x="265" y="272" width="70" height="110"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gasCloud" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-wg-cfr">
+                                <rect key="frame" x="35" y="437" width="200" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightObstacleFive" translatesAutoresizingMaskIntoConstraints="NO" id="CVb-Gn-cbu">
+                                <rect key="frame" x="287" y="184" width="250" height="80"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="CVb-Gn-cbu" secondAttribute="trailing" constant="47" id="03n-eZ-Hw8"/>
+                            <constraint firstItem="xMq-Bq-12O" firstAttribute="top" secondItem="0dY-Ls-z0C" secondAttribute="top" id="1FB-TY-cWo"/>
+                            <constraint firstItem="Osb-gO-OyP" firstAttribute="top" secondItem="xMq-Bq-12O" secondAttribute="bottom" constant="6" id="2aS-ql-cNv"/>
+                            <constraint firstItem="FqH-Hp-JDm" firstAttribute="top" secondItem="r7p-J9-EDl" secondAttribute="bottom" constant="75" id="AUa-wF-EIs"/>
+                            <constraint firstItem="ffh-Z6-cu8" firstAttribute="top" secondItem="aeb-wg-cfr" secondAttribute="bottom" constant="43" id="Hbi-ce-1F5"/>
+                            <constraint firstItem="xMq-Bq-12O" firstAttribute="top" secondItem="FqH-Hp-JDm" secondAttribute="bottom" constant="59" id="KKf-OG-pUN"/>
+                            <constraint firstItem="Osb-gO-OyP" firstAttribute="centerX" secondItem="0dY-Ls-z0C" secondAttribute="centerX" id="Mxg-fW-8G5"/>
                             <constraint firstItem="nNe-hg-pxb" firstAttribute="leading" secondItem="7Ef-FE-TpO" secondAttribute="leading" id="N6Z-0S-mKH"/>
                             <constraint firstAttribute="trailing" secondItem="nNe-hg-pxb" secondAttribute="trailing" id="OoX-Tt-0vq"/>
+                            <constraint firstItem="aeb-wg-cfr" firstAttribute="leading" secondItem="7Ef-FE-TpO" secondAttribute="leadingMargin" constant="19" id="Oum-fv-hSa"/>
+                            <constraint firstItem="xMq-Bq-12O" firstAttribute="centerX" secondItem="0dY-Ls-z0C" secondAttribute="centerX" id="QnX-Tx-mcb"/>
                             <constraint firstItem="nNe-hg-pxb" firstAttribute="bottom" secondItem="ffh-Z6-cu8" secondAttribute="top" id="YIl-h8-LRg"/>
+                            <constraint firstItem="FqH-Hp-JDm" firstAttribute="centerX" secondItem="0dY-Ls-z0C" secondAttribute="centerX" id="ZgF-zW-J0E"/>
                             <constraint firstItem="nNe-hg-pxb" firstAttribute="top" secondItem="7Ef-FE-TpO" secondAttribute="top" id="jQt-zl-Pb1"/>
+                            <constraint firstItem="Osb-gO-OyP" firstAttribute="top" secondItem="0dY-Ls-z0C" secondAttribute="bottom" constant="42" id="kve-rZ-LLh"/>
+                            <constraint firstItem="xMq-Bq-12O" firstAttribute="top" secondItem="CVb-Gn-cbu" secondAttribute="bottom" constant="8" symbolic="YES" id="nxe-yo-Y3T"/>
+                            <constraint firstItem="ffh-Z6-cu8" firstAttribute="top" secondItem="Osb-gO-OyP" secondAttribute="bottom" constant="145" id="slu-b1-8BW"/>
+                            <constraint firstItem="FqH-Hp-JDm" firstAttribute="centerX" secondItem="nNe-hg-pxb" secondAttribute="centerX" id="uIL-JJ-pId"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beginButton" destination="FqH-Hp-JDm" id="gTy-nd-fBl"/>
+                        <outlet property="fastronaut" destination="xMq-Bq-12O" id="erW-3m-QNd"/>
+                        <outlet property="leftObstacleView" destination="aeb-wg-cfr" id="0tM-ec-6bw"/>
+                        <outlet property="proceedButton" destination="Osb-gO-OyP" id="stt-wD-wYW"/>
+                        <outlet property="rightObstacleView" destination="CVb-Gn-cbu" id="G0D-eL-acK"/>
+                        <outlet property="youDiedButton" destination="0dY-Ls-z0C" id="2cg-su-D6Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4t-va-Rki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -631,12 +708,14 @@
         <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="blastOffScene" width="335" height="550"/>
         <image name="fifthLevelFastro" width="335" height="550"/>
+        <image name="gasCloud" width="200" height="120"/>
         <image name="greenFastroLanded" width="70" height="110"/>
         <image name="leftObstacleFour" width="180" height="85"/>
         <image name="levelOneObstacle" width="100" height="100"/>
         <image name="levelThreeObstacle" width="185" height="185"/>
         <image name="levelTwoObstacle" width="200" height="125"/>
         <image name="redFastro" width="70" height="110"/>
+        <image name="rightObstacleFive" width="250" height="80"/>
         <image name="rightObstacleFour" width="180" height="85"/>
         <image name="rocketShipFinal" width="100" height="350"/>
         <image name="thirdLevelView" width="335" height="550"/>
