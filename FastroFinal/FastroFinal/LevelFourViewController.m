@@ -12,7 +12,8 @@
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
-extern int obstaclePosition;
+int leftObstaclePosition;
+int rightObstaclePosition;
 extern int fastroFlight;
 extern int score;
 
@@ -103,11 +104,13 @@ extern int score;
     
     int frame = self.view.frame.size.height;
     
-    obstaclePosition = arc4random() %frame;
+    leftObstaclePosition = arc4random() %frame;
     
-    self.leftObstacleView.center = CGPointMake(-30, obstaclePosition);
+    self.leftObstacleView.center = CGPointMake(-30, leftObstaclePosition);
     
-    self.rightObstacleView.center = CGPointMake(380, obstaclePosition);
+    rightObstaclePosition = arc4random() %frame;
+    
+    self.rightObstacleView.center = CGPointMake(380, rightObstaclePosition);
     
     [self animateView:self.leftObstacleView duration:HUGE_VALF];
     
