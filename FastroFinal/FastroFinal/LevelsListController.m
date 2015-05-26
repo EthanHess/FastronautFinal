@@ -13,6 +13,7 @@
 #import "LevelThreeViewController.h"
 #import "LevelFourViewController.h"
 #import "LevelFiveViewController.h"
+#import "LevelSixViewController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -107,7 +108,14 @@
             [self.navigationController pushViewController:fiveVC animated:YES];
             
             break; }
-        
+            
+        case 6:  {
+            
+            LevelSixViewController *sixVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelSix"];
+            
+            [self.navigationController pushViewController:sixVC animated:YES];
+            
+        }
         
         
     }

@@ -18,6 +18,7 @@
 		270E52341B0834FE001CDF3C /* LevelOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E52331B0834FE001CDF3C /* LevelOneViewController.m */; };
 		270E52381B095F20001CDF3C /* LevelsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E52371B095F20001CDF3C /* LevelsListController.m */; };
 		270E523C1B098D35001CDF3C /* SoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E523B1B098D35001CDF3C /* SoundController.m */; };
+		274E520D1B15117E00C9B004 /* LevelSixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E520C1B15117E00C9B004 /* LevelSixViewController.m */; };
 		275B50701B10360900E6896A /* spaceshipTakeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 275B506F1B10360900E6896A /* spaceshipTakeoff.mp3 */; };
 		275B50721B10F78400E6896A /* timeTravel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 275B50711B10F78400E6896A /* timeTravel.mp3 */; };
 		275B50741B10F79300E6896A /* songDaTechno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 275B50731B10F79300E6896A /* songDaTechno.mp3 */; };
@@ -60,6 +61,8 @@
 		270E52371B095F20001CDF3C /* LevelsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelsListController.m; sourceTree = "<group>"; };
 		270E523A1B098D35001CDF3C /* SoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundController.h; sourceTree = "<group>"; };
 		270E523B1B098D35001CDF3C /* SoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundController.m; sourceTree = "<group>"; };
+		274E520B1B15117E00C9B004 /* LevelSixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSixViewController.h; sourceTree = "<group>"; };
+		274E520C1B15117E00C9B004 /* LevelSixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSixViewController.m; sourceTree = "<group>"; };
 		275B506F1B10360900E6896A /* spaceshipTakeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spaceshipTakeoff.mp3; sourceTree = "<group>"; };
 		275B50711B10F78400E6896A /* timeTravel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timeTravel.mp3; sourceTree = "<group>"; };
 		275B50731B10F79300E6896A /* songDaTechno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = songDaTechno.mp3; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				275B50B01B12AF8800E6896A /* LevelFourViewController.m */,
 				275B50E61B13AD4100E6896A /* LevelFiveViewController.h */,
 				275B50E71B13AD4100E6896A /* LevelFiveViewController.m */,
+				274E520B1B15117E00C9B004 /* LevelSixViewController.h */,
+				274E520C1B15117E00C9B004 /* LevelSixViewController.m */,
 				270E52391B098D12001CDF3C /* Controllers */,
 				270E523A1B098D35001CDF3C /* SoundController.h */,
 				270E523B1B098D35001CDF3C /* SoundController.m */,
@@ -293,6 +298,7 @@
 			files = (
 				270E52121B082986001CDF3C /* ViewController.m in Sources */,
 				270E52341B0834FE001CDF3C /* LevelOneViewController.m in Sources */,
+				274E520D1B15117E00C9B004 /* LevelSixViewController.m in Sources */,
 				270E52381B095F20001CDF3C /* LevelsListController.m in Sources */,
 				275B50B11B12AF8800E6896A /* LevelFourViewController.m in Sources */,
 				270E520F1B082986001CDF3C /* AppDelegate.m in Sources */,
