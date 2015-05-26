@@ -55,7 +55,7 @@ extern int score;
     
     [self placeObstacles];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
 }
 
 
@@ -64,7 +64,6 @@ extern int score;
     self.leftObstacleView.center = CGPointMake(self.leftObstacleView.center.x + 1, self.leftObstacleView.center.y);
     
     self.rightObstacleView.center = CGPointMake(self.rightObstacleView.center.x - 1, self.rightObstacleView.center.y);
-    //    [self animateView:self.obstacleView duration:10];
     
     if (self.leftObstacleView.center.x > 400) {
         
@@ -118,7 +117,7 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 5;
+    fastroFlight = fastroFlight - 8;
     
     if (fastroFlight < -15) {
         fastroFlight = -15;

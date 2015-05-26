@@ -617,6 +617,9 @@
                                     <color key="titleColor" red="0.15919974000000001" green="1" blue="0.94836995310000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yAD-Uo-IMS" kind="show" id="vND-p8-v7t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-Ls-z0C">
                                 <rect key="frame" x="135" y="272" width="330" height="74"/>
@@ -697,6 +700,100 @@
             </objects>
             <point key="canvasLocation" x="959" y="3610"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3Bz-Os-PQm">
+            <objects>
+                <viewController id="yAD-Uo-IMS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mvn-jv-BQx"/>
+                        <viewControllerLayoutGuide type="bottom" id="MVS-Df-ly8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gRW-lf-380">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sixthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-0p-eVe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6m-0s-NaT">
+                                <rect key="frame" x="178" y="392" width="244" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="RGh-gi-gYz"/>
+                                    <constraint firstAttribute="height" constant="67" id="nFY-Qq-nYQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG4-10-TWG">
+                                <rect key="frame" x="135" y="271" width="330" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="pLP-p8-8oO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="EBU-tc-KFs" eventType="touchUpInside" id="AjZ-ry-xl3"/>
+                                    <action selector="resetGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="gt3-iq-0cx"/>
+                                    <action selector="resetGame:" destination="n2P-IK-mkA" eventType="touchUpInside" id="qVN-hT-lVH"/>
+                                    <action selector="resetGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="zid-lS-ELO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6i-57-HKc">
+                                <rect key="frame" x="204" y="142" width="192" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="O7d-W7-q51"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Begin!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="815-w4-FsL"/>
+                                    <action selector="startGame:" destination="n2P-IK-mkA" eventType="touchUpInside" id="S9v-ed-iea"/>
+                                    <action selector="startGame:" destination="EBU-tc-KFs" eventType="touchUpInside" id="clg-ik-sqF"/>
+                                    <action selector="startGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="m7R-yK-xbd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFastro" translatesAutoresizingMaskIntoConstraints="NO" id="ADA-Eb-tdT">
+                                <rect key="frame" x="265" y="245" width="70" height="110"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topSpike" translatesAutoresizingMaskIntoConstraints="NO" id="Gt9-CQ-orR">
+                                <rect key="frame" x="490" y="-276" width="80" height="450"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottomSpike" translatesAutoresizingMaskIntoConstraints="NO" id="OBF-sN-9S5">
+                                <rect key="frame" x="490" y="333" width="80" height="450"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ADA-Eb-tdT" firstAttribute="top" secondItem="M6i-57-HKc" secondAttribute="bottom" constant="29" id="7fT-16-Rwe"/>
+                            <constraint firstItem="M6i-57-HKc" firstAttribute="centerX" secondItem="pG4-10-TWG" secondAttribute="centerX" id="AUF-ng-XS0"/>
+                            <constraint firstItem="pG4-10-TWG" firstAttribute="centerX" secondItem="H6m-0s-NaT" secondAttribute="centerX" id="HOu-us-jlI"/>
+                            <constraint firstItem="H6m-0s-NaT" firstAttribute="top" secondItem="ADA-Eb-tdT" secondAttribute="bottom" constant="37" id="Iro-dG-owr"/>
+                            <constraint firstAttribute="trailing" secondItem="Zpv-0p-eVe" secondAttribute="trailing" id="M7h-zg-jfM"/>
+                            <constraint firstItem="ADA-Eb-tdT" firstAttribute="centerX" secondItem="pG4-10-TWG" secondAttribute="centerX" id="OqS-io-0Jh"/>
+                            <constraint firstItem="Zpv-0p-eVe" firstAttribute="centerX" secondItem="pG4-10-TWG" secondAttribute="centerX" id="Ph2-Cu-TkY"/>
+                            <constraint firstItem="pG4-10-TWG" firstAttribute="top" secondItem="M6i-57-HKc" secondAttribute="bottom" constant="55" id="YTl-hr-ziv"/>
+                            <constraint firstItem="Zpv-0p-eVe" firstAttribute="bottom" secondItem="MVS-Df-ly8" secondAttribute="top" id="a97-q7-tiY"/>
+                            <constraint firstItem="M6i-57-HKc" firstAttribute="top" secondItem="Mvn-jv-BQx" secondAttribute="bottom" constant="78" id="sXV-wO-uDd"/>
+                            <constraint firstItem="Zpv-0p-eVe" firstAttribute="centerY" secondItem="ADA-Eb-tdT" secondAttribute="centerY" id="u2j-m3-TVp"/>
+                            <constraint firstItem="Zpv-0p-eVe" firstAttribute="leading" secondItem="gRW-lf-380" secondAttribute="leading" id="vMe-t2-cbs"/>
+                            <constraint firstItem="H6m-0s-NaT" firstAttribute="top" secondItem="pG4-10-TWG" secondAttribute="bottom" constant="47" id="xhJ-2q-U5E"/>
+                            <constraint firstItem="Zpv-0p-eVe" firstAttribute="top" secondItem="gRW-lf-380" secondAttribute="top" id="xoY-Yf-Y8a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHY-cL-4oP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="4270"/>
+        </scene>
     </scenes>
     <resources>
         <image name="FastroFinalWelcomeView" width="335" height="550"/>
@@ -707,6 +804,7 @@
         <image name="GreenFastro" width="70" height="110"/>
         <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="blastOffScene" width="335" height="550"/>
+        <image name="bottomSpike" width="80" height="450"/>
         <image name="fifthLevelFastro" width="335" height="550"/>
         <image name="gasCloud" width="200" height="120"/>
         <image name="greenFastroLanded" width="70" height="110"/>
@@ -718,6 +816,8 @@
         <image name="rightObstacleFive" width="250" height="80"/>
         <image name="rightObstacleFour" width="180" height="85"/>
         <image name="rocketShipFinal" width="100" height="350"/>
+        <image name="sixthLevelFastro" width="335" height="550"/>
         <image name="thirdLevelView" width="335" height="550"/>
+        <image name="topSpike" width="80" height="450"/>
     </resources>
 </document>
