@@ -19,6 +19,7 @@
 		270E52381B095F20001CDF3C /* LevelsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E52371B095F20001CDF3C /* LevelsListController.m */; };
 		270E523C1B098D35001CDF3C /* SoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E523B1B098D35001CDF3C /* SoundController.m */; };
 		274E520D1B15117E00C9B004 /* LevelSixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E520C1B15117E00C9B004 /* LevelSixViewController.m */; };
+		274E52B31B155F6500C9B004 /* TheLiberator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 274E52B21B155F6500C9B004 /* TheLiberator.mp3 */; };
 		275B50701B10360900E6896A /* spaceshipTakeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 275B506F1B10360900E6896A /* spaceshipTakeoff.mp3 */; };
 		275B50721B10F78400E6896A /* timeTravel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 275B50711B10F78400E6896A /* timeTravel.mp3 */; };
 		275B50741B10F79300E6896A /* songDaTechno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 275B50731B10F79300E6896A /* songDaTechno.mp3 */; };
@@ -63,6 +64,7 @@
 		270E523B1B098D35001CDF3C /* SoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundController.m; sourceTree = "<group>"; };
 		274E520B1B15117E00C9B004 /* LevelSixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSixViewController.h; sourceTree = "<group>"; };
 		274E520C1B15117E00C9B004 /* LevelSixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSixViewController.m; sourceTree = "<group>"; };
+		274E52B21B155F6500C9B004 /* TheLiberator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TheLiberator.mp3; sourceTree = "<group>"; };
 		275B506F1B10360900E6896A /* spaceshipTakeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spaceshipTakeoff.mp3; sourceTree = "<group>"; };
 		275B50711B10F78400E6896A /* timeTravel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timeTravel.mp3; sourceTree = "<group>"; };
 		275B50731B10F79300E6896A /* songDaTechno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = songDaTechno.mp3; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				270E52091B082986001CDF3C /* Supporting Files */,
 				275B50AA1B1180CB00E6896A /* startSomethingNew.mp3 */,
 				275B50731B10F79300E6896A /* songDaTechno.mp3 */,
+				274E52B21B155F6500C9B004 /* TheLiberator.mp3 */,
 				275B506F1B10360900E6896A /* spaceshipTakeoff.mp3 */,
 				275B50711B10F78400E6896A /* timeTravel.mp3 */,
 			);
@@ -275,6 +278,7 @@
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				275B50AB1B1180CB00E6896A /* startSomethingNew.mp3 in Resources */,
 				270E521A1B082986001CDF3C /* LaunchScreen.xib in Resources */,
+				274E52B31B155F6500C9B004 /* TheLiberator.mp3 in Resources */,
 				275B50721B10F78400E6896A /* timeTravel.mp3 in Resources */,
 				275B50701B10360900E6896A /* spaceshipTakeoff.mp3 in Resources */,
 				270E52171B082986001CDF3C /* Images.xcassets in Resources */,
