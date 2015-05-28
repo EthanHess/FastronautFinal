@@ -1,24 +1,24 @@
 //
-//  LevelEightViewController.m
+//  LevelNineViewController.m
 //  FastroFinal
 //
 //  Created by Ethan Hess on 5/28/15.
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "LevelEightViewController.h"
+#import "LevelNineViewController.h"
 #import "SoundController.h"
 #import <math.h>
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
-int middleObstaclePosition;
+extern int middleObstaclePosition;
 extern int topObstaclePosition;
 extern int bottomObstaclePosition;
 extern int fastroFlight;
 extern int score;
 
-@interface LevelEightViewController ()
+@interface LevelNineViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
@@ -36,7 +36,7 @@ extern int score;
 
 @end
 
-@implementation LevelEightViewController
+@implementation LevelNineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

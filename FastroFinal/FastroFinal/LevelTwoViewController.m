@@ -97,7 +97,7 @@ extern int score;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(380, obstaclePosition);
+    self.obstacleView.center = CGPointMake(450, obstaclePosition);
     
     [self animateView:self.obstacleView duration:HUGE_VALF];
     
