@@ -93,6 +93,11 @@ extern int score;
         [self gameOver];
     }
     
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.middleObstacleView.frame)) {
+        
+        [self gameOver];
+    }
+    
     if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         [self gameOver];
     }
@@ -108,13 +113,13 @@ extern int score;
 - (void)placeObstacles {
     
     topObstaclePosition = arc4random() %380;
-    topObstaclePosition = topObstaclePosition - 150;
-    bottomObstaclePosition = topObstaclePosition + 610;
-    middleObstaclePosition = topObstaclePosition + 310;
+    topObstaclePosition = topObstaclePosition - 250;
+    bottomObstaclePosition = topObstaclePosition + 710;
+    middleObstaclePosition = topObstaclePosition + 360;
     
-    self.topObstacleView.center = CGPointMake(380, topObstaclePosition);
-    self.bottomObstacleView.center = CGPointMake(380, bottomObstaclePosition);
-    self.middleObstacleView.center = CGPointMake(380, middleObstaclePosition);
+    self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
+    self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
+    self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
     
 }
 
@@ -123,7 +128,7 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 8;
+    fastroFlight = fastroFlight - 5;
     
     if (fastroFlight < -15) {
         fastroFlight = -15;
@@ -135,7 +140,7 @@ extern int score;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 30;
+    fastroFlight = 20;
     
 }
 
@@ -148,6 +153,7 @@ extern int score;
     self.youDiedButton.hidden = NO;
     self.topObstacleView.hidden = YES;
     self.bottomObstacleView.hidden = YES;
+    self.middleObstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     
     score = 0;
