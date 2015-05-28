@@ -807,10 +807,10 @@
             </objects>
             <point key="canvasLocation" x="959" y="4270"/>
         </scene>
-        <!--View Controller-->
+        <!--Level Eight View Controller-->
         <scene sceneID="a8D-1X-vgv">
             <objects>
-                <viewController id="6r2-Y9-uBj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelEight" id="6r2-Y9-uBj" customClass="LevelEightViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K3D-Te-bR4"/>
                         <viewControllerLayoutGuide type="bottom" id="2mf-jc-4vi"/>
@@ -849,6 +849,7 @@
                                     <action selector="resetGame:" destination="ngT-mY-xEx" eventType="touchUpInside" id="OBK-dd-w33"/>
                                     <action selector="resetGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="V1a-4e-udH"/>
                                     <action selector="resetGame:" destination="EBU-tc-KFs" eventType="touchUpInside" id="XV7-oB-Imx"/>
+                                    <action selector="resetGame:" destination="6r2-Y9-uBj" eventType="touchUpInside" id="Y67-LZ-dX2"/>
                                     <action selector="resetGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="mqU-EB-LTY"/>
                                 </connections>
                             </button>
@@ -864,6 +865,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="startGame:" destination="6r2-Y9-uBj" eventType="touchUpInside" id="34d-Ix-KwX"/>
                                     <action selector="startGame:" destination="n2P-IK-mkA" eventType="touchUpInside" id="BIw-yP-S52"/>
                                     <action selector="startGame:" destination="ngT-mY-xEx" eventType="touchUpInside" id="CYQ-vw-BvY"/>
                                     <action selector="startGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="YYN-wF-yy7"/>
@@ -909,6 +911,15 @@
                             <constraint firstItem="tVL-jo-Ejw" firstAttribute="top" secondItem="j3N-Lb-cAj" secondAttribute="bottom" constant="63" id="tzF-wG-aZN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beginButton" destination="j3N-Lb-cAj" id="1h9-ZX-7Bw"/>
+                        <outlet property="bottomObstacleView" destination="bKz-wZ-qNT" id="8R7-Wl-ueW"/>
+                        <outlet property="fastronaut" destination="mE4-ju-Aa6" id="6pd-Pq-9FM"/>
+                        <outlet property="middleObstacleView" destination="bkS-xK-W3i" id="gql-Kh-1Vq"/>
+                        <outlet property="proceedButton" destination="Znd-ku-bYq" id="uu6-MG-2Ei"/>
+                        <outlet property="topObstacleView" destination="tGp-QN-PdV" id="tK8-sf-mN4"/>
+                        <outlet property="youDiedButton" destination="tVL-jo-Ejw" id="ccY-0t-9MA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTL-55-jyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
