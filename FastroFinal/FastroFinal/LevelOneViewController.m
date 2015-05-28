@@ -63,7 +63,7 @@ int score;
 - (void)obstacleMoving {
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
-//    [self animateView:self.obstacleView duration:10];
+    [self animateView:self.obstacleView duration:10];
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -180,7 +180,7 @@ int score;
     
 }
 
-- (void)animateView:(UIView *)view duration:(float)duration {
+- (void)animateView:(UIImageView *)view duration:(float)duration {
     
    
     CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));

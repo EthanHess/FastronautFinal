@@ -60,7 +60,7 @@ extern int score;
     
     [self placeObstacles];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
 }
 
 
@@ -106,7 +106,7 @@ extern int score;
 
 - (void)placeObstacles {
     
-    topObstaclePosition = arc4random() %350;
+    topObstaclePosition = arc4random() %380;
     topObstaclePosition = topObstaclePosition - 225;
     bottomObstaclePosition = topObstaclePosition + 680;
     

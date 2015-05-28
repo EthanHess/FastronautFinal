@@ -101,7 +101,7 @@ extern int score;
 
 - (void)placeObstacles {
     
-    topObstaclePosition = arc4random() %350;
+    topObstaclePosition = arc4random() %380;
     topObstaclePosition = topObstaclePosition - 225;
     bottomObstaclePosition = topObstaclePosition + 680;
     
