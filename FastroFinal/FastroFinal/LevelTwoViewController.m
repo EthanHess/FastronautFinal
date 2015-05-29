@@ -8,9 +8,6 @@
 
 #import "LevelTwoViewController.h"
 #import "SoundController.h"
-#import <math.h>
-
-static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 extern int obstaclePosition;
 extern int fastroFlight;
@@ -61,8 +58,14 @@ extern int score;
 
 - (void)obstacleMoving {
     
+    //    int value = arc4random_uniform(-1) + 2;
+    
+//    float value = 0.5;
+    
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
-    //    [self animateView:self.obstacleView duration:10];
+
+    
+//    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -99,7 +102,6 @@ extern int score;
     
     self.obstacleView.center = CGPointMake(450, obstaclePosition);
     
-    [self animateView:self.obstacleView duration:HUGE_VALF];
     
 }
 
@@ -176,23 +178,6 @@ extern int score;
     self.obstacleView.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
-    
-}
-
-- (void)animateView:(UIView *)view duration:(float)duration {
-    
-    
-    CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
-    //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
-    //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
-    
-    [UIView animateWithDuration:duration animations:^{
-        
-        view.transform = rotate;
-        //        view.transform = bigger;
-        //        view.transform = smaller;
-        
-    }];
     
 }
 
