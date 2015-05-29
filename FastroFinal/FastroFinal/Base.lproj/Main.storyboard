@@ -484,6 +484,35 @@
             </objects>
             <point key="canvasLocation" x="959" y="2288"/>
         </scene>
+        <!--Level Ten View Controller-->
+        <scene sceneID="TEf-Dw-NXt">
+            <objects>
+                <viewController storyboardIdentifier="LevelTen" id="8c4-p0-DeA" customClass="LevelTenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J9Y-Ag-74p"/>
+                        <viewControllerLayoutGuide type="bottom" id="d0X-rn-kNJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2lh-iM-dsR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tenthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-RB-EZs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UQy-RB-EZs" firstAttribute="leading" secondItem="2lh-iM-dsR" secondAttribute="leading" id="O8d-QD-tsB"/>
+                            <constraint firstItem="UQy-RB-EZs" firstAttribute="bottom" secondItem="d0X-rn-kNJ" secondAttribute="top" id="YFk-ga-1uD"/>
+                            <constraint firstAttribute="trailing" secondItem="UQy-RB-EZs" secondAttribute="trailing" id="br8-b8-0rU"/>
+                            <constraint firstItem="UQy-RB-EZs" firstAttribute="top" secondItem="2lh-iM-dsR" secondAttribute="top" id="uvA-d9-svi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUs-ok-btK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="2287"/>
+        </scene>
         <!--Level Four View Controller-->
         <scene sceneID="qbV-af-QPW">
             <objects>
@@ -617,6 +646,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8c4-p0-DeA" kind="show" id="bws-ET-GkO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq4-9j-Y3x">
                                 <rect key="frame" x="204" y="171" width="192" height="74"/>
@@ -1195,6 +1227,7 @@
         <image name="sevenTopObstacle" width="110" height="450"/>
         <image name="seventhLevelFastro" width="335" height="550"/>
         <image name="sixthLevelFastro" width="335" height="550"/>
+        <image name="tenthLevelFastro" width="335" height="550"/>
         <image name="thirdLevelView" width="335" height="550"/>
         <image name="topSpike" width="80" height="450"/>
     </resources>
