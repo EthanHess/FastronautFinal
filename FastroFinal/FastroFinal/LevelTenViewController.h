@@ -10,4 +10,6 @@
 
 @interface LevelTenViewController : UIViewController
 
+@property (nonatomic) BOOL isComplete; 
+
 @end

@@ -499,15 +499,88 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tenthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-RB-EZs">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shk-7n-NKL">
+                                <rect key="frame" x="178" y="431" width="244" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="6vI-lx-tCV"/>
+                                    <constraint firstAttribute="width" constant="244" id="zQA-C7-anL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-v8-Hek">
+                                <rect key="frame" x="135" y="335" width="330" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="ifu-dn-VQm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="CxZ-Ts-vA3"/>
+                                    <action selector="resetGame:" destination="8c4-p0-DeA" eventType="touchUpInside" id="LzX-pB-XaO"/>
+                                    <action selector="resetGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="SgX-a4-lql"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1K-GU-SnR">
+                                <rect key="frame" x="204" y="206" width="192" height="74"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Begin!">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="qqO-el-oaD" eventType="touchUpInside" id="Rl0-OV-Skk"/>
+                                    <action selector="startGame:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="cUM-da-Nlv"/>
+                                    <action selector="startGame:" destination="8c4-p0-DeA" eventType="touchUpInside" id="wXA-Wy-Fuw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFastro" translatesAutoresizingMaskIntoConstraints="NO" id="YdB-zJ-q68">
+                                <rect key="frame" x="265" y="299" width="70" height="110"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTenBottom" translatesAutoresizingMaskIntoConstraints="NO" id="yN1-8L-ONl">
+                                <rect key="frame" x="39" y="321" width="150" height="450"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTenTop" translatesAutoresizingMaskIntoConstraints="NO" id="V9x-Xl-4jw">
+                                <rect key="frame" x="423" y="-170" width="150" height="450"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="yN1-8L-ONl" firstAttribute="top" secondItem="J9Y-Ag-74p" secondAttribute="bottom" constant="257" id="0f2-5U-lQ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V9x-Xl-4jw" secondAttribute="trailing" constant="11" id="6I4-Ft-TQZ"/>
+                            <constraint firstItem="A2Q-v8-Hek" firstAttribute="top" secondItem="V9x-Xl-4jw" secondAttribute="bottom" constant="55" id="7SY-WM-Tcm"/>
+                            <constraint firstItem="d0X-rn-kNJ" firstAttribute="top" secondItem="Shk-7n-NKL" secondAttribute="bottom" constant="102" id="9YF-dk-uHn"/>
+                            <constraint firstItem="A2Q-v8-Hek" firstAttribute="centerX" secondItem="o1K-GU-SnR" secondAttribute="centerX" id="Cxx-5m-H0E"/>
+                            <constraint firstItem="o1K-GU-SnR" firstAttribute="top" secondItem="J9Y-Ag-74p" secondAttribute="bottom" constant="142" id="D28-rW-4pg"/>
+                            <constraint firstItem="YdB-zJ-q68" firstAttribute="leading" secondItem="yN1-8L-ONl" secondAttribute="trailing" constant="76" id="Jm5-Yd-3lI"/>
+                            <constraint firstItem="YdB-zJ-q68" firstAttribute="centerX" secondItem="A2Q-v8-Hek" secondAttribute="centerX" id="MKN-pA-OcT"/>
                             <constraint firstItem="UQy-RB-EZs" firstAttribute="leading" secondItem="2lh-iM-dsR" secondAttribute="leading" id="O8d-QD-tsB"/>
+                            <constraint firstItem="V9x-Xl-4jw" firstAttribute="leading" secondItem="o1K-GU-SnR" secondAttribute="trailing" constant="27" id="PZ3-aD-orA"/>
+                            <constraint firstItem="YdB-zJ-q68" firstAttribute="top" secondItem="o1K-GU-SnR" secondAttribute="bottom" constant="19" id="QwD-iJ-Fm9"/>
                             <constraint firstItem="UQy-RB-EZs" firstAttribute="bottom" secondItem="d0X-rn-kNJ" secondAttribute="top" id="YFk-ga-1uD"/>
                             <constraint firstAttribute="trailing" secondItem="UQy-RB-EZs" secondAttribute="trailing" id="br8-b8-0rU"/>
+                            <constraint firstItem="Shk-7n-NKL" firstAttribute="top" secondItem="YdB-zJ-q68" secondAttribute="bottom" constant="22" id="cGZ-vQ-Iec"/>
+                            <constraint firstItem="YdB-zJ-q68" firstAttribute="bottom" secondItem="A2Q-v8-Hek" secondAttribute="bottom" id="dzs-Qc-Ohh"/>
+                            <constraint firstItem="Shk-7n-NKL" firstAttribute="centerX" secondItem="UQy-RB-EZs" secondAttribute="centerX" id="o1c-Ob-0XO"/>
+                            <constraint firstItem="o1K-GU-SnR" firstAttribute="bottom" secondItem="V9x-Xl-4jw" secondAttribute="bottom" id="oeH-MY-ide"/>
                             <constraint firstItem="UQy-RB-EZs" firstAttribute="top" secondItem="2lh-iM-dsR" secondAttribute="top" id="uvA-d9-svi"/>
+                            <constraint firstItem="Shk-7n-NKL" firstAttribute="centerX" secondItem="A2Q-v8-Hek" secondAttribute="centerX" id="zPQ-oh-I9P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="beginButton" destination="o1K-GU-SnR" id="qZ3-9G-uB9"/>
+                        <outlet property="bottomObstacleView" destination="yN1-8L-ONl" id="S0k-lC-Lwn"/>
+                        <outlet property="fastronaut" destination="YdB-zJ-q68" id="MGV-Zm-LZW"/>
+                        <outlet property="proceedButton" destination="Shk-7n-NKL" id="YqU-MF-fRv"/>
+                        <outlet property="topObstacleView" destination="V9x-Xl-4jw" id="75U-OW-aLF"/>
+                        <outlet property="youDiedButton" destination="A2Q-v8-Hek" id="wOS-PZ-gTc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUs-ok-btK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1213,6 +1286,8 @@
         <image name="levelEightMiddle" width="120" height="120"/>
         <image name="levelEightTop" width="120" height="300"/>
         <image name="levelOneObstacle" width="100" height="100"/>
+        <image name="levelTenBottom" width="150" height="450"/>
+        <image name="levelTenTop" width="150" height="450"/>
         <image name="levelThreeObstacle" width="185" height="185"/>
         <image name="levelTwoObstacle" width="200" height="125"/>
         <image name="nineBottomObstacle" width="150" height="300"/>
