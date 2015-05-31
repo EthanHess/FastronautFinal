@@ -16,7 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+//    "A Little Faith"
+//    Kevin MacLeod (incompetech.com)
+//    Licensed under Creative Commons: By Attribution 3.0
+//http://creativecommons.org/licenses/by/3.0/
+    
     return YES;
 }
 
