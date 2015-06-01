@@ -19,6 +19,7 @@
 #import "LevelNineViewController.h"
 #import "LevelTenViewController.h"
 #import "LevelElevenViewController.h"
+#import "LevelTwelveViewController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -159,6 +160,14 @@
             LevelElevenViewController *elevenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEleven"];
             
             [self.navigationController pushViewController:elevenVC animated:YES];
+            
+            break; }
+    
+        case 12: {
+            
+            LevelTwelveViewController *twelveVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwelve"];
+            
+            [self.navigationController pushViewController:twelveVC animated:YES];
         }
     
         
