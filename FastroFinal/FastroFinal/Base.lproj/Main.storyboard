@@ -305,17 +305,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-xi-bTV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastrozontal" translatesAutoresizingMaskIntoConstraints="NO" id="s0z-Qc-dFO">
-                                <rect key="frame" x="245" y="265" width="110" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveSubviewOne" translatesAutoresizingMaskIntoConstraints="NO" id="kWG-fs-bz8">
+                                <rect key="frame" x="117" y="451" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwelveMiddle" translatesAutoresizingMaskIntoConstraints="NO" id="jOq-JS-n7g">
-                                <rect key="frame" x="28" y="225" width="150" height="150"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveTop" translatesAutoresizingMaskIntoConstraints="NO" id="NHK-Us-Bf9">
-                                <rect key="frame" x="384" y="-138" width="150" height="300"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveBottom" translatesAutoresizingMaskIntoConstraints="NO" id="Yfg-r8-ICh">
-                                <rect key="frame" x="384" y="426" width="150" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveSubviewTwo" translatesAutoresizingMaskIntoConstraints="NO" id="ygK-eb-fMa">
+                                <rect key="frame" x="356" y="451" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NM8-yL-k0q">
                                 <rect key="frame" x="178" y="376" width="244" height="67"/>
@@ -371,10 +365,23 @@
                                     <action selector="startGame:" destination="6r2-Y9-uBj" eventType="touchUpInside" id="lKM-HH-qfJ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastrozontal" translatesAutoresizingMaskIntoConstraints="NO" id="s0z-Qc-dFO">
+                                <rect key="frame" x="245" y="265" width="110" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwelveMiddle" translatesAutoresizingMaskIntoConstraints="NO" id="jOq-JS-n7g">
+                                <rect key="frame" x="28" y="225" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveTop" translatesAutoresizingMaskIntoConstraints="NO" id="NHK-Us-Bf9">
+                                <rect key="frame" x="384" y="-138" width="150" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveBottom" translatesAutoresizingMaskIntoConstraints="NO" id="Yfg-r8-ICh">
+                                <rect key="frame" x="384" y="426" width="150" height="300"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Yfg-r8-ICh" firstAttribute="top" secondItem="fVE-Lh-nCn" secondAttribute="bottom" constant="88" id="Bn9-at-Ckz"/>
+                            <constraint firstItem="kWG-fs-bz8" firstAttribute="top" secondItem="NM8-yL-k0q" secondAttribute="bottom" constant="8" symbolic="YES" id="H7V-HC-1Bl"/>
                             <constraint firstItem="UV2-V7-oQO" firstAttribute="centerX" secondItem="bpH-xi-bTV" secondAttribute="centerX" id="IiH-24-Hpu"/>
                             <constraint firstItem="fVE-Lh-nCn" firstAttribute="top" secondItem="UV2-V7-oQO" secondAttribute="bottom" constant="63" id="Mbv-wF-jDC"/>
                             <constraint firstItem="NM8-yL-k0q" firstAttribute="top" secondItem="fVE-Lh-nCn" secondAttribute="bottom" constant="38" id="RNE-6e-j5p"/>
@@ -390,10 +397,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="NHK-Us-Bf9" secondAttribute="trailing" constant="50" id="ebr-C8-7wO"/>
                             <constraint firstItem="UV2-V7-oQO" firstAttribute="centerX" secondItem="s0z-Qc-dFO" secondAttribute="centerX" id="ekB-hK-K4y"/>
                             <constraint firstItem="bpH-xi-bTV" firstAttribute="bottom" secondItem="g5j-sb-tQY" secondAttribute="top" id="lvl-c5-2QG"/>
+                            <constraint firstAttribute="trailing" secondItem="ygK-eb-fMa" secondAttribute="trailing" constant="144" id="o6z-YU-E2T"/>
+                            <constraint firstItem="kWG-fs-bz8" firstAttribute="leading" secondItem="AZ6-9Y-aRi" secondAttribute="leading" constant="117" id="r6t-hN-69F"/>
                             <constraint firstItem="Yfg-r8-ICh" firstAttribute="leading" secondItem="NHK-Us-Bf9" secondAttribute="leading" id="rY2-F6-RuL"/>
                             <constraint firstItem="UV2-V7-oQO" firstAttribute="top" secondItem="LKT-kb-UCX" secondAttribute="bottom" constant="63" id="uYp-pR-PjD"/>
                             <constraint firstItem="s0z-Qc-dFO" firstAttribute="centerY" secondItem="bpH-xi-bTV" secondAttribute="centerY" id="vcj-hW-fgf"/>
                             <constraint firstItem="bpH-xi-bTV" firstAttribute="leading" secondItem="AZ6-9Y-aRi" secondAttribute="leading" id="wX2-kt-EAX"/>
+                            <constraint firstItem="ygK-eb-fMa" firstAttribute="top" secondItem="kWG-fs-bz8" secondAttribute="top" id="wzN-bh-cOV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1539,6 +1549,8 @@
         <image name="topSpike" width="80" height="450"/>
         <image name="twelthLevelFastro" width="335" height="550"/>
         <image name="twelveBottom" width="150" height="300"/>
+        <image name="twelveSubviewOne" width="100" height="100"/>
+        <image name="twelveSubviewTwo" width="100" height="100"/>
         <image name="twelveTop" width="150" height="300"/>
     </resources>
 </document>
