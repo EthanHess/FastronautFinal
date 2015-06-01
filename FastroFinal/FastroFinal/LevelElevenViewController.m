@@ -55,7 +55,7 @@ extern int score;
     
     [self placeObstacles];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
 }
 
 
@@ -115,10 +115,10 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 8;
+    fastroFlight = fastroFlight - 10;
     
-    if (fastroFlight < -15) {
-        fastroFlight = -15;
+    if (fastroFlight < -20) {
+        fastroFlight = -20;
     }
     
     if (fastroFlight > 0) {
