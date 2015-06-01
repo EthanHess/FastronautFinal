@@ -18,6 +18,7 @@
 #import "LevelEightViewController.h"
 #import "LevelNineViewController.h"
 #import "LevelTenViewController.h"
+#import "LevelElevenViewController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -59,7 +60,7 @@
 
 - (NSArray *)levels {
     
-    return @[@"Home Screen", @"Level One", @"Level Two", @"Level Three", @"Level Four", @"Level Five", @"Level Six", @"Level Seven", @"Level Eight", @"Level Nine", @"Level Ten",];
+    return @[@"Home Screen", @"Level One", @"Level Two", @"Level Three", @"Level Four", @"Level Five", @"Level Six", @"Level Seven", @"Level Eight", @"Level Nine", @"Level Ten", @"Level Eleven", @"Level Twelve", @"Level Thirteen", @"Level Fourteen", @"Level Fifteen"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -151,6 +152,13 @@
             
             [self.navigationController pushViewController:tenVC animated:YES];
             
+            break; }
+            
+        case 11:  {
+            
+            LevelElevenViewController *elevenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEleven"];
+            
+            [self.navigationController pushViewController:elevenVC animated:YES];
         }
     
         
