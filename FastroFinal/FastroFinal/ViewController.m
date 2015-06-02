@@ -16,6 +16,10 @@ int astroFall;
 
 @property (weak, nonatomic) IBOutlet UIButton *startNewGame;
 @property (weak, nonatomic) IBOutlet UIButton *levelButton;
+@property (weak, nonatomic) IBOutlet UIButton *instructionsButton;
+@property (weak, nonatomic) IBOutlet UIButton *creditsButton;
+
+
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (nonatomic, strong) NSTimer *astroTimer;
 @property (nonatomic, strong) SoundController *soundController;
@@ -33,6 +37,8 @@ int astroFall;
     
     self.startNewGame.hidden = YES;
     self.levelButton.hidden = YES;
+    self.instructionsButton.hidden = YES;
+    self.creditsButton.hidden = YES;
 
     int frame = self.view.frame.size.height;
     
@@ -59,6 +65,8 @@ int astroFall;
         astroFall = 0;
         self.startNewGame.hidden = NO;
         self.levelButton.hidden = NO;
+        self.instructionsButton.hidden = NO;
+        self.creditsButton.hidden = NO;
         self.fastronaut.image = [UIImage imageNamed:@"greenFastroLanded"];
     }
     

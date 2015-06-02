@@ -121,7 +121,7 @@ extern int score;
     
     self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
-    self.middleObstacleView.center = CGPointMake(-30, middleObstaclePosition);
+    self.middleObstacleView.center = CGPointMake(-80, middleObstaclePosition);
     
 }
 
