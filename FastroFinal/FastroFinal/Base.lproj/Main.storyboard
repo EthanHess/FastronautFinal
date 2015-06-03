@@ -299,6 +299,9 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZAr-DL-bGo" kind="show" id="YZN-qV-GlV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-ud-AP1">
                                 <rect key="frame" x="135" y="279" width="330" height="74"/>
@@ -386,6 +389,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="109-4g-Mzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1611" y="274"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SQ7-0K-E07">
+            <objects>
+                <viewController id="ZAr-DL-bGo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rT8-OK-MfA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ucd-OQ-5d8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KB0-QJ-KeY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourteenthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="a69-rN-6rg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ith-cY-tgC">
+                                <rect key="frame" x="135" y="295" width="330" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="j4i-cM-Wyb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="4CQ-5W-qcX" eventType="touchUpInside" id="YKv-2l-98c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-z9-9JJ">
+                                <rect key="frame" x="178" y="395" width="244" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="j57-Sa-zL2"/>
+                                    <constraint firstAttribute="height" constant="67" id="oIg-0B-l0F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CVx-Jm-99Z" kind="show" id="Egh-Od-Uhd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenFastroLanded" translatesAutoresizingMaskIntoConstraints="NO" id="fLf-YQ-rJe">
+                                <rect key="frame" x="265" y="277" width="70" height="110"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-0o-Kex">
+                                <rect key="frame" x="204" y="195" width="192" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="faA-W6-2SW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Begin!">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="4CQ-5W-qcX" eventType="touchUpInside" id="hBd-3j-Gma"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fLf-YQ-rJe" firstAttribute="top" secondItem="VIP-0o-Kex" secondAttribute="bottom" constant="8" symbolic="YES" id="0BU-Jf-9it"/>
+                            <constraint firstItem="a69-rN-6rg" firstAttribute="bottom" secondItem="Ucd-OQ-5d8" secondAttribute="top" id="3n4-CU-A42"/>
+                            <constraint firstItem="VIP-0o-Kex" firstAttribute="centerX" secondItem="Ith-cY-tgC" secondAttribute="centerX" id="7LN-PG-cBR"/>
+                            <constraint firstItem="Ucd-OQ-5d8" firstAttribute="top" secondItem="VhX-z9-9JJ" secondAttribute="bottom" constant="138" id="JiR-sA-jug"/>
+                            <constraint firstItem="VhX-z9-9JJ" firstAttribute="top" secondItem="fLf-YQ-rJe" secondAttribute="bottom" constant="8" symbolic="YES" id="LGF-5T-8xB"/>
+                            <constraint firstItem="Ith-cY-tgC" firstAttribute="centerX" secondItem="a69-rN-6rg" secondAttribute="centerX" id="Mep-WR-2V0"/>
+                            <constraint firstItem="Ith-cY-tgC" firstAttribute="top" secondItem="VIP-0o-Kex" secondAttribute="bottom" constant="26" id="aLx-4R-gCe"/>
+                            <constraint firstItem="a69-rN-6rg" firstAttribute="leading" secondItem="KB0-QJ-KeY" secondAttribute="leading" id="aiR-Kw-Uvw"/>
+                            <constraint firstItem="VIP-0o-Kex" firstAttribute="top" secondItem="rT8-OK-MfA" secondAttribute="bottom" constant="131" id="gQg-Pv-Jqh"/>
+                            <constraint firstItem="a69-rN-6rg" firstAttribute="top" secondItem="KB0-QJ-KeY" secondAttribute="top" id="klI-tL-CA8"/>
+                            <constraint firstAttribute="trailing" secondItem="a69-rN-6rg" secondAttribute="trailing" id="o8g-c5-pXC"/>
+                            <constraint firstItem="fLf-YQ-rJe" firstAttribute="centerY" secondItem="Ith-cY-tgC" secondAttribute="centerY" id="p2t-Si-yls"/>
+                            <constraint firstItem="Ith-cY-tgC" firstAttribute="centerX" secondItem="fLf-YQ-rJe" secondAttribute="centerX" id="pdK-uD-I0w"/>
+                            <constraint firstItem="VhX-z9-9JJ" firstAttribute="centerX" secondItem="Ith-cY-tgC" secondAttribute="centerX" id="wAq-Zx-jbP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z08-W8-FGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="274"/>
         </scene>
         <!--Level One View Controller-->
         <scene sceneID="u6t-o5-G69">
@@ -614,6 +700,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTL-Mq-SxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1613" y="953"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IoL-sD-xy3">
+            <objects>
+                <viewController id="CVx-Jm-99Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t4z-yv-J50"/>
+                        <viewControllerLayoutGuide type="bottom" id="KXQ-eW-fjb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nB7-YP-pQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fifteenthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="8bQ-cs-3hK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8bQ-cs-3hK" secondAttribute="trailing" id="Iqg-wQ-y34"/>
+                            <constraint firstItem="8bQ-cs-3hK" firstAttribute="leading" secondItem="nB7-YP-pQQ" secondAttribute="leading" id="Tew-SC-rRJ"/>
+                            <constraint firstItem="8bQ-cs-3hK" firstAttribute="bottom" secondItem="KXQ-eW-fjb" secondAttribute="top" id="Y3z-ff-BNL"/>
+                            <constraint firstItem="8bQ-cs-3hK" firstAttribute="top" secondItem="nB7-YP-pQQ" secondAttribute="top" id="dUv-os-OG7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWk-6f-c9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="952"/>
         </scene>
         <!--Level Two View Controller-->
         <scene sceneID="LDa-to-fPn">
@@ -1712,7 +1827,9 @@
         <image name="bottomSpike" width="80" height="450"/>
         <image name="eighthLevelFastro" width="335" height="550"/>
         <image name="eleventhLevelFastro" width="335" height="550"/>
+        <image name="fifteenthLevelFastro" width="335" height="550"/>
         <image name="fifthLevelFastro" width="335" height="550"/>
+        <image name="fourteenthLevelFastro" width="335" height="550"/>
         <image name="gasCloud" width="200" height="120"/>
         <image name="greenFastroLanded" width="70" height="110"/>
         <image name="leftObstacleFour" width="180" height="85"/>
