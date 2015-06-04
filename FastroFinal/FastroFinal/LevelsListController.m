@@ -63,7 +63,7 @@
 
 - (NSArray *)levels {
     
-    return @[@"Home Screen", @"Level One", @"Level Two", @"Level Three", @"Level Four", @"Level Five", @"Level Six", @"Level Seven", @"Level Eight", @"Level Nine", @"Level Ten", @"Level Eleven", @"Level Twelve", @"Level Thirteen", @"Level Fourteen", @"Level Fifteen"];
+    return @[@"Home Screen", @"Level One", @"Level Two", @"Level Three", @"Level Four", @"Level Five", @"Level Six", @"Level Seven", @"Level Eight", @"Level Nine", @"Level Ten", @"Level Eleven", @"Level Twelve", @"Level Thirteen", @"Level Fourteen", @"Level Fifteen", @"Level Sixteen", @"Level Seventeen", @"Level Eighteen", @"Level Nineteen", @"Level Twenty", @"Level Twenty One", @"Level Twenty Two", @"Level Twenty Three", @"Level Twenty Four", @"Level Twenty Five", @"Level Twenty Six", @"Level Twenty Seven", @"Level Twenty Eight", @"Level Twenty Nine", @"Boss Level"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

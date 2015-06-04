@@ -103,11 +103,11 @@ extern int score;
     
     leftObstaclePosition = arc4random() %frame;
     
-    self.leftObstacleView.center = CGPointMake(-30, leftObstaclePosition);
+    self.leftObstacleView.center = CGPointMake(-90, leftObstaclePosition);
     
     rightObstaclePosition = arc4random() %frame;
     
-    self.rightObstacleView.center = CGPointMake(380, rightObstaclePosition);
+    self.rightObstacleView.center = CGPointMake(440, rightObstaclePosition);
     
     
 }

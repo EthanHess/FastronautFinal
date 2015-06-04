@@ -30,7 +30,16 @@
 		275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50AD1B12442800E6896A /* LevelThreeViewController.m */; };
 		275B50B11B12AF8800E6896A /* LevelFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50B01B12AF8800E6896A /* LevelFourViewController.m */; };
 		275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50E71B13AD4100E6896A /* LevelFiveViewController.m */; };
+		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
+		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
+		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
+		27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */; };
+		27BACAF61B1FF09100FA26E2 /* Exit the Premises.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */; };
+		27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */; };
+		27BACAFA1B1FF0B300FA26E2 /* Zanzibar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */; };
+		27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */; };
 		27F9A9561B1F932F00CD4BEF /* LevelFourteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A9551B1F932F00CD4BEF /* LevelFourteenViewController.m */; };
+		27F9A9591B1F9D7F00CD4BEF /* LevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A9581B1F9D7F00CD4BEF /* LevelController.m */; };
 		27FFABCB1B17B6A100F2E4D3 /* LevelNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFABCA1B17B6A100F2E4D3 /* LevelNineViewController.m */; };
 		27FFAC0F1B190BD200F2E4D3 /* LevelTenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFAC0E1B190BD200F2E4D3 /* LevelTenViewController.m */; };
 		27FFAC151B1AB5B400F2E4D3 /* The Curtain Rises.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */; };
@@ -93,8 +102,18 @@
 		275B50B01B12AF8800E6896A /* LevelFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFourViewController.m; sourceTree = "<group>"; };
 		275B50E61B13AD4100E6896A /* LevelFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFiveViewController.h; sourceTree = "<group>"; };
 		275B50E71B13AD4100E6896A /* LevelFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFiveViewController.m; sourceTree = "<group>"; };
+		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
+		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
+		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
+		27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Discovery Hit.mp3"; sourceTree = "<group>"; };
+		27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Exit the Premises.mp3"; sourceTree = "<group>"; };
+		27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nano Hoedown.mp3"; sourceTree = "<group>"; };
+		27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zanzibar.mp3; sourceTree = "<group>"; };
+		27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sunflower Dance Party.mp3"; sourceTree = "<group>"; };
 		27F9A9541B1F932F00CD4BEF /* LevelFourteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFourteenViewController.h; sourceTree = "<group>"; };
 		27F9A9551B1F932F00CD4BEF /* LevelFourteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFourteenViewController.m; sourceTree = "<group>"; };
+		27F9A9571B1F9D7F00CD4BEF /* LevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelController.h; sourceTree = "<group>"; };
+		27F9A9581B1F9D7F00CD4BEF /* LevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelController.m; sourceTree = "<group>"; };
 		27FFABC91B17B6A100F2E4D3 /* LevelNineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelNineViewController.h; sourceTree = "<group>"; };
 		27FFABCA1B17B6A100F2E4D3 /* LevelNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelNineViewController.m; sourceTree = "<group>"; };
 		27FFAC0D1B190BD200F2E4D3 /* LevelTenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTenViewController.h; sourceTree = "<group>"; };
@@ -125,6 +144,14 @@
 			isa = PBXGroup;
 			children = (
 				270E52081B082986001CDF3C /* FastroFinal */,
+				27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */,
+				27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */,
+				27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */,
+				27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */,
+				27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */,
+				27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */,
+				27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */,
+				27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */,
 				27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */,
 				27FFAC141B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 */,
 				270E52221B082986001CDF3C /* FastroFinalTests */,
@@ -189,6 +216,8 @@
 				270E52391B098D12001CDF3C /* Controllers */,
 				270E523A1B098D35001CDF3C /* SoundController.h */,
 				270E523B1B098D35001CDF3C /* SoundController.m */,
+				27F9A9571B1F9D7F00CD4BEF /* LevelController.h */,
+				27F9A9581B1F9D7F00CD4BEF /* LevelController.m */,
 				270E52161B082986001CDF3C /* Images.xcassets */,
 				270E52181B082986001CDF3C /* LaunchScreen.xib */,
 				270E52091B082986001CDF3C /* Supporting Files */,
@@ -316,11 +345,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BACAF61B1FF09100FA26E2 /* Exit the Premises.mp3 in Resources */,
+				27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */,
+				27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */,
 				27FFAC161B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 in Resources */,
+				27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */,
+				27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */,
 				27FFAC151B1AB5B400F2E4D3 /* The Curtain Rises.mp3 in Resources */,
+				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				270E521A1B082986001CDF3C /* LaunchScreen.xib in Resources */,
 				270E52171B082986001CDF3C /* Images.xcassets in Resources */,
+				27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */,
+				27BACAFA1B1FF0B300FA26E2 /* Zanzibar.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +389,7 @@
 				275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */,
 				275B50771B10FDE900E6896A /* LevelTwoViewController.m in Sources */,
 				271B77F51B1E638F0028A554 /* CreditsViewController.m in Sources */,
+				27F9A9591B1F9D7F00CD4BEF /* LevelController.m in Sources */,
 				270E520C1B082986001CDF3C /* main.m in Sources */,
 				274E52F11B178DD300C9B004 /* LevelEightViewController.m in Sources */,
 				274E52EE1B16714800C9B004 /* LevelSevenViewController.m in Sources */,

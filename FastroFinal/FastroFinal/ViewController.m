@@ -74,7 +74,7 @@ int astroFall;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"The Curtain Rises" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Take a Chance" withExtension:@"mp3"];
     
     [self.soundController playFileAtURL:url];
     

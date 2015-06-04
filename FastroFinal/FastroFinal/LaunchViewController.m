@@ -51,7 +51,7 @@
 
 - (void)launchSound {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Discovery Hit" withExtension:@"mp3"];
     
     [self.soundController playFileAtURL:url];
     

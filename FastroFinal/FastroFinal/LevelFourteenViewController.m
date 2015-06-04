@@ -194,7 +194,7 @@ extern int score;
     
     self.mushroomView.image = [UIImage imageNamed:@"flatMushroom"];
     
-    if (self.fastronaut.center.y == self.view.frame.size.height / 2) {
+    if (self.fastronaut.center.y < 275) {
         
         self.mushroomView.image = [UIImage imageNamed:@"levelFourteenMushroom"];
         fastroFlight = 50;

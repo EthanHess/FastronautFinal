@@ -13,6 +13,7 @@
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 int obstaclePosition;
+int coinPosition;
 int fastroFlight;
 int score;
 
@@ -26,8 +27,13 @@ int score;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *coin;
+
+
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
+@property (nonatomic, strong) NSTimer *coinTimer;
 @property (nonatomic, strong) SoundController *soundController;
 
 
@@ -44,7 +50,6 @@ int score;
     self.youDiedButton.hidden = YES;
     score = 0;
     
-    [self playAudio];
 }
 
 
@@ -56,7 +61,13 @@ int score;
     
     [self placeObstacle];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0038 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    [self placeCoin];
+    
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0035 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    [self playAudio];
 }
 
 
@@ -70,10 +81,10 @@ int score;
         [self placeObstacle];
     }
     
-    if (self.obstacleView.center.x == 30) {
-        
-        [self score];
-    }
+//    if (self.obstacleView.center.x == 30) {
+//        
+//        [self score];
+//    }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
@@ -132,15 +143,48 @@ int score;
     
 }
 
+- (void)placeCoin {
+    
+    int frame = self.view.frame.size.height;
+    
+    coinPosition = arc4random() %frame;
+    
+    self.coin.center = CGPointMake(380, coinPosition);
+    
+    self.coin.hidden = NO;
+    
+    
+}
+
+- (void)coinMoving {
+    
+    self.coin.center = CGPointMake(self.coin.center.x - 1, self.coin.center.y);
+    
+    if (self.coin.center.x < - 35) {
+        
+        [self placeCoin];
+    }
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.coin.frame)) {
+        
+        self.coin.hidden = YES;
+        [self placeCoin];
+        [self score];
+    }
+    
+}
+
 
 - (void)gameOver {
     
     [self.fastroTimer invalidate];
     [self.obstacleTimer invalidate];
+    [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
+    self.coin.hidden = YES; 
     
     score = 0;
     
@@ -151,13 +195,17 @@ int score;
     
     score = score + 1;
     
-    if (score > 5) {
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+    
+    if (score == 5) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
+        [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
         self.obstacleView.hidden = YES;
+        self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
         
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playAudio) object:nil];
@@ -171,10 +219,14 @@ int score;
 
 - (IBAction)resetGame:(id)sender {
     
+    score = 0;
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score]; 
+    
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.obstacleView.hidden = NO;
+    self.coin.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
