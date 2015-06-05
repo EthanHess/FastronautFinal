@@ -15,7 +15,6 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 int obstaclePosition;
 int coinPosition;
 int fastroFlight;
-int score;
 
 @interface LevelOneViewController ()
 
@@ -30,7 +29,7 @@ int score;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 
-
+@property (nonatomic, assign) int score;
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
@@ -40,6 +39,8 @@ int score;
 @end
 
 @implementation LevelOneViewController
+
+@synthesize score;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -109,7 +110,7 @@ int score;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(380, obstaclePosition);
+    self.obstacleView.center = CGPointMake(450, obstaclePosition);
     
     [self animateView:self.obstacleView duration:HUGE_VALF];
     
@@ -169,7 +170,7 @@ int score;
         
         self.coin.hidden = YES;
         [self placeCoin];
-        [self score];
+        [self scoreChange];
     }
     
 }
@@ -191,11 +192,11 @@ int score;
 }
 
 
-- (void)score {
+- (void)scoreChange {
     
     score = score + 1;
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+//    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
     if (score == 5) {
         

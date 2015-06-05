@@ -72,7 +72,7 @@ extern int score;
     
     if (self.leftObstacleView.center.x == 380) {
         
-        [self score];
+        [self scoreChange];
     }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.leftObstacleView.frame)) {
@@ -156,7 +156,7 @@ extern int score;
 }
 
 
-- (void)score {
+- (void)scoreChange {
     
     score = score + 1;
     

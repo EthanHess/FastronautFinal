@@ -80,7 +80,7 @@ extern int score;
     
     if (self.topObstacleView.center.x == 30) {
         
-        [self score];
+        [self scoreChange];
     }
     
     
@@ -163,7 +163,7 @@ extern int score;
 }
 
 
-- (void)score {
+- (void)scoreChange {
     
     score = score + 1;
     
