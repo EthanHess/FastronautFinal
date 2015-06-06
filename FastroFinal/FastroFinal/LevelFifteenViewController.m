@@ -138,7 +138,7 @@ extern int score;
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.oilOcean.frame)) {
         
-        fastroFlight = 10; 
+        fastroFlight = 10;
     }
     
 }

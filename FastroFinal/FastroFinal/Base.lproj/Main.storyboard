@@ -865,6 +865,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwoObstacle" translatesAutoresizingMaskIntoConstraints="NO" id="OIt-h2-XB0">
                                 <rect key="frame" x="343" y="129" width="200" height="125"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastroCoin" translatesAutoresizingMaskIntoConstraints="NO" id="0KJ-1h-10G">
+                                <rect key="frame" x="471" y="383" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -887,6 +890,7 @@
                     </view>
                     <connections>
                         <outlet property="beginButton" destination="dCw-3g-mg5" id="qHX-xH-tOR"/>
+                        <outlet property="coin" destination="0KJ-1h-10G" id="jyV-g4-GSl"/>
                         <outlet property="fastronaut" destination="GBe-To-EFO" id="5pF-4R-wdF"/>
                         <outlet property="obstacleView" destination="OIt-h2-XB0" id="SE6-JE-LXp"/>
                         <outlet property="proceedButton" destination="Pqd-Nq-kos" id="xPT-wQ-vvo"/>
@@ -1060,6 +1064,9 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelThreeObstacle" translatesAutoresizingMaskIntoConstraints="NO" id="Hqy-ty-4XX">
                                 <rect key="frame" x="-9" y="141" width="185" height="185"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastroCoin" translatesAutoresizingMaskIntoConstraints="NO" id="LA0-Hm-uBo">
+                                <rect key="frame" x="501" y="392" width="50" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1262,6 +1269,9 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightObstacleFour" translatesAutoresizingMaskIntoConstraints="NO" id="MyZ-hm-uaR">
                                 <rect key="frame" x="16" y="389" width="180" height="85"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastroCoin" translatesAutoresizingMaskIntoConstraints="NO" id="J15-kk-QMf">
+                                <rect key="frame" x="495" y="315" width="50" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1475,6 +1485,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightObstacleFive" translatesAutoresizingMaskIntoConstraints="NO" id="CVb-Gn-cbu">
                                 <rect key="frame" x="287" y="184" width="250" height="80"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastroCoin" translatesAutoresizingMaskIntoConstraints="NO" id="GNU-Pk-TX3">
+                                <rect key="frame" x="500" y="360" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1577,6 +1590,9 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottomSpike" translatesAutoresizingMaskIntoConstraints="NO" id="OBF-sN-9S5">
                                 <rect key="frame" x="490" y="333" width="80" height="450"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastroCoin" translatesAutoresizingMaskIntoConstraints="NO" id="vNi-qT-hEj">
+                                <rect key="frame" x="480" y="238" width="50" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
