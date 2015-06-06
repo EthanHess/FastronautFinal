@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface LevelFourteenViewController : ViewController
+@interface LevelFourteenViewController : UIViewController
 
 @property (nonatomic) BOOL isComplete;
 

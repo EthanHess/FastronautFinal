@@ -1,19 +1,19 @@
 //
-//  LevelTwoViewController.m
+//  LevelFifteenViewController.m
 //  FastroFinal
 //
-//  Created by Ethan Hess on 5/23/15.
+//  Created by Ethan Hess on 6/6/15.
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "LevelTwoViewController.h"
+#import "LevelFifteenViewController.h"
 #import "SoundController.h"
 
 extern int obstaclePosition;
 extern int fastroFlight;
 extern int score;
 
-@interface LevelTwoViewController ()
+@interface LevelFifteenViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
@@ -22,6 +22,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+@property (weak, nonatomic) IBOutlet UIImageView *oilOcean;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
@@ -29,7 +30,7 @@ extern int score;
 
 @end
 
-@implementation LevelTwoViewController
+@implementation LevelFifteenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -60,12 +61,12 @@ extern int score;
     
     //    int value = arc4random_uniform(-1) + 2;
     
-//    float value = 0.5;
+    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
-
     
-//    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
+    
+    //    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -117,19 +118,28 @@ extern int score;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"FastronautLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"greenFastroLanded"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"Fastronaut-Final"];
+        self.fastronaut.image = [UIImage imageNamed:@"GreenFastro"];
     }
     
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.oilOcean.frame)) {
+        
+        fastroFlight = - 2;
+    }
 }
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     fastroFlight = 30;
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.oilOcean.frame)) {
+        
+        fastroFlight = 10; 
+    }
     
 }
 

@@ -15,6 +15,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 int obstaclePosition;
 int coinPosition;
 int fastroFlight;
+int score; 
 
 @interface LevelOneViewController ()
 
@@ -29,7 +30,7 @@ int fastroFlight;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 
-@property (nonatomic, assign) int score;
+//@property (nonatomic, assign) int score;
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
@@ -40,7 +41,7 @@ int fastroFlight;
 
 @implementation LevelOneViewController
 
-@synthesize score;
+//@synthesize score;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
