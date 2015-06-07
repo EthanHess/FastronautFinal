@@ -43,7 +43,6 @@ extern int score;
     self.youDiedButton.hidden = YES;
     score = 0;
     
-    [self playAudio];
 }
 
 
@@ -60,6 +59,8 @@ extern int score;
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0038 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    [self playAudio];
     
 }
 
@@ -80,10 +81,10 @@ extern int score;
         [self placeObstacle];
     }
     
-    if (self.obstacleView.center.x == 30) {
-        
-        [self scoreChange];
-    }
+//    if (self.obstacleView.center.x == 30) {
+//        
+//        [self scoreChange];
+//    }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
@@ -195,7 +196,7 @@ extern int score;
     
     score = score + 1;
     
-    if (score > 5) {
+    if (score == 10) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -231,7 +232,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"The Complex" withExtension:@"mp3"];
     
     [self.soundController playFileAtURL:url];
     

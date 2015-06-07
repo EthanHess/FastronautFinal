@@ -523,6 +523,9 @@
                                 <state key="normal" title="Well done! Proceed">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aHW-eG-h3Q" kind="show" id="sbB-rg-fJv"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenFastroLanded" translatesAutoresizingMaskIntoConstraints="NO" id="Lrs-3V-gkq">
                                 <rect key="frame" x="265" y="248" width="70" height="110"/>
@@ -1004,6 +1007,35 @@
             </objects>
             <point key="canvasLocation" x="1615" y="1623"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="M7v-H1-3KI">
+            <objects>
+                <viewController id="aHW-eG-h3Q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rXP-Ya-XUH"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Vz-8S-flr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCZ-ai-AFv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sixteenthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="qmL-Xa-EhN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qmL-Xa-EhN" firstAttribute="bottom" secondItem="3Vz-8S-flr" secondAttribute="top" id="763-gO-34W"/>
+                            <constraint firstItem="qmL-Xa-EhN" firstAttribute="top" secondItem="jCZ-ai-AFv" secondAttribute="top" id="Rl7-VX-wLh"/>
+                            <constraint firstItem="qmL-Xa-EhN" firstAttribute="leading" secondItem="jCZ-ai-AFv" secondAttribute="leading" id="THD-B1-1WU"/>
+                            <constraint firstAttribute="trailing" secondItem="qmL-Xa-EhN" secondAttribute="trailing" id="x2A-IY-U2T"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKp-Ac-Nn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="1625"/>
+        </scene>
         <!--Level Three View Controller-->
         <scene sceneID="jiN-jd-vuZ">
             <objects>
@@ -1092,6 +1124,7 @@
                     </view>
                     <connections>
                         <outlet property="beginButton" destination="tD9-uc-h2T" id="gY8-mm-X0l"/>
+                        <outlet property="coin" destination="LA0-Hm-uBo" id="FAF-Kd-A8X"/>
                         <outlet property="fastronaut" destination="C2x-c9-BQi" id="p9S-w4-vqu"/>
                         <outlet property="obstacleView" destination="Hqy-ty-4XX" id="0wv-w4-0eY"/>
                         <outlet property="proceedButton" destination="gpO-mG-wMQ" id="jLn-S7-ajh"/>
@@ -1271,7 +1304,7 @@
                                 <rect key="frame" x="16" y="389" width="180" height="85"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastroCoin" translatesAutoresizingMaskIntoConstraints="NO" id="J15-kk-QMf">
-                                <rect key="frame" x="495" y="315" width="50" height="50"/>
+                                <rect key="frame" x="30" y="280" width="50" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1298,6 +1331,7 @@
                     </view>
                     <connections>
                         <outlet property="beginButton" destination="PcY-TP-qkf" id="bnB-Lp-ex4"/>
+                        <outlet property="coin" destination="J15-kk-QMf" id="VNf-Kd-xUq"/>
                         <outlet property="fastronaut" destination="Ffg-aC-aJL" id="L2a-rf-eD6"/>
                         <outlet property="leftObstacleView" destination="MyZ-hm-uaR" id="dDf-ag-woW"/>
                         <outlet property="proceedButton" destination="YWz-s3-YT8" id="3G8-gN-Cdu"/>
@@ -1890,6 +1924,7 @@
         <image name="sevenBottomObstacle" width="110" height="450"/>
         <image name="sevenTopObstacle" width="110" height="450"/>
         <image name="seventhLevelFastro" width="335" height="550"/>
+        <image name="sixteenthLevelFastro" width="335" height="550"/>
         <image name="sixthLevelFastro" width="335" height="550"/>
         <image name="tenthLevelFastro" width="335" height="550"/>
         <image name="thirdLevelView" width="335" height="550"/>

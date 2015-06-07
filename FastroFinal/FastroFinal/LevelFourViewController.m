@@ -15,6 +15,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 int leftObstaclePosition;
 int rightObstaclePosition;
 extern int fastroFlight;
+extern int coinPosition;
 extern int score;
 
 @interface LevelFourViewController ()
@@ -25,11 +26,13 @@ extern int score;
 
 @property (weak, nonatomic) IBOutlet UIImageView *leftObstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *rightObstacleView;
+@property (weak, nonatomic) IBOutlet UIImageView *coin;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
+@property (nonatomic, strong) NSTimer *coinTimer;
 @property (nonatomic, strong) SoundController *soundController;
 
 @end
@@ -45,7 +48,6 @@ extern int score;
     self.youDiedButton.hidden = YES;
     score = 0;
     
-    [self playAudio];
 }
 
 
@@ -58,6 +60,10 @@ extern int score;
     [self placeObstacles];
     
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    [self playAudio];
 }
 
 
@@ -73,10 +79,10 @@ extern int score;
         [self placeObstacles];
     }
     
-    if (self.leftObstacleView.center.x == 380) {
-        
-        [self scoreChange];
-    }
+//    if (self.leftObstacleView.center.x == 380) {
+//        
+//        [self scoreChange];
+//    }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.leftObstacleView.frame)) {
         
@@ -144,15 +150,48 @@ extern int score;
     
 }
 
+- (void)placeCoin {
+    
+    int frame = self.view.frame.size.height;
+    
+    coinPosition = arc4random() %frame;
+    
+    self.coin.center = CGPointMake(380, coinPosition);
+    
+    self.coin.hidden = NO;
+    
+    
+}
+
+- (void)coinMoving {
+    
+    self.coin.center = CGPointMake(self.coin.center.x - 1, self.coin.center.y);
+    
+    if (self.coin.center.x < - 35) {
+        
+        [self placeCoin];
+    }
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.coin.frame)) {
+        
+        self.coin.hidden = YES;
+        [self placeCoin];
+        [self scoreChange];
+    }
+    
+}
+
 
 - (void)gameOver {
     
     [self.fastroTimer invalidate];
     [self.obstacleTimer invalidate];
+    [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
     self.leftObstacleView.hidden = YES;
     self.rightObstacleView.hidden = YES;
+    self.coin.hidden = YES;
     self.fastronaut.hidden = YES;
     
     score = 0;
@@ -168,10 +207,12 @@ extern int score;
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
+        [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
         self.leftObstacleView.hidden = YES;
         self.rightObstacleView.hidden = YES;
+        self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
         
         [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playAudio) object:nil];
@@ -190,6 +231,7 @@ extern int score;
     self.fastronaut.hidden = NO;
     self.leftObstacleView.hidden = NO;
     self.rightObstacleView.hidden = NO;
+    self.coin.hidden = NO; 
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
@@ -216,7 +258,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Exit the Premises" withExtension:@"mp3"];
     
     [self.soundController playFileAtURL:url];
     
