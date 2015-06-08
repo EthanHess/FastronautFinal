@@ -436,6 +436,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelFourteenMushroom" translatesAutoresizingMaskIntoConstraints="NO" id="KHd-7s-5Kx">
                                 <rect key="frame" x="225" y="480" width="150" height="120"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LevelFourteenObstacle" translatesAutoresizingMaskIntoConstraints="NO" id="vxL-eP-VZy">
+                                <rect key="frame" x="424" y="202" width="150" height="180"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -462,6 +465,7 @@
                         <outlet property="fastronaut" destination="fLf-YQ-rJe" id="1PA-hR-g5P"/>
                         <outlet property="mushroomView" destination="KHd-7s-5Kx" id="GTI-DA-3WE"/>
                         <outlet property="proceedButton" destination="VhX-z9-9JJ" id="505-JE-y0F"/>
+                        <outlet property="topObstacleView" destination="vxL-eP-VZy" id="TtS-c0-cOQ"/>
                         <outlet property="youDiedButton" destination="Ith-cY-tgC" id="mqg-bH-TWv"/>
                     </connections>
                 </viewController>
@@ -1021,6 +1025,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sixteenthLevelFastro" translatesAutoresizingMaskIntoConstraints="NO" id="qmL-Xa-EhN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LevelSixteenBounce" translatesAutoresizingMaskIntoConstraints="NO" id="Lpu-vV-1O5">
+                                <rect key="frame" x="225" y="513" width="150" height="100"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1887,6 +1894,8 @@
         <image name="FirstLevelFastro" width="335" height="550"/>
         <image name="FourthLevelFastro" width="335" height="550"/>
         <image name="GreenFastro" width="70" height="110"/>
+        <image name="LevelFourteenObstacle" width="150" height="180"/>
+        <image name="LevelSixteenBounce" width="150" height="100"/>
         <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="backgroundSeven" width="120" height="120"/>
         <image name="blastOffScene" width="335" height="550"/>
