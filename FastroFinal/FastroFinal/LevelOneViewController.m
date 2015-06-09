@@ -43,6 +43,11 @@ int score;
 
 //@synthesize score;
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [self.soundController cancelAudio];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -11,6 +11,10 @@
 
 @interface SoundController : NSObject
 
++ (SoundController *)sharedInstance; 
+
 - (void)playFileAtURL:(NSURL *)url;
+
+- (void)cancelAudio;
 
 @end

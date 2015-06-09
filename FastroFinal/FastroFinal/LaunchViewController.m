@@ -14,16 +14,21 @@
 @property (weak, nonatomic) IBOutlet UIImageView *rocketView;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
 @property (nonatomic, strong) NSTimer *rocketTimer;
-@property (nonatomic, strong) SoundController *soundController;
+
 
 @end
 
 @implementation LaunchViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [[SoundController sharedInstance]cancelAudio];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.soundController = [SoundController new];
     
     self.proceedButton.hidden = YES;
     
@@ -53,7 +58,7 @@
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Discovery Hit" withExtension:@"mp3"];
     
-    [self.soundController playFileAtURL:url];
+    [[SoundController sharedInstance]playFileAtURL:url];
     
 }
 

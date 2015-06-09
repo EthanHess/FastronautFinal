@@ -53,7 +53,7 @@ extern int score;
     
     [self placeObstacle];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0038 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
 }
 
 

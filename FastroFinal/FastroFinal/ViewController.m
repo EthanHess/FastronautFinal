@@ -22,7 +22,6 @@ int astroFall;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (nonatomic, strong) NSTimer *astroTimer;
-@property (nonatomic, strong) SoundController *soundController;
 
 @end
 
@@ -30,8 +29,6 @@ int astroFall;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.soundController = [SoundController new];
     
     self.navigationController.navigationBarHidden = YES;
     
@@ -76,8 +73,7 @@ int astroFall;
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Take a Chance" withExtension:@"mp3"];
     
-    [self.soundController playFileAtURL:url];
-    
+    [[SoundController sharedInstance]playFileAtURL:url];
 }
 
 - (void)didReceiveMemoryWarning {

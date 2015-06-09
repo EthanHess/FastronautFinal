@@ -16,11 +16,28 @@
 
 @implementation SoundController
 
++ (SoundController *)sharedInstance {
+    static SoundController *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [SoundController new];
+    });
+    
+    return sharedInstance;
+    
+}
+
 - (void)playFileAtURL:(NSURL *)url {
     
     self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
     self.player.numberOfLoops = 0;
     [self.player play];
+    
+}
+
+- (void)cancelAudio {
+    
+    [self.player stop];
     
 }
 
