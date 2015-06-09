@@ -28,7 +28,6 @@ extern int score;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
-@property (nonatomic, strong) SoundController *soundController;
 
 @end
 
@@ -37,13 +36,12 @@ extern int score;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.soundController = [SoundController new];
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
     
-    [self playAudio];
+    [[SoundController sharedInstance]cancelAudio];
 }
 
 
@@ -56,6 +54,8 @@ extern int score;
     [self placeObstacles];
     
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    
+    [self playAudio]; 
 }
 
 
@@ -197,9 +197,9 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Zanzibar" withExtension:@"mp3"];
     
-    [self.soundController playFileAtURL:url];
+    [[SoundController sharedInstance]playFileAtURL:url];
     
 }
 

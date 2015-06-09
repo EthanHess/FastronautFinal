@@ -34,7 +34,6 @@ int score;
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
-@property (nonatomic, strong) SoundController *soundController;
 
 
 @end
@@ -43,19 +42,16 @@ int score;
 
 //@synthesize score;
 
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [self.soundController cancelAudio];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.soundController = [SoundController new];
+
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
+    
+    [[SoundController sharedInstance]cancelAudio];
     
 }
 
@@ -262,7 +258,7 @@ int score;
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
     
-    [self.soundController playFileAtURL:url];
+    [[SoundController sharedInstance]playFileAtURL:url];
     
 }
 

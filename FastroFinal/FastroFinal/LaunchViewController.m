@@ -20,11 +20,6 @@
 
 @implementation LaunchViewController
 
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [[SoundController sharedInstance]cancelAudio];
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +28,8 @@
     self.proceedButton.hidden = YES;
     
     self.rocketTimer = [NSTimer scheduledTimerWithTimeInterval:0.002 target:self selector:@selector(rocketUp) userInfo:nil repeats:YES];
+    
+    [[SoundController sharedInstance]cancelAudio];
     
     [self launchSound]; 
     

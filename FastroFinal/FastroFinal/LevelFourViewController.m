@@ -33,7 +33,6 @@ extern int score;
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
-@property (nonatomic, strong) SoundController *soundController;
 
 @end
 
@@ -42,11 +41,11 @@ extern int score;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.soundController = [SoundController new];
-    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
+    
+    [[SoundController sharedInstance]cancelAudio];
     
 }
 
@@ -259,8 +258,7 @@ extern int score;
 - (void)playAudio {
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Exit the Premises" withExtension:@"mp3"];
-    
-    [self.soundController playFileAtURL:url];
+    [[SoundController sharedInstance]playFileAtURL:url]; 
     
 }
 
