@@ -7,8 +7,10 @@
 //
 
 #import "CreditsViewController.h"
+#import "SoundController.h"
 
 @interface CreditsViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *creditsLabel;
 
 @end
 
@@ -17,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.navigationBarHidden = NO; 
+    [[SoundController sharedInstance]cancelAudio];
+    
+    self.creditsLabel.text = @"Hello";
 }
 
 - (void)didReceiveMemoryWarning {
