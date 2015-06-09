@@ -214,8 +214,6 @@ extern int score;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
         
-        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playAudio) object:nil];
-        
         self.isComplete = YES;
     }
     

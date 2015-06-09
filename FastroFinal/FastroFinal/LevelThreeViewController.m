@@ -202,8 +202,6 @@ extern int score;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         
-        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playAudio) object:nil];
-        
         self.isComplete = YES;
     }
     
