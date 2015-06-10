@@ -119,7 +119,7 @@ extern int score;
 
 - (void)placeObstacles {
     
-    topObstaclePosition = arc4random() %380;
+    topObstaclePosition = arc4random() %200;
     bottomObstaclePosition = topObstaclePosition + 550;
     middleObstaclePosition = topObstaclePosition + 275;
     
@@ -138,6 +138,14 @@ extern int score;
     
     if (fastroFlight < -15) {
         fastroFlight = -15;
+    }
+    
+    if (fastroFlight > 0) {
+        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
+    }
+    
+    if (fastroFlight < 0) {
+        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
     }
     
     
