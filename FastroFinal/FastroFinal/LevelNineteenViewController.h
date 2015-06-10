@@ -10,4 +10,6 @@
 
 @interface LevelNineteenViewController : ViewController
 
+@property (nonatomic) BOOL isComplete;
+
 @end

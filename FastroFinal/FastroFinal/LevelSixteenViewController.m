@@ -184,8 +184,7 @@ extern int score;
         self.topObstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
-        
-        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playAudio) object:nil];
+    
         
         self.isComplete = YES;
     }
@@ -211,9 +210,15 @@ extern int score;
     
     fastroFlight = - 80;
     
+    self.topBounce.image = [UIImage imageNamed:@"LevelSixteenBounceUp"];
     
+    if (self.fastronaut.center.y > 275) {
+        
+        self.bounceView.image = [UIImage imageNamed:@"LevelSixteenBounce"];
+        fastroFlight = 50;
+    
+    }
 }
-
 
 - (IBAction)resetGame:(id)sender {
     
