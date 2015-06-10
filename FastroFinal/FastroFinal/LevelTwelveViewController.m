@@ -167,7 +167,7 @@ extern int score;
     
     score = score + 1;
     
-    if (score > 5) {
+    if (score > 3) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

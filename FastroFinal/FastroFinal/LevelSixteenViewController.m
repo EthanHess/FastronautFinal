@@ -28,6 +28,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (weak, nonatomic) IBOutlet UIImageView *bounceView;
+@property (weak, nonatomic) IBOutlet UIImageView *topBounce;
 
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
@@ -139,6 +140,11 @@ extern int score;
         [self mushroomPop];
     }
     
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.topBounce.frame)) {
+        
+        [self popDown];
+    }
+    
     
 }
 
@@ -198,6 +204,13 @@ extern int score;
         self.bounceView.image = [UIImage imageNamed:@"LevelSixteenBounce"];
         fastroFlight = 50;
     }
+    
+}
+
+- (void)popDown {
+    
+    fastroFlight = - 80;
+    
     
 }
 

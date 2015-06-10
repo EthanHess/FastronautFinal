@@ -60,7 +60,7 @@ extern int score;
     
     [self placeObstacles];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
 }
 
 
@@ -115,8 +115,8 @@ extern int score;
     
     topObstaclePosition = arc4random() %300;
     topObstaclePosition = topObstaclePosition - 60;
-    bottomObstaclePosition = topObstaclePosition + 550;
-    middleObstaclePosition = topObstaclePosition + 275;
+    bottomObstaclePosition = topObstaclePosition + 560;
+    middleObstaclePosition = topObstaclePosition + 285;
     
     self.topObstacleView.center = CGPointMake(-80, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(-80, bottomObstaclePosition);
@@ -166,7 +166,7 @@ extern int score;
     
     score = score + 1;
     
-    if (score > 5) {
+    if (score > 3) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

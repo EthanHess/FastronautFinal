@@ -74,10 +74,6 @@ extern int score;
         [self placeObstacles];
     }
     
-    if (self.leftObstacleView.center.x == 380) {
-        
-        [self scoreChange];
-    }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.leftObstacleView.frame)) {
         

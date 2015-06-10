@@ -8,9 +8,6 @@
 
 #import "LevelFourViewController.h"
 #import "SoundController.h"
-#import <math.h>
-
-static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 int leftObstaclePosition;
 int rightObstaclePosition;
@@ -71,17 +68,13 @@ extern int score;
     self.leftObstacleView.center = CGPointMake(self.leftObstacleView.center.x + 1, self.leftObstacleView.center.y);
     
     self.rightObstacleView.center = CGPointMake(self.rightObstacleView.center.x - 1, self.rightObstacleView.center.y);
-    //    [self animateView:self.obstacleView duration:10];
+
     
     if (self.leftObstacleView.center.x > 400) {
         
         [self placeObstacles];
     }
-    
-//    if (self.leftObstacleView.center.x == 380) {
-//        
-//        [self scoreChange];
-//    }
+
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.leftObstacleView.frame)) {
         
@@ -117,7 +110,6 @@ extern int score;
     
     self.rightObstacleView.center = CGPointMake(430, rightObstaclePosition);
     
-//    [self animateView:self.leftObstacleView duration:HUGE_VALF];
     
 }
 
@@ -231,23 +223,6 @@ extern int score;
     self.coin.hidden = NO; 
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
-    
-}
-
-- (void)animateView:(UIView *)view duration:(float)duration {
-    
-    
-    CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
-    //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
-    //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
-    
-    [UIView animateWithDuration:duration animations:^{
-        
-        view.transform = rotate;
-        //        view.transform = bigger;
-        //        view.transform = smaller;
-        
-    }];
     
 }
 
