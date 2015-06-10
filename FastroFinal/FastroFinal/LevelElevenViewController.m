@@ -238,7 +238,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Ghostpocalypse - 7 Master" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     

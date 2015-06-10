@@ -240,7 +240,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Space Fighter Loop" withExtension:@"mp3"];
     
     [self.soundController playFileAtURL:url];
     

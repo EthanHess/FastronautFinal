@@ -40,6 +40,17 @@
 		27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */; };
 		27BACAFA1B1FF0B300FA26E2 /* Zanzibar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */; };
 		27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */; };
+		27BC830F1B28F66600668F80 /* Controlled Chaos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83041B28F66600668F80 /* Controlled Chaos.mp3 */; };
+		27BC83101B28F66600668F80 /* Enter the Maze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83051B28F66600668F80 /* Enter the Maze.mp3 */; };
+		27BC83111B28F66600668F80 /* Five Armies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83061B28F66600668F80 /* Five Armies.mp3 */; };
+		27BC83121B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83071B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 */; };
+		27BC83131B28F66600668F80 /* Hero Down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83081B28F66600668F80 /* Hero Down.mp3 */; };
+		27BC83141B28F66600668F80 /* Hit the Streets v2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83091B28F66600668F80 /* Hit the Streets v2.mp3 */; };
+		27BC83151B28F66600668F80 /* Ibn Al-Noor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */; };
+		27BC83161B28F66600668F80 /* Rising.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830B1B28F66600668F80 /* Rising.mp3 */; };
+		27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */; };
+		27BC83181B28F66600668F80 /* The Whip Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */; };
+		27BC83191B28F66600668F80 /* Who Likes to Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */; };
 		27E9F0F01B27956200066878 /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0EF1B27956200066878 /* PurchasedDataController.m */; };
 		27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F21B27958700066878 /* GamePurchaseController.m */; };
 		27E9F0F61B2795AD00066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F51B2795AD00066878 /* LevelSeventeenViewController.m */; };
@@ -121,6 +132,17 @@
 		27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nano Hoedown.mp3"; sourceTree = "<group>"; };
 		27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zanzibar.mp3; sourceTree = "<group>"; };
 		27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sunflower Dance Party.mp3"; sourceTree = "<group>"; };
+		27BC83041B28F66600668F80 /* Controlled Chaos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Controlled Chaos.mp3"; sourceTree = "<group>"; };
+		27BC83051B28F66600668F80 /* Enter the Maze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Enter the Maze.mp3"; sourceTree = "<group>"; };
+		27BC83061B28F66600668F80 /* Five Armies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Five Armies.mp3"; sourceTree = "<group>"; };
+		27BC83071B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ghostpocalypse - 7 Master.mp3"; sourceTree = "<group>"; };
+		27BC83081B28F66600668F80 /* Hero Down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hero Down.mp3"; sourceTree = "<group>"; };
+		27BC83091B28F66600668F80 /* Hit the Streets v2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hit the Streets v2.mp3"; sourceTree = "<group>"; };
+		27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ibn Al-Noor.mp3"; sourceTree = "<group>"; };
+		27BC830B1B28F66600668F80 /* Rising.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rising.mp3; sourceTree = "<group>"; };
+		27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Space Fighter Loop.mp3"; sourceTree = "<group>"; };
+		27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Whip Theme.mp3"; sourceTree = "<group>"; };
+		27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Who Likes to Party.mp3"; sourceTree = "<group>"; };
 		27E9F0EE1B27956200066878 /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
 		27E9F0EF1B27956200066878 /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
 		27E9F0F11B27958700066878 /* GamePurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePurchaseController.h; sourceTree = "<group>"; };
@@ -175,6 +197,17 @@
 				27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */,
 				27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */,
 				27FFAC141B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 */,
+				27BC83041B28F66600668F80 /* Controlled Chaos.mp3 */,
+				27BC83051B28F66600668F80 /* Enter the Maze.mp3 */,
+				27BC83061B28F66600668F80 /* Five Armies.mp3 */,
+				27BC83071B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 */,
+				27BC83081B28F66600668F80 /* Hero Down.mp3 */,
+				27BC83091B28F66600668F80 /* Hit the Streets v2.mp3 */,
+				27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */,
+				27BC830B1B28F66600668F80 /* Rising.mp3 */,
+				27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */,
+				27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */,
+				27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */,
 				270E52221B082986001CDF3C /* FastroFinalTests */,
 				270E52071B082986001CDF3C /* Products */,
 			);
@@ -380,18 +413,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BC83141B28F66600668F80 /* Hit the Streets v2.mp3 in Resources */,
 				27BACAF61B1FF09100FA26E2 /* Exit the Premises.mp3 in Resources */,
+				27BC83121B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 in Resources */,
+				27BC83161B28F66600668F80 /* Rising.mp3 in Resources */,
 				27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */,
 				27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */,
+				27BC83101B28F66600668F80 /* Enter the Maze.mp3 in Resources */,
 				27FFAC161B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 in Resources */,
 				27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */,
+				27BC83181B28F66600668F80 /* The Whip Theme.mp3 in Resources */,
 				27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */,
+				27BC830F1B28F66600668F80 /* Controlled Chaos.mp3 in Resources */,
+				27BC83131B28F66600668F80 /* Hero Down.mp3 in Resources */,
+				27BC83191B28F66600668F80 /* Who Likes to Party.mp3 in Resources */,
+				27BC83111B28F66600668F80 /* Five Armies.mp3 in Resources */,
 				27FFAC151B1AB5B400F2E4D3 /* The Curtain Rises.mp3 in Resources */,
 				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
+				27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				270E521A1B082986001CDF3C /* LaunchScreen.xib in Resources */,
 				270E52171B082986001CDF3C /* Images.xcassets in Resources */,
 				27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */,
+				27BC83151B28F66600668F80 /* Ibn Al-Noor.mp3 in Resources */,
 				27BACAFA1B1FF0B300FA26E2 /* Zanzibar.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
