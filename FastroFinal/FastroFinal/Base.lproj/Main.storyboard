@@ -656,6 +656,7 @@
                     </view>
                     <connections>
                         <outlet property="beginButton" destination="otD-Zt-Obc" id="pcS-FV-Gl3"/>
+                        <outlet property="coin" destination="gyE-Sf-hic" id="Irm-rv-2n5"/>
                         <outlet property="fastronaut" destination="Lrs-3V-gkq" id="eZj-Nv-uHS"/>
                         <outlet property="obstacleView" destination="PvS-z9-XQU" id="AcR-C5-Ah6"/>
                         <outlet property="oilOcean" destination="Li7-Kc-VH4" id="688-PU-KYP"/>
