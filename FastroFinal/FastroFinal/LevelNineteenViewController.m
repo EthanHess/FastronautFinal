@@ -65,14 +65,9 @@ extern int coinPosition;
 
 - (void)obstacleMoving {
     
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
-    
-    //    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -107,7 +102,7 @@ extern int coinPosition;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(450, obstaclePosition);
+    self.obstacleView.center = CGPointMake(500, obstaclePosition);
     
     
 }
@@ -117,10 +112,10 @@ extern int coinPosition;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 5;
+    fastroFlight = fastroFlight - 10;
     
-    if (fastroFlight < -15) {
-        fastroFlight = -15;
+    if (fastroFlight < - 20) {
+        fastroFlight = - 20;
     }
     
     if (fastroFlight > 0) {
@@ -137,7 +132,7 @@ extern int coinPosition;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 30;
+    fastroFlight = 40;
 
     
 }
