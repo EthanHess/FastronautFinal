@@ -15,6 +15,7 @@ extern int topObstaclePosition;
 extern int bottomObstaclePosition;
 extern int fastroFlight;
 extern int score;
+extern int coinPosition;
 
 @interface LevelSixteenViewController ()
 
@@ -24,6 +25,7 @@ extern int score;
 
 @property (weak, nonatomic) IBOutlet UIImageView *topObstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomObstacleView;
+@property (weak, nonatomic) IBOutlet UIImageView *coin;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
@@ -33,7 +35,7 @@ extern int score;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
-@property (nonatomic, strong) SoundController *soundController;
+@property (nonatomic, strong) NSTimer *coinTimer;
 
 @end
 
@@ -42,13 +44,11 @@ extern int score;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.soundController = [SoundController new];
-    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
     
-    [self playAudio];
+    [[SoundController sharedInstance] cancelAudio];
 }
 
 
@@ -60,27 +60,27 @@ extern int score;
     
     [self placeObstacles];
     
+    [self placeCoin];
+    
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    [self playAudio];
 }
 
 
 - (void)obstacleMoving {
     
-    self.topObstacleView.center = CGPointMake(self.topObstacleView.center.x - 1, self.topObstacleView.center.y);
+    self.topObstacleView.center = CGPointMake(self.topObstacleView.center.x + 1, self.topObstacleView.center.y);
     
-    self.bottomObstacleView.center = CGPointMake(self.bottomObstacleView.center.x + 1, self.bottomObstacleView.center.y);
+    self.bottomObstacleView.center = CGPointMake(self.bottomObstacleView.center.x - 1, self.bottomObstacleView.center.y);
     
-    if (self.topObstacleView.center.x < - 30) {
+    if (self.topObstacleView.center.x > 400) {
         
         [self placeObstacles];
     }
-    
-    if (self.topObstacleView.center.x == 30) {
-        
-        [self scoreChange];
-    }
-    
-    
+
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.topObstacleView.frame)) {
         
@@ -112,7 +112,12 @@ extern int score;
     
     topObstaclePosition = arc4random() %frame;
     
-    self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
+    bottomObstaclePosition = arc4random() %frame;
+    
+    self.topObstacleView.center = CGPointMake(-50, topObstaclePosition);
+    
+    self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
+    
     
 }
 
@@ -155,15 +160,48 @@ extern int score;
     
 }
 
+- (void)placeCoin {
+    
+    int frame = self.view.frame.size.height;
+    
+    coinPosition = arc4random() %frame;
+    
+    self.coin.center = CGPointMake(380, coinPosition);
+    
+    self.coin.hidden = NO;
+    
+    
+}
+
+- (void)coinMoving {
+    
+    self.coin.center = CGPointMake(self.coin.center.x - 1, self.coin.center.y);
+    
+    if (self.coin.center.x < - 35) {
+        
+        [self placeCoin];
+    }
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.coin.frame)) {
+        
+        self.coin.hidden = YES;
+        [self placeCoin];
+        [self scoreChange];
+    }
+    
+}
+
 
 - (void)gameOver {
     
     [self.fastroTimer invalidate];
     [self.obstacleTimer invalidate];
+    [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
     self.topObstacleView.hidden = YES;
     self.bottomObstacleView.hidden = YES;
+    self.coin.hidden = YES;
     self.fastronaut.hidden = YES;
     
     score = 0;
@@ -179,13 +217,14 @@ extern int score;
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
+        [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
         self.topObstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
+        self.coin.hidden = YES;
     
-        
         self.isComplete = YES;
     }
     
@@ -227,8 +266,11 @@ extern int score;
     self.fastronaut.hidden = NO;
     self.topObstacleView.hidden = NO;
     self.bottomObstacleView.hidden = NO;
+    self.coin.hidden = NO;
     
     self.bounceView.image = [UIImage imageNamed:@"LevelSixteenBounce"];
+    
+    self.topBounce.image = [UIImage imageNamed:@"LevelSixteenBounce"];
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
@@ -242,7 +284,7 @@ extern int score;
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Space Fighter Loop" withExtension:@"mp3"];
     
-    [self.soundController playFileAtURL:url];
+    [[SoundController sharedInstance]playFileAtURL:url];
     
 }
 
