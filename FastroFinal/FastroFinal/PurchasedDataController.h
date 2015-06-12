@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const kPurchasedContentUpdated = @"kPurchasedContentUpdated";
+
 @interface PurchasedDataController : NSObject
+
+@property (nonatomic) BOOL accessElevenThroughTwenty;
+@property (nonatomic) BOOL accessTwentyOneThroughEnd;
 
 + (PurchasedDataController *)sharedInstance;
 

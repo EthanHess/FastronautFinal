@@ -8,6 +8,7 @@
 
 #import "LevelsListController.h"
 #import "ViewController.h"
+#import "PurchasedDataController.h"
 #import "LevelOneViewController.h"
 #import "LevelTwoViewController.h"
 #import "LevelThreeViewController.h"
@@ -27,6 +28,7 @@
 #import "LevelSeventeenViewController.h"
 #import "LevelEighteenViewController.h"
 #import "LevelNineteenViewController.h"
+#import "LevelTwentyViewController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -40,8 +42,36 @@
     [super viewDidLoad];
     
     self.tableView.backgroundColor = [UIColor blackColor];
+    
+    [self configureWithPurchases];
+    [self registerForPurchaseNotifications];
 
 }
+
+#pragma ConfiguringPurchases
+
+- (void)configureWithPurchases {
+    
+    
+    
+}
+
+- (void)purchasesUpdated:(NSNotification *)notification {
+    
+    [self configureWithPurchases];
+}
+
+- (void)registerForPurchaseNotifications {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchasesUpdated:) name:kPurchasedContentUpdated object:nil];
+    
+}
+
+
+
+
+
+#pragma TableViewSetUp
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -232,9 +262,18 @@
             
             [self.navigationController pushViewController:nineteenVC animated:YES];
         
-    }
+            break; }
+            
+        case 20: {
+            
+            LevelTwentyViewController *twentyVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwenty"];
+            
+            [self.navigationController pushViewController:twentyVC animated:YES];
+        
+        }
     }
 }
+
             
 
 
