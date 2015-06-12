@@ -75,11 +75,6 @@ extern int coinPosition;
         [self placeObstacle];
     }
     
-    if (self.obstacleView.center.x == 30) {
-        
-        [self scoreChange];
-    }
-    
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
         [self gameOver];

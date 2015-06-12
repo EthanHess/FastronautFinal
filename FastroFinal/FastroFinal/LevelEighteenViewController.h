@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "ViewController.h"
+@import UIKit;
 
-@interface LevelEighteenViewController : ViewController
+@interface LevelEighteenViewController : UIViewController
 
 @property (nonatomic) BOOL isComplete;
 

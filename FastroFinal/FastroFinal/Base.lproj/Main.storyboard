@@ -2477,6 +2477,9 @@
                                 <state key="normal" title="Well done! Proceed">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a45-6Y-8pq" kind="show" id="7Lt-c5-JXg"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyRed" translatesAutoresizingMaskIntoConstraints="NO" id="w66-Tp-YFt">
                                 <rect key="frame" x="323" y="348" width="150" height="450"/>
@@ -2529,6 +2532,35 @@
             </objects>
             <point key="canvasLocation" x="2241" y="4270"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="L4t-sE-Nn8">
+            <objects>
+                <viewController id="a45-6Y-8pq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p9H-hP-7Vm"/>
+                        <viewControllerLayoutGuide type="bottom" id="5og-cI-jk0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cls-w1-Jts">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyOneFastro" translatesAutoresizingMaskIntoConstraints="NO" id="POX-AB-2u1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="POX-AB-2u1" firstAttribute="bottom" secondItem="5og-cI-jk0" secondAttribute="top" id="3NJ-LV-47c"/>
+                            <constraint firstItem="POX-AB-2u1" firstAttribute="top" secondItem="Cls-w1-Jts" secondAttribute="top" id="CZK-gF-KCm"/>
+                            <constraint firstItem="POX-AB-2u1" firstAttribute="leading" secondItem="Cls-w1-Jts" secondAttribute="leading" id="CZk-o6-HAd"/>
+                            <constraint firstAttribute="trailing" secondItem="POX-AB-2u1" secondAttribute="trailing" id="Qye-VH-afD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTN-so-qnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2875" y="4270"/>
+        </scene>
     </scenes>
     <resources>
         <image name="FastroFinalWelcomeView" width="335" height="550"/>
@@ -2575,6 +2607,7 @@
         <image name="levelTwentyLauncher" width="180" height="110"/>
         <image name="levelTwentyObstacleOne" width="120" height="50"/>
         <image name="levelTwentyObstacleTwo" width="120" height="50"/>
+        <image name="levelTwentyOneFastro" width="335" height="550"/>
         <image name="levelTwoObstacle" width="200" height="125"/>
         <image name="nineBottomObstacle" width="150" height="300"/>
         <image name="nineMiddle" width="150" height="150"/>
