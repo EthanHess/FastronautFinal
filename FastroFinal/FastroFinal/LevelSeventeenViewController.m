@@ -1,29 +1,18 @@
 //
-//  LevelSeventeenViewController.m
+//  LevelEighteenViewController.m
 //  FastroFinal
 //
 //  Created by Ethan Hess on 6/9/15.
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-
-//
-//  LevelNineViewController.m
-//  FastroFinal
-//
-//  Created by Ethan Hess on 5/28/15.
-//  Copyright (c) 2015 Ethan Hess. All rights reserved.
-//
-
 #import "LevelSeventeenViewController.h"
 #import "SoundController.h"
 
-extern int middleObstaclePosition;
-extern int topObstaclePosition;
-extern int bottomObstaclePosition;
+extern int obstaclePosition;
 extern int fastroFlight;
-extern int coinPosition;
 extern int score;
+extern int coinPosition;
 
 @interface LevelSeventeenViewController ()
 
@@ -31,17 +20,17 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
 
-@property (weak, nonatomic) IBOutlet UIImageView *topObstacleView;
-@property (weak, nonatomic) IBOutlet UIImageView *middleObstacleView;
-@property (weak, nonatomic) IBOutlet UIImageView *bottomObstacleView;
-@property (weak, nonatomic) IBOutlet UIImageView *coin;
-
+@property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+@property (weak, nonatomic) IBOutlet UIImageView *oilOcean;
+@property (weak, nonatomic) IBOutlet UIImageView *coin;
+@property (weak, nonatomic) IBOutlet UIImageView *platform;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
+@property (nonatomic, strong) NSTimer *oceanTimer;
 
 @end
 
@@ -56,7 +45,6 @@ extern int score;
     self.youDiedButton.hidden = YES;
     score = 0;
     
-    
 }
 
 
@@ -66,11 +54,15 @@ extern int score;
     
     self.fastroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastroMoving) userInfo:nil repeats:YES];
     
-    [self placeObstacles];
+    [self placeObstacle];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    [self placeCoin];
+    
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0045 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    self.oceanTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(oceanMoving) userInfo:nil repeats:YES];
     
     [self playAudio];
 }
@@ -78,29 +70,26 @@ extern int score;
 
 - (void)obstacleMoving {
     
-    self.topObstacleView.center = CGPointMake(self.topObstacleView.center.x - 1, self.topObstacleView.center.y);
+    //    int value = arc4random_uniform(-1) + 2;
     
-    self.middleObstacleView.center = CGPointMake(self.middleObstacleView.center.x - 1.25, self.middleObstacleView.center.y);
+    //    float value = 0.5;
     
-    self.bottomObstacleView.center = CGPointMake(self.bottomObstacleView.center.x - 1.5, self.bottomObstacleView.center.y);
+    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
-    if (self.topObstacleView.center.x < - 30) {
+    
+    //    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
+    
+    if (self.obstacleView.center.x < - 35) {
         
-        [self placeObstacles];
+        [self placeObstacle];
     }
     
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.topObstacleView.frame)) {
+    if (self.obstacleView.center.x == 30) {
         
-        [self gameOver];
+        [self scoreChange];
     }
     
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.bottomObstacleView.frame)) {
-        
-        [self gameOver];
-    }
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.middleObstacleView.frame)) {
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
         [self gameOver];
     }
@@ -117,15 +106,28 @@ extern int score;
 }
 
 
-- (void)placeObstacles {
+- (void)placeObstacle {
     
-    topObstaclePosition = arc4random() %200;
-    bottomObstaclePosition = topObstaclePosition + 550;
-    middleObstaclePosition = topObstaclePosition + 275;
+    int frame = self.view.frame.size.height;
     
-    self.topObstacleView.center = CGPointMake(420, topObstaclePosition);
-    self.bottomObstacleView.center = CGPointMake(460, bottomObstaclePosition);
-    self.middleObstacleView.center = CGPointMake(500, middleObstaclePosition);
+    obstaclePosition = arc4random() %frame;
+    
+    self.obstacleView.center = CGPointMake(450, obstaclePosition);
+    
+    
+}
+
+- (void)oceanMoving {
+    
+    if (self.oilOcean.center.y > 500) {
+        
+        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y + 1));
+    }
+    
+    else if (self.oilOcean.center.y > 600) {
+        
+        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y - 1));
+    }
     
 }
 
@@ -141,20 +143,33 @@ extern int score;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
+        self.fastronaut.image = [UIImage imageNamed:@"greenFastroLanded"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
+        self.fastronaut.image = [UIImage imageNamed:@"GreenFastro"];
     }
     
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.oilOcean.frame)) {
+        
+        fastroFlight = - 2;
+    }
     
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.platform.frame)) {
+        
+        fastroFlight = 0;
+    }
 }
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 20;
+    fastroFlight = 30;
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.oilOcean.frame)) {
+        
+        fastroFlight = 10;
+    }
     
 }
 
@@ -164,7 +179,7 @@ extern int score;
     
     coinPosition = arc4random() %frame;
     
-    self.coin.center = CGPointMake(450, coinPosition);
+    self.coin.center = CGPointMake(-50, coinPosition);
     
     self.coin.hidden = NO;
     
@@ -172,9 +187,9 @@ extern int score;
 
 - (void)coinMoving {
     
-    self.coin.center = CGPointMake(self.coin.center.x - 1, self.coin.center.y);
+    self.coin.center = CGPointMake(self.coin.center.x + 1, self.coin.center.y);
     
-    if (self.coin.center.x < - 35) {
+    if (self.coin.center.x > 450) {
         
         [self placeCoin];
     }
@@ -196,11 +211,9 @@ extern int score;
     [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
-    self.topObstacleView.hidden = YES;
-    self.bottomObstacleView.hidden = YES;
-    self.middleObstacleView.hidden = YES;
-    self.coin.hidden = YES;
+    self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
+    self.coin.hidden = YES;
     
     score = 0;
     
@@ -211,18 +224,16 @@ extern int score;
     
     score = score + 1;
     
-    if (score > 3) {
+    if (score == 2) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
-        self.topObstacleView.hidden = YES;
-        self.bottomObstacleView.hidden = YES;
-        self.middleObstacleView.hidden = YES;
-        self.coin.hidden = YES;
+        self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
+        self.coin.hidden = YES;
         
         self.isComplete = YES;
     }
@@ -236,9 +247,7 @@ extern int score;
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
-    self.topObstacleView.hidden = NO;
-    self.bottomObstacleView.hidden = NO;
-    self.middleObstacleView.hidden = NO;
+    self.obstacleView.hidden = NO;
     self.coin.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
@@ -247,14 +256,14 @@ extern int score;
 
 
 
-
-
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Who Likes to Party" withExtension:@"mp3"];
     
-    [[SoundController sharedInstance]playFileAtURL:url];
+    [[SoundController sharedInstance] playFileAtURL:url];
     
 }
 
+
 @end
+

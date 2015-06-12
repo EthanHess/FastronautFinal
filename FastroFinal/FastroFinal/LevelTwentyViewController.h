@@ -2,7 +2,7 @@
 //  LevelTwentyViewController.h
 //  FastroFinal
 //
-//  Created by Ethan Hess on 6/11/15.
+//  Created by Ethan Hess on 6/12/15.
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
@@ -10,6 +10,6 @@
 
 @interface LevelTwentyViewController : UIViewController
 
-@property (nonatomic) BOOL isComplete; 
+@property (nonatomic) BOOL isComplete;
 
 @end

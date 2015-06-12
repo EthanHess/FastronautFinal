@@ -51,12 +51,12 @@
 		27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */; };
 		27BC83181B28F66600668F80 /* The Whip Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */; };
 		27BC83191B28F66600668F80 /* Who Likes to Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */; };
-		27BC83671B2A41ED00668F80 /* LevelTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83661B2A41ED00668F80 /* LevelTwentyViewController.m */; };
+		27BC83671B2A41ED00668F80 /* LevelNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */; };
+		27BC836A1B2B722900668F80 /* LevelTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83691B2B722900668F80 /* LevelTwentyViewController.m */; };
 		27E9F0F01B27956200066878 /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0EF1B27956200066878 /* PurchasedDataController.m */; };
 		27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F21B27958700066878 /* GamePurchaseController.m */; };
-		27E9F0F61B2795AD00066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F51B2795AD00066878 /* LevelSeventeenViewController.m */; };
-		27E9F0F91B2795C900066878 /* LevelEighteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F81B2795C900066878 /* LevelEighteenViewController.m */; };
-		27E9F0FC1B2795E100066878 /* LevelNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0FB1B2795E100066878 /* LevelNineteenViewController.m */; };
+		27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */; };
+		27E9F0FC1B2795E100066878 /* LevelEighteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0FB1B2795E100066878 /* LevelEighteenViewController.m */; };
 		27F9A9561B1F932F00CD4BEF /* LevelFourteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A9551B1F932F00CD4BEF /* LevelFourteenViewController.m */; };
 		27F9A9591B1F9D7F00CD4BEF /* LevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A9581B1F9D7F00CD4BEF /* LevelController.m */; };
 		27FFABCB1B17B6A100F2E4D3 /* LevelNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFABCA1B17B6A100F2E4D3 /* LevelNineViewController.m */; };
@@ -144,18 +144,18 @@
 		27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Space Fighter Loop.mp3"; sourceTree = "<group>"; };
 		27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Whip Theme.mp3"; sourceTree = "<group>"; };
 		27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Who Likes to Party.mp3"; sourceTree = "<group>"; };
-		27BC83651B2A41ED00668F80 /* LevelTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyViewController.h; sourceTree = "<group>"; };
-		27BC83661B2A41ED00668F80 /* LevelTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyViewController.m; sourceTree = "<group>"; };
+		27BC83651B2A41ED00668F80 /* LevelNineteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelNineteenViewController.h; sourceTree = "<group>"; };
+		27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelNineteenViewController.m; sourceTree = "<group>"; };
+		27BC83681B2B722900668F80 /* LevelTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyViewController.h; sourceTree = "<group>"; };
+		27BC83691B2B722900668F80 /* LevelTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyViewController.m; sourceTree = "<group>"; };
 		27E9F0EE1B27956200066878 /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
 		27E9F0EF1B27956200066878 /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
 		27E9F0F11B27958700066878 /* GamePurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePurchaseController.h; sourceTree = "<group>"; };
 		27E9F0F21B27958700066878 /* GamePurchaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePurchaseController.m; sourceTree = "<group>"; };
-		27E9F0F41B2795AD00066878 /* LevelSeventeenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSeventeenViewController.h; sourceTree = "<group>"; };
-		27E9F0F51B2795AD00066878 /* LevelSeventeenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSeventeenViewController.m; sourceTree = "<group>"; };
-		27E9F0F71B2795C900066878 /* LevelEighteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelEighteenViewController.h; sourceTree = "<group>"; };
-		27E9F0F81B2795C900066878 /* LevelEighteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelEighteenViewController.m; sourceTree = "<group>"; };
-		27E9F0FA1B2795E100066878 /* LevelNineteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelNineteenViewController.h; sourceTree = "<group>"; };
-		27E9F0FB1B2795E100066878 /* LevelNineteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelNineteenViewController.m; sourceTree = "<group>"; };
+		27E9F0F71B2795C900066878 /* LevelSeventeenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSeventeenViewController.h; sourceTree = "<group>"; };
+		27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSeventeenViewController.m; sourceTree = "<group>"; };
+		27E9F0FA1B2795E100066878 /* LevelEighteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelEighteenViewController.h; sourceTree = "<group>"; };
+		27E9F0FB1B2795E100066878 /* LevelEighteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelEighteenViewController.m; sourceTree = "<group>"; };
 		27F9A9541B1F932F00CD4BEF /* LevelFourteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFourteenViewController.h; sourceTree = "<group>"; };
 		27F9A9551B1F932F00CD4BEF /* LevelFourteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFourteenViewController.m; sourceTree = "<group>"; };
 		27F9A9571B1F9D7F00CD4BEF /* LevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelController.h; sourceTree = "<group>"; };
@@ -274,14 +274,14 @@
 				27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */,
 				2703E55A1B2636AB005F82FE /* LevelSixteenViewController.h */,
 				2703E55B1B2636AB005F82FE /* LevelSixteenViewController.m */,
-				27E9F0F41B2795AD00066878 /* LevelSeventeenViewController.h */,
-				27E9F0F51B2795AD00066878 /* LevelSeventeenViewController.m */,
-				27E9F0F71B2795C900066878 /* LevelEighteenViewController.h */,
-				27E9F0F81B2795C900066878 /* LevelEighteenViewController.m */,
-				27E9F0FA1B2795E100066878 /* LevelNineteenViewController.h */,
-				27E9F0FB1B2795E100066878 /* LevelNineteenViewController.m */,
-				27BC83651B2A41ED00668F80 /* LevelTwentyViewController.h */,
-				27BC83661B2A41ED00668F80 /* LevelTwentyViewController.m */,
+				27E9F0F71B2795C900066878 /* LevelSeventeenViewController.h */,
+				27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */,
+				27E9F0FA1B2795E100066878 /* LevelEighteenViewController.h */,
+				27E9F0FB1B2795E100066878 /* LevelEighteenViewController.m */,
+				27BC83651B2A41ED00668F80 /* LevelNineteenViewController.h */,
+				27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */,
+				27BC83681B2B722900668F80 /* LevelTwentyViewController.h */,
+				27BC83691B2B722900668F80 /* LevelTwentyViewController.m */,
 				270E52391B098D12001CDF3C /* Controllers */,
 				270E523A1B098D35001CDF3C /* SoundController.h */,
 				270E523B1B098D35001CDF3C /* SoundController.m */,
@@ -460,8 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				270E52121B082986001CDF3C /* ViewController.m in Sources */,
-				27E9F0FC1B2795E100066878 /* LevelNineteenViewController.m in Sources */,
-				27E9F0F61B2795AD00066878 /* LevelSeventeenViewController.m in Sources */,
+				27E9F0FC1B2795E100066878 /* LevelEighteenViewController.m in Sources */,
 				27FFAC0F1B190BD200F2E4D3 /* LevelTenViewController.m in Sources */,
 				271B77F81B1E63AA0028A554 /* InstructionsViewController.m in Sources */,
 				270E52341B0834FE001CDF3C /* LevelOneViewController.m in Sources */,
@@ -477,11 +476,12 @@
 				271B77F51B1E638F0028A554 /* CreditsViewController.m in Sources */,
 				27F9A9591B1F9D7F00CD4BEF /* LevelController.m in Sources */,
 				270E520C1B082986001CDF3C /* main.m in Sources */,
-				27BC83671B2A41ED00668F80 /* LevelTwentyViewController.m in Sources */,
+				27BC83671B2A41ED00668F80 /* LevelNineteenViewController.m in Sources */,
+				27BC836A1B2B722900668F80 /* LevelTwentyViewController.m in Sources */,
 				274E52F11B178DD300C9B004 /* LevelEightViewController.m in Sources */,
 				27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */,
 				274E52EE1B16714800C9B004 /* LevelSevenViewController.m in Sources */,
-				27E9F0F91B2795C900066878 /* LevelEighteenViewController.m in Sources */,
+				27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */,
 				275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */,
 				272A853C1B1CFA4D00C15F41 /* LevelTwelveViewController.m in Sources */,
 				270E52311B082D83001CDF3C /* LaunchViewController.m in Sources */,

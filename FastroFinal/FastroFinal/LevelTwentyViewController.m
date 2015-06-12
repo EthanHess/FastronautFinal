@@ -2,7 +2,7 @@
 //  LevelTwentyViewController.m
 //  FastroFinal
 //
-//  Created by Ethan Hess on 6/11/15.
+//  Created by Ethan Hess on 6/12/15.
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
@@ -12,9 +12,9 @@
 
 extern int topObstaclePosition;
 extern int bottomObstaclePosition;
+extern int coinPosition;
 extern int fastroFlight;
 extern int score;
-extern int coinPosition;
 
 @interface LevelTwentyViewController ()
 
@@ -27,11 +27,6 @@ extern int coinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
-@property (weak, nonatomic) IBOutlet UIImageView *rock;
-
-
-@property (weak, nonatomic) IBOutlet UIImageView *topBounce;
-
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
@@ -48,7 +43,7 @@ extern int coinPosition;
     self.youDiedButton.hidden = YES;
     score = 0;
     
-    [[SoundController sharedInstance] cancelAudio];
+    [[SoundController sharedInstance]cancelAudio];
 }
 
 
@@ -62,11 +57,12 @@ extern int coinPosition;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
     [self playAudio];
+    
 }
 
 
@@ -74,7 +70,7 @@ extern int coinPosition;
     
     self.topObstacleView.center = CGPointMake(self.topObstacleView.center.x + 1, self.topObstacleView.center.y);
     
-    self.bottomObstacleView.center = CGPointMake(self.bottomObstacleView.center.x - 1, self.bottomObstacleView.center.y);
+    self.bottomObstacleView.center = CGPointMake(self.bottomObstacleView.center.x + 1, self.bottomObstacleView.center.y);
     
     if (self.topObstacleView.center.x > 400) {
         
@@ -92,16 +88,13 @@ extern int coinPosition;
         [self gameOver];
     }
     
-    if (self.fastronaut.center.y < 0) {
-        
-        [self fastroLaunch];
+    if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
+        [self gameOver];
     }
     
-//    if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
-//        [self gameOver];
-//    }
-    
-    
+    if (self.fastronaut.center.y < 0 + self.fastronaut.frame.size.height / 2) {
+        [self gameOver];
+    }
     
     
 }
@@ -109,16 +102,12 @@ extern int coinPosition;
 
 - (void)placeObstacles {
     
-    int frame = self.view.frame.size.height;
+    topObstaclePosition = arc4random() %380;
+    topObstaclePosition = topObstaclePosition - 225;
+    bottomObstaclePosition = topObstaclePosition + 680;
     
-    topObstaclePosition = arc4random() %frame;
-    
-    bottomObstaclePosition = arc4random() %frame;
-    
-    self.topObstacleView.center = CGPointMake(-50, topObstaclePosition);
-    
-    self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
-    
+    self.topObstacleView.center = CGPointMake(- 50, topObstaclePosition);
+    self.bottomObstacleView.center = CGPointMake(- 50, bottomObstaclePosition);
     
 }
 
@@ -127,36 +116,26 @@ extern int coinPosition;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight + 10;
+    fastroFlight = fastroFlight - 8;
     
-    if (fastroFlight > 20) {
-        fastroFlight = 20;
-    }
-    
-    if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"greenReverseTwo"];
+    if (fastroFlight < -15) {
+        fastroFlight = -15;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"greenReverseOne"];
+        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
     }
     
-    
+    if (fastroFlight < 0) {
+        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
+    }
     
 }
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = - 30;
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.rock.frame)) {
-        
-        fastroFlight = 0;
-        
-        self.rock.image = [UIImage imageNamed:@"levelTwentyRock Broken"];
-    }
-    
+    fastroFlight = 30;
     
 }
 
@@ -169,7 +148,6 @@ extern int coinPosition;
     self.coin.center = CGPointMake(380, coinPosition);
     
     self.coin.hidden = NO;
-    
     
 }
 
@@ -190,21 +168,6 @@ extern int coinPosition;
     }
     
 }
-
-- (void)fastroLaunch {
-    
-    fastroFlight = - 150;
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.rock.frame)) {
-        
-        fastroFlight = 0;
-        
-        self.rock.image = [UIImage imageNamed:@"levelTwentyRock Broken"];
-    }
-    
-}
-    
-// Something wrong with the above method ^^
 
 
 - (void)gameOver {
@@ -228,7 +191,7 @@ extern int coinPosition;
     
     score = score + 1;
     
-    if (score > 5) {
+    if (score == 2) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -237,15 +200,14 @@ extern int coinPosition;
         self.proceedButton.hidden = NO;
         self.topObstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
-        self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
+        self.fastronaut.hidden = YES;
         
         self.isComplete = YES;
     }
     
     
 }
-
 
 
 - (IBAction)resetGame:(id)sender {
@@ -257,10 +219,6 @@ extern int coinPosition;
     self.bottomObstacleView.hidden = NO;
     self.coin.hidden = NO;
     
-    self.rock.image = [UIImage imageNamed:@"levelTwentyRock"];
-    
-    fastroFlight = - 30;
-    
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
 }
@@ -271,7 +229,7 @@ extern int coinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Space Fighter Loop" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Controlled Chaos" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     
@@ -283,3 +241,4 @@ extern int coinPosition;
 
 
 @end
+

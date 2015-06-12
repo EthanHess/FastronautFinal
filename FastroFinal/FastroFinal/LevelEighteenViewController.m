@@ -1,5 +1,5 @@
 //
-//  LevelEighteenViewController.m
+//  LevelNineteenViewController.m
 //  FastroFinal
 //
 //  Created by Ethan Hess on 6/9/15.
@@ -23,18 +23,16 @@ extern int coinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
-@property (weak, nonatomic) IBOutlet UIImageView *oilOcean;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
-@property (weak, nonatomic) IBOutlet UIImageView *platform;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
-@property (nonatomic, strong) NSTimer *oceanTimer;
 
 @end
 
 @implementation LevelEighteenViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -62,22 +60,15 @@ extern int coinPosition;
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
-    self.oceanTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(oceanMoving) userInfo:nil repeats:YES];
-    
     [self playAudio];
 }
 
 
 - (void)obstacleMoving {
     
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
-    
-    //    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -112,22 +103,8 @@ extern int coinPosition;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(450, obstaclePosition);
+    self.obstacleView.center = CGPointMake(500, obstaclePosition);
     
-    
-}
-
-- (void)oceanMoving {
-    
-    if (self.oilOcean.center.y > 500) {
-        
-        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y + 1));
-    }
-    
-    else if (self.oilOcean.center.y > 600) {
-        
-        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y - 1));
-    }
     
 }
 
@@ -136,10 +113,10 @@ extern int coinPosition;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 5;
+    fastroFlight = fastroFlight - 10;
     
-    if (fastroFlight < -15) {
-        fastroFlight = -15;
+    if (fastroFlight < - 20) {
+        fastroFlight = - 20;
     }
     
     if (fastroFlight > 0) {
@@ -150,26 +127,14 @@ extern int coinPosition;
         self.fastronaut.image = [UIImage imageNamed:@"GreenFastro"];
     }
     
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.oilOcean.frame)) {
-        
-        fastroFlight = - 2;
-    }
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.platform.frame)) {
-        
-        fastroFlight = 0;
-    }
+
 }
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 30;
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.oilOcean.frame)) {
-        
-        fastroFlight = 10;
-    }
+    fastroFlight = 40;
+
     
 }
 
@@ -224,7 +189,7 @@ extern int coinPosition;
     
     score = score + 1;
     
-    if (score > 5) {
+    if (score == 2) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -266,4 +231,3 @@ extern int coinPosition;
 
 
 @end
-

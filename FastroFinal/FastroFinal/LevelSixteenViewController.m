@@ -213,7 +213,7 @@ extern int coinPosition;
     
     score = score + 1;
     
-    if (score > 5) {
+    if (score == 2) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

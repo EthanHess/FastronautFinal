@@ -1,15 +1,15 @@
 //
-//  LevelNineteenViewController.h
+//  LevelTwentyViewController.h
 //  FastroFinal
 //
-//  Created by Ethan Hess on 6/9/15.
+//  Created by Ethan Hess on 6/11/15.
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface LevelNineteenViewController : ViewController
+@interface LevelNineteenViewController : UIViewController
 
-@property (nonatomic) BOOL isComplete;
+@property (nonatomic) BOOL isComplete; 
 
 @end
