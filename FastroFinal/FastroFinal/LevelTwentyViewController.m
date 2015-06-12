@@ -204,7 +204,7 @@ extern int coinPosition;
     
 }
     
-
+// Something wrong with the above method ^^
 
 
 - (void)gameOver {

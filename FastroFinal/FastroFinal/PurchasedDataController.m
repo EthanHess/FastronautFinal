@@ -7,6 +7,10 @@
 //
 
 #import "PurchasedDataController.h"
+#import "GamePurchaseController.h"
+
+static NSString * const kLevelsElevenThroughTwentyKey = @"ElevelThroughTwenty";
+static NSString * const kLevelsTwentyOneThroughThirtyKey = @"TwentyOneThroughThirty";
 
 @implementation PurchasedDataController
 
@@ -20,5 +24,68 @@
     return sharedInstance;
     
 }
+
+- (void)registerForNotifications {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchaseNotification:) name:kInAppPurchaseCompletedNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchaseNotification:) name:kInAppPurchaseRestoredNotification object:nil];
+}
+
+- (void)loadFromDefaults {
+    
+    self.accessElevenThroughTwenty = [[NSUserDefaults standardUserDefaults] boolForKey:kLevelsElevenThroughTwentyKey];
+    
+    self.accessTwentyOneThroughEnd = [[NSUserDefaults standardUserDefaults] boolForKey:kLevelsTwentyOneThroughThirtyKey];
+    
+    if (!self.accessElevenThroughTwenty) {
+        self.accessElevenThroughTwenty = NO;
+    }
+    
+    if (!self.accessTwentyOneThroughEnd) {
+        self.accessTwentyOneThroughEnd = NO;
+    }
+
+}
+
+
+- (void)setElevenThroughTwenty:(BOOL)accessible {
+    
+    _accessElevenThroughTwenty = accessible;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:accessible forKey:kLevelsElevenThroughTwentyKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)setTwentyOneThroughEnd:(BOOL)accessible {
+    
+    _accessTwentyOneThroughEnd = accessible;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:accessible forKey:kLevelsElevenThroughTwentyKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)purchaseNotification:(NSNotification *)notification {
+    
+    NSString *productIdentifer = notification.userInfo[kProductIDKey];
+    
+    if ([productIdentifer isEqualToString:@"com.devmtn.SimpleStore.removeads"]) {
+        self.accessElevenThroughTwenty = YES;
+    }
+    
+    if ([productIdentifer isEqualToString:@"com.devmtn.SimpleStore.goldstar"]) {
+        self.accessTwentyOneThroughEnd = YES;
+    }
+    
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kPurchasedContentUpdated object:nil userInfo:nil];
+    
+}
+
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 @end
