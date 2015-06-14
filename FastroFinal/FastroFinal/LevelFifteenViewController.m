@@ -72,17 +72,9 @@ extern int coinPosition;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
-    
-    //    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
-    
     if (self.obstacleView.center.x < - 35) {
         
         [self placeObstacle];
-    }
-    
-    if (self.obstacleView.center.x == 30) {
-        
-        [self scoreChange];
     }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {

@@ -39,9 +39,13 @@ extern int coinPosition;
     
     [[SoundController sharedInstance] cancelAudio];
     
+    self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
+    self.obstacleView.layer.masksToBounds = YES; 
+    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
+    
     
 }
 

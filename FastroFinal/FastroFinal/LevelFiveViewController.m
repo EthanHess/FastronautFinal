@@ -51,17 +51,32 @@ extern int score;
     
     self.beginButton.hidden = YES;
     
-    self.fastroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastroMoving) userInfo:nil repeats:YES];
+    [self alert]; 
+}
+
+- (void)alert {
     
-    [self placeObstacles];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Get 10 coins!" message:@"You can do it!" preferredStyle:UIAlertControllerStyleAlert];
     
-    [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Okay!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+        self.fastroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastroMoving) userInfo:nil repeats:YES];
+        
+        [self placeObstacles];
+        
+        [self placeCoin];
+        
+        self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+        
+        self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+        
+        [self playAudio];
+        
+    }]];
     
-     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    [self presentViewController:alertController animated:YES completion:nil];
     
-    [self playAudio]; 
 }
 
 
@@ -193,7 +208,7 @@ extern int score;
     
     score = score + 1;
     
-    if (score == 2) {
+    if (score == 20) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

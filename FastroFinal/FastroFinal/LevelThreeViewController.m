@@ -191,7 +191,7 @@ extern int score;
     
     score = score + 1;
     
-    if (score == 2) {
+    if (score == 20) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

@@ -200,7 +200,7 @@ int score;
     
 //    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 2) {
+    if (score == 20) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
