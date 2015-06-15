@@ -37,6 +37,8 @@ extern int coinPosition;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+    
     [[SoundController sharedInstance] cancelAudio];
     
     self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
@@ -188,7 +190,7 @@ extern int coinPosition;
     
     score = score + 1;
     
-    if (score == 2) {
+    if (score == 10) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

@@ -44,6 +44,8 @@ extern int coinPosition;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;

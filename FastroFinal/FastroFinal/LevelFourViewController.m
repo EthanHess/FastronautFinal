@@ -38,6 +38,8 @@ extern int score;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
@@ -196,7 +198,7 @@ extern int score;
     
     score = score + 1;
     
-    if (score == 20) {
+    if (score == 10) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

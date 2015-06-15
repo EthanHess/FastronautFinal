@@ -15,7 +15,7 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
 int obstaclePosition;
 int coinPosition;
 int fastroFlight;
-int score; 
+int score;
 
 @interface LevelOneViewController ()
 
@@ -30,7 +30,7 @@ int score;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 
-//@property (nonatomic, assign) int score;
+
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
@@ -44,7 +44,10 @@ int score;
 
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
+    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
 
     
     self.proceedButton.hidden = YES;
@@ -66,7 +69,7 @@ int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0035 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -83,11 +86,7 @@ int score;
         
         [self placeObstacle];
     }
-    
-//    if (self.obstacleView.center.x == 30) {
-//        
-//        [self score];
-//    }
+
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
@@ -198,9 +197,9 @@ int score;
     
     score = score + 1;
     
-//    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 20) {
+    if (score == 10) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -221,6 +220,7 @@ int score;
 - (IBAction)resetGame:(id)sender {
     
     score = 0;
+    
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score]; 
     
     self.beginButton.hidden = NO;
