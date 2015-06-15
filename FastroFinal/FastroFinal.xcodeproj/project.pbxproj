@@ -53,6 +53,10 @@
 		27BC83191B28F66600668F80 /* Who Likes to Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */; };
 		27BC83671B2A41ED00668F80 /* LevelNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */; };
 		27BC836A1B2B722900668F80 /* LevelTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83691B2B722900668F80 /* LevelTwentyViewController.m */; };
+		27BC840C1B2E4E6100668F80 /* Lightless Dawn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840B1B2E4E6100668F80 /* Lightless Dawn.mp3 */; };
+		27BC840E1B2E4E8300668F80 /* Killing Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */; };
+		27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */; };
+		27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */; };
 		27E9F0F01B27956200066878 /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0EF1B27956200066878 /* PurchasedDataController.m */; };
 		27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F21B27958700066878 /* GamePurchaseController.m */; };
 		27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */; };
@@ -148,6 +152,10 @@
 		27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelNineteenViewController.m; sourceTree = "<group>"; };
 		27BC83681B2B722900668F80 /* LevelTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyViewController.h; sourceTree = "<group>"; };
 		27BC83691B2B722900668F80 /* LevelTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyViewController.m; sourceTree = "<group>"; };
+		27BC840B1B2E4E6100668F80 /* Lightless Dawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lightless Dawn.mp3"; sourceTree = "<group>"; };
+		27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Killing Time.mp3"; sourceTree = "<group>"; };
+		27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Sketch.mp3"; sourceTree = "<group>"; };
+		27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EDM Detection Mode.mp3"; sourceTree = "<group>"; };
 		27E9F0EE1B27956200066878 /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
 		27E9F0EF1B27956200066878 /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
 		27E9F0F11B27958700066878 /* GamePurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePurchaseController.h; sourceTree = "<group>"; };
@@ -192,13 +200,17 @@
 				270E52081B082986001CDF3C /* FastroFinal */,
 				27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */,
 				27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */,
+				27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */,
 				27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */,
+				27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */,
 				27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */,
+				27BC840B1B2E4E6100668F80 /* Lightless Dawn.mp3 */,
 				27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */,
 				27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */,
 				27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */,
 				27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */,
 				27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */,
+				27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */,
 				27FFAC141B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 */,
 				27BC83041B28F66600668F80 /* Controlled Chaos.mp3 */,
 				27BC83051B28F66600668F80 /* Enter the Maze.mp3 */,
@@ -423,11 +435,14 @@
 				27BC83121B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 in Resources */,
 				27BC83161B28F66600668F80 /* Rising.mp3 in Resources */,
 				27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */,
+				27BC840C1B2E4E6100668F80 /* Lightless Dawn.mp3 in Resources */,
 				27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */,
+				27BC840E1B2E4E8300668F80 /* Killing Time.mp3 in Resources */,
 				27BC83101B28F66600668F80 /* Enter the Maze.mp3 in Resources */,
 				27FFAC161B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 in Resources */,
 				27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */,
 				27BC83181B28F66600668F80 /* The Whip Theme.mp3 in Resources */,
+				27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */,
 				27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */,
 				27BC830F1B28F66600668F80 /* Controlled Chaos.mp3 in Resources */,
 				27BC83131B28F66600668F80 /* Hero Down.mp3 in Resources */,
@@ -437,6 +452,7 @@
 				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
 				27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
+				27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */,
 				270E521A1B082986001CDF3C /* LaunchScreen.xib in Resources */,
 				270E52171B082986001CDF3C /* Images.xcassets in Resources */,
 				27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */,

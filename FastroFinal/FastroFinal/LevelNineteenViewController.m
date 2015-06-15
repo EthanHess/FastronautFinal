@@ -27,7 +27,6 @@ extern int coinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
-@property (weak, nonatomic) IBOutlet UIImageView *rock;
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *topBounce;
@@ -150,14 +149,6 @@ extern int coinPosition;
     
     fastroFlight = - 30;
     
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.rock.frame)) {
-        
-        fastroFlight = 0;
-        
-        self.rock.image = [UIImage imageNamed:@"levelTwentyRock Broken"];
-    }
-    
-    
 }
 
 - (void)placeCoin {
@@ -194,27 +185,10 @@ extern int coinPosition;
 - (void)fastroLaunch {
     
     fastroFlight = - 150;
-    
-    [self breakRock];
+ 
     
 }
 
-- (void)breakRock {
-        
-       if (CGRectIntersectsRect(self.fastronaut.frame, self.rock.frame)) {
-        
-        fastroFlight = 0;
-        
-        self.rock.image = [UIImage imageNamed:@"levelTwentyRock Broken"];
-           
-           [self breakRock];
-
-    }
-    
-    
-}
-    
-// Something wrong with the above method ^^
 
 
 - (void)gameOver {
@@ -267,8 +241,6 @@ extern int coinPosition;
     self.bottomObstacleView.hidden = NO;
     self.coin.hidden = NO;
     
-    self.rock.image = [UIImage imageNamed:@"levelTwentyRock"];
-    
     fastroFlight = - 30;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
@@ -281,7 +253,7 @@ extern int coinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Space Fighter Loop" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Electro Sketch" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     

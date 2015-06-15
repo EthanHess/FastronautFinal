@@ -253,7 +253,7 @@ extern int coinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Who Likes to Party" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Lightless Dawn" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     
