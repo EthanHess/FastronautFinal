@@ -33,6 +33,7 @@
 		275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50E71B13AD4100E6896A /* LevelFiveViewController.m */; };
 		27B127541B2393E1007BACD1 /* LevelFifteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */; };
 		27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */; };
+		27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */; };
 		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
@@ -132,6 +133,8 @@
 		27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFifteenViewController.m; sourceTree = "<group>"; };
 		27B25A0B1B30B82100544F52 /* LevelTwentyOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyOneViewController.h; sourceTree = "<group>"; };
 		27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyOneViewController.m; sourceTree = "<group>"; };
+		27B25A0E1B30E9D100544F52 /* LevelTwentyTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyTwoViewController.h; sourceTree = "<group>"; };
+		27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyTwoViewController.m; sourceTree = "<group>"; };
 		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 				27BC83691B2B722900668F80 /* LevelTwentyViewController.m */,
 				27B25A0B1B30B82100544F52 /* LevelTwentyOneViewController.h */,
 				27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */,
+				27B25A0E1B30E9D100544F52 /* LevelTwentyTwoViewController.h */,
+				27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */,
 				270E52391B098D12001CDF3C /* Controllers */,
 				270E523A1B098D35001CDF3C /* SoundController.h */,
 				270E523B1B098D35001CDF3C /* SoundController.m */,
@@ -502,6 +507,7 @@
 				274E52F11B178DD300C9B004 /* LevelEightViewController.m in Sources */,
 				27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */,
 				274E52EE1B16714800C9B004 /* LevelSevenViewController.m in Sources */,
+				27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */,
 				27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */,
 				275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */,
 				272A853C1B1CFA4D00C15F41 /* LevelTwelveViewController.m in Sources */,

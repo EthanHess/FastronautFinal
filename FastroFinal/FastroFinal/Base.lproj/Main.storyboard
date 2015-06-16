@@ -1348,6 +1348,27 @@
             </objects>
             <point key="canvasLocation" x="1195.2" y="2791.7199999999998"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="NrI-s5-IDb">
+            <objects>
+                <viewController id="Snj-hL-pDz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y8e-vU-8x3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyThreeFastro" id="hpM-Po-2q4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eqa-dN-Zbv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p57-2L-J0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="2794"/>
+        </scene>
         <!--Level Seventeen View Controller-->
         <scene sceneID="8Io-4n-xBd">
             <objects>
@@ -1943,10 +1964,10 @@
             </objects>
             <point key="canvasLocation" x="1195.2" y="4042.2666666666664"/>
         </scene>
-        <!--View Controller-->
+        <!--Level Twenty Two View Controller-->
         <scene sceneID="W3k-BU-ez7">
             <objects>
-                <viewController id="SzU-0D-obR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelTwentyTwo" id="SzU-0D-obR" customClass="LevelTwentyTwoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l3e-lQ-Xnq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2000,7 +2021,18 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Snj-hL-pDz" kind="push" id="8jt-G3-BNL"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyTwoObstacle" id="hzh-FT-uTa">
+                                <rect key="frame" x="16" y="87" width="150" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyTwoObstacleTwo" id="R6g-uX-ktK">
+                                <rect key="frame" x="154" y="428" width="150" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2149,7 +2181,10 @@
         <image name="levelTwentyObstacleTwo" width="120" height="50"/>
         <image name="levelTwentyOne" width="150" height="100"/>
         <image name="levelTwentyOneFastro" width="335" height="550"/>
+        <image name="levelTwentyThreeFastro" width="335" height="550"/>
         <image name="levelTwentyTwoFastro" width="335" height="550"/>
+        <image name="levelTwentyTwoObstacle" width="150" height="100"/>
+        <image name="levelTwentyTwoObstacleTwo" width="150" height="100"/>
         <image name="levelTwoObstacle" width="200" height="125"/>
         <image name="mainViewLanding" width="150" height="100"/>
         <image name="nineBottomObstacle" width="150" height="300"/>
