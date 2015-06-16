@@ -13,6 +13,7 @@ extern int obstaclePosition;
 extern int fastroFlight;
 extern int score;
 extern int coinPosition;
+int redCoinPosition;
 
 @interface LevelTwentyOneViewController ()
 
@@ -25,6 +26,8 @@ extern int coinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
+@property (weak, nonatomic) IBOutlet UIImageView *redCoin;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
@@ -60,6 +63,8 @@ extern int coinPosition;
     [self placeObstacle];
     
     [self placeCoin];
+    
+    [self placeRedCoin];
     
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0045 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
@@ -151,6 +156,18 @@ extern int coinPosition;
     
 }
 
+- (void)placeRedCoin {
+    
+    int frame = self.view.frame.size.height;
+    
+    redCoinPosition = arc4random() %frame;
+    
+    self.redCoin.center = CGPointMake(400, redCoinPosition);
+    
+    self.redCoin.hidden = NO;
+}
+
+
 - (void)coinMoving {
     
     self.coin.center = CGPointMake(self.coin.center.x + 1, self.coin.center.y);
@@ -165,6 +182,22 @@ extern int coinPosition;
         self.coin.hidden = YES;
         [self placeCoin];
         [self scoreChange];
+    }
+    
+    //animate red coin
+    
+    self.redCoin.center = CGPointMake(self.redCoin.center.x - 1, self.redCoin.center.y);
+    
+    if (self.redCoin.center.x < - 50) {
+        
+        [self placeRedCoin];
+    }
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.redCoin.frame)) {
+        
+        self.redCoin.hidden = YES;
+        [self placeRedCoin];
+        [self scoreDown];
     }
     
 }
@@ -190,7 +223,9 @@ extern int coinPosition;
     
     score = score + 1;
     
-    if (score == 2) {
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+    
+    if (score == 10) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -200,6 +235,7 @@ extern int coinPosition;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
+        self.redCoin.hidden = YES;
         
         self.isComplete = YES;
     }
@@ -207,14 +243,45 @@ extern int coinPosition;
     
 }
 
+- (void)scoreDown {
+    
+    if (score > 0) {
+    
+    score = score - 1;
+        
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+        
+    }
+    
+    else {
+        
+        [self.fastroTimer invalidate];
+        [self.obstacleTimer invalidate];
+        [self.coinTimer invalidate];
+        
+        self.youDiedButton.hidden = NO;
+        self.obstacleView.hidden = YES;
+        self.fastronaut.hidden = YES;
+        self.coin.hidden = YES;
+        self.redCoin.hidden = YES;
+        
+    }
+    
+}
+
 
 - (IBAction)resetGame:(id)sender {
+    
+    score = 0;
+    
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.obstacleView.hidden = NO;
     self.coin.hidden = NO;
+    self.redCoin.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     

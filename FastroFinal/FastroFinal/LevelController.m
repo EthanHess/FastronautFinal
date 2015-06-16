@@ -21,6 +21,19 @@
     
 }
 
-
+- (void)saveBool:(BOOL)isComplete {
+    
+    if (isComplete == YES) {
+        
+        [[NSUserDefaults standardUserDefaults]setBool:isComplete forKey:@"isComplete"];
+    }
+    
+//    if (isComplete == NO) {
+//        
+//        [[NSUserDefaults standardUserDefaults]setBool:isComplete forKey:@"isComplete"];
+//    }
+    
+    
+}
 
 @end

@@ -11,5 +11,6 @@
 @interface LevelController : NSObject
 
 + (LevelController *)sharedInstance;
+- (void)saveBool:(BOOL)isComplete; 
 
 @end
