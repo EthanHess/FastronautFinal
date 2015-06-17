@@ -26,6 +26,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIImageView *rightObstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
@@ -52,32 +53,17 @@ extern int score;
     
     self.beginButton.hidden = YES;
     
-    [self alert]; 
-}
-
-- (void)alert {
+    self.fastroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastroMoving) userInfo:nil repeats:YES];
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Get 10 coins!" message:@"You can do it!" preferredStyle:UIAlertControllerStyleAlert];
+    [self placeObstacles];
     
+    [self placeCoin];
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Okay!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        
-        self.fastroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastroMoving) userInfo:nil repeats:YES];
-        
-        [self placeObstacles];
-        
-        [self placeCoin];
-        
-        self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
-        
-        self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
-        
-        [self playAudio];
-        
-    }]];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
-    [self presentViewController:alertController animated:YES completion:nil];
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
+    [self playAudio];
 }
 
 
@@ -209,6 +195,8 @@ extern int score;
     
     score = score + 1;
     
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+    
     if (score == 10) {
         
         [self.fastroTimer invalidate];
@@ -229,6 +217,10 @@ extern int score;
 
 
 - (IBAction)resetGame:(id)sender {
+    
+    score = 0;
+    
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;

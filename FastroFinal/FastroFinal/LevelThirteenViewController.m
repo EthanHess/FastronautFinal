@@ -31,6 +31,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
@@ -214,6 +215,8 @@ extern int score;
     
     score = score + 1;
     
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+    
     if (score == 2) {
         
         [self.fastroTimer invalidate];
@@ -235,6 +238,10 @@ extern int score;
 
 
 - (IBAction)resetGame:(id)sender {
+    
+    score = 0;
+    
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;

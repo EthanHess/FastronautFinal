@@ -304,7 +304,7 @@ extern int redCoinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"One Sly Move" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Super Friendly" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     

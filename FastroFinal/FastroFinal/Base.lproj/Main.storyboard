@@ -334,6 +334,13 @@
                                 <rect key="frame" x="0.0" y="232" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rPG-Ax-aHE">
+                                <rect key="frame" x="124" y="28" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -345,6 +352,7 @@
                         <outlet property="fastronaut" destination="8cs-z2-V62" id="SsH-hG-a1C"/>
                         <outlet property="middleObstacleView" destination="5zq-sP-m9a" id="k7y-7Z-JHa"/>
                         <outlet property="proceedButton" destination="MnV-gm-IGc" id="pG3-WA-dmd"/>
+                        <outlet property="scoreLabel" destination="rPG-Ax-aHE" id="ACr-DK-Uif"/>
                         <outlet property="topObstacleView" destination="78r-Pd-kLE" id="vNz-bY-f9z"/>
                         <outlet property="youDiedButton" destination="uEh-ZW-UnM" id="0Gb-Om-Emz"/>
                     </connections>
@@ -416,6 +424,13 @@
                                     <segue destination="SAg-MS-ITm" kind="push" id="0U8-J0-jme"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BIJ-Mq-Aue">
+                                <rect key="frame" x="124" y="29" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -426,6 +441,7 @@
                         <outlet property="fastronaut" destination="fLf-YQ-rJe" id="1PA-hR-g5P"/>
                         <outlet property="mushroomView" destination="KHd-7s-5Kx" id="GTI-DA-3WE"/>
                         <outlet property="proceedButton" destination="2Qg-fP-4ME" id="ChO-2h-Lap"/>
+                        <outlet property="scoreLabel" destination="BIJ-Mq-Aue" id="Qzt-T0-AhZ"/>
                         <outlet property="topObstacleView" destination="vxL-eP-VZy" id="TtS-c0-cOQ"/>
                         <outlet property="youDiedButton" destination="1fx-aU-vic" id="xz8-T3-OvS"/>
                     </connections>
@@ -622,6 +638,13 @@
                                 <rect key="frame" x="210" y="217" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TAy-2x-ZT4">
+                                <rect key="frame" x="124" y="31" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -633,6 +656,7 @@
                         <outlet property="obstacleView" destination="PvS-z9-XQU" id="AcR-C5-Ah6"/>
                         <outlet property="oilOcean" destination="Li7-Kc-VH4" id="688-PU-KYP"/>
                         <outlet property="proceedButton" destination="TR9-Ms-Isa" id="67P-1n-vxu"/>
+                        <outlet property="scoreLabel" destination="TAy-2x-ZT4" id="Gxa-FM-7eO"/>
                         <outlet property="youDiedButton" destination="7Kj-Df-neA" id="cIn-7s-H2C"/>
                     </connections>
                 </viewController>
@@ -818,7 +842,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FcF-eM-OpE">
                                 <rect key="frame" x="124" y="30" width="73" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -928,6 +952,13 @@
                                 <rect key="frame" x="269" y="259" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hki-E2-MiQ">
+                                <rect key="frame" x="124" y="29" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -939,6 +970,7 @@
                         <outlet property="fastronaut" destination="s0z-Qc-dFO" id="nfc-5S-z2K"/>
                         <outlet property="middleObstacleView" destination="jOq-JS-n7g" id="yW6-uh-bWD"/>
                         <outlet property="proceedButton" destination="Dm2-S7-gU6" id="VA3-DC-pFk"/>
+                        <outlet property="scoreLabel" destination="Hki-E2-MiQ" id="FVA-tU-WbN"/>
                         <outlet property="topObstacleView" destination="NHK-Us-Bf9" id="onJ-lI-bHJ"/>
                         <outlet property="youDiedButton" destination="nDg-QH-o2D" id="DMF-A3-VH5"/>
                     </connections>
@@ -1007,6 +1039,13 @@
                                 <rect key="frame" x="471" y="383" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b3Z-MW-shR">
+                                <rect key="frame" x="124" y="20" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1017,6 +1056,7 @@
                         <outlet property="fastronaut" destination="GBe-To-EFO" id="5pF-4R-wdF"/>
                         <outlet property="obstacleView" destination="OIt-h2-XB0" id="SE6-JE-LXp"/>
                         <outlet property="proceedButton" destination="Pqd-Nq-kos" id="xPT-wQ-vvo"/>
+                        <outlet property="scoreLabel" destination="b3Z-MW-shR" id="COk-Ph-iec"/>
                         <outlet property="youDiedButton" destination="oep-iY-3XO" id="dzY-6p-6rW"/>
                     </connections>
                 </viewController>
@@ -1088,6 +1128,13 @@
                                     <segue destination="mrw-z1-BXs" kind="push" id="BJo-bR-7KI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KQZ-uB-LUp">
+                                <rect key="frame" x="124" y="25" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1098,6 +1145,7 @@
                         <outlet property="coin" destination="vEI-h3-MA8" id="WyV-El-2TV"/>
                         <outlet property="fastronaut" destination="3Qw-T0-bw4" id="kXI-QT-4mF"/>
                         <outlet property="proceedButton" destination="eCF-0Z-6NK" id="2uj-Ww-OY2"/>
+                        <outlet property="scoreLabel" destination="KQZ-uB-LUp" id="ADp-XK-DB7"/>
                         <outlet property="topObstacleView" destination="azs-fi-vZN" id="5DU-LG-xWW"/>
                         <outlet property="youDiedButton" destination="gE7-ah-3ui" id="9wb-qx-ALJ"/>
                     </connections>
@@ -1178,6 +1226,13 @@
                                 <rect key="frame" x="85" y="-59" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D5v-jN-fBm">
+                                <rect key="frame" x="124" y="43" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1189,6 +1244,7 @@
                         <outlet property="coin" destination="cm4-Qs-uWk" id="a38-Hf-cpL"/>
                         <outlet property="fastronaut" destination="faP-9T-Oeh" id="IRY-Th-5Gt"/>
                         <outlet property="proceedButton" destination="Fgn-ue-6gR" id="T0V-qp-dkE"/>
+                        <outlet property="scoreLabel" destination="D5v-jN-fBm" id="K23-ML-rCP"/>
                         <outlet property="topBounce" destination="MNo-ac-MIk" id="Wal-Tc-Mm8"/>
                         <outlet property="topObstacleView" destination="jgr-6j-78E" id="xoK-vN-892"/>
                         <outlet property="youDiedButton" destination="oIb-aQ-ZnS" id="Zcc-Yt-3CE"/>
@@ -1384,6 +1440,13 @@
                                 <rect key="frame" x="-56" y="42" width="185" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dfx-Bb-8Og">
+                                <rect key="frame" x="124" y="20" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1394,6 +1457,7 @@
                         <outlet property="fastronaut" destination="C2x-c9-BQi" id="p9S-w4-vqu"/>
                         <outlet property="obstacleView" destination="Hqy-ty-4XX" id="0wv-w4-0eY"/>
                         <outlet property="proceedButton" destination="gpO-mG-wMQ" id="jLn-S7-ajh"/>
+                        <outlet property="scoreLabel" destination="dfx-Bb-8Og" id="XZ2-mE-nrO"/>
                         <outlet property="youDiedButton" destination="Amb-mb-kx4" id="NMv-lt-6mS"/>
                     </connections>
                 </viewController>
@@ -1465,6 +1529,13 @@
                                 <rect key="frame" x="232" y="278" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EK5-cV-l3a">
+                                <rect key="frame" x="124" y="20" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1475,6 +1546,7 @@
                         <outlet property="coin" destination="TGp-e2-lJW" id="GmQ-fy-ovz"/>
                         <outlet property="fastronaut" destination="YdB-zJ-q68" id="MGV-Zm-LZW"/>
                         <outlet property="proceedButton" destination="jiZ-U7-4Ag" id="asJ-7F-F1a"/>
+                        <outlet property="scoreLabel" destination="EK5-cV-l3a" id="lgC-v4-IE0"/>
                         <outlet property="topObstacleView" destination="V9x-Xl-4jw" id="75U-OW-aLF"/>
                         <outlet property="youDiedButton" destination="1bv-e2-cdA" id="v54-BW-hKS"/>
                     </connections>
@@ -1547,6 +1619,13 @@
                                 <rect key="frame" x="-110" y="248" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NOF-7j-3t5">
+                                <rect key="frame" x="124" y="31" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1558,6 +1637,7 @@
                         <outlet property="leftObstacleView" destination="MyZ-hm-uaR" id="dDf-ag-woW"/>
                         <outlet property="proceedButton" destination="YWz-s3-YT8" id="3G8-gN-Cdu"/>
                         <outlet property="rightObstacleView" destination="ZTL-PX-FfI" id="OX7-zY-zSX"/>
+                        <outlet property="scoreLabel" destination="NOF-7j-3t5" id="zID-pz-0su"/>
                         <outlet property="youDiedButton" destination="6Di-m2-5l5" id="LDe-RH-v6K"/>
                     </connections>
                 </viewController>
@@ -1633,6 +1713,13 @@
                                     <segue destination="8c4-p0-DeA" kind="push" id="XCR-Bl-A6Y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xF5-Zp-Y9O">
+                                <rect key="frame" x="124" y="25" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1644,6 +1731,7 @@
                         <outlet property="fastronaut" destination="dLZ-Yz-HJz" id="rAQ-d7-Eg7"/>
                         <outlet property="middleObstacleView" destination="5DH-ZB-fCa" id="epq-H2-SaS"/>
                         <outlet property="proceedButton" destination="zIq-MT-HYD" id="S3y-2J-Q0b"/>
+                        <outlet property="scoreLabel" destination="xF5-Zp-Y9O" id="Hkx-Yk-0SM"/>
                         <outlet property="topObstacleView" destination="i2w-yR-Vay" id="dDx-I7-eHK"/>
                         <outlet property="youDiedButton" destination="u8e-Hc-oYq" id="50W-rV-rPn"/>
                     </connections>
@@ -1709,6 +1797,13 @@
                                 <rect key="frame" x="232" y="71" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nUH-Ns-4vQ">
+                                <rect key="frame" x="124" y="32" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1719,6 +1814,7 @@
                         <outlet property="fastronaut" destination="WX3-gj-gQW" id="5Je-eI-yS2"/>
                         <outlet property="obstacleView" destination="Ode-Ut-U6z" id="p1U-jY-YVq"/>
                         <outlet property="proceedButton" destination="slt-Cz-gEx" id="vqH-Wd-Dnt"/>
+                        <outlet property="scoreLabel" destination="nUH-Ns-4vQ" id="JxJ-51-fOK"/>
                         <outlet property="youDiedButton" destination="Axa-gG-c78" id="yAI-Zv-gfT"/>
                     </connections>
                 </viewController>
@@ -1791,6 +1887,13 @@
                                 <rect key="frame" x="154" y="30" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2wE-nM-RDA">
+                                <rect key="frame" x="125" y="35" width="72" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1802,6 +1905,7 @@
                         <outlet property="obstacleView" destination="7Tj-wb-PYu" id="gc9-4Z-aR9"/>
                         <outlet property="proceedButton" destination="qBF-QS-mLR" id="lPl-EQ-bCw"/>
                         <outlet property="redCoin" destination="T5a-DH-vRL" id="FJX-la-Ajn"/>
+                        <outlet property="scoreLabel" destination="2wE-nM-RDA" id="m0p-Sv-HCb"/>
                         <outlet property="youDiedButton" destination="WKC-zD-iBi" id="Ua3-Dx-zTU"/>
                     </connections>
                 </viewController>
@@ -1877,6 +1981,13 @@
                                     <action selector="startGame:" destination="T6m-rz-gMb" eventType="touchUpInside" id="Q0h-Iw-dHj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y9G-wM-bYg">
+                                <rect key="frame" x="124" y="26" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1889,6 +2000,7 @@
                         <outlet property="oilOcean" destination="R4k-1c-GmT" id="4jb-J0-Y1T"/>
                         <outlet property="platform" destination="dqk-cT-3yd" id="gXA-5h-SGJ"/>
                         <outlet property="proceedButton" destination="GJz-JR-0sY" id="ueb-oC-18N"/>
+                        <outlet property="scoreLabel" destination="Y9G-wM-bYg" id="2GX-AT-klN"/>
                         <outlet property="youDiedButton" destination="Rj2-kD-Hot" id="SAH-YH-lp2"/>
                     </connections>
                 </viewController>
@@ -2038,6 +2150,13 @@
                                 <rect key="frame" x="367" y="305" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0fG-a3-xoh">
+                                <rect key="frame" x="124" y="22" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2049,6 +2168,7 @@
                         <outlet property="leftObstacleView" destination="aeb-wg-cfr" id="0tM-ec-6bw"/>
                         <outlet property="proceedButton" destination="Osb-gO-OyP" id="stt-wD-wYW"/>
                         <outlet property="rightObstacleView" destination="CVb-Gn-cbu" id="G0D-eL-acK"/>
+                        <outlet property="scoreLabel" destination="0fG-a3-xoh" id="9If-kn-0K3"/>
                         <outlet property="youDiedButton" destination="0dY-Ls-z0C" id="2cg-su-D6Q"/>
                     </connections>
                 </viewController>
@@ -2124,6 +2244,13 @@
                                     <segue destination="9sE-Kt-QG7" kind="push" id="xOQ-UD-egR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LUu-0X-645">
+                                <rect key="frame" x="124" y="20" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2135,6 +2262,7 @@
                         <outlet property="fastronaut" destination="N8w-Uo-FiV" id="0t3-Ni-pkv"/>
                         <outlet property="middleObstacleView" destination="HrP-8E-zMc" id="Yxp-IC-we4"/>
                         <outlet property="proceedButton" destination="Xg8-qo-A5t" id="XyX-x2-ofX"/>
+                        <outlet property="scoreLabel" destination="LUu-0X-645" id="5mD-bt-3o1"/>
                         <outlet property="topObstacleView" destination="SQJ-Xa-x7b" id="2Ti-Nj-kug"/>
                         <outlet property="youDiedButton" destination="1ss-io-x7G" id="YFT-6C-nqo"/>
                     </connections>
@@ -2207,6 +2335,13 @@
                                 <rect key="frame" x="350" y="-100" width="80" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Odh-Xi-z7P">
+                                <rect key="frame" x="124" y="33" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2217,6 +2352,7 @@
                         <outlet property="coin" destination="vNi-qT-hEj" id="vdy-Fb-oo7"/>
                         <outlet property="fastronaut" destination="ADA-Eb-tdT" id="MrM-dn-dRw"/>
                         <outlet property="proceedButton" destination="H6m-0s-NaT" id="l27-Qb-nk8"/>
+                        <outlet property="scoreLabel" destination="Odh-Xi-z7P" id="5ty-Cq-Ved"/>
                         <outlet property="topObstacleView" destination="Gt9-CQ-orR" id="H9A-Z1-Ty0"/>
                         <outlet property="youDiedButton" destination="pG4-10-TWG" id="x5x-tM-lsD"/>
                     </connections>
@@ -2293,6 +2429,13 @@
                                     <segue destination="6E5-o2-adj" kind="push" id="7IV-Qv-G0a"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hNo-Hf-Lr6">
+                                <rect key="frame" x="124" y="33" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2303,6 +2446,7 @@
                         <outlet property="coin" destination="IrH-nZ-Ko8" id="ADT-cA-AUZ"/>
                         <outlet property="fastronaut" destination="Zck-HW-dwO" id="GD8-yC-FuU"/>
                         <outlet property="proceedButton" destination="O3K-D0-X3o" id="t2H-QN-bnR"/>
+                        <outlet property="scoreLabel" destination="hNo-Hf-Lr6" id="VJx-7n-27P"/>
                         <outlet property="spinObstacle" destination="GDk-Aa-IZX" id="S9E-R7-DOq"/>
                         <outlet property="topObstacleView" destination="6k4-gs-3z5" id="Vqb-fY-9tN"/>
                         <outlet property="youDiedButton" destination="lrR-V3-8gE" id="Qyy-VO-ctx"/>
@@ -2384,6 +2528,13 @@
                                 <rect key="frame" x="110" y="454" width="100" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7cB-gV-ORA">
+                                <rect key="frame" x="124" y="20" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2394,6 +2545,7 @@
                         <outlet property="coin" destination="XNS-Xz-BEI" id="K2L-dw-WHF"/>
                         <outlet property="fastronaut" destination="MsG-Pe-Q7W" id="BiJ-fn-zzG"/>
                         <outlet property="proceedButton" destination="Cbi-ek-EKT" id="XSE-RZ-a9m"/>
+                        <outlet property="scoreLabel" destination="7cB-gV-ORA" id="OvJ-SE-wKC"/>
                         <outlet property="topBounce" destination="juj-v1-r4h" id="VJk-OK-Jvr"/>
                         <outlet property="topObstacleView" destination="RSu-kY-Ke3" id="TCK-uT-aop"/>
                         <outlet property="youDiedButton" destination="2dr-nm-mZ1" id="ZcI-vg-Vaq"/>
@@ -2464,6 +2616,13 @@
                                     <action selector="startGame:" destination="euO-XM-Mmr" eventType="touchUpInside" id="mWq-JA-tgX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vss-5S-fOz">
+                                <rect key="frame" x="124" y="33" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2474,6 +2633,7 @@
                         <outlet property="coin" destination="teR-rc-6er" id="han-IS-Kyx"/>
                         <outlet property="fastronaut" destination="Rt9-rc-S7K" id="5J4-gA-Js6"/>
                         <outlet property="proceedButton" destination="pcA-nL-lnr" id="lrH-j1-sbx"/>
+                        <outlet property="scoreLabel" destination="vss-5S-fOz" id="EHy-bG-sjX"/>
                         <outlet property="topObstacleView" destination="CfA-lY-14D" id="Pti-Js-0cq"/>
                         <outlet property="youDiedButton" destination="Umn-cx-CrY" id="aBJ-8P-Ynp"/>
                     </connections>
@@ -2557,6 +2717,13 @@
                                 <rect key="frame" x="154" y="428" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="76x-d8-8TG">
+                                <rect key="frame" x="124" y="27" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2569,6 +2736,7 @@
                         <outlet property="obstacleView" destination="hzh-FT-uTa" id="ZG2-hp-XBh"/>
                         <outlet property="proceedButton" destination="F2Q-LZ-fxP" id="guV-Vh-4Er"/>
                         <outlet property="redCoin" destination="6ht-ec-xy3" id="blb-6r-HWx"/>
+                        <outlet property="scoreLabel" destination="76x-d8-8TG" id="Ms0-Vk-g0G"/>
                         <outlet property="youDiedButton" destination="kR7-85-IE2" id="wM9-qD-d2H"/>
                     </connections>
                 </viewController>
@@ -2641,10 +2809,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D7l-Ki-6Cu">
-                                <rect key="frame" x="111" y="56" width="73" height="65"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="111" y="34" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

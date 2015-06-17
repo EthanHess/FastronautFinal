@@ -29,6 +29,7 @@ int redCoinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *redCoin;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
+
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
