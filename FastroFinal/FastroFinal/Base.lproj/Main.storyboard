@@ -1348,10 +1348,10 @@
             </objects>
             <point key="canvasLocation" x="1195.2" y="2791.7199999999998"/>
         </scene>
-        <!--View Controller-->
+        <!--Level Twenty Three View Controller-->
         <scene sceneID="NrI-s5-IDb">
             <objects>
-                <viewController id="Snj-hL-pDz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LevelTwentyThree" id="Snj-hL-pDz" customClass="LevelTwentyThreeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y8e-vU-8x3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1360,10 +1360,72 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redFastro" id="AgD-8f-ZVx">
+                                <rect key="frame" x="125" y="229" width="70" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CQS-Nr-Mno">
+                                <rect key="frame" x="63" y="180" width="195" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <color key="tintColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Begin!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="Snj-hL-pDz" eventType="touchUpInside" id="ndF-JG-Of3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WKC-zD-iBi">
+                                <rect key="frame" x="28" y="258" width="265" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <color key="tintColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="Snj-hL-pDz" eventType="touchUpInside" id="1vp-5H-sKR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qBF-QS-mLR">
+                                <rect key="frame" x="-7" y="328" width="334" height="68"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <color key="tintColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wLJ-UO-vO4" kind="push" id="DOe-jV-vLX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="nlG-LU-coT">
+                                <rect key="frame" x="243" y="392" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCoin" id="T5a-DH-vRL">
+                                <rect key="frame" x="41" y="145" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyThreeObstacle" id="7Tj-wb-PYu">
+                                <rect key="frame" x="154" y="30" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="eqa-dN-Zbv"/>
+                    <connections>
+                        <outlet property="beginButton" destination="CQS-Nr-Mno" id="wov-bN-Rss"/>
+                        <outlet property="coin" destination="nlG-LU-coT" id="259-bT-C1g"/>
+                        <outlet property="fastronaut" destination="AgD-8f-ZVx" id="QM9-ds-rIQ"/>
+                        <outlet property="obstacleView" destination="7Tj-wb-PYu" id="gc9-4Z-aR9"/>
+                        <outlet property="proceedButton" destination="qBF-QS-mLR" id="lPl-EQ-bCw"/>
+                        <outlet property="redCoin" destination="T5a-DH-vRL" id="FJX-la-Ajn"/>
+                        <outlet property="youDiedButton" destination="WKC-zD-iBi" id="Ua3-Dx-zTU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p57-2L-J0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1455,6 +1517,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZa-eo-67q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1195.2" y="2165.0266666666666"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kuP-qg-7Rb">
+            <objects>
+                <viewController id="wLJ-UO-vO4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eyp-1I-c0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFourFastro" id="Aij-bb-Rgz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w4V-lz-DrH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8y-gS-gBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533" y="2165"/>
         </scene>
         <!--Level Five View Controller-->
         <scene sceneID="nzF-zP-JTR">
@@ -2192,12 +2275,14 @@
         <image name="levelTenTop" width="150" height="450"/>
         <image name="levelThreeObstacle" width="185" height="185"/>
         <image name="levelTwelveMiddle" width="150" height="150"/>
+        <image name="levelTwentyFourFastro" width="335" height="550"/>
         <image name="levelTwentyLauncher" width="180" height="110"/>
         <image name="levelTwentyObstacleOne" width="120" height="50"/>
         <image name="levelTwentyObstacleTwo" width="120" height="50"/>
         <image name="levelTwentyOne" width="150" height="100"/>
         <image name="levelTwentyOneFastro" width="335" height="550"/>
         <image name="levelTwentyThreeFastro" width="335" height="550"/>
+        <image name="levelTwentyThreeObstacle" width="150" height="150"/>
         <image name="levelTwentyTwoFastro" width="335" height="550"/>
         <image name="levelTwentyTwoObstacle" width="150" height="100"/>
         <image name="levelTwentyTwoObstacleTwo" width="150" height="100"/>

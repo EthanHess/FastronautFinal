@@ -1,29 +1,28 @@
 //
-//  LevelTwentyTwoViewController.m
+//  LevelTwentyThreeViewController.m
 //  FastroFinal
 //
-//  Created by Ethan Hess on 6/16/15.
+//  Created by Ethan Hess on 6/17/15.
 //  Copyright (c) 2015 Ethan Hess. All rights reserved.
 //
 
-#import "LevelTwentyTwoViewController.h"
+#import "LevelTwentyThreeViewController.h"
 #import "SoundController.h"
 
 extern int obstaclePosition;
-extern int bottomObstaclePosition;
 extern int fastroFlight;
 extern int score;
 extern int coinPosition;
 extern int redCoinPosition;
 
-@interface LevelTwentyTwoViewController ()
+@interface LevelTwentyThreeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
-@property (weak, nonatomic) IBOutlet UIImageView *bottomObstacleView;
+@property (weak, nonatomic) IBOutlet UIImageView *blowerView;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
@@ -36,13 +35,12 @@ extern int redCoinPosition;
 
 @end
 
-@implementation LevelTwentyTwoViewController
+@implementation LevelTwentyThreeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
-    
     
     [[SoundController sharedInstance] cancelAudio];
     
@@ -86,14 +84,7 @@ extern int redCoinPosition;
         [self placeObstacle];
     }
     
-    self.bottomObstacleView.center = CGPointMake(self.bottomObstacleView.center.x + 1, self.bottomObstacleView.center.y);
-    
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
-        
-        [self gameOver];
-    }
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.bottomObstacleView.frame)) {
         
         [self gameOver];
     }
@@ -118,9 +109,7 @@ extern int redCoinPosition;
     
     self.obstacleView.center = CGPointMake(480, obstaclePosition);
     
-    bottomObstaclePosition = arc4random() %frame;
     
-    self.bottomObstacleView.center = CGPointMake(-50, bottomObstaclePosition);
 }
 
 
@@ -130,16 +119,16 @@ extern int redCoinPosition;
     
     fastroFlight = fastroFlight - 10;
     
-    if (fastroFlight < - 20) {
+    if (fastroFlight <  - 20) {
         fastroFlight = - 20;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"FastronautLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"redFastroLanded"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"Fastronaut-Final"];
+        self.fastronaut.image = [UIImage imageNamed:@"redFastro"];
     }
     
 }
@@ -219,7 +208,6 @@ extern int redCoinPosition;
     
     self.youDiedButton.hidden = NO;
     self.obstacleView.hidden = YES;
-    self.bottomObstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     self.coin.hidden = YES;
     self.redCoin.hidden = YES;
@@ -243,7 +231,6 @@ extern int redCoinPosition;
         
         self.proceedButton.hidden = NO;
         self.obstacleView.hidden = YES;
-        self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
         self.redCoin.hidden = YES;
@@ -272,7 +259,6 @@ extern int redCoinPosition;
         
         self.youDiedButton.hidden = NO;
         self.obstacleView.hidden = YES;
-        self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
         self.redCoin.hidden = YES;
@@ -292,7 +278,6 @@ extern int redCoinPosition;
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.obstacleView.hidden = NO;
-    self.bottomObstacleView.hidden = NO; 
     self.coin.hidden = NO;
     self.redCoin.hidden = NO;
     
