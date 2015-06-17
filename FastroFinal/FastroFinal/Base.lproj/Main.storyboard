@@ -2003,6 +2003,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="SzU-0D-obR" eventType="touchUpInside" id="St4-9B-bgP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kR7-85-IE2">
                                 <rect key="frame" x="22" y="249" width="277" height="90"/>
@@ -2012,6 +2015,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="SzU-0D-obR" eventType="touchUpInside" id="Qc1-Gj-lWI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="F2Q-LZ-fxP">
                                 <rect key="frame" x="36" y="333" width="249" height="87"/>
@@ -2037,6 +2043,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0ck-Go-nbj"/>
+                    <connections>
+                        <outlet property="beginButton" destination="LKk-Zb-ACz" id="07W-cs-EAF"/>
+                        <outlet property="bottomObstacleView" destination="R6g-uX-ktK" id="qJj-6X-shP"/>
+                        <outlet property="coin" destination="omh-Nw-fhb" id="vPS-3Q-OZV"/>
+                        <outlet property="fastronaut" destination="kq9-Hs-zP6" id="5e9-1o-P5J"/>
+                        <outlet property="obstacleView" destination="hzh-FT-uTa" id="ZG2-hp-XBh"/>
+                        <outlet property="proceedButton" destination="F2Q-LZ-fxP" id="guV-Vh-4Er"/>
+                        <outlet property="redCoin" destination="6ht-ec-xy3" id="blb-6r-HWx"/>
+                        <outlet property="youDiedButton" destination="kR7-85-IE2" id="wM9-qD-d2H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak2-87-3ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

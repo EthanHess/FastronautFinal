@@ -30,7 +30,7 @@
 #import "LevelNineteenViewController.h"
 #import "LevelTwentyViewController.h"
 #import "LevelTwentyOneViewController.h"
-
+#import "LevelTwentyTwoViewController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -283,7 +283,13 @@
             
             [self.navigationController pushViewController:twentyOne animated:YES];
             
+            break; }
             
+        case 22: {
+            
+            LevelTwentyTwoViewController *twentyTwo = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyTwo"];
+            
+            [self.navigationController pushViewController:twentyTwo animated:YES];
             
             
         }

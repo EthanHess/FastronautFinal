@@ -66,7 +66,7 @@ int redCoinPosition;
     
     [self placeRedCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0045 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -110,7 +110,7 @@ int redCoinPosition;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(450, obstaclePosition);
+    self.obstacleView.center = CGPointMake(480, obstaclePosition);
     
     
 }
@@ -213,6 +213,7 @@ int redCoinPosition;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     self.coin.hidden = YES;
+    self.redCoin.hidden = YES; 
     
     score = 0;
     
@@ -225,7 +226,7 @@ int redCoinPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 10) {
+    if (score == 5) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -291,7 +292,7 @@ int redCoinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Who Likes to Party" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"One Sly Move" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     

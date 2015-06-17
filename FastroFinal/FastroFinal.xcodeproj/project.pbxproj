@@ -34,6 +34,7 @@
 		27B127541B2393E1007BACD1 /* LevelFifteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */; };
 		27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */; };
 		27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */; };
+		27B25A121B30F31A00544F52 /* One Sly Move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A111B30F31A00544F52 /* One Sly Move.mp3 */; };
 		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
@@ -135,6 +136,7 @@
 		27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyOneViewController.m; sourceTree = "<group>"; };
 		27B25A0E1B30E9D100544F52 /* LevelTwentyTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyTwoViewController.h; sourceTree = "<group>"; };
 		27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyTwoViewController.m; sourceTree = "<group>"; };
+		27B25A111B30F31A00544F52 /* One Sly Move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Sly Move.mp3"; sourceTree = "<group>"; };
 		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				270E52081B082986001CDF3C /* FastroFinal */,
+				27B25A111B30F31A00544F52 /* One Sly Move.mp3 */,
 				27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */,
 				27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */,
 				27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */,
@@ -451,6 +454,7 @@
 				27BC83101B28F66600668F80 /* Enter the Maze.mp3 in Resources */,
 				27FFAC161B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 in Resources */,
 				27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */,
+				27B25A121B30F31A00544F52 /* One Sly Move.mp3 in Resources */,
 				27BC83181B28F66600668F80 /* The Whip Theme.mp3 in Resources */,
 				27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */,
 				27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */,
