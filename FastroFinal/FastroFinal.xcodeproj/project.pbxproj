@@ -37,6 +37,13 @@
 		27B25A121B30F31A00544F52 /* One Sly Move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A111B30F31A00544F52 /* One Sly Move.mp3 */; };
 		27B25A1B1B31E92C00544F52 /* LevelTwentyThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A1A1B31E92C00544F52 /* LevelTwentyThreeViewController.m */; };
 		27B25A1E1B31FBB800544F52 /* LevelTwentyFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A1D1B31FBB800544F52 /* LevelTwentyFourViewController.m */; };
+		27B25A211B32090D00544F52 /* LevelTwentyFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A201B32090D00544F52 /* LevelTwentyFiveViewController.m */; };
+		27B25A241B32092E00544F52 /* LevelTwentySixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A231B32092E00544F52 /* LevelTwentySixViewController.m */; };
+		27B25A271B32094D00544F52 /* LevelTwentySevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A261B32094D00544F52 /* LevelTwentySevenViewController.m */; };
+		27B25A2A1B32096400544F52 /* LevelTwentyEightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A291B32096400544F52 /* LevelTwentyEightViewController.m */; };
+		27B25A2D1B32097900544F52 /* LevelTwentyNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A2C1B32097900544F52 /* LevelTwentyNineViewController.m */; };
+		27B25A301B32099800544F52 /* LevelThirtyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A2F1B32099800544F52 /* LevelThirtyViewController.m */; };
+		27B25A331B3209B000544F52 /* WonTheGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A321B3209B000544F52 /* WonTheGameViewController.m */; };
 		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
@@ -143,6 +150,20 @@
 		27B25A1A1B31E92C00544F52 /* LevelTwentyThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyThreeViewController.m; sourceTree = "<group>"; };
 		27B25A1C1B31FBB800544F52 /* LevelTwentyFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyFourViewController.h; sourceTree = "<group>"; };
 		27B25A1D1B31FBB800544F52 /* LevelTwentyFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyFourViewController.m; sourceTree = "<group>"; };
+		27B25A1F1B32090D00544F52 /* LevelTwentyFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyFiveViewController.h; sourceTree = "<group>"; };
+		27B25A201B32090D00544F52 /* LevelTwentyFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyFiveViewController.m; sourceTree = "<group>"; };
+		27B25A221B32092E00544F52 /* LevelTwentySixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentySixViewController.h; sourceTree = "<group>"; };
+		27B25A231B32092E00544F52 /* LevelTwentySixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentySixViewController.m; sourceTree = "<group>"; };
+		27B25A251B32094D00544F52 /* LevelTwentySevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentySevenViewController.h; sourceTree = "<group>"; };
+		27B25A261B32094D00544F52 /* LevelTwentySevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentySevenViewController.m; sourceTree = "<group>"; };
+		27B25A281B32096400544F52 /* LevelTwentyEightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyEightViewController.h; sourceTree = "<group>"; };
+		27B25A291B32096400544F52 /* LevelTwentyEightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyEightViewController.m; sourceTree = "<group>"; };
+		27B25A2B1B32097900544F52 /* LevelTwentyNineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyNineViewController.h; sourceTree = "<group>"; };
+		27B25A2C1B32097900544F52 /* LevelTwentyNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyNineViewController.m; sourceTree = "<group>"; };
+		27B25A2E1B32099800544F52 /* LevelThirtyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelThirtyViewController.h; sourceTree = "<group>"; };
+		27B25A2F1B32099800544F52 /* LevelThirtyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelThirtyViewController.m; sourceTree = "<group>"; };
+		27B25A311B3209B000544F52 /* WonTheGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WonTheGameViewController.h; sourceTree = "<group>"; };
+		27B25A321B3209B000544F52 /* WonTheGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WonTheGameViewController.m; sourceTree = "<group>"; };
 		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
@@ -317,6 +338,20 @@
 				27B25A1A1B31E92C00544F52 /* LevelTwentyThreeViewController.m */,
 				27B25A1C1B31FBB800544F52 /* LevelTwentyFourViewController.h */,
 				27B25A1D1B31FBB800544F52 /* LevelTwentyFourViewController.m */,
+				27B25A1F1B32090D00544F52 /* LevelTwentyFiveViewController.h */,
+				27B25A201B32090D00544F52 /* LevelTwentyFiveViewController.m */,
+				27B25A221B32092E00544F52 /* LevelTwentySixViewController.h */,
+				27B25A231B32092E00544F52 /* LevelTwentySixViewController.m */,
+				27B25A251B32094D00544F52 /* LevelTwentySevenViewController.h */,
+				27B25A261B32094D00544F52 /* LevelTwentySevenViewController.m */,
+				27B25A281B32096400544F52 /* LevelTwentyEightViewController.h */,
+				27B25A291B32096400544F52 /* LevelTwentyEightViewController.m */,
+				27B25A2B1B32097900544F52 /* LevelTwentyNineViewController.h */,
+				27B25A2C1B32097900544F52 /* LevelTwentyNineViewController.m */,
+				27B25A2E1B32099800544F52 /* LevelThirtyViewController.h */,
+				27B25A2F1B32099800544F52 /* LevelThirtyViewController.m */,
+				27B25A311B3209B000544F52 /* WonTheGameViewController.h */,
+				27B25A321B3209B000544F52 /* WonTheGameViewController.m */,
 				270E52391B098D12001CDF3C /* Controllers */,
 				270E523A1B098D35001CDF3C /* SoundController.h */,
 				270E523B1B098D35001CDF3C /* SoundController.m */,
@@ -503,18 +538,22 @@
 				27E9F0FC1B2795E100066878 /* LevelEighteenViewController.m in Sources */,
 				27FFAC0F1B190BD200F2E4D3 /* LevelTenViewController.m in Sources */,
 				271B77F81B1E63AA0028A554 /* InstructionsViewController.m in Sources */,
+				27B25A301B32099800544F52 /* LevelThirtyViewController.m in Sources */,
 				270E52341B0834FE001CDF3C /* LevelOneViewController.m in Sources */,
 				27FFABCB1B17B6A100F2E4D3 /* LevelNineViewController.m in Sources */,
 				27F9A9561B1F932F00CD4BEF /* LevelFourteenViewController.m in Sources */,
 				274E520D1B15117E00C9B004 /* LevelSixViewController.m in Sources */,
 				272A85AF1B1E437B00C15F41 /* LevelThirteenViewController.m in Sources */,
 				270E52381B095F20001CDF3C /* LevelsListController.m in Sources */,
+				27B25A331B3209B000544F52 /* WonTheGameViewController.m in Sources */,
 				275B50B11B12AF8800E6896A /* LevelFourViewController.m in Sources */,
+				27B25A241B32092E00544F52 /* LevelTwentySixViewController.m in Sources */,
 				270E520F1B082986001CDF3C /* AppDelegate.m in Sources */,
 				275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */,
 				275B50771B10FDE900E6896A /* LevelTwoViewController.m in Sources */,
 				271B77F51B1E638F0028A554 /* CreditsViewController.m in Sources */,
 				27F9A9591B1F9D7F00CD4BEF /* LevelController.m in Sources */,
+				27B25A2A1B32096400544F52 /* LevelTwentyEightViewController.m in Sources */,
 				270E520C1B082986001CDF3C /* main.m in Sources */,
 				27BC83671B2A41ED00668F80 /* LevelNineteenViewController.m in Sources */,
 				27B25A1B1B31E92C00544F52 /* LevelTwentyThreeViewController.m in Sources */,
@@ -525,10 +564,13 @@
 				27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */,
 				27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */,
 				27B25A1E1B31FBB800544F52 /* LevelTwentyFourViewController.m in Sources */,
+				27B25A211B32090D00544F52 /* LevelTwentyFiveViewController.m in Sources */,
 				275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */,
+				27B25A2D1B32097900544F52 /* LevelTwentyNineViewController.m in Sources */,
 				272A853C1B1CFA4D00C15F41 /* LevelTwelveViewController.m in Sources */,
 				270E52311B082D83001CDF3C /* LaunchViewController.m in Sources */,
 				27E9F0F01B27956200066878 /* PurchasedDataController.m in Sources */,
+				27B25A271B32094D00544F52 /* LevelTwentySevenViewController.m in Sources */,
 				272A84D51B1BC78B00C15F41 /* LevelElevenViewController.m in Sources */,
 				2703E55C1B2636AB005F82FE /* LevelSixteenViewController.m in Sources */,
 				27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */,
