@@ -917,7 +917,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveBottom" id="Yfg-r8-ICh">
-                                <rect key="frame" x="104" y="410" width="215" height="300"/>
+                                <rect key="frame" x="104" y="410" width="150" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveSubviewOne" id="kWG-fs-bz8">
@@ -1300,14 +1300,29 @@
                                     <segue destination="eUj-3X-ris" kind="push" id="Mqb-eS-5Nd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCoin" id="aC7-QT-fOv">
-                                <rect key="frame" x="74" y="358" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="ltY-zk-EzC">
                                 <rect key="frame" x="15" y="145" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCoin" id="aC7-QT-fOv">
+                                <rect key="frame" x="74" y="358" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFiveBottom" id="baP-cU-fVF">
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFiveTop" id="kI5-cd-yhk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9UH-EG-cFe">
+                                <rect key="frame" x="124" y="20" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2028,6 +2043,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="wLJ-UO-vO4" eventType="touchUpInside" id="6g3-4X-vYW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y9t-dG-MjG">
                                 <rect key="frame" x="31" y="269" width="259" height="73"/>
@@ -2037,6 +2055,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="wLJ-UO-vO4" eventType="touchUpInside" id="94A-av-xT3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LsS-X3-miZ">
                                 <rect key="frame" x="0.0" y="334" width="322" height="99"/>
@@ -2054,18 +2075,39 @@
                                 <rect key="frame" x="126" y="251" width="70" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCoin" id="2cZ-kM-oBH">
-                                <rect key="frame" x="230" y="426" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="Iio-tI-GIy">
                                 <rect key="frame" x="52" y="85" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCoin" id="2cZ-kM-oBH">
+                                <rect key="frame" x="230" y="426" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFourObstacle" id="Gpc-3N-exi">
+                                <rect key="frame" x="154" y="143" width="150" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UBc-9e-bz0">
+                                <rect key="frame" x="124" y="20" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="w4V-lz-DrH"/>
+                    <connections>
+                        <outlet property="beginButton" destination="0NL-f2-fEx" id="301-ly-gKC"/>
+                        <outlet property="coin" destination="Iio-tI-GIy" id="0fX-p1-2gf"/>
+                        <outlet property="fastronaut" destination="m0i-QP-1ai" id="924-nE-Rhq"/>
+                        <outlet property="obstacleView" destination="Gpc-3N-exi" id="Jv8-VY-twt"/>
+                        <outlet property="proceedButton" destination="LsS-X3-miZ" id="klI-am-HOs"/>
+                        <outlet property="redCoin" destination="2cZ-kM-oBH" id="iZM-06-c5f"/>
+                        <outlet property="scoreLabel" destination="UBc-9e-bz0" id="PFk-Jr-hFI"/>
+                        <outlet property="youDiedButton" destination="Y9t-dG-MjG" id="mMl-wk-qCS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8y-gS-gBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2880,8 +2922,11 @@
         <image name="levelThreeObstacle" width="185" height="185"/>
         <image name="levelTwelveMiddle" width="150" height="150"/>
         <image name="levelTwentyEightFastro" width="335" height="550"/>
+        <image name="levelTwentyFiveBottom" width="320" height="80"/>
         <image name="levelTwentyFiveFastro" width="335" height="550"/>
+        <image name="levelTwentyFiveTop" width="320" height="80"/>
         <image name="levelTwentyFourFastro" width="335" height="550"/>
+        <image name="levelTwentyFourObstacle" width="150" height="100"/>
         <image name="levelTwentyLauncher" width="180" height="110"/>
         <image name="levelTwentyNineFastro" width="335" height="550"/>
         <image name="levelTwentyObstacleOne" width="120" height="50"/>

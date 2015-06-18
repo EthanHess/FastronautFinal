@@ -46,6 +46,7 @@
 		27B25A331B3209B000544F52 /* WonTheGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A321B3209B000544F52 /* WonTheGameViewController.m */; };
 		27B25A361B320B5500544F52 /* Shiny Tech2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */; };
 		27B25A371B320B5500544F52 /* Super Friendly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A351B320B5500544F52 /* Super Friendly.mp3 */; };
+		27B25A751B336A0400544F52 /* Skye Cuillin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */; };
 		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
@@ -168,6 +169,7 @@
 		27B25A321B3209B000544F52 /* WonTheGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WonTheGameViewController.m; sourceTree = "<group>"; };
 		27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Shiny Tech2.mp3"; path = "FastroFinal/Shiny Tech2.mp3"; sourceTree = "<group>"; };
 		27B25A351B320B5500544F52 /* Super Friendly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Super Friendly.mp3"; path = "FastroFinal/Super Friendly.mp3"; sourceTree = "<group>"; };
+		27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Skye Cuillin.mp3"; sourceTree = "<group>"; };
 		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				270E52081B082986001CDF3C /* FastroFinal */,
 				27B25A111B30F31A00544F52 /* One Sly Move.mp3 */,
+				27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */,
 				27B25A351B320B5500544F52 /* Super Friendly.mp3 */,
 				27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */,
 				27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */,
@@ -520,6 +523,7 @@
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */,
 				27B25A361B320B5500544F52 /* Shiny Tech2.mp3 in Resources */,
+				27B25A751B336A0400544F52 /* Skye Cuillin.mp3 in Resources */,
 				270E521A1B082986001CDF3C /* LaunchScreen.xib in Resources */,
 				270E52171B082986001CDF3C /* Images.xcassets in Resources */,
 				27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */,

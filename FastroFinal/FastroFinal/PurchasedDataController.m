@@ -69,11 +69,11 @@ static NSString * const kLevelsTwentyOneThroughThirtyKey = @"TwentyOneThroughThi
     
     NSString *productIdentifer = notification.userInfo[kProductIDKey];
     
-    if ([productIdentifer isEqualToString:@"com.devmtn.SimpleStore.removeads"]) {
+    if ([productIdentifer isEqualToString:@"com.devmtn."]) {
         self.accessElevenThroughTwenty = YES;
     }
     
-    if ([productIdentifer isEqualToString:@"com.devmtn.SimpleStore.goldstar"]) {
+    if ([productIdentifer isEqualToString:@"com.devmtn."]) {
         self.accessTwentyOneThroughEnd = YES;
     }
     
