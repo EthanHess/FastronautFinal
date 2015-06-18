@@ -47,6 +47,7 @@
 		27B25A361B320B5500544F52 /* Shiny Tech2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */; };
 		27B25A371B320B5500544F52 /* Super Friendly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A351B320B5500544F52 /* Super Friendly.mp3 */; };
 		27B25A751B336A0400544F52 /* Skye Cuillin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */; };
+		27B25A771B33782600544F52 /* Severe Tire Damage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A761B33782600544F52 /* Severe Tire Damage.mp3 */; };
 		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
@@ -170,6 +171,7 @@
 		27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Shiny Tech2.mp3"; path = "FastroFinal/Shiny Tech2.mp3"; sourceTree = "<group>"; };
 		27B25A351B320B5500544F52 /* Super Friendly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Super Friendly.mp3"; path = "FastroFinal/Super Friendly.mp3"; sourceTree = "<group>"; };
 		27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Skye Cuillin.mp3"; sourceTree = "<group>"; };
+		27B25A761B33782600544F52 /* Severe Tire Damage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Severe Tire Damage.mp3"; sourceTree = "<group>"; };
 		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			children = (
 				270E52081B082986001CDF3C /* FastroFinal */,
 				27B25A111B30F31A00544F52 /* One Sly Move.mp3 */,
+				27B25A761B33782600544F52 /* Severe Tire Damage.mp3 */,
 				27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */,
 				27B25A351B320B5500544F52 /* Super Friendly.mp3 */,
 				27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */,
@@ -497,6 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B25A771B33782600544F52 /* Severe Tire Damage.mp3 in Resources */,
 				27BC83141B28F66600668F80 /* Hit the Streets v2.mp3 in Resources */,
 				27BACAF61B1FF09100FA26E2 /* Exit the Premises.mp3 in Resources */,
 				27BC83121B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 in Resources */,

@@ -10,4 +10,6 @@
 
 @interface LevelTwentyFiveViewController : UIViewController
 
+@property (nonatomic) BOOL isComplete;
+
 @end
