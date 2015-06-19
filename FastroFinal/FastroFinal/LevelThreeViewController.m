@@ -42,6 +42,9 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
+    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
@@ -75,15 +78,10 @@ extern int score;
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x + 1, self.obstacleView.center.y);
     //    [self animateView:self.obstacleView duration:10];
     
-    if (self.obstacleView.center.x > 400) {
+    if (self.obstacleView.center.x > 450) {
         
         [self placeObstacle];
     }
-    
-//    if (self.obstacleView.center.x == 380) {
-//        
-//        [self scoreChange];
-//    }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
@@ -108,7 +106,7 @@ extern int score;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(-80, obstaclePosition);
+    self.obstacleView.center = CGPointMake(-180, obstaclePosition);
     
     [self animateView:self.obstacleView duration:HUGE_VALF];
     
@@ -196,7 +194,7 @@ extern int score;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 10) {
+    if (score == 30) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
