@@ -48,7 +48,9 @@ int score;
     [super viewDidLoad];
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
-
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
@@ -69,7 +71,7 @@ int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -151,7 +153,7 @@ int score;
     
     coinPosition = arc4random() %frame;
     
-    self.coin.center = CGPointMake(380, coinPosition);
+    self.coin.center = CGPointMake(400, coinPosition);
     
     self.coin.hidden = NO;
     
@@ -199,7 +201,7 @@ int score;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 10) {
+    if (score == 30) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

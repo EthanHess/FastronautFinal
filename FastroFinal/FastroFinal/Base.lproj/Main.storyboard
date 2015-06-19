@@ -676,6 +676,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentySixBottomObstacle" id="ccK-yC-fJ6">
+                                <rect key="frame" x="54" y="343" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentySixTopObstacle" id="dSl-vX-p8X">
+                                <rect key="frame" x="54" y="-41" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastrozontal" id="eJZ-kI-Uib">
                                 <rect key="frame" x="105" y="249" width="110" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -688,6 +696,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="eUj-3X-ris" eventType="touchUpInside" id="r1P-mG-soY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6wI-Or-SGv">
                                 <rect key="frame" x="37" y="249" width="246" height="59"/>
@@ -697,6 +708,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="eUj-3X-ris" eventType="touchUpInside" id="gZc-xa-vnV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JdV-I5-Nv2">
                                 <rect key="frame" x="21" y="327" width="278" height="67"/>
@@ -718,10 +732,28 @@
                                 <rect key="frame" x="173" y="417" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ijo-Cf-HcN">
+                                <rect key="frame" x="124" y="25" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="lHk-z4-NGx"/>
+                    <connections>
+                        <outlet property="beginButton" destination="Rnu-mj-GI6" id="n6K-Mt-GjW"/>
+                        <outlet property="bottomObstacleView" destination="ccK-yC-fJ6" id="e8q-3A-tjd"/>
+                        <outlet property="coin" destination="iaC-QI-T6n" id="gfe-Os-hZJ"/>
+                        <outlet property="fastronaut" destination="eJZ-kI-Uib" id="F48-Bo-6ut"/>
+                        <outlet property="proceedButton" destination="JdV-I5-Nv2" id="wE0-FM-nuT"/>
+                        <outlet property="redCoin" destination="t2l-GZ-IMr" id="xPY-88-OFq"/>
+                        <outlet property="scoreLabel" destination="ijo-Cf-HcN" id="0aC-rW-HD9"/>
+                        <outlet property="topObstacleView" destination="dSl-vX-p8X" id="xle-zR-Yc0"/>
+                        <outlet property="youDiedButton" destination="6wI-Or-SGv" id="vmY-fi-Ne3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EB4-qj-V8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3000,6 +3032,8 @@
         <image name="twentyBlue" width="150" height="450"/>
         <image name="twentyOneObstacle" width="180" height="180"/>
         <image name="twentyRed" width="150" height="450"/>
+        <image name="twentySixBottomObstacle" width="300" height="300"/>
+        <image name="twentySixTopObstacle" width="300" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
