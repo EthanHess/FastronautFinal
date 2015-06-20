@@ -8,6 +8,7 @@
 
 #import "LevelOneViewController.h"
 #import "SoundController.h"
+#import "ViewController.h"
 #import <math.h>
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
@@ -22,6 +23,7 @@ int score;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 
@@ -54,6 +56,7 @@ int score;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
     [[SoundController sharedInstance]cancelAudio];
@@ -188,6 +191,7 @@ int score;
     self.youDiedButton.hidden = NO;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
+    self.homeButton.hidden = NO;
     self.coin.hidden = YES; 
     
     score = 0;
@@ -208,6 +212,7 @@ int score;
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.obstacleView.hidden = YES;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
@@ -227,6 +232,7 @@ int score;
     
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.obstacleView.hidden = NO;
     self.coin.hidden = NO;
@@ -262,6 +268,13 @@ int score;
     
 }
 
+- (IBAction)goHome:(id)sender {
+    
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+}
 
 
 
