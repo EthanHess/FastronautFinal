@@ -564,6 +564,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="ghq-Pi-Yh4" eventType="touchUpInside" id="ouj-Hg-izK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XY7-It-gw4">
                                 <rect key="frame" x="35" y="280" width="250" height="49"/>
@@ -573,6 +576,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="ghq-Pi-Yh4" eventType="touchUpInside" id="9ik-e4-m2Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Shy-Dx-d4Y">
                                 <rect key="frame" x="24" y="356" width="273" height="64"/>
@@ -601,10 +607,34 @@
                                 <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyEightMiddle" id="pAa-ER-Ejo">
+                                <rect key="frame" x="185" y="195" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyEightTop" id="tUy-o9-DsS">
+                                <rect key="frame" x="187" y="-157" width="110" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyEightBottom" id="f0K-t3-baa">
+                                <rect key="frame" x="185" y="364" width="110" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cel-sc-3eM"/>
+                    <connections>
+                        <outlet property="beginButton" destination="m59-Lf-QOj" id="Mge-Rv-kw0"/>
+                        <outlet property="bottomObstacleView" destination="f0K-t3-baa" id="tXa-MW-jIc"/>
+                        <outlet property="coin" destination="Kqj-gK-tjE" id="JeC-A0-qkG"/>
+                        <outlet property="fastronaut" destination="xdj-s4-Det" id="FjI-UD-wwj"/>
+                        <outlet property="middleObstacleView" destination="pAa-ER-Ejo" id="Ped-YG-dsJ"/>
+                        <outlet property="proceedButton" destination="Shy-Dx-d4Y" id="KPY-QN-IMv"/>
+                        <outlet property="redCoin" destination="jMN-IM-SMt" id="WDt-C0-Fhz"/>
+                        <outlet property="scoreLabel" destination="tdC-Pf-ucz" id="YJZ-CN-9nH"/>
+                        <outlet property="topObstacleView" destination="tUy-o9-DsS" id="eBb-jL-Wnh"/>
+                        <outlet property="youDiedButton" destination="XY7-It-gw4" id="F3G-XI-RCH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHo-w4-QoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3002,7 +3032,7 @@
         <image name="leftObstacleFour" width="180" height="85"/>
         <image name="leveThirtyFastro" width="335" height="550"/>
         <image name="levelEightBottom" width="120" height="300"/>
-        <image name="levelEightMiddle" width="120" height="120"/>
+        <image name="levelEightMiddle" width="110" height="110"/>
         <image name="levelEightTop" width="120" height="300"/>
         <image name="levelEighteenObstacle" width="100" height="100"/>
         <image name="levelEighteenOcean" width="335" height="235"/>
@@ -3018,7 +3048,9 @@
         <image name="levelTenTop" width="150" height="450"/>
         <image name="levelThreeObstacle" width="185" height="185"/>
         <image name="levelTwelveMiddle" width="150" height="150"/>
+        <image name="levelTwentyEightBottom" width="110" height="300"/>
         <image name="levelTwentyEightFastro" width="335" height="550"/>
+        <image name="levelTwentyEightTop" width="110" height="300"/>
         <image name="levelTwentyFiveBottom" width="320" height="80"/>
         <image name="levelTwentyFiveFastro" width="335" height="550"/>
         <image name="levelTwentyFiveObstacle" width="100" height="100"/>
@@ -3073,6 +3105,7 @@
         <image name="twelveTop" width="150" height="300"/>
         <image name="twentiethLevelFastro" width="335" height="550"/>
         <image name="twentyBlue" width="150" height="450"/>
+        <image name="twentyEightMiddle" width="110" height="110"/>
         <image name="twentyOneObstacle" width="180" height="180"/>
         <image name="twentyRed" width="150" height="450"/>
         <image name="twentySevenObstacle" width="200" height="120"/>

@@ -47,7 +47,7 @@ extern int score;
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
-    self.middleObstacleView.layer.cornerRadius = self.middleObstacleView.frame.size.height / 2 + 15;
+    self.middleObstacleView.layer.cornerRadius = self.middleObstacleView.frame.size.height / 2;
     self.middleObstacleView.layer.masksToBounds = YES;
     
     [[SoundController sharedInstance] cancelAudio];
