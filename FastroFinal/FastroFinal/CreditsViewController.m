@@ -10,7 +10,9 @@
 #import "SoundController.h"
 
 @interface CreditsViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *creditsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *creditsLabelOne;
+@property (weak, nonatomic) IBOutlet UILabel *creditsLabelTwo;
+@property (weak, nonatomic) IBOutlet UILabel *songCreditsLabel;
 
 @end
 
@@ -21,7 +23,14 @@
     
     [[SoundController sharedInstance]cancelAudio];
     
-    self.creditsLabel.text = @"Hello";
+    self.creditsLabelOne.text = @"Game and animations by Ethan Hess";
+    
+    self.creditsLabelTwo.text = @"Music by Kevin MacLeod";
+    
+    self.songCreditsLabel.text = @"'One Sly Move' Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 http:'//creativecommons.org/licenses/by/3.0/";
+    self.songCreditsLabel.numberOfLines = 0; 
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
