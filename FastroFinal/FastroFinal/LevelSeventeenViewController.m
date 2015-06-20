@@ -44,6 +44,9 @@ extern int coinPosition;
     
     [[SoundController sharedInstance] cancelAudio];
     
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
+    
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
     score = 0;
@@ -224,7 +227,7 @@ extern int coinPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 2) {
+    if (score == 35) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

@@ -46,6 +46,9 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
+    
     [[SoundController sharedInstance] cancelAudio];
     
     self.proceedButton.hidden = YES;
@@ -65,7 +68,7 @@ extern int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.008 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -85,12 +88,6 @@ extern int score;
         
         [self placeObstacles];
     }
-    
-    if (self.topObstacleView.center.x == 400) {
-        
-        [self scoreChange];
-    }
-    
     
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.topObstacleView.frame)) {
@@ -138,7 +135,7 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 8;
+    fastroFlight = fastroFlight - 5;
     
     if (fastroFlight < -15) {
         fastroFlight = -15;
@@ -217,7 +214,7 @@ extern int score;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 2) {
+    if (score == 35) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

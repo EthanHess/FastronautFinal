@@ -43,6 +43,9 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
+    
     [[SoundController sharedInstance] cancelAudio];
     
     self.proceedButton.hidden = YES;
@@ -79,11 +82,6 @@ extern int score;
     if (self.topObstacleView.center.x < - 30) {
         
         [self placeObstacles];
-    }
-    
-    if (self.topObstacleView.center.x == 30) {
-        
-        [self scoreChange];
     }
     
     
@@ -203,7 +201,7 @@ extern int score;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 2) {
+    if (score == 35) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

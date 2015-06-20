@@ -47,6 +47,9 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
+    
     [[SoundController sharedInstance] cancelAudio];
     
     self.proceedButton.hidden = YES;
@@ -66,9 +69,9 @@ extern int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.008 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
-    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.0035 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
     [self playAudio];
 }
@@ -118,8 +121,8 @@ extern int score;
     
     topObstaclePosition = arc4random() %300;
     topObstaclePosition = topObstaclePosition - 150;
-    bottomObstaclePosition = topObstaclePosition + 770;
-    middleObstaclePosition = topObstaclePosition + 385;
+    bottomObstaclePosition = topObstaclePosition + 790;
+    middleObstaclePosition = topObstaclePosition + 395;
     
     self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
@@ -210,7 +213,7 @@ extern int score;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 2) {
+    if (score == 35) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

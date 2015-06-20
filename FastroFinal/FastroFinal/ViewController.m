@@ -28,6 +28,12 @@ int astroFall;
 
 @implementation ViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -53,7 +59,7 @@ int astroFall;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - astroFall);
     
-    astroFall = astroFall - 5;
+    astroFall = astroFall - 10;
     
     if (astroFall < -15) {
         astroFall = -15;

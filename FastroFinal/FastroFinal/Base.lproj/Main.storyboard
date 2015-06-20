@@ -724,10 +724,6 @@
                                     <segue destination="FWg-3r-Xao" kind="push" id="9iG-W9-c3d"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCoin" id="t2l-GZ-IMr">
-                                <rect key="frame" x="87" y="110" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="iaC-QI-T6n">
                                 <rect key="frame" x="173" y="417" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -749,7 +745,6 @@
                         <outlet property="coin" destination="iaC-QI-T6n" id="gfe-Os-hZJ"/>
                         <outlet property="fastronaut" destination="eJZ-kI-Uib" id="F48-Bo-6ut"/>
                         <outlet property="proceedButton" destination="JdV-I5-Nv2" id="wE0-FM-nuT"/>
-                        <outlet property="redCoin" destination="t2l-GZ-IMr" id="xPY-88-OFq"/>
                         <outlet property="scoreLabel" destination="ijo-Cf-HcN" id="0aC-rW-HD9"/>
                         <outlet property="topObstacleView" destination="dSl-vX-p8X" id="xle-zR-Yc0"/>
                         <outlet property="youDiedButton" destination="6wI-Or-SGv" id="vmY-fi-Ne3"/>
@@ -950,7 +945,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveBottom" id="Yfg-r8-ICh">
                                 <rect key="frame" x="104" y="410" width="150" height="300"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveSubviewOne" id="kWG-fs-bz8">
                                 <rect key="frame" x="61" y="419" width="100" height="100"/>
