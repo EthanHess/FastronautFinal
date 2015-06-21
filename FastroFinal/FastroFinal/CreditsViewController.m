@@ -9,10 +9,13 @@
 #import "CreditsViewController.h"
 #import "SoundController.h"
 
-@interface CreditsViewController ()
+@interface CreditsViewController () <UIScrollViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *creditsLabelOne;
 @property (weak, nonatomic) IBOutlet UILabel *creditsLabelTwo;
-@property (weak, nonatomic) IBOutlet UILabel *songCreditsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *songCreditsLabelOne;
+@property (weak, nonatomic) IBOutlet UILabel *songCreditsLabelTwo;
+@property (weak, nonatomic) IBOutlet UILabel *songCreditsLabelThree;
 
 @end
 
@@ -27,9 +30,14 @@
     
     self.creditsLabelTwo.text = @"Music by Kevin MacLeod";
     
-    self.songCreditsLabel.text = @"'One Sly Move' Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 http:'//creativecommons.org/licenses/by/3.0/";
-    self.songCreditsLabel.numberOfLines = 0;
+    self.songCreditsLabelOne.text = @"'One Sly Move' Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 http:'//creativecommons.org/licenses/by/3.0/";
+    self.songCreditsLabelOne.numberOfLines = 0;
     
+    self.songCreditsLabelTwo.text = @"'Unwritten Return' Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 http:'//creativecommons.org/licenses/by/3.0/";
+    self.songCreditsLabelTwo.numberOfLines = 0;
+    
+    self.songCreditsLabelThree.text = @"'Your Call' Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 http:'//creativecommons.org/licenses/by/3.0/";
+    self.songCreditsLabelThree.numberOfLines = 0;
     
 }
 

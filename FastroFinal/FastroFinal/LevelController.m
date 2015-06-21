@@ -25,7 +25,7 @@
     
     if (isComplete == YES) {
         
-        [[NSUserDefaults standardUserDefaults]setBool:isComplete forKey:@"isComplete"];
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"isComplete"];
     }
     
 //    if (isComplete == NO) {

@@ -17,6 +17,14 @@ static NSString * const kProductIDKey = @"productID";
 
 @interface GamePurchaseController : NSObject
 
-+ (GamePurchaseController *)sharedInstance; 
++ (GamePurchaseController *)sharedInstance;
+
+- (void)requestProducts;
+
+- (void)restorePurchases;
+
+- (void)purchaseOptionSelectedObjectIndex:(NSUInteger)index;
+
+- (NSSet *)bundledProducts;
 
 @end
