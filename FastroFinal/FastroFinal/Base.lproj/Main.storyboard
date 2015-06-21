@@ -890,6 +890,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="gik-ei-vua" eventType="touchUpInside" id="Zhh-qr-HsI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FOx-oQ-g4M">
                                 <rect key="frame" x="15" y="256" width="291" height="55"/>
@@ -899,6 +902,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="gik-ei-vua" eventType="touchUpInside" id="Wni-Sy-AsA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ddi-c5-bds">
                                 <rect key="frame" x="6" y="335" width="308" height="63"/>
@@ -919,10 +925,29 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyNineDiamond" id="b7L-qP-TJD">
+                                <rect key="frame" x="39" y="72" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyNineObstacle" id="YMS-aa-JAa">
+                                <rect key="frame" x="146" y="398" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fzK-MH-Ymd"/>
+                    <connections>
+                        <outlet property="beginButton" destination="pZh-iH-ntk" id="bTx-nE-eHd"/>
+                        <outlet property="coin" destination="v2b-bg-Mad" id="jga-lB-Lqt"/>
+                        <outlet property="diamondView" destination="b7L-qP-TJD" id="EAr-1D-7H6"/>
+                        <outlet property="fastronaut" destination="jvz-nK-luP" id="6y6-e3-Klq"/>
+                        <outlet property="obstacleView" destination="YMS-aa-JAa" id="g0a-zg-9lq"/>
+                        <outlet property="proceedButton" destination="Ddi-c5-bds" id="K91-K9-ZgQ"/>
+                        <outlet property="redCoin" destination="nNy-xN-bsc" id="xL5-PT-u2E"/>
+                        <outlet property="scoreLabel" destination="dwm-zX-uHQ" id="cMV-4m-qYG"/>
+                        <outlet property="youDiedButton" destination="FOx-oQ-g4M" id="zfV-Ap-iHC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyK-tW-OnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3126,6 +3151,7 @@
         <image name="levelTwentyFourObstacle" width="150" height="100"/>
         <image name="levelTwentyLauncher" width="180" height="110"/>
         <image name="levelTwentyNineFastro" width="335" height="550"/>
+        <image name="levelTwentyNineObstacle" width="150" height="150"/>
         <image name="levelTwentyObstacleOne" width="120" height="50"/>
         <image name="levelTwentyObstacleTwo" width="120" height="50"/>
         <image name="levelTwentyOne" width="150" height="100"/>
@@ -3173,6 +3199,7 @@
         <image name="twentiethLevelFastro" width="335" height="550"/>
         <image name="twentyBlue" width="150" height="450"/>
         <image name="twentyEightMiddle" width="110" height="110"/>
+        <image name="twentyNineDiamond" width="90" height="90"/>
         <image name="twentyOneObstacle" width="180" height="180"/>
         <image name="twentyRed" width="150" height="450"/>
         <image name="twentySevenObstacle" width="200" height="120"/>
