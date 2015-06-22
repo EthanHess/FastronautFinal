@@ -7,6 +7,7 @@
 //
 
 #import "LevelOneViewController.h"
+#import "SoundEffectsController.h"
 #import "SoundController.h"
 #import "ViewController.h"
 #import <math.h>
@@ -175,6 +176,7 @@ int score;
     if (CGRectIntersectsRect(self.fastronaut.frame, self.coin.frame)) {
         
         self.coin.hidden = YES;
+        [self playBellSound];
         [self placeCoin];
         [self scoreChange];
     }
@@ -265,6 +267,14 @@ int score;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ding" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
 }
 
