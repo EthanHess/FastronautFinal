@@ -2870,14 +2870,6 @@
                                     <segue destination="a45-6Y-8pq" kind="push" id="7Lt-c5-JXg"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyRed" id="w66-Tp-YFt">
-                                <rect key="frame" x="323" y="332" width="150" height="450"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentyBlue" id="CfA-lY-14D">
-                                <rect key="frame" x="323" y="-250" width="150" height="450"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="teR-rc-6er">
                                 <rect key="frame" x="366" y="225" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2900,18 +2892,31 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seventeenObstacleOne" id="jwH-u2-zSR">
+                                <rect key="frame" x="29" y="33" width="150" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seventeenObstacleThree" id="l2d-kB-JME">
+                                <rect key="frame" x="29" y="428" width="150" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seventeenObstacleTwo" id="sJf-D0-gQ2">
+                                <rect key="frame" x="29" y="224" width="150" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8JL-4l-2Hj"/>
                     <connections>
                         <outlet property="beginButton" destination="YP5-93-h0Q" id="sbq-hj-hu2"/>
-                        <outlet property="bottomObstacleView" destination="w66-Tp-YFt" id="4OF-qH-1hW"/>
+                        <outlet property="bottomObstacleView" destination="l2d-kB-JME" id="HkY-78-Ug1"/>
                         <outlet property="coin" destination="teR-rc-6er" id="han-IS-Kyx"/>
                         <outlet property="fastronaut" destination="Rt9-rc-S7K" id="5J4-gA-Js6"/>
+                        <outlet property="middleObstacleView" destination="sJf-D0-gQ2" id="51w-iy-UIm"/>
                         <outlet property="proceedButton" destination="pcA-nL-lnr" id="lrH-j1-sbx"/>
                         <outlet property="scoreLabel" destination="vss-5S-fOz" id="EHy-bG-sjX"/>
-                        <outlet property="topObstacleView" destination="CfA-lY-14D" id="Pti-Js-0cq"/>
+                        <outlet property="topObstacleView" destination="jwH-u2-zSR" id="qrq-91-z4x"/>
                         <outlet property="youDiedButton" destination="Umn-cx-CrY" id="aBJ-8P-Ynp"/>
                     </connections>
                 </viewController>
@@ -3196,6 +3201,9 @@
         <image name="rocketShipFinal" width="100" height="350"/>
         <image name="sevenBottomObstacle" width="110" height="450"/>
         <image name="sevenTopObstacle" width="110" height="450"/>
+        <image name="seventeenObstacleOne" width="150" height="120"/>
+        <image name="seventeenObstacleThree" width="150" height="120"/>
+        <image name="seventeenObstacleTwo" width="150" height="120"/>
         <image name="seventeenthLevelFastro" width="335" height="550"/>
         <image name="seventhLevelFastro" width="335" height="550"/>
         <image name="sixteenthLevelFastro" width="335" height="550"/>
@@ -3213,11 +3221,9 @@
         <image name="twelveSubviewTwo" width="100" height="100"/>
         <image name="twelveTop" width="150" height="300"/>
         <image name="twentiethLevelFastro" width="335" height="550"/>
-        <image name="twentyBlue" width="150" height="450"/>
         <image name="twentyEightMiddle" width="110" height="110"/>
         <image name="twentyNineDiamond" width="90" height="90"/>
         <image name="twentyOneObstacle" width="180" height="180"/>
-        <image name="twentyRed" width="150" height="450"/>
         <image name="twentySevenObstacle" width="200" height="120"/>
         <image name="twentySixBottomObstacle" width="300" height="300"/>
         <image name="twentySixTopObstacle" width="300" height="300"/>
