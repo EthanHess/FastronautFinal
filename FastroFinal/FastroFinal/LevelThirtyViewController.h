@@ -10,4 +10,6 @@
 
 @interface LevelThirtyViewController : UIViewController
 
+@property (nonatomic) BOOL isComplete; 
+
 @end

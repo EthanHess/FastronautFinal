@@ -1558,6 +1558,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bossObstacle" id="ObY-FG-FPc">
+                                <rect key="frame" x="40" y="191" width="225" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastrozontal" id="6dV-tl-PDr">
                                 <rect key="frame" x="105" y="249" width="110" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1570,6 +1574,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="CAw-ph-f39" eventType="touchUpInside" id="nrh-VV-yoX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ukv-cy-UYb">
                                 <rect key="frame" x="33" y="259" width="254" height="50"/>
@@ -1579,6 +1586,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="CAw-ph-f39" eventType="touchUpInside" id="IUd-Zm-n4z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jJX-pR-CRo">
                                 <rect key="frame" x="24" y="346" width="273" height="63"/>
@@ -1611,6 +1621,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rfc-CJ-svN"/>
+                    <connections>
+                        <outlet property="beginButton" destination="NPc-8m-HIc" id="izb-Ln-6lD"/>
+                        <outlet property="coin" destination="ZhD-4L-gp5" id="cEj-qZ-oQe"/>
+                        <outlet property="fastronaut" destination="6dV-tl-PDr" id="QBK-T4-vMa"/>
+                        <outlet property="obstacleView" destination="ObY-FG-FPc" id="E3q-Xi-tkW"/>
+                        <outlet property="proceedButton" destination="jJX-pR-CRo" id="8nv-rD-jm2"/>
+                        <outlet property="redCoin" destination="azE-zv-jyY" id="GFJ-Hj-4pb"/>
+                        <outlet property="scoreLabel" destination="bdI-ft-fjA" id="jnb-Uv-OLt"/>
+                        <outlet property="youDiedButton" destination="ukv-cy-UYb" id="7hD-ku-7rE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LkU-Ga-97e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3131,6 +3151,7 @@
         <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="backgroundSeven" width="120" height="120"/>
         <image name="blastOffScene" width="335" height="550"/>
+        <image name="bossObstacle" width="225" height="225"/>
         <image name="bottomSpike" width="80" height="450"/>
         <image name="eighteenthLevelFastro" width="335" height="550"/>
         <image name="eighthLevelFastro" width="335" height="550"/>
