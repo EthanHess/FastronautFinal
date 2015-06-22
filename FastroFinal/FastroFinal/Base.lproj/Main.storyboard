@@ -405,6 +405,9 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="KTP-CT-d1b" eventType="touchUpInside" id="nXt-SS-oS2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -415,6 +418,7 @@
                         <outlet property="bottomObstacleView" destination="gpA-Q0-18H" id="zgW-Es-elU"/>
                         <outlet property="coin" destination="Pcq-fQ-ZDe" id="d9v-oV-b9f"/>
                         <outlet property="fastronaut" destination="8cs-z2-V62" id="SsH-hG-a1C"/>
+                        <outlet property="homeButton" destination="nJG-dG-LXJ" id="Pvk-X2-9ZX"/>
                         <outlet property="middleObstacleView" destination="5zq-sP-m9a" id="k7y-7Z-JHa"/>
                         <outlet property="proceedButton" destination="MnV-gm-IGc" id="pG3-WA-dmd"/>
                         <outlet property="scoreLabel" destination="rPG-Ax-aHE" id="ACr-DK-Uif"/>
@@ -458,6 +462,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="ZAr-DL-bGo" eventType="touchUpInside" id="3V7-Pk-EL7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VIP-0o-Kex">
                                 <rect key="frame" x="127" y="144" width="67" height="48"/>
@@ -513,6 +520,7 @@
                         <outlet property="beginButton" destination="VIP-0o-Kex" id="CVr-4A-ofw"/>
                         <outlet property="coin" destination="c6b-ms-dtr" id="7ot-s1-lBQ"/>
                         <outlet property="fastronaut" destination="fLf-YQ-rJe" id="1PA-hR-g5P"/>
+                        <outlet property="homeButton" destination="RZl-1P-re0" id="C9g-59-aDY"/>
                         <outlet property="mushroomView" destination="KHd-7s-5Kx" id="GTI-DA-3WE"/>
                         <outlet property="proceedButton" destination="2Qg-fP-4ME" id="ChO-2h-Lap"/>
                         <outlet property="scoreLabel" destination="BIJ-Mq-Aue" id="Qzt-T0-AhZ"/>
@@ -603,6 +611,9 @@
                                     <color key="titleColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="FWg-3r-Xao" eventType="touchUpInside" id="OOb-pI-8o1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -612,6 +623,7 @@
                         <outlet property="beginButton" destination="osy-6x-lpr" id="vXK-Cs-hRd"/>
                         <outlet property="coin" destination="TnK-yb-0E6" id="gsD-Hp-xwR"/>
                         <outlet property="fastronaut" destination="yeM-Uj-bmN" id="Roz-4p-hHg"/>
+                        <outlet property="homeButton" destination="8Xq-0A-F7J" id="VXh-r1-wdS"/>
                         <outlet property="obstacleView" destination="abc-40-rah" id="a8r-wu-3fx"/>
                         <outlet property="proceedButton" destination="NtJ-Lh-zJ3" id="dQd-dK-BA9"/>
                         <outlet property="redCoin" destination="JdG-VC-8KA" id="X41-EA-GHu"/>
@@ -710,6 +722,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="ghq-Pi-Yh4" eventType="touchUpInside" id="hgH-cD-wmf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -720,6 +735,7 @@
                         <outlet property="bottomObstacleView" destination="f0K-t3-baa" id="tXa-MW-jIc"/>
                         <outlet property="coin" destination="Kqj-gK-tjE" id="JeC-A0-qkG"/>
                         <outlet property="fastronaut" destination="xdj-s4-Det" id="FjI-UD-wwj"/>
+                        <outlet property="homeButton" destination="Uq9-6s-FRC" id="3ro-OO-cJl"/>
                         <outlet property="middleObstacleView" destination="pAa-ER-Ejo" id="Ped-YG-dsJ"/>
                         <outlet property="proceedButton" destination="Shy-Dx-d4Y" id="KPY-QN-IMv"/>
                         <outlet property="redCoin" destination="jMN-IM-SMt" id="WDt-C0-Fhz"/>
@@ -811,6 +827,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goHome:" destination="4CQ-5W-qcX" eventType="touchUpInside" id="C9p-Hf-tX5"/>
+                                    <action selector="goHome:" destination="SAg-MS-ITm" eventType="touchUpInside" id="kRI-OU-g46"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -821,6 +838,7 @@
                         <outlet property="beginButton" destination="otD-Zt-Obc" id="pcS-FV-Gl3"/>
                         <outlet property="coin" destination="gyE-Sf-hic" id="Irm-rv-2n5"/>
                         <outlet property="fastronaut" destination="Lrs-3V-gkq" id="eZj-Nv-uHS"/>
+                        <outlet property="homeButton" destination="Kzo-TS-5UF" id="Zrf-bE-ZwZ"/>
                         <outlet property="obstacleView" destination="PvS-z9-XQU" id="AcR-C5-Ah6"/>
                         <outlet property="oilOcean" destination="Li7-Kc-VH4" id="688-PU-KYP"/>
                         <outlet property="proceedButton" destination="TR9-Ms-Isa" id="67P-1n-vxu"/>
@@ -864,6 +882,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="eUj-3X-ris" eventType="touchUpInside" id="up0-ty-GIV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rnu-mj-GI6">
                                 <rect key="frame" x="47" y="168" width="226" height="45"/>
@@ -921,6 +942,7 @@
                         <outlet property="bottomObstacleView" destination="ccK-yC-fJ6" id="e8q-3A-tjd"/>
                         <outlet property="coin" destination="iaC-QI-T6n" id="gfe-Os-hZJ"/>
                         <outlet property="fastronaut" destination="eJZ-kI-Uib" id="F48-Bo-6ut"/>
+                        <outlet property="homeButton" destination="TuF-5d-sG2" id="siJ-qx-3yw"/>
                         <outlet property="proceedButton" destination="JdV-I5-Nv2" id="wE0-FM-nuT"/>
                         <outlet property="scoreLabel" destination="ijo-Cf-HcN" id="0aC-rW-HD9"/>
                         <outlet property="topObstacleView" destination="dSl-vX-p8X" id="xle-zR-Yc0"/>
@@ -1014,6 +1036,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="gik-ei-vua" eventType="touchUpInside" id="Vtp-vi-Vy1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1024,6 +1049,7 @@
                         <outlet property="coin" destination="v2b-bg-Mad" id="jga-lB-Lqt"/>
                         <outlet property="diamondView" destination="b7L-qP-TJD" id="EAr-1D-7H6"/>
                         <outlet property="fastronaut" destination="jvz-nK-luP" id="6y6-e3-Klq"/>
+                        <outlet property="homeButton" destination="vLb-pe-uDm" id="q4T-BR-qv7"/>
                         <outlet property="obstacleView" destination="YMS-aa-JAa" id="g0a-zg-9lq"/>
                         <outlet property="proceedButton" destination="Ddi-c5-bds" id="K91-K9-ZgQ"/>
                         <outlet property="redCoin" destination="nNy-xN-bsc" id="xL5-PT-u2E"/>
@@ -1225,6 +1251,9 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="mrw-z1-BXs" eventType="touchUpInside" id="QTf-jU-FfN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1235,6 +1264,7 @@
                         <outlet property="bottomObstacleView" destination="Yfg-r8-ICh" id="Ldw-bn-fe2"/>
                         <outlet property="coin" destination="1nr-2l-Z06" id="TA2-m4-sv6"/>
                         <outlet property="fastronaut" destination="s0z-Qc-dFO" id="nfc-5S-z2K"/>
+                        <outlet property="homeButton" destination="Oj3-Qh-gUG" id="UHo-g5-nur"/>
                         <outlet property="middleObstacleView" destination="jOq-JS-n7g" id="yW6-uh-bWD"/>
                         <outlet property="proceedButton" destination="Dm2-S7-gU6" id="VA3-DC-pFk"/>
                         <outlet property="scoreLabel" destination="Hki-E2-MiQ" id="FVA-tU-WbN"/>
@@ -1321,6 +1351,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="qqO-el-oaD" eventType="touchUpInside" id="sCe-3l-Z4k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1330,6 +1363,7 @@
                         <outlet property="beginButton" destination="dCw-3g-mg5" id="qHX-xH-tOR"/>
                         <outlet property="coin" destination="0KJ-1h-10G" id="jyV-g4-GSl"/>
                         <outlet property="fastronaut" destination="GBe-To-EFO" id="5pF-4R-wdF"/>
+                        <outlet property="homeButton" destination="NsA-DX-58q" id="wVv-7o-hTL"/>
                         <outlet property="obstacleView" destination="OIt-h2-XB0" id="SE6-JE-LXp"/>
                         <outlet property="proceedButton" destination="Pqd-Nq-kos" id="xPT-wQ-vvo"/>
                         <outlet property="scoreLabel" destination="b3Z-MW-shR" id="COk-Ph-iec"/>
@@ -1419,6 +1453,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="aKO-UM-pIt" eventType="touchUpInside" id="rBw-fW-0ki"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1429,6 +1466,7 @@
                         <outlet property="bottomObstacleView" destination="yID-Ua-5P1" id="pBG-HR-csd"/>
                         <outlet property="coin" destination="vEI-h3-MA8" id="WyV-El-2TV"/>
                         <outlet property="fastronaut" destination="3Qw-T0-bw4" id="kXI-QT-4mF"/>
+                        <outlet property="homeButton" destination="Jn8-rl-CNB" id="L4f-fV-8eW"/>
                         <outlet property="proceedButton" destination="eCF-0Z-6NK" id="2uj-Ww-OY2"/>
                         <outlet property="scoreLabel" destination="KQZ-uB-LUp" id="ADp-XK-DB7"/>
                         <outlet property="topObstacleView" destination="azs-fi-vZN" id="5DU-LG-xWW"/>
@@ -1526,6 +1564,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="aHW-eG-h3Q" eventType="touchUpInside" id="djp-p0-zk3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1537,6 +1578,7 @@
                         <outlet property="bounceView" destination="Lpu-vV-1O5" id="eUO-jW-0DU"/>
                         <outlet property="coin" destination="cm4-Qs-uWk" id="a38-Hf-cpL"/>
                         <outlet property="fastronaut" destination="faP-9T-Oeh" id="IRY-Th-5Gt"/>
+                        <outlet property="homeButton" destination="D1Z-ds-N2k" id="VcF-UD-1J3"/>
                         <outlet property="proceedButton" destination="Fgn-ue-6gR" id="T0V-qp-dkE"/>
                         <outlet property="scoreLabel" destination="D5v-jN-fBm" id="K23-ML-rCP"/>
                         <outlet property="topBounce" destination="MNo-ac-MIk" id="Wal-Tc-Mm8"/>
@@ -1635,6 +1677,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="Eim-X8-mY2" eventType="touchUpInside" id="5Ge-m7-nKu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1645,6 +1690,7 @@
                         <outlet property="bottomView" destination="baP-cU-fVF" id="ln9-GS-0tX"/>
                         <outlet property="coin" destination="ltY-zk-EzC" id="sqR-Xs-H38"/>
                         <outlet property="fastronaut" destination="REF-IS-73Y" id="ZC6-PG-GOj"/>
+                        <outlet property="homeButton" destination="BMP-bh-yN6" id="NoA-dH-ffv"/>
                         <outlet property="obstacleView" destination="5Z4-oz-j3R" id="EwK-BS-CmE"/>
                         <outlet property="proceedButton" destination="fvx-UA-oAi" id="w7p-wF-7ty"/>
                         <outlet property="redCoin" destination="aC7-QT-fOv" id="hCB-CC-nqC"/>
@@ -1736,6 +1782,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="CAw-ph-f39" eventType="touchUpInside" id="ABN-QN-50n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1745,6 +1794,7 @@
                         <outlet property="beginButton" destination="NPc-8m-HIc" id="izb-Ln-6lD"/>
                         <outlet property="coin" destination="ZhD-4L-gp5" id="cEj-qZ-oQe"/>
                         <outlet property="fastronaut" destination="6dV-tl-PDr" id="QBK-T4-vMa"/>
+                        <outlet property="homeButton" destination="dPT-tG-sX0" id="P6x-xH-jzk"/>
                         <outlet property="obstacleView" destination="ObY-FG-FPc" id="E3q-Xi-tkW"/>
                         <outlet property="proceedButton" destination="jJX-pR-CRo" id="8nv-rD-jm2"/>
                         <outlet property="redCoin" destination="azE-zv-jyY" id="GFJ-Hj-4pb"/>
@@ -1831,6 +1881,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="mTc-Yw-9Xc" eventType="touchUpInside" id="y7F-qL-DJG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1840,6 +1893,7 @@
                         <outlet property="beginButton" destination="tD9-uc-h2T" id="gY8-mm-X0l"/>
                         <outlet property="coin" destination="LA0-Hm-uBo" id="FAF-Kd-A8X"/>
                         <outlet property="fastronaut" destination="C2x-c9-BQi" id="p9S-w4-vqu"/>
+                        <outlet property="homeButton" destination="Zn7-Wn-l6y" id="6yj-iV-juN"/>
                         <outlet property="obstacleView" destination="Hqy-ty-4XX" id="0wv-w4-0eY"/>
                         <outlet property="proceedButton" destination="gpO-mG-wMQ" id="jLn-S7-ajh"/>
                         <outlet property="scoreLabel" destination="dfx-Bb-8Og" id="XZ2-mE-nrO"/>
@@ -1929,6 +1983,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="8c4-p0-DeA" eventType="touchUpInside" id="dv1-fs-6dD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1939,6 +1996,7 @@
                         <outlet property="bottomObstacleView" destination="yN1-8L-ONl" id="S0k-lC-Lwn"/>
                         <outlet property="coin" destination="TGp-e2-lJW" id="GmQ-fy-ovz"/>
                         <outlet property="fastronaut" destination="YdB-zJ-q68" id="MGV-Zm-LZW"/>
+                        <outlet property="homeButton" destination="tSt-1t-v4q" id="52o-Hm-URP"/>
                         <outlet property="proceedButton" destination="jiZ-U7-4Ag" id="asJ-7F-F1a"/>
                         <outlet property="scoreLabel" destination="EK5-cV-l3a" id="lgC-v4-IE0"/>
                         <outlet property="topObstacleView" destination="V9x-Xl-4jw" id="75U-OW-aLF"/>
@@ -1969,6 +2027,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="n2P-IK-mkA" eventType="touchUpInside" id="rmh-I9-DVc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YWz-s3-YT8">
                                 <rect key="frame" x="38" y="319" width="244" height="67"/>
@@ -2037,6 +2098,7 @@
                         <outlet property="beginButton" destination="PcY-TP-qkf" id="bnB-Lp-ex4"/>
                         <outlet property="coin" destination="J15-kk-QMf" id="VNf-Kd-xUq"/>
                         <outlet property="fastronaut" destination="Ffg-aC-aJL" id="L2a-rf-eD6"/>
+                        <outlet property="homeButton" destination="gR5-8g-bqX" id="oPL-Xe-8PN"/>
                         <outlet property="leftObstacleView" destination="MyZ-hm-uaR" id="dDf-ag-woW"/>
                         <outlet property="proceedButton" destination="YWz-s3-YT8" id="3G8-gN-Cdu"/>
                         <outlet property="rightObstacleView" destination="ZTL-PX-FfI" id="OX7-zY-zSX"/>
@@ -2131,6 +2193,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="9sE-Kt-QG7" eventType="touchUpInside" id="MdE-yg-2d7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2141,6 +2206,7 @@
                         <outlet property="bottomObstacleView" destination="dTt-EL-6vP" id="eWk-5w-1eI"/>
                         <outlet property="coin" destination="w5d-RR-mrN" id="4Xs-cc-oji"/>
                         <outlet property="fastronaut" destination="dLZ-Yz-HJz" id="rAQ-d7-Eg7"/>
+                        <outlet property="homeButton" destination="VDg-K5-i8W" id="T4x-8S-Moe"/>
                         <outlet property="middleObstacleView" destination="5DH-ZB-fCa" id="epq-H2-SaS"/>
                         <outlet property="proceedButton" destination="zIq-MT-HYD" id="S3y-2J-Q0b"/>
                         <outlet property="scoreLabel" destination="xF5-Zp-Y9O" id="Hkx-Yk-0SM"/>
@@ -2176,6 +2242,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="zDb-y3-D5u" eventType="touchUpInside" id="zDf-hn-4Qn"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenFastro" id="WX3-gj-gQW">
                                 <rect key="frame" x="125" y="229" width="70" height="110"/>
@@ -2233,6 +2302,7 @@
                         <outlet property="beginButton" destination="gAx-eT-hrK" id="lDr-3N-Zn1"/>
                         <outlet property="coin" destination="LBF-gi-PXt" id="w8K-qD-SNu"/>
                         <outlet property="fastronaut" destination="WX3-gj-gQW" id="5Je-eI-yS2"/>
+                        <outlet property="homeButton" destination="A65-dH-KAK" id="udU-RI-Etn"/>
                         <outlet property="obstacleView" destination="Ode-Ut-U6z" id="p1U-jY-YVq"/>
                         <outlet property="proceedButton" destination="slt-Cz-gEx" id="vqH-Wd-Dnt"/>
                         <outlet property="scoreLabel" destination="nUH-Ns-4vQ" id="JxJ-51-fOK"/>
@@ -2323,6 +2393,9 @@
                                     <color key="titleColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="Snj-hL-pDz" eventType="touchUpInside" id="WqC-en-fKl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2332,6 +2405,7 @@
                         <outlet property="beginButton" destination="CQS-Nr-Mno" id="wov-bN-Rss"/>
                         <outlet property="coin" destination="nlG-LU-coT" id="259-bT-C1g"/>
                         <outlet property="fastronaut" destination="AgD-8f-ZVx" id="QM9-ds-rIQ"/>
+                        <outlet property="homeButton" destination="f59-x3-Jig" id="hrT-AX-EHi"/>
                         <outlet property="obstacleView" destination="7Tj-wb-PYu" id="gc9-4Z-aR9"/>
                         <outlet property="proceedButton" destination="qBF-QS-mLR" id="lPl-EQ-bCw"/>
                         <outlet property="redCoin" destination="T5a-DH-vRL" id="FJX-la-Ajn"/>
@@ -2426,6 +2500,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="T6m-rz-gMb" eventType="touchUpInside" id="5OS-Ha-SeK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2435,6 +2512,7 @@
                         <outlet property="beginButton" destination="Bvn-fG-ttz" id="sEw-E3-xuv"/>
                         <outlet property="coin" destination="H9K-fs-RhL" id="olN-L0-3dQ"/>
                         <outlet property="fastronaut" destination="tyU-Fk-WT2" id="YoJ-ae-xpU"/>
+                        <outlet property="homeButton" destination="qZ1-yf-FQ0" id="NLu-k9-GqN"/>
                         <outlet property="obstacleView" destination="QFc-mo-A5n" id="w0m-f3-TzO"/>
                         <outlet property="oilOcean" destination="R4k-1c-GmT" id="4jb-J0-Y1T"/>
                         <outlet property="platform" destination="dqk-cT-3yd" id="gXA-5h-SGJ"/>
@@ -2526,6 +2604,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="wLJ-UO-vO4" eventType="touchUpInside" id="4tP-Ok-gqC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2535,6 +2616,7 @@
                         <outlet property="beginButton" destination="0NL-f2-fEx" id="301-ly-gKC"/>
                         <outlet property="coin" destination="Iio-tI-GIy" id="0fX-p1-2gf"/>
                         <outlet property="fastronaut" destination="m0i-QP-1ai" id="924-nE-Rhq"/>
+                        <outlet property="homeButton" destination="LrO-qd-UOg" id="gu7-hO-SyY"/>
                         <outlet property="obstacleView" destination="Gpc-3N-exi" id="Jv8-VY-twt"/>
                         <outlet property="proceedButton" destination="LsS-X3-miZ" id="klI-am-HOs"/>
                         <outlet property="redCoin" destination="2cZ-kM-oBH" id="iZM-06-c5f"/>
@@ -2566,11 +2648,17 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="yb8-oo-6a8" eventType="touchUpInside" id="mIE-Md-AJz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="T03-sg-lYY"/>
+                    <connections>
+                        <outlet property="homeButton" destination="xLp-Yz-BMb" id="ooB-Ia-6Vc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Zb-Xb-5ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2655,6 +2743,9 @@
                                     <color key="titleColor" red="0.15919974000000001" green="1" blue="0.94836995310000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="EBU-tc-KFs" eventType="touchUpInside" id="lFT-Xa-1Ji"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2664,6 +2755,7 @@
                         <outlet property="beginButton" destination="FqH-Hp-JDm" id="gTy-nd-fBl"/>
                         <outlet property="coin" destination="GNU-Pk-TX3" id="PGt-CC-7JV"/>
                         <outlet property="fastronaut" destination="xMq-Bq-12O" id="erW-3m-QNd"/>
+                        <outlet property="homeButton" destination="05G-0x-8PM" id="DQ5-Tq-xLJ"/>
                         <outlet property="leftObstacleView" destination="aeb-wg-cfr" id="0tM-ec-6bw"/>
                         <outlet property="proceedButton" destination="Osb-gO-OyP" id="stt-wD-wYW"/>
                         <outlet property="rightObstacleView" destination="CVb-Gn-cbu" id="G0D-eL-acK"/>
@@ -2758,6 +2850,9 @@
                                     <color key="titleColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="6E5-o2-adj" eventType="touchUpInside" id="cqP-dK-RoF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2768,6 +2863,7 @@
                         <outlet property="bottomObstacleView" destination="1Rc-hF-ePr" id="MA4-Xk-IHf"/>
                         <outlet property="coin" destination="cEE-nj-Lbb" id="HwE-gj-fJg"/>
                         <outlet property="fastronaut" destination="N8w-Uo-FiV" id="0t3-Ni-pkv"/>
+                        <outlet property="homeButton" destination="gds-pB-VrP" id="cUI-Bs-O7V"/>
                         <outlet property="middleObstacleView" destination="HrP-8E-zMc" id="Yxp-IC-we4"/>
                         <outlet property="proceedButton" destination="Xg8-qo-A5t" id="XyX-x2-ofX"/>
                         <outlet property="scoreLabel" destination="LUu-0X-645" id="5mD-bt-3o1"/>
@@ -2799,6 +2895,9 @@
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="yAD-Uo-IMS" eventType="touchUpInside" id="qnH-zh-EKz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pG4-10-TWG">
                                 <rect key="frame" x="-5" y="281" width="330" height="48"/>
@@ -2868,6 +2967,7 @@
                         <outlet property="bottomObstacleView" destination="OBF-sN-9S5" id="L4w-xP-2f5"/>
                         <outlet property="coin" destination="vNi-qT-hEj" id="vdy-Fb-oo7"/>
                         <outlet property="fastronaut" destination="ADA-Eb-tdT" id="MrM-dn-dRw"/>
+                        <outlet property="homeButton" destination="pmV-3y-V7y" id="Of9-Ev-DSX"/>
                         <outlet property="proceedButton" destination="H6m-0s-NaT" id="l27-Qb-nk8"/>
                         <outlet property="scoreLabel" destination="Odh-Xi-z7P" id="5ty-Cq-Ved"/>
                         <outlet property="topObstacleView" destination="Gt9-CQ-orR" id="H9A-Z1-Ty0"/>
@@ -2890,8 +2990,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AOI-Qk-PqX">
+                                <rect key="frame" x="101" y="436" width="119" height="48"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="ngT-mY-xEx" eventType="touchUpInside" id="Xx9-Dd-hZu"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sbo-sE-gJb">
-                                <rect key="frame" x="64" y="230" width="192" height="74"/>
+                                <rect key="frame" x="64" y="185" width="192" height="74"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Begin!">
@@ -2923,7 +3035,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lrR-V3-8gE">
-                                <rect key="frame" x="-5" y="312" width="330" height="48"/>
+                                <rect key="frame" x="-5" y="280" width="330" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="You died! Try again">
@@ -2934,8 +3046,15 @@
                                     <action selector="resetGame:" destination="ngT-mY-xEx" eventType="touchUpInside" id="zCn-0T-dA4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hNo-Hf-Lr6">
+                                <rect key="frame" x="124" y="33" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O3K-D0-X3o">
-                                <rect key="frame" x="38" y="380" width="244" height="48"/>
+                                <rect key="frame" x="38" y="357" width="244" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Well done! Proceed">
@@ -2946,22 +3065,6 @@
                                     <segue destination="6E5-o2-adj" kind="push" id="7IV-Qv-G0a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hNo-Hf-Lr6">
-                                <rect key="frame" x="124" y="33" width="73" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AOI-Qk-PqX">
-                                <rect key="frame" x="101" y="436" width="119" height="48"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2971,6 +3074,7 @@
                         <outlet property="bottomObstacleView" destination="MOX-cC-xDc" id="UZu-OC-A6Q"/>
                         <outlet property="coin" destination="IrH-nZ-Ko8" id="ADT-cA-AUZ"/>
                         <outlet property="fastronaut" destination="Zck-HW-dwO" id="GD8-yC-FuU"/>
+                        <outlet property="homeButton" destination="AOI-Qk-PqX" id="3zS-eC-kc4"/>
                         <outlet property="proceedButton" destination="O3K-D0-X3o" id="t2H-QN-bnR"/>
                         <outlet property="scoreLabel" destination="hNo-Hf-Lr6" id="VJx-7n-27P"/>
                         <outlet property="spinObstacle" destination="GDk-Aa-IZX" id="S9E-R7-DOq"/>
@@ -3069,6 +3173,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="Zff-Xa-Znh" eventType="touchUpInside" id="JFc-qn-amN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3079,6 +3186,7 @@
                         <outlet property="bottomObstacleView" destination="jeU-mq-wwG" id="hrl-vo-tmv"/>
                         <outlet property="coin" destination="XNS-Xz-BEI" id="K2L-dw-WHF"/>
                         <outlet property="fastronaut" destination="MsG-Pe-Q7W" id="BiJ-fn-zzG"/>
+                        <outlet property="homeButton" destination="Lfi-th-EfJ" id="aU2-Yl-UGr"/>
                         <outlet property="proceedButton" destination="Cbi-ek-EKT" id="XSE-RZ-a9m"/>
                         <outlet property="scoreLabel" destination="7cB-gV-ORA" id="OvJ-SE-wKC"/>
                         <outlet property="topBounce" destination="juj-v1-r4h" id="VJk-OK-Jvr"/>
@@ -3170,6 +3278,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="euO-XM-Mmr" eventType="touchUpInside" id="2oR-NY-4Se"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3180,6 +3291,7 @@
                         <outlet property="bottomObstacleView" destination="l2d-kB-JME" id="HkY-78-Ug1"/>
                         <outlet property="coin" destination="teR-rc-6er" id="han-IS-Kyx"/>
                         <outlet property="fastronaut" destination="Rt9-rc-S7K" id="5J4-gA-Js6"/>
+                        <outlet property="homeButton" destination="Vh0-Jj-rSV" id="SNM-zx-DTd"/>
                         <outlet property="middleObstacleView" destination="sJf-D0-gQ2" id="51w-iy-UIm"/>
                         <outlet property="proceedButton" destination="pcA-nL-lnr" id="lrH-j1-sbx"/>
                         <outlet property="scoreLabel" destination="vss-5S-fOz" id="EHy-bG-sjX"/>
@@ -3281,6 +3393,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="SzU-0D-obR" eventType="touchUpInside" id="YnR-ol-KLb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3291,6 +3406,7 @@
                         <outlet property="bottomObstacleView" destination="R6g-uX-ktK" id="qJj-6X-shP"/>
                         <outlet property="coin" destination="omh-Nw-fhb" id="vPS-3Q-OZV"/>
                         <outlet property="fastronaut" destination="kq9-Hs-zP6" id="5e9-1o-P5J"/>
+                        <outlet property="homeButton" destination="OPD-LY-2xD" id="eJD-4G-0b4"/>
                         <outlet property="obstacleView" destination="hzh-FT-uTa" id="ZG2-hp-XBh"/>
                         <outlet property="proceedButton" destination="F2Q-LZ-fxP" id="guV-Vh-4Er"/>
                         <outlet property="redCoin" destination="6ht-ec-xy3" id="blb-6r-HWx"/>
@@ -3381,6 +3497,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goHome:" destination="a45-6Y-8pq" eventType="touchUpInside" id="cmw-5N-Ocr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3391,6 +3510,7 @@
                         <outlet property="blowerView" destination="nnG-Wy-4CL" id="plD-5N-dhS"/>
                         <outlet property="coin" destination="m7b-Zj-kvb" id="7Km-cJ-33z"/>
                         <outlet property="fastronaut" destination="q7h-36-2ik" id="zph-ah-mMA"/>
+                        <outlet property="homeButton" destination="U3f-Er-K3c" id="ggp-NN-2lH"/>
                         <outlet property="obstacleView" destination="3bx-mQ-jWA" id="kHB-Y4-WCw"/>
                         <outlet property="proceedButton" destination="VHb-Jw-qX0" id="8Cd-9Q-WGv"/>
                         <outlet property="redCoin" destination="YPe-7R-aZA" id="z4p-Yz-T0H"/>

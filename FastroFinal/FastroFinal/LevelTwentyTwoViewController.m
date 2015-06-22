@@ -21,6 +21,7 @@ extern int redCoinPosition;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomObstacleView;
@@ -312,6 +313,10 @@ extern int redCoinPosition;
     
 }
 
+- (IBAction)goHome:(id)sender {
+    
+    
+}
 
 @end
 

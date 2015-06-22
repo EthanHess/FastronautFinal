@@ -19,6 +19,7 @@ extern int coinPosition;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 
@@ -245,5 +246,9 @@ extern int coinPosition;
     
 }
 
+- (IBAction)goHome:(id)sender {
+    
+    
+}
 
 @end

@@ -22,6 +22,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -252,6 +253,12 @@ extern int score;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Secrets of the Schoolyard" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url]; 
+    
+}
+
+
+- (IBAction)goHome:(id)sender {
+    
     
 }
 

@@ -21,6 +21,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *topObstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomObstacleView;
@@ -235,9 +236,6 @@ extern int score;
 }
 
 
-
-
-
 - (void)playAudio {
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Ibn Al-Noor" withExtension:@"mp3"];
@@ -247,6 +245,10 @@ extern int score;
 }
 
 
+- (IBAction)goHome:(id)sender {
+    
+    
+}
 
 
 

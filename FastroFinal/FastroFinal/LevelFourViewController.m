@@ -20,6 +20,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *leftObstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *rightObstacleView;
@@ -250,5 +251,9 @@ extern int score;
     
 }
 
+- (IBAction)goHome:(id)sender {
+    
+    
+}
 
 @end

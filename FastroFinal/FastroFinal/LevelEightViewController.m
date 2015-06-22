@@ -22,6 +22,7 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *topObstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *middleObstacleView;
@@ -255,13 +256,16 @@ extern int score;
 }
 
 
-
-
 - (void)playAudio {
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Five Armies" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (IBAction)goHome:(id)sender {
+    
     
 }
 

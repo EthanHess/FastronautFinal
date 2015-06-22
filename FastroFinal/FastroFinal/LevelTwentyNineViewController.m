@@ -21,6 +21,7 @@ int diamondPosition;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UIButton *youDiedButton;
 @property (weak, nonatomic) IBOutlet UIButton *proceedButton;
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *diamondView;
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
@@ -366,5 +367,10 @@ int diamondPosition;
     
 }
 
+- (IBAction)goHome:(id)sender {
+    
+    
+    
+}
 
 @end

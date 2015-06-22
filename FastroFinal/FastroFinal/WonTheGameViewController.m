@@ -1,3 +1,4 @@
+
 //
 //  WonTheGameViewController.m
 //  FastroFinal
@@ -7,8 +8,9 @@
 //
 
 #import "WonTheGameViewController.h"
-
 @interface WonTheGameViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @end
 
@@ -22,6 +24,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)goHome:(id)sender {
+    
+    
 }
 
 /*
