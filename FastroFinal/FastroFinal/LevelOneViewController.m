@@ -97,14 +97,17 @@ int score;
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y < 0 + self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound];
     }
     
     
@@ -264,7 +267,7 @@ int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Son Of A Rocket" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     
@@ -273,6 +276,14 @@ int score;
 - (void)playBellSound {
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"ding" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playGameOverSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
     
     [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
