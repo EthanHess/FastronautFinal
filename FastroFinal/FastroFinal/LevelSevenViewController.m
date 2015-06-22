@@ -247,7 +247,7 @@ extern int score;
     
     CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
     
-    [UIView animateWithDuration:duration animations:^{
+    [UIImageView animateWithDuration:duration animations:^{
         
         view.transform = rotate;
         

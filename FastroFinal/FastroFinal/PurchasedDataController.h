@@ -14,6 +14,7 @@ static NSString * const kPurchasedContentUpdated = @"kPurchasedContentUpdated";
 
 @property (nonatomic) BOOL accessElevenThroughTwenty;
 @property (nonatomic) BOOL accessTwentyOneThroughEnd;
+@property (nonatomic) BOOL accessAllLevels; 
 
 + (PurchasedDataController *)sharedInstance;
 

@@ -350,9 +350,16 @@
             LevelTwentyNineViewController *twentyNine = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyNine"];
             
             [self.navigationController pushViewController:twentyNine animated:YES];
-
+            
+            break;
         }
             
+        case 29: {
+            
+            LevelThirtyViewController *thirty = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelThirty"];
+            
+            [self.navigationController pushViewController:thirty animated:YES]; 
+        }
             
         
     }

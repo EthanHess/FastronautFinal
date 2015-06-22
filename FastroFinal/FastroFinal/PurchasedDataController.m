@@ -11,6 +11,7 @@
 
 static NSString * const kLevelsElevenThroughTwentyKey = @"ElevelThroughTwenty";
 static NSString * const kLevelsTwentyOneThroughThirtyKey = @"TwentyOneThroughThirty";
+static NSString * const kAllLevels = @"allLevels";
 
 @implementation PurchasedDataController
 
@@ -65,6 +66,17 @@ static NSString * const kLevelsTwentyOneThroughThirtyKey = @"TwentyOneThroughThi
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+- (void)setAllLevels:(BOOL)accessible {
+    
+    _accessAllLevels = accessible;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:accessible forKey:kAllLevels];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+
+
+
 - (void)purchaseNotification:(NSNotification *)notification {
     
     NSString *productIdentifer = notification.userInfo[kProductIDKey];
@@ -81,6 +93,8 @@ static NSString * const kLevelsTwentyOneThroughThirtyKey = @"TwentyOneThroughThi
     [[NSNotificationCenter defaultCenter] postNotificationName:kPurchasedContentUpdated object:nil userInfo:nil];
     
 }
+
+
 
 - (void)dealloc {
     
