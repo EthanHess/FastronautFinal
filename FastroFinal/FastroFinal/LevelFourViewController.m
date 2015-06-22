@@ -8,6 +8,8 @@
 
 #import "LevelFourViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 int leftObstaclePosition;
 int rightObstaclePosition;
@@ -47,6 +49,7 @@ extern int score;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
     [[SoundController sharedInstance]cancelAudio];
@@ -192,6 +195,7 @@ extern int score;
     self.leftObstacleView.hidden = YES;
     self.rightObstacleView.hidden = YES;
     self.coin.hidden = YES;
+    self.homeButton.hidden = NO;
     self.fastronaut.hidden = YES;
     
     score = 0;
@@ -214,6 +218,7 @@ extern int score;
         self.proceedButton.hidden = NO;
         self.leftObstacleView.hidden = YES;
         self.rightObstacleView.hidden = YES;
+        self.homeButton.hidden = NO;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
         
@@ -232,6 +237,7 @@ extern int score;
     
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.leftObstacleView.hidden = NO;
     self.rightObstacleView.hidden = NO;
@@ -253,6 +259,10 @@ extern int score;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
     
 }
 

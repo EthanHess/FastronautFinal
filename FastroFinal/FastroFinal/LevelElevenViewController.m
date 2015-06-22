@@ -8,6 +8,8 @@
 
 #import "LevelElevenViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 
 extern int topObstaclePosition;
@@ -51,6 +53,7 @@ extern int score;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
 }
@@ -186,6 +189,7 @@ extern int score;
     [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
+    self.homeButton.hidden = NO;
     self.topObstacleView.hidden = YES;
     self.bottomObstacleView.hidden = YES;
     self.coin.hidden = YES;
@@ -209,6 +213,7 @@ extern int score;
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.topObstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
@@ -230,6 +235,7 @@ extern int score;
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
     self.beginButton.hidden = NO;
+    self.homeButton.hidden = YES; 
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.topObstacleView.hidden = NO;
@@ -253,6 +259,10 @@ extern int score;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
     
 }
 

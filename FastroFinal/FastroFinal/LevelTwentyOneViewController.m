@@ -8,6 +8,8 @@
 
 #import "LevelTwentyOneViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 extern int obstaclePosition;
 extern int fastroFlight;
@@ -54,6 +56,7 @@ int redCoinPosition;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
 }
@@ -215,6 +218,7 @@ int redCoinPosition;
     [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
+    self.homeButton.hidden = NO;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     self.coin.hidden = YES;
@@ -238,6 +242,7 @@ int redCoinPosition;
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
@@ -261,15 +266,7 @@ int redCoinPosition;
     
     else {
         
-        [self.fastroTimer invalidate];
-        [self.obstacleTimer invalidate];
-        [self.coinTimer invalidate];
-        
-        self.youDiedButton.hidden = NO;
-        self.obstacleView.hidden = YES;
-        self.fastronaut.hidden = YES;
-        self.coin.hidden = YES;
-        self.redCoin.hidden = YES;
+        [self gameOver];
         
     }
     
@@ -288,6 +285,7 @@ int redCoinPosition;
     self.obstacleView.hidden = NO;
     self.coin.hidden = NO;
     self.redCoin.hidden = NO;
+    self.homeButton.hidden = YES;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
@@ -305,6 +303,10 @@ int redCoinPosition;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
     
 }
 

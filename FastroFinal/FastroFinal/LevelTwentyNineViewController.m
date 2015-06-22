@@ -8,6 +8,8 @@
 
 #import "LevelTwentyNineViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 extern int obstaclePosition;
 extern int fastroFlight;
@@ -54,6 +56,7 @@ int diamondPosition;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
 }
@@ -250,6 +253,7 @@ int diamondPosition;
     [self.diamondTimer invalidate];
     
     self.youDiedButton.hidden = NO;
+    self.homeButton.hidden = NO;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     self.coin.hidden = YES;
@@ -274,6 +278,7 @@ int diamondPosition;
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
@@ -298,17 +303,7 @@ int diamondPosition;
     
     else {
         
-        [self.fastroTimer invalidate];
-        [self.obstacleTimer invalidate];
-        [self.coinTimer invalidate];
-        [self.diamondTimer invalidate];
-        
-        self.youDiedButton.hidden = NO;
-        self.obstacleView.hidden = YES;
-        self.fastronaut.hidden = YES;
-        self.coin.hidden = YES;
-        self.redCoin.hidden = YES;
-        self.diamondView.hidden = YES;
+        [self gameOver];
         
     }
     
@@ -332,6 +327,7 @@ int diamondPosition;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
         self.redCoin.hidden = YES;
+        self.homeButton.hidden = NO;
         self.diamondView.hidden = YES;
         
         self.isComplete = YES;
@@ -352,6 +348,7 @@ int diamondPosition;
     self.coin.hidden = NO;
     self.redCoin.hidden = NO;
     self.diamondView.hidden = NO;
+    self.homeButton.hidden = YES; 
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
@@ -369,6 +366,10 @@ int diamondPosition;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
     
     
 }

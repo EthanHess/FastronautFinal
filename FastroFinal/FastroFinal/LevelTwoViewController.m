@@ -8,6 +8,8 @@
 
 #import "LevelTwoViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 extern int obstaclePosition;
 extern int fastroFlight;
@@ -45,6 +47,7 @@ extern int score;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
     [[SoundController sharedInstance]cancelAudio];
@@ -189,6 +192,7 @@ extern int score;
     [self.coinTimer invalidate]; 
     
     self.youDiedButton.hidden = NO;
+    self.homeButton.hidden = NO;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     self.coin.hidden = YES; 
@@ -211,6 +215,7 @@ extern int score;
         [self.coinTimer invalidate]; 
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.obstacleView.hidden = YES;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
@@ -232,6 +237,7 @@ extern int score;
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.obstacleView.hidden = NO;
+    self.homeButton.hidden = YES; 
     self.coin.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
@@ -250,6 +256,10 @@ extern int score;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
     
 }
 

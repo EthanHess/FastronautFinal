@@ -30,8 +30,17 @@ int astroFall;
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    [self placeFastro];
     
+}
+
+- (void)placeFastro {
     
+    int frame = self.view.frame.size.height;
+    
+    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, - frame);
+    
+    self.astroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastronautMoving) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidLoad {
@@ -43,12 +52,6 @@ int astroFall;
     self.levelButton.hidden = YES;
     self.instructionsButton.hidden = YES;
     self.creditsButton.hidden = YES;
-
-    int frame = self.view.frame.size.height;
-    
-    self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, - frame);
-    
-    self.astroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastronautMoving) userInfo:nil repeats:YES];
     
     [self playAudio];
     

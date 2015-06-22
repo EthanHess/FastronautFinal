@@ -8,6 +8,8 @@
 
 #import "LevelNineteenViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 
 extern int topObstaclePosition;
@@ -52,6 +54,7 @@ extern int coinPosition;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
     [[SoundController sharedInstance] cancelAudio];
@@ -205,6 +208,7 @@ extern int coinPosition;
     [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
+    self.homeButton.hidden = NO;
     self.topObstacleView.hidden = YES;
     self.bottomObstacleView.hidden = YES;
     self.coin.hidden = YES;
@@ -228,6 +232,7 @@ extern int coinPosition;
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.topObstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
@@ -248,6 +253,7 @@ extern int coinPosition;
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
     self.beginButton.hidden = NO;
+    self.homeButton.hidden = YES; 
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.topObstacleView.hidden = NO;
@@ -273,7 +279,10 @@ extern int coinPosition;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
     
+    [self.navigationController pushViewController:viewController animated:YES];
+
 }
 
 

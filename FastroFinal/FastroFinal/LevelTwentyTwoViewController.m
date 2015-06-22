@@ -8,6 +8,8 @@
 
 #import "LevelTwentyTwoViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 extern int obstaclePosition;
 extern int bottomObstaclePosition;
@@ -51,6 +53,7 @@ extern int redCoinPosition;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
 }
@@ -221,6 +224,7 @@ extern int redCoinPosition;
     [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
+    self.homeButton.hidden = NO;
     self.obstacleView.hidden = YES;
     self.bottomObstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
@@ -245,6 +249,7 @@ extern int redCoinPosition;
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.obstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
@@ -269,16 +274,7 @@ extern int redCoinPosition;
     
     else {
         
-        [self.fastroTimer invalidate];
-        [self.obstacleTimer invalidate];
-        [self.coinTimer invalidate];
-        
-        self.youDiedButton.hidden = NO;
-        self.obstacleView.hidden = YES;
-        self.bottomObstacleView.hidden = YES;
-        self.fastronaut.hidden = YES;
-        self.coin.hidden = YES;
-        self.redCoin.hidden = YES;
+        [self gameOver];
         
     }
     
@@ -293,6 +289,7 @@ extern int redCoinPosition;
     
     self.beginButton.hidden = NO;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.obstacleView.hidden = NO;
     self.bottomObstacleView.hidden = NO; 
@@ -315,7 +312,10 @@ extern int redCoinPosition;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
     
+    [self.navigationController pushViewController:viewController animated:YES];
+
 }
 
 @end

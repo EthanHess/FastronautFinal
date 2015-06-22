@@ -8,6 +8,9 @@
 //
 
 #import "WonTheGameViewController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
+
 @interface WonTheGameViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *homeButton;
@@ -29,7 +32,10 @@
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
     
+    [self.navigationController pushViewController:viewController animated:YES];
+
 }
 
 /*

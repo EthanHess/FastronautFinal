@@ -8,6 +8,8 @@
 
 #import "LevelTwentyEightViewController.h"
 #import "SoundController.h"
+#import "SoundEffectsController.h"
+#import "ViewController.h"
 
 
 extern int middleObstaclePosition;
@@ -57,6 +59,7 @@ extern int score;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
+    self.homeButton.hidden = YES;
     score = 0;
     
 }
@@ -230,6 +233,7 @@ extern int score;
     [self.coinTimer invalidate];
     
     self.youDiedButton.hidden = NO;
+    self.homeButton.hidden = NO;
     self.topObstacleView.hidden = YES;
     self.bottomObstacleView.hidden = YES;
     self.middleObstacleView.hidden = YES;
@@ -255,6 +259,7 @@ extern int score;
         [self.coinTimer invalidate];
         
         self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
         self.topObstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
         self.middleObstacleView.hidden = YES;
@@ -280,18 +285,7 @@ extern int score;
     
     else {
         
-        [self.fastroTimer invalidate];
-        [self.obstacleTimer invalidate];
-        [self.coinTimer invalidate];
-        
-        self.youDiedButton.hidden = NO;
-        self.topObstacleView.hidden = YES;
-        self.middleObstacleView.hidden = YES;
-        self.bottomObstacleView.hidden = YES;
-        self.fastronaut.hidden = YES;
-        self.redCoin.hidden = YES;
-        self.coin.hidden = YES;
-        self.redCoin.hidden = YES;
+        [self gameOver];
         
     }
     
@@ -310,6 +304,7 @@ extern int score;
     self.topObstacleView.hidden = NO;
     self.bottomObstacleView.hidden = NO;
     self.middleObstacleView.hidden = NO;
+    self.homeButton.hidden = YES; 
     self.coin.hidden = NO;
     self.redCoin.hidden = NO;
     
@@ -329,6 +324,10 @@ extern int score;
 
 - (IBAction)goHome:(id)sender {
     
+    ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"home"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
     
 }
 
