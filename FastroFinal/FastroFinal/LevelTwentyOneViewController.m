@@ -10,6 +10,7 @@
 #import "SoundController.h"
 #import "SoundEffectsController.h"
 #import "ViewController.h"
+#import "LevelController.h"
 
 extern int obstaclePosition;
 extern int fastroFlight;
@@ -190,6 +191,7 @@ int redCoinPosition;
         self.coin.hidden = YES;
         [self placeCoin];
         [self scoreChange];
+        [self playBellSound];
     }
     
     //animate red coin
@@ -249,6 +251,8 @@ int redCoinPosition;
         self.redCoin.hidden = YES;
         
         self.isComplete = YES;
+        
+        [self playWinSound];
     }
     
     
@@ -298,6 +302,30 @@ int redCoinPosition;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"One Sly Move" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
+    
+}
+
+- (void)playBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ceramicBell" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playGameOverSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playWinSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"winSound" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
 }
 

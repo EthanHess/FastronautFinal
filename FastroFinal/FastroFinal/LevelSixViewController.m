@@ -9,6 +9,7 @@
 #import "LevelSixViewController.h"
 #import "SoundController.h"
 #import "SoundEffectsController.h"
+#import "LevelController.h"
 #import "ViewController.h"
 
 
@@ -175,6 +176,7 @@ extern int score;
         self.coin.hidden = YES;
         [self placeCoin];
         [self scoreChange];
+        [self playBellSound];
     }
     
 }
@@ -218,6 +220,8 @@ extern int score;
         self.fastronaut.hidden = YES;
         
         self.isComplete = YES;
+        
+        [self playWinSound];
     }
     
     
@@ -251,6 +255,30 @@ extern int score;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Controlled Chaos" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ceramicBell" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playGameOverSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playWinSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"winSound" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
 }
 

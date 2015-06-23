@@ -10,6 +10,7 @@
 #import "SoundController.h"
 #import "SoundEffectsController.h"
 #import "ViewController.h"
+#import "LevelController.h"
 #import <math.h>
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
@@ -189,6 +190,7 @@ extern int score;
         self.coin.hidden = YES;
         [self placeCoin];
         [self scoreChange];
+        [self playBellSound];
     }
     
 }
@@ -234,6 +236,8 @@ extern int score;
         self.coin.hidden = YES;
         
         self.isComplete = YES;
+        
+        [self playWinSound];
     }
     
     
@@ -279,6 +283,30 @@ extern int score;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Rising" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ceramicBell" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playGameOverSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playWinSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"winSound" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
 }
 

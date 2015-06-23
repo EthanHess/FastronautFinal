@@ -7,6 +7,7 @@
 //
 
 #import "LevelOneViewController.h"
+#import "LevelController.h"
 #import "SoundEffectsController.h"
 #import "ViewController.h"
 #import "SoundController.h"
@@ -223,7 +224,9 @@ int score;
         
         self.isComplete = YES;
         
-        [self playWinSound]; 
+//        [[LevelController sharedInstance]saveBool:self.isComplete];
+        
+        [self playWinSound];
     }
     
     
@@ -276,7 +279,7 @@ int score;
 
 - (void)playBellSound {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ding" withExtension:@"wav"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ceramicBell" withExtension:@"wav"];
     
     [[SoundEffectsController sharedInstance]playFileAtURL:url];
     

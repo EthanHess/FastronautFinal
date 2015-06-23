@@ -9,6 +9,7 @@
 #import "LevelTwentyFourViewController.h"
 #import "SoundController.h"
 #import "SoundEffectsController.h"
+#import "LevelController.h"
 #import "ViewController.h"
 
 extern int obstaclePosition;
@@ -202,6 +203,7 @@ extern int redCoinPosition;
         self.redCoin.hidden = YES;
         [self placeRedCoin];
         [self scoreDown];
+        [self playBellSound];
     }
     
 }
@@ -245,6 +247,8 @@ extern int redCoinPosition;
         self.redCoin.hidden = YES;
         
         self.isComplete = YES;
+        
+        [self playWinSound];
     }
     
     
@@ -294,6 +298,30 @@ extern int redCoinPosition;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Skye Cuillin" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
+    
+}
+
+- (void)playBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ceramicBell" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playGameOverSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playWinSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"winSound" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
 }
 

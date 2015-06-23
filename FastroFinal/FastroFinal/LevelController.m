@@ -26,6 +26,7 @@
     if (isComplete == YES) {
         
         [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"isComplete"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
 //    if (isComplete == NO) {

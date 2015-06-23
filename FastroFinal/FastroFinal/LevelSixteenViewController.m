@@ -11,6 +11,7 @@
 #import "SoundController.h"
 #import "SoundEffectsController.h"
 #import "ViewController.h"
+#import "LevelController.h"
 
 
 extern int topObstaclePosition;
@@ -197,6 +198,7 @@ extern int coinPosition;
         self.coin.hidden = YES;
         [self placeCoin];
         [self scoreChange];
+        [self playBellSound];
     }
     
 }
@@ -240,6 +242,8 @@ extern int coinPosition;
         self.coin.hidden = YES;
     
         self.isComplete = YES;
+        
+        [self playWinSound];
     }
     
     
@@ -301,6 +305,30 @@ extern int coinPosition;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Space Fighter Loop" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ceramicBell" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playGameOverSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playWinSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"winSound" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
 }
 
