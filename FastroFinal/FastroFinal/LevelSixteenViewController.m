@@ -73,7 +73,7 @@ extern int coinPosition;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0075 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -148,11 +148,11 @@ extern int coinPosition;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"redFastroLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"redFastro"];
+        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
     }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.bounceView.frame)) {

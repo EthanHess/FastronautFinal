@@ -109,7 +109,7 @@ extern int redCoinPosition;
     
     if (self.fastronaut.center.y < 0 + self.fastronaut.frame.size.height / 2) {
         [self gameOver];
-        [self playGameOverSound]; 
+        [self playGameOverSound];
     }
     
     
