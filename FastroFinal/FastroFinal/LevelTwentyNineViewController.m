@@ -75,6 +75,8 @@ int diamondPosition;
     
     [self placeRedCoin];
     
+    [self placeDiamond]; 
+    
     self.diamondTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(diamondMoving) userInfo:nil repeats:YES];
     
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0075 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
@@ -130,11 +132,11 @@ int diamondPosition;
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.diamondView.frame)) {
         
+        self.diamondView.hidden = YES;
         [self placeDiamond];
         [self scoreChangeTwo];
         [self playLoudBellSound]; 
         
-        self.diamondView.hidden = YES;
     }
     
     
@@ -145,6 +147,7 @@ int diamondPosition;
     int frame = self.view.frame.size.height;
     
     diamondPosition = arc4random() %frame;
+    
     self.diamondView.center = CGPointMake(-50, diamondPosition);
     
     self.diamondView.hidden = NO;
@@ -283,6 +286,7 @@ int diamondPosition;
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
         [self.coinTimer invalidate];
+        [self.diamondTimer invalidate]; 
         
         self.proceedButton.hidden = NO;
         self.homeButton.hidden = NO;

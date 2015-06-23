@@ -74,7 +74,7 @@ extern int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -145,11 +145,11 @@ extern int score;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"greenFastroLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"GreenFastro"];
+        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
     }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.mushroomView.frame)) {
@@ -248,13 +248,14 @@ extern int score;
     
     fastroFlight = 80;
     
-    self.mushroomView.image = [UIImage imageNamed:@"flatMushroom"];
+    self.mushroomView.animationImages = [NSArray arrayWithObjects:
+                                       [UIImage imageNamed:@"flatMushroom"],
+                                       [UIImage imageNamed:@"levelFourteenMushroom"],
+                                       [UIImage imageNamed:@"flatMushroom"], nil];
     
-    if (self.fastronaut.center.y < 275) {
-        
-        self.mushroomView.image = [UIImage imageNamed:@"levelFourteenMushroom"];
-        fastroFlight = 50;
-    }
+    [self.mushroomView setAnimationRepeatCount:1];
+    self.mushroomView.animationDuration = 0.2;
+    [self.mushroomView startAnimating];
     
 }
 
@@ -272,8 +273,6 @@ extern int score;
     self.topObstacleView.hidden = NO;
     self.bottomObstacleView.hidden = NO;
     self.coin.hidden = NO;
-    
-    self.mushroomView.image = [UIImage imageNamed:@"levelFourteenMushroom"];
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     

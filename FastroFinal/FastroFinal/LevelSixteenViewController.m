@@ -257,13 +257,15 @@ extern int coinPosition;
     
     fastroFlight = 80;
     
-    self.bounceView.image = [UIImage imageNamed:@"LevelSixteenBounceDown"];
+    self.bounceView.animationImages = [NSArray arrayWithObjects:
+                                         [UIImage imageNamed:@"LevelSixteenBounceDown"],
+                                         [UIImage imageNamed:@"LevelSixteenBounce"],
+                                         [UIImage imageNamed:@"LevelSixteenBounceDown"], nil];
     
-    if (self.fastronaut.center.y < 275) {
-        
-        self.bounceView.image = [UIImage imageNamed:@"LevelSixteenBounce"];
-        fastroFlight = 50;
-    }
+    [self.bounceView setAnimationRepeatCount:1];
+    self.bounceView.animationDuration = 0.2;
+    [self.bounceView startAnimating];
+    
     
 }
 
@@ -271,14 +273,15 @@ extern int coinPosition;
     
     fastroFlight = - 80;
     
-    self.topBounce.image = [UIImage imageNamed:@"LevelSixteenBounceUp"];
+    self.topBounce.animationImages = [NSArray arrayWithObjects:
+                                       [UIImage imageNamed:@"LevelSixteenBounceUp"],
+                                       [UIImage imageNamed:@"LevelSixteenBounce"],
+                                       [UIImage imageNamed:@"LevelSixteenBounceUp"], nil];
     
-    if (self.fastronaut.center.y > 275) {
-        
-        self.bounceView.image = [UIImage imageNamed:@"LevelSixteenBounce"];
-        fastroFlight = 50;
+    [self.topBounce setAnimationRepeatCount:1];
+    self.topBounce.animationDuration = 0.2;
+    [self.topBounce startAnimating];
     
-    }
 }
 
 - (IBAction)resetGame:(id)sender {
@@ -294,10 +297,6 @@ extern int coinPosition;
     self.topObstacleView.hidden = NO;
     self.bottomObstacleView.hidden = NO;
     self.coin.hidden = NO;
-    
-    self.bounceView.image = [UIImage imageNamed:@"LevelSixteenBounce"];
-    
-    self.topBounce.image = [UIImage imageNamed:@"LevelSixteenBounce"];
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     

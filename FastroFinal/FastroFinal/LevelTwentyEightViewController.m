@@ -193,7 +193,7 @@ extern int score;
     
     redCoinPosition = arc4random() %frame;
     
-    self.redCoin.center = CGPointMake(400, redCoinPosition);
+    self.redCoin.center = CGPointMake(450, redCoinPosition);
     
     self.redCoin.hidden = NO;
 }
@@ -215,7 +215,7 @@ extern int score;
         [self playBellSound];
     }
     
-    self.redCoin.center = CGPointMake(self.redCoin.center.x - 1, self.redCoin.center.y);
+    self.redCoin.center = CGPointMake(self.redCoin.center.x - .75, self.redCoin.center.y);
     
     if (self.redCoin.center.x < - 50) {
         

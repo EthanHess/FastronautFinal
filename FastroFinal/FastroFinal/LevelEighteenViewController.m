@@ -133,11 +133,11 @@ extern int coinPosition;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"greenFastroLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"GreenFastro"];
+        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
     }
     
 
