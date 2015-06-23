@@ -57,6 +57,7 @@
 		27B25B2E1B387C3D00544F52 /* SoundEffectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25B2D1B387C3D00544F52 /* SoundEffectsController.m */; };
 		27B25B301B387DBF00544F52 /* gameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B2F1B387DBF00544F52 /* gameOver.wav */; };
 		27B25B321B387E5900544F52 /* Son Of A Rocket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B311B387E5900544F52 /* Son Of A Rocket.mp3 */; };
+		27B25B661B39C97000544F52 /* winSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B651B39C97000544F52 /* winSound.wav */; };
 		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
@@ -191,6 +192,7 @@
 		27B25B2D1B387C3D00544F52 /* SoundEffectsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffectsController.m; sourceTree = "<group>"; };
 		27B25B2F1B387DBF00544F52 /* gameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameOver.wav; sourceTree = "<group>"; };
 		27B25B311B387E5900544F52 /* Son Of A Rocket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Son Of A Rocket.mp3"; sourceTree = "<group>"; };
+		27B25B651B39C97000544F52 /* winSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = winSound.wav; sourceTree = "<group>"; };
 		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				27B25A111B30F31A00544F52 /* One Sly Move.mp3 */,
 				27B25B311B387E5900544F52 /* Son Of A Rocket.mp3 */,
 				27B25B2F1B387DBF00544F52 /* gameOver.wav */,
+				27B25B651B39C97000544F52 /* winSound.wav */,
 				27B25B2A1B387B8600544F52 /* ding.wav */,
 				27B25AAA1B34A1D600544F52 /* Unwritten Return.mp3 */,
 				27B25B261B3733EE00544F52 /* Your Call.mp3 */,
@@ -560,6 +563,7 @@
 				27B25B321B387E5900544F52 /* Son Of A Rocket.mp3 in Resources */,
 				27B25AAB1B34A1D600544F52 /* Unwritten Return.mp3 in Resources */,
 				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
+				27B25B661B39C97000544F52 /* winSound.wav in Resources */,
 				27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */,

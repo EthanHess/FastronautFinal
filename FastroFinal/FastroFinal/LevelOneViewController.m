@@ -43,7 +43,6 @@ int score;
 
 @implementation LevelOneViewController
 
-//@synthesize score;
 
 
 - (void)viewDidLoad {
@@ -223,6 +222,8 @@ int score;
         self.fastronaut.hidden = YES;
         
         self.isComplete = YES;
+        
+        [self playWinSound]; 
     }
     
     
@@ -253,7 +254,7 @@ int score;
 //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
 //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
     
-    [UIView animateWithDuration:duration animations:^{
+    [UIImageView animateWithDuration:duration animations:^{
         
         view.transform = rotate;
 //        view.transform = bigger;
@@ -284,6 +285,14 @@ int score;
 - (void)playGameOverSound {
     
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playWinSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"winSound" withExtension:@"wav"];
     
     [[SoundEffectsController sharedInstance]playFileAtURL:url];
     

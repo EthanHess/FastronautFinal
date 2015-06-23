@@ -89,23 +89,22 @@ extern int score;
         
         [self placeObstacle];
     }
-    
-//    if (self.obstacleView.center.x == 30) {
-//        
-//        [self scoreChange];
-//    }
+
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y < 0 + self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound]; 
     }
     
     
@@ -180,6 +179,7 @@ extern int score;
         self.coin.hidden = YES;
         [self placeCoin];
         [self scoreChange];
+        [self playBellSound];
     }
     
 }
@@ -251,6 +251,22 @@ extern int score;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"The Complex" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url]; 
+    
+}
+
+- (void)playBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ding" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+}
+
+- (void)playGameOverSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"gameOver" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
     
 }
 
