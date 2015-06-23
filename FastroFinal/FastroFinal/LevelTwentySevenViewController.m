@@ -96,14 +96,17 @@ extern int redCoinPosition;
     if (CGRectIntersectsRect(self.fastronaut.frame, self.obstacleView.frame)) {
         
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y < 0 + self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound];
     }
     
     
@@ -268,6 +271,7 @@ extern int redCoinPosition;
     else {
         
         [self gameOver];
+        [self playGameOverSound];
         
     }
     

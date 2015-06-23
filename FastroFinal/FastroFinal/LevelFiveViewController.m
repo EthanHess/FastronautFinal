@@ -90,19 +90,23 @@ extern int score;
     if (CGRectIntersectsRect(self.fastronaut.frame, self.leftObstacleView.frame)) {
         
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (CGRectIntersectsRect(self.fastronaut.frame, self.rightObstacleView.frame)) {
         
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound];
     }
     
     if (self.fastronaut.center.y < 0 + self.fastronaut.frame.size.height / 2) {
         [self gameOver];
+        [self playGameOverSound];
     }
     
     
