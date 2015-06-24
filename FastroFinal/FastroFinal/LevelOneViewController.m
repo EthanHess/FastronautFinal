@@ -250,14 +250,14 @@ int score;
     
 }
 
-- (void)animateView:(UIImageView *)view duration:(float)duration {
+- (void)animateView:(UIView *)view duration:(float)duration {
     
    
     CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
 //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
 //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
     
-    [UIImageView animateWithDuration:duration animations:^{
+    [UIView animateWithDuration:duration animations:^{
         
         view.transform = rotate;
 //        view.transform = bigger;
