@@ -225,9 +225,9 @@ extern int score;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
         
-        [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playAudio) object:nil];
-        
         self.isComplete = YES;
+        
+        [[LevelController sharedInstance]saveBool:self.isComplete];
         
         [self playWinSound];
     }

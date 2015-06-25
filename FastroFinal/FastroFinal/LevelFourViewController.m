@@ -231,6 +231,8 @@ extern int score;
         
         self.isComplete = YES;
         
+        [[LevelController sharedInstance]saveBool:self.isComplete];
+        
         [self playWinSound];
     }
     

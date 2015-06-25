@@ -122,7 +122,7 @@ int score;
     
     self.obstacleView.center = CGPointMake(450, obstaclePosition);
     
-    [self animateView:self.obstacleView duration:5];
+    [self animateView:self.obstacleView duration:1];
     
 }
 

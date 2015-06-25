@@ -21,34 +21,17 @@
     [super viewDidLoad];
     
     [[SoundController sharedInstance]cancelAudio];
+    [self.tableView setBackgroundColor:[UIColor blackColor]];
     
 }
 
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    
-//    if (section == 0) {
-//        
-//        return @"Game credits";
-//    }
-//    
-//    if (section == 1) {
-//        
-//        return @"Sound effects";
-//    }
-//    
-//    else {
-//        
-//        return @"Music tracks";
-//    }
-//    
-//}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
-    UIView *sectionHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 80)];
+    UIView *sectionHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 20)];
     sectionHeaderView.backgroundColor = [UIColor blackColor];
     
-    UILabel *creditsLabel = [[UILabel alloc]initWithFrame:sectionHeaderView.bounds];
+    UILabel *creditsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, sectionHeaderView.frame.size.width, sectionHeaderView.frame.size.height)];
     creditsLabel.textColor = [UIColor greenColor];
     creditsLabel.font = [UIFont fontWithName:@"Chalkduster" size:18];
     
@@ -57,7 +40,7 @@
         creditsLabel.text = @"Game credits";
     }
     
-    if (section == 1) {
+    else if (section == 1) {
         
         creditsLabel.text = @"Sound effects";
     }
@@ -71,6 +54,8 @@
     
     return sectionHeaderView;
 }
+
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     

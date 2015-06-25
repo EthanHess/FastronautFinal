@@ -66,7 +66,7 @@ extern int score;
     
     self.beginButton.hidden = YES;
     
-    [self animateView:self.spinObstacle duration:HUGE_VALF];
+    [self animateView:self.spinObstacle duration:3];
     
     self.fastroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastroMoving) userInfo:nil repeats:YES];
     
@@ -232,6 +232,8 @@ extern int score;
         
         self.isComplete = YES;
         
+        [[LevelController sharedInstance]saveBool:self.isComplete];
+        
         [self playWinSound];
     }
     
@@ -262,11 +264,9 @@ extern int score;
     
     CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
     
-    [UIImageView animateWithDuration:duration animations:^{
-        
+    [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
         view.transform = rotate;
-        
-    }];
+    } completion:nil];
     
 }
 

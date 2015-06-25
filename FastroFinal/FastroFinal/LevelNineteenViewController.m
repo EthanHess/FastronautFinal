@@ -238,6 +238,8 @@ extern int coinPosition;
         
         self.isComplete = YES;
         
+        [[LevelController sharedInstance]saveBool:self.isComplete];
+        
         [self playWinSound];
     }
     

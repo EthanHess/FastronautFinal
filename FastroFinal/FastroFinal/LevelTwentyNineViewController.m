@@ -298,6 +298,8 @@ int diamondPosition;
         
         self.isComplete = YES;
         
+        [[LevelController sharedInstance]saveBool:self.isComplete];
+        
         [self playWinSound];
     }
     
@@ -345,6 +347,8 @@ int diamondPosition;
         self.diamondView.hidden = YES;
         
         self.isComplete = YES;
+        
+        [[LevelController sharedInstance]saveBool:self.isComplete];
         
         [self playWinSound];
     }
