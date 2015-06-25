@@ -8,6 +8,12 @@
 
 #import "LevelController.h"
 
+@interface LevelController ()
+
+@property (nonatomic, strong, readwrite) NSArray *arrayOfCompletedLevels;
+
+@end
+
 @implementation LevelController
 
 + (LevelController *)sharedInstance {
@@ -23,18 +29,28 @@
 
 - (void)saveBool:(BOOL)isComplete {
     
-    if (isComplete == YES) {
+    NSArray *arrayOfBooleans;
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"isCompleteArray"]) {
         
-        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"isComplete"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        arrayOfBooleans = [[NSUserDefaults standardUserDefaults] objectForKey:@"isCompleteArray"];
+        
+    }else
+    {
+        arrayOfBooleans = [[NSArray alloc]init];
     }
-    
-//    if (isComplete == NO) {
-//        
-//        [[NSUserDefaults standardUserDefaults]setBool:isComplete forKey:@"isComplete"];
-//    }
-    
+
+        arrayOfBooleans = [arrayOfBooleans arrayByAddingObject:[NSNumber numberWithBool:isComplete]];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:arrayOfBooleans forKey:@"isCompleteArray"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
+
+-(NSArray *)arrayOfCompletedLevels
+{
+        return [[NSUserDefaults standardUserDefaults] objectForKey:@"isCompleteArray"];
+}
+
 
 @end

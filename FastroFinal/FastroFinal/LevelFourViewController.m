@@ -142,11 +142,11 @@ extern int score;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"redFastroLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"redFastro"];
+        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
     }
     
 }

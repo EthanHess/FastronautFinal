@@ -122,7 +122,7 @@ int score;
     
     self.obstacleView.center = CGPointMake(450, obstaclePosition);
     
-    [self animateView:self.obstacleView duration:HUGE_VALF];
+    [self animateView:self.obstacleView duration:5];
     
 }
 
@@ -224,7 +224,7 @@ int score;
         
         self.isComplete = YES;
         
-//        [[LevelController sharedInstance]saveBool:self.isComplete];
+        [[LevelController sharedInstance]saveBool:self.isComplete];
         
         [self playWinSound];
     }
@@ -250,20 +250,23 @@ int score;
     
 }
 
-- (void)animateView:(UIView *)view duration:(float)duration {
+- (void)animateView:(UIImageView *)view duration:(float)duration {
     
    
     CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
 //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
 //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
     
-    [UIView animateWithDuration:duration animations:^{
-        
+    [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
         view.transform = rotate;
-//        view.transform = bigger;
-//        view.transform = smaller;
-        
-    }];
+    } completion:nil];
+    
+//    [UIView animateWithDuration:duration animations:^{
+//        
+////        view.transform = bigger;
+////        view.transform = smaller;
+//        
+//    }];
     
 }
 

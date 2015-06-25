@@ -39,6 +39,7 @@
 #import "LevelTwentyEightViewController.h"
 #import "LevelTwentyNineViewController.h"
 #import "LevelThirtyViewController.h"
+#import "LevelController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -105,8 +106,22 @@
     cell.textLabel.text = [self levels][indexPath.row];
     cell.backgroundColor = [UIColor blackColor];
     
-    return cell;
-    
+    if (indexPath.row == 0) {
+        return cell;
+    }
+    else
+    {
+        if (indexPath.row > [LevelController sharedInstance].arrayOfCompletedLevels.count) {
+            [cell setUserInteractionEnabled:NO];
+            [cell.textLabel setTextColor:[UIColor redColor]];
+        }
+        else
+        {
+            [cell setUserInteractionEnabled:YES];
+        }
+        return cell;
+    }
+
 }
 
 - (NSArray *)levels {

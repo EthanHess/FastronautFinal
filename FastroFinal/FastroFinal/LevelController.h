@@ -10,7 +10,7 @@
 
 @interface LevelController : NSObject
 
-@property (nonatomic, strong, readonly) NSArray *completedLevels;
+@property (nonatomic, strong, readonly) NSArray *arrayOfCompletedLevels;
 
 + (LevelController *)sharedInstance;
 - (void)saveBool:(BOOL)isComplete; 

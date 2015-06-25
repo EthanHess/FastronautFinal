@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *songCreditsLabelOne;
 @property (weak, nonatomic) IBOutlet UILabel *songCreditsLabelTwo;
 @property (weak, nonatomic) IBOutlet UILabel *songCreditsLabelThree;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -38,6 +39,8 @@
     
     self.songCreditsLabelThree.text = @"'Your Call' Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 http:'//creativecommons.org/licenses/by/3.0/";
     self.songCreditsLabelThree.numberOfLines = 0;
+    
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height * 3);
     
 }
 
