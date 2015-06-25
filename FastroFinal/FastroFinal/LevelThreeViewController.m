@@ -11,9 +11,7 @@
 #import "SoundEffectsController.h"
 #import "ViewController.h"
 #import "LevelController.h"
-#import <math.h>
 
-static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 extern int obstaclePosition;
 extern int fastroFlight;
@@ -115,8 +113,6 @@ extern int score;
     obstaclePosition = arc4random() %frame;
     
     self.obstacleView.center = CGPointMake(-180, obstaclePosition);
-    
-    [self animateView:self.obstacleView duration:HUGE_VALF];
     
 }
 
@@ -239,23 +235,6 @@ extern int score;
     self.coin.hidden = NO; 
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
-    
-}
-
-- (void)animateView:(UIView *)view duration:(float)duration {
-    
-    
-    CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
-    //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
-    //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
-    
-    [UIView animateWithDuration:duration animations:^{
-        
-        view.transform = rotate;
-        //        view.transform = bigger;
-        //        view.transform = smaller;
-        
-    }];
     
 }
 
