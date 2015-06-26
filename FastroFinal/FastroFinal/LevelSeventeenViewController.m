@@ -32,13 +32,12 @@ extern int coinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (weak, nonatomic) IBOutlet UIImageView *oilOcean;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
-@property (weak, nonatomic) IBOutlet UIImageView *platform;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
-@property (nonatomic, strong) NSTimer *oceanTimer;
+//@property (nonatomic, strong) NSTimer *oceanTimer;
 
 @end
 
@@ -72,11 +71,13 @@ extern int coinPosition;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0045 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
-    self.oceanTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(oceanMoving) userInfo:nil repeats:YES];
+//    self.oceanTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(oceanMoving) userInfo:nil repeats:YES];
+    
+    [self animateView:self.obstacleView duration:2.0];
     
     [self playAudio];
 }
@@ -84,14 +85,8 @@ extern int coinPosition;
 
 - (void)obstacleMoving {
     
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
-    
-    
-    //    self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
     if (self.obstacleView.center.x < - 35) {
         
@@ -126,24 +121,21 @@ extern int coinPosition;
     
     self.obstacleView.center = CGPointMake(450, obstaclePosition);
     
-    [self animateView:self.obstacleView duration:.5];
-    
-    
 }
 
-- (void)oceanMoving {
-    
-    if (self.oilOcean.center.y > 500) {
-        
-        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y + 1));
-    }
-    
-    else if (self.oilOcean.center.y > 600) {
-        
-        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y - 1));
-    }
-    
-}
+//- (void)oceanMoving {
+//    
+//    if (self.oilOcean.center.y > 500) {
+//        
+//        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y + 1));
+//    }
+//    
+//    else {
+//        
+//        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y - 1));
+//    }
+//    
+//}
 
 
 - (void)fastroMoving {
@@ -169,10 +161,6 @@ extern int coinPosition;
         fastroFlight = - 2;
     }
     
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.platform.frame)) {
-        
-        fastroFlight = 0;
-    }
 }
 
 
@@ -286,12 +274,12 @@ extern int coinPosition;
     
     
     CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
-    //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
-    //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
+        CGAffineTransform bigger = CGAffineTransformMakeScale(1.5, 1.5);
     
     [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
         
         view.transform = rotate;
+        view.transform = bigger;
         
     } completion:nil];
     
