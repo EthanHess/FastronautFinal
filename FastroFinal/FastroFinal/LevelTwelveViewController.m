@@ -38,6 +38,8 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *spinOne;
+@property (weak, nonatomic) IBOutlet UIImageView *spinTwo;
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
@@ -77,6 +79,9 @@ extern int score;
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.008 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.0035 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    [self animateView:self.spinOne duration:1.5];
+    [self animateView:self.spinTwo duration:2]; 
     
     [self playAudio];
 }
@@ -274,11 +279,11 @@ extern int score;
     
     CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
     
-    [UIView animateWithDuration:duration animations:^{
+    [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
         
         view.transform = rotate;
         
-    }];
+    } completion:nil];
     
 }
 

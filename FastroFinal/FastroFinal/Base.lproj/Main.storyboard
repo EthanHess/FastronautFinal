@@ -1108,10 +1108,6 @@
                                 <rect key="frame" x="104" y="-138" width="150" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveBottom" id="Yfg-r8-ICh">
-                                <rect key="frame" x="6" y="411" width="150" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="1nr-2l-Z06">
                                 <rect key="frame" x="269" y="259" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1175,6 +1171,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twelveBottom" id="Yfg-r8-ICh">
+                                <rect key="frame" x="-15" y="411" width="150" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1188,13 +1188,15 @@
                         <outlet property="middleObstacleView" destination="jOq-JS-n7g" id="yW6-uh-bWD"/>
                         <outlet property="proceedButton" destination="Dm2-S7-gU6" id="VA3-DC-pFk"/>
                         <outlet property="scoreLabel" destination="Hki-E2-MiQ" id="FVA-tU-WbN"/>
+                        <outlet property="spinOne" destination="ygK-eb-fMa" id="JGx-b9-P7c"/>
+                        <outlet property="spinTwo" destination="kWG-fs-bz8" id="WAq-wH-w7g"/>
                         <outlet property="topObstacleView" destination="NHK-Us-Bf9" id="onJ-lI-bHJ"/>
                         <outlet property="youDiedButton" destination="nDg-QH-o2D" id="DMF-A3-VH5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTL-Mq-SxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860.26666666666665" y="902.17333333333329"/>
+            <point key="canvasLocation" x="860" y="902"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="5hJ-Ix-8Mc">
@@ -1430,6 +1432,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenDiamond" id="9lh-Wt-qB1">
+                                <rect key="frame" x="64" y="155" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1439,6 +1445,7 @@
                         <outlet property="bottomObstacleView" destination="yID-Ua-5P1" id="pBG-HR-csd"/>
                         <outlet property="coin" destination="vEI-h3-MA8" id="WyV-El-2TV"/>
                         <outlet property="fastronaut" destination="3Qw-T0-bw4" id="kXI-QT-4mF"/>
+                        <outlet property="greenDiamond" destination="9lh-Wt-qB1" id="2Iv-SC-6ys"/>
                         <outlet property="homeButton" destination="Jn8-rl-CNB" id="L4f-fV-8eW"/>
                         <outlet property="proceedButton" destination="eCF-0Z-6NK" id="2uj-Ww-OY2"/>
                         <outlet property="scoreLabel" destination="KQZ-uB-LUp" id="ADp-XK-DB7"/>

@@ -261,12 +261,7 @@ int score;
         view.transform = rotate;
     } completion:nil];
     
-//    [UIView animateWithDuration:duration animations:^{
-//        
-////        view.transform = bigger;
-////        view.transform = smaller;
-//        
-//    }];
+
     
 }
 
