@@ -11,6 +11,9 @@
 #import "SoundEffectsController.h"
 #import "ViewController.h"
 #import "LevelController.h"
+#import <math.h>
+
+static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 extern int obstaclePosition;
 extern int fastroFlight;
@@ -67,9 +70,11 @@ extern int coinPosition;
     
     [self placeCoin]; 
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0045 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
-    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.0025 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    [self animateView:self.obstacleView duration:1];
     
     [self playAudio];
 }
@@ -248,6 +253,21 @@ extern int coinPosition;
     self.coin.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+    
+}
+
+- (void)animateView:(UIImageView *)view duration:(float)duration {
+    
+    
+    CGAffineTransform rotate = CGAffineTransformMakeRotation(radians(180));
+    //    CGAffineTransform bigger = CGAffineTransformMakeScale(2, 2);
+    //    CGAffineTransform smaller = CGAffineTransformMakeScale(1, 1);
+    
+    [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
+        view.transform = rotate;
+    } completion:nil];
+    
+    
     
 }
 

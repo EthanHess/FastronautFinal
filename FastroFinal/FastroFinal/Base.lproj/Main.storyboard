@@ -432,6 +432,10 @@
                                     <action selector="resetGame:" destination="ZAr-DL-bGo" eventType="touchUpInside" id="s9A-J8-p4b"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenDiamond" id="aJ9-qS-wQc">
+                                <rect key="frame" x="49" y="159" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -440,6 +444,7 @@
                         <outlet property="beginButton" destination="VIP-0o-Kex" id="CVr-4A-ofw"/>
                         <outlet property="coin" destination="c6b-ms-dtr" id="7ot-s1-lBQ"/>
                         <outlet property="fastronaut" destination="fLf-YQ-rJe" id="1PA-hR-g5P"/>
+                        <outlet property="greenDiamond" destination="aJ9-qS-wQc" id="rKf-5c-N4l"/>
                         <outlet property="homeButton" destination="RZl-1P-re0" id="C9g-59-aDY"/>
                         <outlet property="mushroomView" destination="KHd-7s-5Kx" id="GTI-DA-3WE"/>
                         <outlet property="proceedButton" destination="2Qg-fP-4ME" id="ChO-2h-Lap"/>
