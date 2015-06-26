@@ -35,7 +35,8 @@
         
         arrayOfBooleans = [[NSUserDefaults standardUserDefaults] objectForKey:@"isCompleteArray"];
         
-    }else
+    } else
+        
     {
         arrayOfBooleans = [[NSArray alloc]init];
     }

@@ -119,7 +119,7 @@ extern int score;
     
     topObstaclePosition = arc4random() %380;
     topObstaclePosition = topObstaclePosition - 225;
-    bottomObstaclePosition = topObstaclePosition + 680;
+    bottomObstaclePosition = topObstaclePosition + 700;
     
     self.topObstacleView.center = CGPointMake(380, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(380, bottomObstaclePosition); 

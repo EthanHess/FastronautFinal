@@ -2107,6 +2107,10 @@
                                 <rect key="frame" x="249" y="-141" width="150" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenDiamond" id="MyR-ei-nU1">
+                                <rect key="frame" x="78" y="185" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="w5d-RR-mrN">
                                 <rect key="frame" x="407" y="221" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2179,6 +2183,7 @@
                         <outlet property="bottomObstacleView" destination="dTt-EL-6vP" id="eWk-5w-1eI"/>
                         <outlet property="coin" destination="w5d-RR-mrN" id="4Xs-cc-oji"/>
                         <outlet property="fastronaut" destination="dLZ-Yz-HJz" id="rAQ-d7-Eg7"/>
+                        <outlet property="greenDiamond" destination="MyR-ei-nU1" id="bdB-WC-Gac"/>
                         <outlet property="homeButton" destination="VDg-K5-i8W" id="T4x-8S-Moe"/>
                         <outlet property="middleObstacleView" destination="5DH-ZB-fCa" id="epq-H2-SaS"/>
                         <outlet property="proceedButton" destination="zIq-MT-HYD" id="S3y-2J-Q0b"/>
@@ -3512,6 +3517,7 @@
         <image name="fifthLevelFastro" width="335" height="550"/>
         <image name="fourteenthLevelFastro" width="335" height="550"/>
         <image name="gasCloud" width="200" height="120"/>
+        <image name="greenDiamond" width="75" height="75"/>
         <image name="greenFastroLanded" width="70" height="110"/>
         <image name="greenReverseTwo" width="70" height="110"/>
         <image name="leftObstacleFour" width="180" height="85"/>

@@ -70,7 +70,7 @@ extern int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -123,8 +123,8 @@ extern int score;
     topObstaclePosition = topObstaclePosition - 225;
     bottomObstaclePosition = topObstaclePosition + 680;
     
-    self.topObstacleView.center = CGPointMake(500, topObstaclePosition);
-    self.bottomObstacleView.center = CGPointMake(-120, bottomObstaclePosition);
+    self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
+    self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);
     
 }
 

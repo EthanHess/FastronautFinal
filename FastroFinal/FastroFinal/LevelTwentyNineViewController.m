@@ -298,7 +298,7 @@ int diamondPosition;
         
         self.isComplete = YES;
         
-        [[LevelController sharedInstance]saveBool:self.isComplete];
+        
         
         [self playWinSound];
     }
