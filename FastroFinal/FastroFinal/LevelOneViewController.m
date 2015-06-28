@@ -221,15 +221,23 @@ int score;
         self.obstacleView.hidden = YES;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
+        
+        [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 2) {
+            
+            return;
+        }
+        
+        else {
             
         self.isComplete = YES;
             
         [[LevelController sharedInstance]saveBool:self.isComplete];
-        
-        [self playWinSound];
+            
+        }
     }
-    
-    // ^^Grab array index value to dertimine whether level has been completed or not and not to resave it. 
+
     
 }
 
