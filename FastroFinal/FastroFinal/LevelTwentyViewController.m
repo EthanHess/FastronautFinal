@@ -15,7 +15,6 @@
 
 extern int topObstaclePosition;
 extern int bottomObstaclePosition;
-extern int middleObstaclePosition;
 extern int coinPosition;
 extern int fastroFlight;
 extern int score;
@@ -28,7 +27,6 @@ extern int score;
 @property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *topObstacleView;
-@property (weak, nonatomic) IBOutlet UIImageView *middleObstacleView; 
 @property (weak, nonatomic) IBOutlet UIImageView *bottomObstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 
@@ -70,7 +68,7 @@ extern int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0075 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -82,8 +80,6 @@ extern int score;
 - (void)obstacleMoving {
     
     self.topObstacleView.center = CGPointMake(self.topObstacleView.center.x + 1, self.topObstacleView.center.y);
-    
-    self.middleObstacleView.center = CGPointMake(self.middleObstacleView.center.x + 1.25, self.middleObstacleView.center.y);
     
     self.bottomObstacleView.center = CGPointMake(self.bottomObstacleView.center.x + 1.5, self.bottomObstacleView.center.y);
     
@@ -105,12 +101,6 @@ extern int score;
         [self playGameOverSound];
     }
     
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.middleObstacleView.frame)) {
-        
-        [self gameOver];
-        [self playGameOverSound];
-    }
-    
     if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         [self gameOver];
         [self playGameOverSound];
@@ -127,14 +117,11 @@ extern int score;
 
 - (void)placeObstacles {
     
-    topObstaclePosition = arc4random() %350;
+    topObstaclePosition = arc4random() %300;
     
-    middleObstaclePosition = topObstaclePosition + 300;
-    
-    bottomObstaclePosition = topObstaclePosition + 600;
+    bottomObstaclePosition = topObstaclePosition + 360;
     
     self.topObstacleView.center = CGPointMake(- 100, topObstaclePosition);
-    self.middleObstacleView.center = CGPointMake(- 100, middleObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(- 100, bottomObstaclePosition);
     
 }
@@ -209,7 +196,6 @@ extern int score;
     self.homeButton.hidden = NO;
     self.topObstacleView.hidden = YES;
     self.bottomObstacleView.hidden = YES;
-    self.middleObstacleView.hidden = YES;
     self.coin.hidden = YES;
     self.fastronaut.hidden = YES;
     
@@ -234,7 +220,6 @@ extern int score;
         self.homeButton.hidden = NO;
         self.topObstacleView.hidden = YES;
         self.bottomObstacleView.hidden = YES;
-        self.middleObstacleView.hidden = YES;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
         
@@ -260,7 +245,6 @@ extern int score;
     self.youDiedButton.hidden = YES;
     self.fastronaut.hidden = NO;
     self.topObstacleView.hidden = NO;
-    self.middleObstacleView.hidden = NO;
     self.bottomObstacleView.hidden = NO;
     self.coin.hidden = NO;
     

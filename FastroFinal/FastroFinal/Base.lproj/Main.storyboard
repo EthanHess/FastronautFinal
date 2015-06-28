@@ -163,7 +163,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dLW-tz-VO5"/>
-                                    <barButtonItem title="Buy All" id="lQc-nf-UpI"/>
+                                    <barButtonItem title="Buy All" id="lQc-nf-UpI">
+                                        <connections>
+                                            <action selector="buyAllButtonClicked:" destination="6mI-nW-S3u" id="tfJ-q6-2V8"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="PnS-e6-GLj"/>
                                     <barButtonItem title="Restore Purchases" id="WGM-lo-wft"/>
                                 </items>
@@ -3203,10 +3207,6 @@
                                 <rect key="frame" x="29" y="428" width="150" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seventeenObstacleTwo" id="sJf-D0-gQ2">
-                                <rect key="frame" x="29" y="224" width="150" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastroCoin" id="teR-rc-6er">
                                 <rect key="frame" x="366" y="225" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3277,7 +3277,6 @@
                         <outlet property="coin" destination="teR-rc-6er" id="han-IS-Kyx"/>
                         <outlet property="fastronaut" destination="Rt9-rc-S7K" id="5J4-gA-Js6"/>
                         <outlet property="homeButton" destination="Vh0-Jj-rSV" id="SNM-zx-DTd"/>
-                        <outlet property="middleObstacleView" destination="sJf-D0-gQ2" id="51w-iy-UIm"/>
                         <outlet property="proceedButton" destination="pcA-nL-lnr" id="lrH-j1-sbx"/>
                         <outlet property="scoreLabel" destination="vss-5S-fOz" id="EHy-bG-sjX"/>
                         <outlet property="topObstacleView" destination="jwH-u2-zSR" id="qrq-91-z4x"/>
@@ -3473,7 +3472,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D7l-Ki-6Cu">
-                                <rect key="frame" x="111" y="34" width="73" height="65"/>
+                                <rect key="frame" x="124" y="34" width="73" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
@@ -3587,7 +3586,6 @@
         <image name="sevenTopObstacle" width="110" height="450"/>
         <image name="seventeenObstacleOne" width="150" height="120"/>
         <image name="seventeenObstacleThree" width="150" height="120"/>
-        <image name="seventeenObstacleTwo" width="150" height="120"/>
         <image name="seventeenthLevelFastro" width="335" height="550"/>
         <image name="seventhLevelFastro" width="335" height="550"/>
         <image name="sixteenthLevelFastro" width="335" height="550"/>

@@ -221,14 +221,15 @@ int score;
         self.obstacleView.hidden = YES;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
-        
+            
         self.isComplete = YES;
-        
+            
         [[LevelController sharedInstance]saveBool:self.isComplete];
         
         [self playWinSound];
     }
     
+    // ^^Grab array index value to dertimine whether level has been completed or not and not to resave it. 
     
 }
 
@@ -260,8 +261,6 @@ int score;
     [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
         view.transform = rotate;
     } completion:nil];
-    
-
     
 }
 
