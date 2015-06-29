@@ -221,11 +221,20 @@ extern int score;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
         
-        self.isComplete = YES;
-        
-        [[LevelController sharedInstance]saveBool:self.isComplete];
-        
         [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 3) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
     
     

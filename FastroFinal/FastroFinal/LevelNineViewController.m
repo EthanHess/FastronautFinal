@@ -282,9 +282,18 @@ extern int diamondPosition;
         self.fastronaut.hidden = YES;
         self.greenDiamond.hidden = YES;
         
-        self.isComplete = YES;
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 10) {
+            
+            return;
+        }
         
-        [[LevelController sharedInstance]saveBool:self.isComplete];
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
         
         [self playWinSound];
     }
@@ -314,11 +323,20 @@ extern int diamondPosition;
         self.fastronaut.hidden = YES;
         self.greenDiamond.hidden = YES;
         
-        self.isComplete = YES;
-        
-        [[LevelController sharedInstance]saveBool:self.isComplete];
-        
         [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 10) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
 }
 

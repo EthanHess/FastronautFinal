@@ -253,11 +253,20 @@ extern int redCoinPosition;
         self.coin.hidden = YES;
         self.redCoin.hidden = YES;
         
-        self.isComplete = YES;
-        
-        [[LevelController sharedInstance]saveBool:self.isComplete];
-        
         [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 31) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
     
     

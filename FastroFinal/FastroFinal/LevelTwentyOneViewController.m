@@ -17,6 +17,7 @@ extern int fastroFlight;
 extern int score;
 extern int coinPosition;
 int redCoinPosition;
+extern int diamondPosition;
 
 @interface LevelTwentyOneViewController ()
 
@@ -28,6 +29,7 @@ int redCoinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
 @property (weak, nonatomic) IBOutlet UIImageView *blowerView;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
+@property (weak, nonatomic) IBOutlet UIImageView *greenDiamond;
 
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 @property (weak, nonatomic) IBOutlet UIImageView *redCoin;
@@ -37,6 +39,7 @@ int redCoinPosition;
 @property (nonatomic, strong) NSTimer *fastroTimer;
 @property (nonatomic, strong) NSTimer *obstacleTimer;
 @property (nonatomic, strong) NSTimer *coinTimer;
+@property (nonatomic, strong) NSTimer *diamondTimer;
 
 @end
 
@@ -75,19 +78,17 @@ int redCoinPosition;
     
     [self placeRedCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0075 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.008 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
-    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.004 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    
+    self.diamondTimer = [NSTimer scheduledTimerWithTimeInterval:0.004 target:self selector:@selector(diamondMoving) userInfo:nil repeats:YES];
     
     [self playAudio];
 }
 
 
 - (void)obstacleMoving {
-    
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
@@ -127,6 +128,37 @@ int redCoinPosition;
     
 }
 
+- (void)diamondMoving {
+    
+    self.greenDiamond.center = CGPointMake(self.greenDiamond.center.x + 1, self.greenDiamond.center.y);
+    
+    if (self.greenDiamond.center.x > 450) {
+        
+        [self placeDiamond];
+    }
+    
+    if (CGRectIntersectsRect(self.fastronaut.frame, self.greenDiamond.frame)) {
+        
+        self.greenDiamond.hidden = YES;
+        [self placeDiamond];
+        [self scoreChangeTwo];
+        [self playLoudBellSound];
+        
+    }
+    
+}
+
+- (void)placeDiamond {
+    
+    int frame = self.view.frame.size.height;
+    
+    diamondPosition = arc4random() %frame;
+    
+    self.greenDiamond.center = CGPointMake(-50, diamondPosition);
+    
+    self.greenDiamond.hidden = NO;
+    
+}
 
 - (void)fastroMoving {
     
@@ -134,8 +166,8 @@ int redCoinPosition;
     
     fastroFlight = fastroFlight + 10;
     
-    if (fastroFlight > 20) {
-        fastroFlight = 20;
+    if (fastroFlight > 15) {
+        fastroFlight = 15;
     }
     
     if (fastroFlight > 0) {
@@ -221,13 +253,15 @@ int redCoinPosition;
     [self.fastroTimer invalidate];
     [self.obstacleTimer invalidate];
     [self.coinTimer invalidate];
+    [self.diamondTimer invalidate];
     
     self.youDiedButton.hidden = NO;
     self.homeButton.hidden = NO;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     self.coin.hidden = YES;
-    self.redCoin.hidden = YES; 
+    self.redCoin.hidden = YES;
+    self.greenDiamond.hidden = YES;
     
     score = 0;
     
@@ -245,6 +279,7 @@ int redCoinPosition;
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
         [self.coinTimer invalidate];
+        [self.diamondTimer invalidate];
         
         self.proceedButton.hidden = NO;
         self.homeButton.hidden = NO;
@@ -252,12 +287,22 @@ int redCoinPosition;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
         self.redCoin.hidden = YES;
-        
-        self.isComplete = YES;
-        
-        [[LevelController sharedInstance]saveBool:self.isComplete];
-        
+        self.greenDiamond.hidden = YES;
+
         [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 22) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
     
     
@@ -282,6 +327,41 @@ int redCoinPosition;
     
 }
 
+- (void)scoreChangeTwo {
+    
+    score = score + 3;
+    
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+    
+    if (score >= 35) {
+        
+        [self.fastroTimer invalidate];
+        [self.obstacleTimer invalidate];
+        [self.coinTimer invalidate];
+        [self.diamondTimer invalidate];
+        
+        self.proceedButton.hidden = NO;
+        self.homeButton.hidden = NO;
+        self.coin.hidden = YES;
+        self.fastronaut.hidden = YES;
+        self.greenDiamond.hidden = YES;
+        
+        [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 22) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
+    }
+}
 
 - (IBAction)resetGame:(id)sender {
     
@@ -296,11 +376,20 @@ int redCoinPosition;
     self.coin.hidden = NO;
     self.redCoin.hidden = NO;
     self.homeButton.hidden = YES;
+    self.greenDiamond.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
 }
 
+- (void)playLoudBellSound {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"ding" withExtension:@"wav"];
+    
+    [[SoundEffectsController sharedInstance]playFileAtURL:url];
+    
+    
+}
 
 
 - (void)playAudio {

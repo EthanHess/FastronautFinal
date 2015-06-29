@@ -212,11 +212,20 @@ extern int score;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         
-        self.isComplete = YES;
+        [self playWinSound];
         
-        [[LevelController sharedInstance]saveBool:self.isComplete];
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 4) {
+            
+            return;
+        }
         
-        [self playWinSound]; 
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
     
     

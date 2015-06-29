@@ -231,12 +231,21 @@ extern int redCoinPosition;
         self.bottomObstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
-        
-        self.isComplete = YES;
-        
-        [[LevelController sharedInstance]saveBool:self.isComplete];
-        
+
         [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 27) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
     
     

@@ -270,11 +270,20 @@ extern int diamondPosition;
         self.coin.hidden = YES;
         self.greenDiamond.hidden = YES;
         
-        self.isComplete = YES;
-        
-        [[LevelController sharedInstance]saveBool:self.isComplete];
-        
         [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 15) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
     
     
@@ -300,9 +309,18 @@ extern int diamondPosition;
         self.fastronaut.hidden = YES;
         self.greenDiamond.hidden = YES;
         
-        self.isComplete = YES;
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 15) {
+            
+            return;
+        }
         
-        [[LevelController sharedInstance]saveBool:self.isComplete];
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
         
         [self playWinSound];
     }

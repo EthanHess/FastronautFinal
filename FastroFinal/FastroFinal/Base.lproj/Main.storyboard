@@ -3315,8 +3315,8 @@
                                 <rect key="frame" x="227" y="128" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastronaut-Final" id="kq9-Hs-zP6">
-                                <rect key="frame" x="125" y="229" width="70" height="110"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastrozontal" id="xtN-g1-cox">
+                                <rect key="frame" x="105" y="249" width="110" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LKk-Zb-ACz">
@@ -3382,7 +3382,7 @@
                         <outlet property="beginButton" destination="LKk-Zb-ACz" id="07W-cs-EAF"/>
                         <outlet property="bottomObstacleView" destination="R6g-uX-ktK" id="qJj-6X-shP"/>
                         <outlet property="coin" destination="omh-Nw-fhb" id="vPS-3Q-OZV"/>
-                        <outlet property="fastronaut" destination="kq9-Hs-zP6" id="5e9-1o-P5J"/>
+                        <outlet property="fastronaut" destination="xtN-g1-cox" id="PLb-gW-Hkd"/>
                         <outlet property="homeButton" destination="OPD-LY-2xD" id="eJD-4G-0b4"/>
                         <outlet property="obstacleView" destination="hzh-FT-uTa" id="ZG2-hp-XBh"/>
                         <outlet property="proceedButton" destination="F2Q-LZ-fxP" id="guV-Vh-4Er"/>
@@ -3478,6 +3478,10 @@
                                 <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenDiamond" id="3O6-1p-yjG">
+                                <rect key="frame" x="-5" y="140" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3487,6 +3491,7 @@
                         <outlet property="blowerView" destination="nnG-Wy-4CL" id="plD-5N-dhS"/>
                         <outlet property="coin" destination="m7b-Zj-kvb" id="7Km-cJ-33z"/>
                         <outlet property="fastronaut" destination="q7h-36-2ik" id="zph-ah-mMA"/>
+                        <outlet property="greenDiamond" destination="3O6-1p-yjG" id="RAk-Mn-Xjy"/>
                         <outlet property="homeButton" destination="U3f-Er-K3c" id="ggp-NN-2lH"/>
                         <outlet property="obstacleView" destination="3bx-mQ-jWA" id="kHB-Y4-WCw"/>
                         <outlet property="proceedButton" destination="VHb-Jw-qX0" id="8Cd-9Q-WGv"/>

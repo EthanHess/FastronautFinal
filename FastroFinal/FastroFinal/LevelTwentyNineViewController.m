@@ -296,7 +296,18 @@ int diamondPosition;
         self.redCoin.hidden = YES;
         self.diamondView.hidden = YES;
         
-        self.isComplete = YES;
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 30) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
         
         
         
@@ -346,9 +357,18 @@ int diamondPosition;
         self.homeButton.hidden = NO;
         self.diamondView.hidden = YES;
         
-        self.isComplete = YES;
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 30) {
+            
+            return;
+        }
         
-        [[LevelController sharedInstance]saveBool:self.isComplete];
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
         
         [self playWinSound];
     }

@@ -146,11 +146,11 @@ extern int redCoinPosition;
     }
     
     if (fastroFlight > 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"FastronautLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"Fastrozontal"];
     }
     
     if (fastroFlight < 0) {
-        self.fastronaut.image = [UIImage imageNamed:@"Fastronaut-Final"];
+        self.fastronaut.image = [UIImage imageNamed:@"FastrozontalDown"];
     }
     
 }
@@ -262,11 +262,20 @@ extern int redCoinPosition;
         self.coin.hidden = YES;
         self.redCoin.hidden = YES;
         
-        self.isComplete = YES;
-        
-        [[LevelController sharedInstance]saveBool:self.isComplete];
-        
         [self playWinSound];
+        
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 23) {
+            
+            return;
+        }
+        
+        else {
+            
+            self.isComplete = YES;
+            
+            [[LevelController sharedInstance]saveBool:self.isComplete];
+            
+        }
     }
     
     
