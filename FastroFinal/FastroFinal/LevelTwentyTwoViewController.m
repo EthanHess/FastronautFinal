@@ -74,7 +74,7 @@ extern int redCoinPosition;
     
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
-    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.004 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
     [self playAudio];
 }
@@ -127,11 +127,11 @@ extern int redCoinPosition;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(480, obstaclePosition);
+    self.obstacleView.center = CGPointMake(550, obstaclePosition);
     
     bottomObstaclePosition = arc4random() %frame;
     
-    self.bottomObstacleView.center = CGPointMake(-50, bottomObstaclePosition);
+    self.bottomObstacleView.center = CGPointMake(-100, bottomObstaclePosition);
 }
 
 
@@ -139,10 +139,10 @@ extern int redCoinPosition;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 10;
+    fastroFlight = fastroFlight - 8;
     
-    if (fastroFlight < - 20) {
-        fastroFlight = - 20;
+    if (fastroFlight < - 15) {
+        fastroFlight = - 15;
     }
     
     if (fastroFlight > 0) {

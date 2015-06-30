@@ -333,7 +333,7 @@ extern int diamondPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score >= 35) {
+    if (score >= 40) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

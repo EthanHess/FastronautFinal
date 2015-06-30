@@ -29,7 +29,6 @@ extern int redCoinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
-@property (weak, nonatomic) IBOutlet UIImageView *redCoin;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *topView;
@@ -71,11 +70,11 @@ extern int redCoinPosition;
     
     [self placeCoin];
     
-    [self placeRedCoin];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0045 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
-    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    [self animateView:self.obstacleView duration:1.5];
     
     [self playAudio];
 }
@@ -175,17 +174,6 @@ extern int redCoinPosition;
     
 }
 
-- (void)placeRedCoin {
-    
-    int frame = self.view.frame.size.height;
-    
-    redCoinPosition = arc4random() %frame;
-    
-    self.redCoin.center = CGPointMake(400, redCoinPosition);
-    
-    self.redCoin.hidden = NO;
-}
-
 
 - (void)coinMoving {
     
@@ -201,22 +189,6 @@ extern int redCoinPosition;
         self.coin.hidden = YES;
         [self placeCoin];
         [self scoreChange];
-    }
-    
-    //animate red coin
-    
-    self.redCoin.center = CGPointMake(self.redCoin.center.x - 1, self.redCoin.center.y);
-    
-    if (self.redCoin.center.x < - 50) {
-        
-        [self placeRedCoin];
-    }
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.redCoin.frame)) {
-        
-        self.redCoin.hidden = YES;
-        [self placeRedCoin];
-        [self scoreDown];
         [self playBellSound];
     }
     
@@ -234,7 +206,6 @@ extern int redCoinPosition;
     self.obstacleView.hidden = YES;
     self.fastronaut.hidden = YES;
     self.coin.hidden = YES;
-    self.redCoin.hidden = YES;
     
     score = 0;
     
@@ -258,7 +229,6 @@ extern int redCoinPosition;
         self.obstacleView.hidden = YES;
         self.fastronaut.hidden = YES;
         self.coin.hidden = YES;
-        self.redCoin.hidden = YES;
         
         [self playWinSound];
         
@@ -311,9 +281,23 @@ extern int redCoinPosition;
     self.obstacleView.hidden = NO;
     self.coin.hidden = NO;
     self.homeButton.hidden = YES;
-    self.redCoin.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+    
+}
+
+- (void)animateView:(UIImageView *)view duration:(float)duration {
+    
+    
+    CGAffineTransform bigger = CGAffineTransformMakeScale(1.3, 1.3);
+    
+    [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
+        
+        view.transform = bigger;
+        
+    } completion:nil];
+    
+    
     
 }
 
