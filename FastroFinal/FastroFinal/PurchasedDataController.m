@@ -11,7 +11,7 @@
 
 static NSString * const kLevelsElevenThroughTwentyKey = @"ElevelThroughTwenty";
 static NSString * const kLevelsTwentyOneThroughThirtyKey = @"TwentyOneThroughThirty";
-static NSString * const kAllLevels = @"allLevels";
+static NSString * const kAllLevelsKey = @"allLevels";
 
 @implementation PurchasedDataController
 
@@ -39,12 +39,18 @@ static NSString * const kAllLevels = @"allLevels";
     
     self.accessTwentyOneThroughEnd = [[NSUserDefaults standardUserDefaults] boolForKey:kLevelsTwentyOneThroughThirtyKey];
     
+    self.accessAllLevels = [[NSUserDefaults standardUserDefaults] boolForKey:kAllLevelsKey];
+    
     if (!self.accessElevenThroughTwenty) {
         self.accessElevenThroughTwenty = NO;
     }
     
     if (!self.accessTwentyOneThroughEnd) {
         self.accessTwentyOneThroughEnd = NO;
+    }
+    
+    if (!self.accessAllLevels) {
+        self.accessAllLevels = NO;
     }
 
 }
@@ -70,7 +76,7 @@ static NSString * const kAllLevels = @"allLevels";
     
     _accessAllLevels = accessible;
     
-    [[NSUserDefaults standardUserDefaults] setBool:accessible forKey:kAllLevels];
+    [[NSUserDefaults standardUserDefaults] setBool:accessible forKey:kAllLevelsKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
@@ -89,6 +95,9 @@ static NSString * const kAllLevels = @"allLevels";
         self.accessTwentyOneThroughEnd = YES;
     }
     
+    if ([productIdentifer isEqualToString:@"com.devmtn."]) {
+        self.accessAllLevels = YES;
+    }
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kPurchasedContentUpdated object:nil userInfo:nil];
     

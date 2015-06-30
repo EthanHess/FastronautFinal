@@ -13,6 +13,7 @@
 @property (nonatomic, strong, readonly) NSArray *arrayOfCompletedLevels;
 
 + (LevelController *)sharedInstance;
+
 - (void)saveBool:(BOOL)isComplete; 
 
 @end

@@ -1937,7 +1937,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aKO-UM-pIt" kind="push" id="EJW-ib-YNf"/>
+                                    <action selector="purchaseNextLevels:" destination="8c4-p0-DeA" eventType="touchUpInside" id="nIN-jL-E1W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o1K-GU-SnR">
@@ -3259,7 +3259,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="a45-6Y-8pq" kind="push" id="7Lt-c5-JXg"/>
+                                    <action selector="purchaseLastLevels:" destination="euO-XM-Mmr" eventType="touchUpInside" id="hbv-KF-DG4"/>
                                 </connections>
                             </button>
                         </subviews>

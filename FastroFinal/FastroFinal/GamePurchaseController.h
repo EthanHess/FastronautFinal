@@ -17,6 +17,8 @@ static NSString * const kProductIDKey = @"productID";
 
 @interface GamePurchaseController : NSObject
 
+@property (nonatomic, strong) NSArray *products; 
+
 + (GamePurchaseController *)sharedInstance;
 
 - (void)requestProducts;

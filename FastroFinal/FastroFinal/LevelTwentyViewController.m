@@ -11,6 +11,7 @@
 #import "SoundEffectsController.h"
 #import "ViewController.h"
 #import "LevelController.h"
+#import "LevelTwentyOneViewController.h"
 
 
 extern int topObstaclePosition;
@@ -304,6 +305,27 @@ extern int score;
 }
 
 
+- (IBAction)purchaseLastLevels:(id)sender {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Purchase last ten levels?" message:@"Would you like to purchase the last levels for $.99?" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+        LevelTwentyOneViewController *levelTOne = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyOne"];
+        
+        [self.navigationController pushViewController:levelTOne animated:YES];
+        
+        // purchase code goes here.
+    }]];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 
 
 
