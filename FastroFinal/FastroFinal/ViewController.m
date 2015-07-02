@@ -86,11 +86,25 @@ int astroFall;
     [[SoundController sharedInstance]playFileAtURL:url];
 }
 
+
+- (IBAction)unwindToMainMenu:(UIStoryboardSegue *)sender {
+    
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    self.startNewGame.hidden = YES;
+    self.levelButton.hidden = YES;
+    self.instructionsButton.hidden = YES;
+    self.creditsButton.hidden = YES;
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 @end

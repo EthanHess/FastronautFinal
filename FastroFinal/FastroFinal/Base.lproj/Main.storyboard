@@ -106,6 +106,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Azq-pJ-YKN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="103.5" y="255.5"/>
         </scene>
@@ -124,7 +125,7 @@
                                     <barButtonItem title="Back Home" id="3XH-ty-JCJ">
                                         <color key="tintColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="push" id="R8Y-Uz-RBG"/>
+                                            <segue destination="Azq-pJ-YKN" kind="unwind" unwindAction="unwindToMainMenu:" id="N9g-7G-ONc"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -163,7 +164,7 @@
                                 <items>
                                     <barButtonItem title="Home" id="nPC-ev-hs6">
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="push" id="SsY-QA-Ahw"/>
+                                            <segue destination="Azq-pJ-YKN" kind="unwind" unwindAction="unwindToMainMenu:" id="qtZ-OP-ewo"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dLW-tz-VO5"/>
@@ -1233,7 +1234,7 @@
                                 <items>
                                     <barButtonItem title="Back Home" id="WbK-en-4sb">
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="push" id="aVG-Iv-qdq"/>
+                                            <segue destination="Azq-pJ-YKN" kind="unwind" unwindAction="unwindToMainMenu:" id="UaI-Hv-Db9"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -1269,7 +1270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwy-iT-18j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="1658"/>
+            <point key="canvasLocation" x="103.5" y="1707.5"/>
         </scene>
         <!--Level Two View Controller-->
         <scene sceneID="LDa-to-fPn">
@@ -3632,7 +3633,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="aVG-Iv-qdq"/>
-    </inferredMetricsTieBreakers>
 </document>
