@@ -531,9 +531,16 @@
                                     <action selector="startGame:" destination="FWg-3r-Xao" eventType="touchUpInside" id="a2z-ro-VDp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2oa-Tf-2Q1">
+                                <rect key="frame" x="151.5" y="34" width="73" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Xq-0A-F7J">
-                                <rect key="frame" x="101" y="417" width="174" height="48"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="100" y="483" width="174" height="48"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
@@ -543,13 +550,6 @@
                                     <action selector="goHome:" destination="FWg-3r-Xao" eventType="touchUpInside" id="OOb-pI-8o1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2oa-Tf-2Q1">
-                                <rect key="frame" x="151.5" y="34" width="73" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -643,8 +643,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uq9-6s-FRC">
-                                <rect key="frame" x="101" y="434" width="174" height="48"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="101" y="513" width="174" height="48"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -661,6 +661,10 @@
                                 <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenDiamond" id="Pik-aH-O8K">
+                                <rect key="frame" x="35" y="225" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -670,6 +674,7 @@
                         <outlet property="bottomObstacleView" destination="f0K-t3-baa" id="tXa-MW-jIc"/>
                         <outlet property="coin" destination="Kqj-gK-tjE" id="JeC-A0-qkG"/>
                         <outlet property="fastronaut" destination="xdj-s4-Det" id="FjI-UD-wwj"/>
+                        <outlet property="greenDiamond" destination="Pik-aH-O8K" id="727-cH-maK"/>
                         <outlet property="homeButton" destination="Uq9-6s-FRC" id="3ro-OO-cJl"/>
                         <outlet property="middleObstacleView" destination="pAa-ER-Ejo" id="Ped-YG-dsJ"/>
                         <outlet property="proceedButton" destination="Shy-Dx-d4Y" id="KPY-QN-IMv"/>
@@ -1510,18 +1515,6 @@
                                 <rect key="frame" x="105" y="258" width="110" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bjb-Iq-wl4">
-                                <rect key="frame" x="127" y="139" width="122" height="48"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="Begin!">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startGame:" destination="aHW-eG-h3Q" eventType="touchUpInside" id="tQz-Uw-TKv"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fgn-ue-6gR">
                                 <rect key="frame" x="7" y="354" width="362" height="52"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -1532,6 +1525,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="T6m-rz-gMb" kind="push" id="1Kp-zH-HQV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oIb-aQ-ZnS">
+                                <rect key="frame" x="68" y="246" width="241" height="66"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="aHW-eG-h3Q" eventType="touchUpInside" id="jqC-js-cVK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D1Z-ds-N2k">
@@ -1553,16 +1558,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oIb-aQ-ZnS">
-                                <rect key="frame" x="67" y="271" width="241" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bjb-Iq-wl4">
+                                <rect key="frame" x="127" y="156" width="122" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="You died! Try again">
+                                <state key="normal" title="Begin!">
                                     <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="resetGame:" destination="aHW-eG-h3Q" eventType="touchUpInside" id="jqC-js-cVK"/>
+                                    <action selector="startGame:" destination="aHW-eG-h3Q" eventType="touchUpInside" id="tQz-Uw-TKv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2250,19 +2255,8 @@
                                     <action selector="startGame:" destination="zDb-y3-D5u" eventType="touchUpInside" id="5Pu-73-CnF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="slt-Cz-gEx">
-                                <rect key="frame" x="29" y="314" width="318" height="62"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="Well done! Proceed">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Zff-Xa-Znh" kind="push" id="xXR-qO-5Ea"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A65-dH-KAK">
-                                <rect key="frame" x="98" y="372" width="174" height="48"/>
+                                <rect key="frame" x="100" y="408" width="174" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Home">
@@ -2289,6 +2283,17 @@
                                 </state>
                                 <connections>
                                     <action selector="resetGame:" destination="zDb-y3-D5u" eventType="touchUpInside" id="6Fb-EX-aIu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="slt-Cz-gEx">
+                                <rect key="frame" x="29" y="333" width="318" height="62"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zff-Xa-Znh" kind="push" id="xXR-qO-5Ea"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2438,18 +2443,10 @@
                                 <rect key="frame" x="125" y="229" width="70" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GJz-JR-0sY">
-                                <rect key="frame" x="1" y="330" width="374" height="60"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="Well done! Proceed">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zDb-y3-D5u" kind="push" id="Adk-df-mvf"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelEighteenOcean" id="R4k-1c-GmT">
+                                <rect key="frame" x="0.0" y="586" width="375" height="217"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rj2-kD-Hot">
                                 <rect key="frame" x="69" y="274" width="238" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -2463,7 +2460,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qZ1-yf-FQ0">
-                                <rect key="frame" x="101" y="391" width="174" height="48"/>
+                                <rect key="frame" x="100" y="439" width="174" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Home">
@@ -2493,10 +2490,18 @@
                                 <color key="textColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelEighteenOcean" id="R4k-1c-GmT">
-                                <rect key="frame" x="0.0" y="586" width="375" height="217"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GJz-JR-0sY">
+                                <rect key="frame" x="1" y="358" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="Well done! Proceed">
+                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zDb-y3-D5u" kind="push" id="Adk-df-mvf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3115,7 +3120,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lfi-th-EfJ">
-                                <rect key="frame" x="101" y="368" width="174" height="48"/>
+                                <rect key="frame" x="101" y="403" width="174" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Home">
@@ -3138,20 +3143,8 @@
                                     <action selector="startGame:" destination="Zff-Xa-Znh" eventType="touchUpInside" id="JCf-YW-Wre"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2dr-nm-mZ1">
-                                <rect key="frame" x="11" y="241" width="354" height="52"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
-                                <state key="normal" title="You died! Try again">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="resetGame:" destination="Zff-Xa-Znh" eventType="touchUpInside" id="SEc-0b-EQE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cbi-ek-EKT">
-                                <rect key="frame" x="22" y="293" width="331" height="67"/>
+                                <rect key="frame" x="22" y="312" width="331" height="67"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Well done! Proceed">
@@ -3169,6 +3162,18 @@
                                 <color key="textColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2dr-nm-mZ1">
+                                <rect key="frame" x="11" y="252" width="354" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <state key="normal" title="You died! Try again">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="Zff-Xa-Znh" eventType="touchUpInside" id="SEc-0b-EQE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3241,7 +3246,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vh0-Jj-rSV">
-                                <rect key="frame" x="101" y="385" width="174" height="48"/>
+                                <rect key="frame" x="100" y="428" width="174" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Home">
@@ -3260,7 +3265,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pcA-nL-lnr">
-                                <rect key="frame" x="23" y="332" width="329" height="36"/>
+                                <rect key="frame" x="23" y="350" width="329" height="36"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Well done! Proceed">

@@ -78,6 +78,9 @@ extern int redCoinPosition;
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
+    [self animateView:self.topObstacleView duration:2];
+    [self animateView:self.bottomObstacleView duration:2];
+    
     [self playAudio];
 }
 
@@ -286,6 +289,21 @@ extern int redCoinPosition;
     self.coin.hidden = NO;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+    
+}
+
+- (void)animateView:(UIImageView *)view duration:(float)duration {
+    
+    
+    CGAffineTransform smaller = CGAffineTransformMakeScale(.7, .7);
+    
+    [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
+        
+        view.transform = smaller;
+        
+    } completion:nil];
+    
+    
     
 }
 
