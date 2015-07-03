@@ -9,7 +9,7 @@
 #import "PurchasedDataController.h"
 #import "GamePurchaseController.h"
 
-static NSString * const kLevelsElevenThroughTwentyKey = @"ElevelThroughTwenty";
+static NSString * const kLevelsElevenThroughTwentyKey = @"ElevenThroughTwenty";
 static NSString * const kLevelsTwentyOneThroughThirtyKey = @"TwentyOneThroughThirty";
 static NSString * const kAllLevelsKey = @"allLevels";
 
@@ -87,15 +87,15 @@ static NSString * const kAllLevelsKey = @"allLevels";
     
     NSString *productIdentifer = notification.userInfo[kProductIDKey];
     
-    if ([productIdentifer isEqualToString:@"com.devmtn."]) {
+    if ([productIdentifer isEqualToString:@"com.devmtn.elevenThroughTwenty"]) {
         self.accessElevenThroughTwenty = YES;
     }
     
-    if ([productIdentifer isEqualToString:@"com.devmtn."]) {
+    if ([productIdentifer isEqualToString:@"com.devmtn.twentyOneThroughEnd"]) {
         self.accessTwentyOneThroughEnd = YES;
     }
     
-    if ([productIdentifer isEqualToString:@"com.devmtn."]) {
+    if ([productIdentifer isEqualToString:@"com.devmtn.allLevels"]) {
         self.accessAllLevels = YES;
     }
     

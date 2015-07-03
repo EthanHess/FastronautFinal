@@ -31,8 +31,12 @@
 
 - (NSSet *)bundledProducts {
     
-    // Make accessing levels into products
-    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSArray *bundleProducts = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[bundle URLForResource:@"Products" withExtension:@"json"]] options:0 error:nil];
+    if (bundleProducts) {
+        NSSet *products = [NSSet setWithArray:bundleProducts];
+        return products;
+    }
     return nil;
     
 }
