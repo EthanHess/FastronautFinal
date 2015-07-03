@@ -14,6 +14,8 @@
 @interface WonTheGameViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *homeButton;
+@property (weak, nonatomic) IBOutlet UIImageView *fastro;
+@property (weak, nonatomic) IBOutlet UIImageView *trophy;
 
 @end
 

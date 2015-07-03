@@ -34,7 +34,6 @@ extern int coinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (weak, nonatomic) IBOutlet UIImageView *bounceView;
-@property (weak, nonatomic) IBOutlet UIImageView *topBounce;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 
@@ -53,6 +52,10 @@ extern int coinPosition;
     
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
+    
+    self.topObstacleView.layer.cornerRadius = self.topObstacleView.frame.size.height / 2;
+    
+    self.bottomObstacleView.layer.cornerRadius = self.bottomObstacleView.frame.size.height / 2;
     
     self.proceedButton.hidden = YES;
     self.youDiedButton.hidden = YES;
@@ -73,7 +76,7 @@ extern int coinPosition;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0075 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.008 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -131,7 +134,7 @@ extern int coinPosition;
     
     self.topObstacleView.center = CGPointMake(-50, topObstaclePosition);
     
-    self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
+    self.bottomObstacleView.center = CGPointMake(400, bottomObstaclePosition);
     
     
 }
@@ -158,11 +161,6 @@ extern int coinPosition;
     if (CGRectIntersectsRect(self.fastronaut.frame, self.bounceView.frame)) {
         
         [self mushroomPop];
-    }
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.topBounce.frame)) {
-        
-        [self popDown];
     }
     
     
@@ -277,21 +275,6 @@ extern int coinPosition;
     self.bounceView.animationDuration = 0.2;
     [self.bounceView startAnimating];
     
-    
-}
-
-- (void)popDown {
-    
-    fastroFlight = - 80;
-    
-    self.topBounce.animationImages = [NSArray arrayWithObjects:
-                                       [UIImage imageNamed:@"LevelSixteenBounceUp"],
-                                       [UIImage imageNamed:@"LevelSixteenBounce"],
-                                       [UIImage imageNamed:@"LevelSixteenBounceUp"], nil];
-    
-    [self.topBounce setAnimationRepeatCount:1];
-    self.topBounce.animationDuration = 0.2;
-    [self.topBounce startAnimating];
     
 }
 

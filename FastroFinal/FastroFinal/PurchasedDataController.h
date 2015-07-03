@@ -18,4 +18,8 @@ static NSString * const kPurchasedContentUpdated = @"kPurchasedContentUpdated";
 
 + (PurchasedDataController *)sharedInstance;
 
+- (void)setElevenThroughTwenty:(BOOL)accessible;
+- (void)setTwentyOneThroughEnd:(BOOL)accessible;
+- (void)setAllLevels:(BOOL)accessible; 
+
 @end

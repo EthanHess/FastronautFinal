@@ -31,6 +31,7 @@
 		275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50AD1B12442800E6896A /* LevelThreeViewController.m */; };
 		275B50B11B12AF8800E6896A /* LevelFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50B01B12AF8800E6896A /* LevelFourViewController.m */; };
 		275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50E71B13AD4100E6896A /* LevelFiveViewController.m */; };
+		27A8371F1B4720B800F02B14 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 27A8371E1B4720B800F02B14 /* Products.json */; };
 		27B127541B2393E1007BACD1 /* LevelFifteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */; };
 		27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */; };
 		27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */; };
@@ -154,6 +155,7 @@
 		275B50B01B12AF8800E6896A /* LevelFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFourViewController.m; sourceTree = "<group>"; };
 		275B50E61B13AD4100E6896A /* LevelFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFiveViewController.h; sourceTree = "<group>"; };
 		275B50E71B13AD4100E6896A /* LevelFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFiveViewController.m; sourceTree = "<group>"; };
+		27A8371E1B4720B800F02B14 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		27B127521B2393E1007BACD1 /* LevelFifteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFifteenViewController.h; sourceTree = "<group>"; };
 		27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFifteenViewController.m; sourceTree = "<group>"; };
 		27B25A0B1B30B82100544F52 /* LevelTwentyOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyOneViewController.h; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 				27E9F0EF1B27956200066878 /* PurchasedDataController.m */,
 				27E9F0F11B27958700066878 /* GamePurchaseController.h */,
 				27E9F0F21B27958700066878 /* GamePurchaseController.m */,
+				27A8371E1B4720B800F02B14 /* Products.json */,
 				270E52161B082986001CDF3C /* Images.xcassets */,
 				270E52181B082986001CDF3C /* LaunchScreen.xib */,
 				270E52091B082986001CDF3C /* Supporting Files */,
@@ -569,6 +572,7 @@
 				27B25AAB1B34A1D600544F52 /* Unwritten Return.mp3 in Resources */,
 				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
 				27B25B661B39C97000544F52 /* winSound.wav in Resources */,
+				27A8371F1B4720B800F02B14 /* Products.json in Resources */,
 				27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */,
