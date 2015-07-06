@@ -71,7 +71,7 @@ extern int coinPosition;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.006 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0085 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -126,10 +126,10 @@ extern int coinPosition;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 10;
+    fastroFlight = fastroFlight - 5;
     
-    if (fastroFlight < - 20) {
-        fastroFlight = - 20;
+    if (fastroFlight < - 15) {
+        fastroFlight = - 15;
     }
     
     if (fastroFlight > 0) {
@@ -146,7 +146,7 @@ extern int coinPosition;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 40;
+    fastroFlight = 30;
 
     
 }

@@ -17,19 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    "A Little Faith"
-//    Kevin MacLeod (incompetech.com)
-//    Licensed under Creative Commons: By Attribution 3.0
-//    http://creativecommons.org/licenses/by/3.0/
-    
-    //freesound link
-    
-//    http://www.freesound.org/people/Aiwha/sounds/196106/
-//
-//    http://www.freesound.org/people/LittleRobotSoundFactory/sounds/274183/
-    
-//    http://www.freesound.org/people/Jagadamba/sounds/254764/
-    
     return YES;
 }
 

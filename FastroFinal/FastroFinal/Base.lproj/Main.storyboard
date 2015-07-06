@@ -30,7 +30,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FastroFinalWelcomeView" id="aO4-DG-Hbv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeView" id="aO4-DG-Hbv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -1011,7 +1011,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FirstLevelFastro" id="N1y-Un-OAE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelOneBackground" id="N1y-Un-OAE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -1032,7 +1032,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Well done! Proceed">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1044,7 +1044,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="You died! Try again">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1057,7 +1057,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Begin!">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1069,7 +1069,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Home">
-                                    <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1281,7 +1281,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SecondLevelFastro" id="fsx-HQ-CLk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwoBackground" id="fsx-HQ-CLk">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -2685,7 +2685,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gasCloud" id="aeb-wg-cfr">
-                                <rect key="frame" x="-32.000001974105857" y="343" width="200" height="120"/>
+                                <rect key="frame" x="-32.000006380592239" y="343" width="200" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastrozontal" id="xMq-Bq-12O">
@@ -3102,14 +3102,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyLauncher" id="juj-v1-r4h">
-                                <rect key="frame" x="70" y="0.0" width="235" height="110"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nineteenthLevelBottom" id="FYF-yx-gv7">
-                                <rect key="frame" x="110" y="553" width="155" height="120"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyObstacleOne" id="jeU-mq-wwG">
                                 <rect key="frame" x="156" y="329" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -3125,6 +3117,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenReverseTwo" id="MsG-Pe-Q7W">
                                 <rect key="frame" x="125" y="229" width="70" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyLauncher" id="juj-v1-r4h">
+                                <rect key="frame" x="70" y="0.0" width="235" height="110"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nineteenthLevelBottom" id="FYF-yx-gv7">
+                                <rect key="frame" x="110" y="553" width="155" height="120"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lfi-th-EfJ">
                                 <rect key="frame" x="101" y="403" width="174" height="48"/>
@@ -3524,16 +3524,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FastroFinalWelcomeView" width="335" height="550"/>
         <image name="Fastronaut-Final" width="70" height="110"/>
         <image name="FastronautLanded" width="70" height="110"/>
         <image name="Fastrozontal" width="110" height="70"/>
-        <image name="FirstLevelFastro" width="335" height="550"/>
         <image name="FourthLevelFastro" width="335" height="550"/>
         <image name="GreenFastro" width="70" height="110"/>
         <image name="LevelFourteenObstacle" width="150" height="180"/>
         <image name="LevelSixteenBounce" width="150" height="100"/>
-        <image name="SecondLevelFastro" width="335" height="550"/>
         <image name="backgroundSeven" width="120" height="120"/>
         <image name="blastOffScene" width="335" height="550"/>
         <image name="bossObstacle" width="225" height="225"/>
@@ -3560,6 +3557,7 @@
         <image name="levelElevenTop" width="200" height="450"/>
         <image name="levelFifteenObstacle" width="120" height="120"/>
         <image name="levelFourteenMushroom" width="150" height="120"/>
+        <image name="levelOneBackground" width="375" height="667"/>
         <image name="levelOneObstacle" width="100" height="100"/>
         <image name="levelSixteenObstacleOne" width="80" height="80"/>
         <image name="levelSixteenObstacleTwo" width="80" height="80"/>
@@ -3590,6 +3588,7 @@
         <image name="levelTwentyTwoFastro" width="335" height="550"/>
         <image name="levelTwentyTwoObstacle" width="150" height="100"/>
         <image name="levelTwentyTwoObstacleTwo" width="150" height="100"/>
+        <image name="levelTwoBackground" width="375" height="667"/>
         <image name="levelTwoObstacle" width="200" height="125"/>
         <image name="mainViewLanding" width="150" height="100"/>
         <image name="nineBottomObstacle" width="150" height="300"/>
@@ -3633,6 +3632,7 @@
         <image name="twentySevenObstacle" width="200" height="120"/>
         <image name="twentySixBottomObstacle" width="300" height="300"/>
         <image name="twentySixTopObstacle" width="300" height="300"/>
+        <image name="welcomeView" width="375" height="667"/>
         <image name="wonTheGameView" width="335" height="550"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
