@@ -74,7 +74,7 @@ int astroFall;
         self.levelButton.hidden = NO;
         self.instructionsButton.hidden = NO;
         self.creditsButton.hidden = NO;
-        self.fastronaut.image = [UIImage imageNamed:@"greenFastroLanded"];
+        self.fastronaut.image = [UIImage imageNamed:@"FastronautLanded"];
     }
     
 }
