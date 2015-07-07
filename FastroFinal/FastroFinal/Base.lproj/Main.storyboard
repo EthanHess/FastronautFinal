@@ -477,7 +477,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentySevenFastro" id="umX-rI-AS6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentySevenBackground" id="umX-rI-AS6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -580,7 +580,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyEightFastro" id="tdy-Rd-aZI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyEightBackground" id="tdy-Rd-aZI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -800,7 +800,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentySixFastro" id="z17-VP-wmS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentySixBackground" id="z17-VP-wmS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -903,7 +903,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyNineFastro" id="0v3-dQ-KPS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyNineBackground" id="0v3-dQ-KPS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -1597,17 +1597,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFiveFastro" id="WxV-PB-R8q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFiveBackground" id="WxV-PB-R8q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFiveBottom" id="baP-cU-fVF">
                                 <rect key="frame" x="0.0" y="587" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFiveTop" id="kI5-cd-yhk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFiveObstacle" id="5Z4-oz-j3R">
                                 <rect key="frame" x="204" y="159" width="100" height="100"/>
@@ -1689,7 +1685,6 @@
                         <outlet property="obstacleView" destination="5Z4-oz-j3R" id="EwK-BS-CmE"/>
                         <outlet property="proceedButton" destination="fvx-UA-oAi" id="w7p-wF-7ty"/>
                         <outlet property="scoreLabel" destination="9UH-EG-cFe" id="9AN-CD-PnX"/>
-                        <outlet property="topView" destination="kI5-cd-yhk" id="Hig-HX-fsr"/>
                         <outlet property="youDiedButton" destination="3ke-td-b80" id="kDB-bS-DmH"/>
                     </connections>
                 </viewController>
@@ -1705,7 +1700,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leveThirtyFastro" id="sdx-Se-JDj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bossBackground" id="sdx-Se-JDj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -2527,7 +2522,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFourFastro" id="Aij-bb-Rgz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="levelTwentyFourBackground" id="Aij-bb-Rgz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -3526,6 +3521,7 @@
         <image name="LevelFourteenObstacle" width="150" height="180"/>
         <image name="LevelSixteenBounce" width="150" height="100"/>
         <image name="backgroundSeven" width="120" height="120"/>
+        <image name="bossBackground" width="375" height="667"/>
         <image name="bossObstacle" width="225" height="225"/>
         <image name="bottomSpike" width="80" height="450"/>
         <image name="fastroCoin" width="50" height="50"/>
@@ -3535,7 +3531,6 @@
         <image name="greenReverseTwo" width="70" height="110"/>
         <image name="launchBackground" width="375" height="667"/>
         <image name="leftObstacleFour" width="180" height="85"/>
-        <image name="leveThirtyFastro" width="335" height="550"/>
         <image name="levelEightBackground" width="375" height="667"/>
         <image name="levelEightBottom" width="120" height="300"/>
         <image name="levelEightMiddle" width="110" height="110"/>
@@ -3571,23 +3566,22 @@
         <image name="levelTwelveBackground" width="375" height="667"/>
         <image name="levelTwelveMiddle" width="150" height="150"/>
         <image name="levelTwentyBackground" width="375" height="667"/>
+        <image name="levelTwentyEightBackground" width="375" height="667"/>
         <image name="levelTwentyEightBottom" width="110" height="300"/>
-        <image name="levelTwentyEightFastro" width="335" height="550"/>
         <image name="levelTwentyEightTop" width="110" height="300"/>
+        <image name="levelTwentyFiveBackground" width="375" height="667"/>
         <image name="levelTwentyFiveBottom" width="320" height="80"/>
-        <image name="levelTwentyFiveFastro" width="335" height="550"/>
         <image name="levelTwentyFiveObstacle" width="100" height="100"/>
-        <image name="levelTwentyFiveTop" width="320" height="80"/>
-        <image name="levelTwentyFourFastro" width="335" height="550"/>
+        <image name="levelTwentyFourBackground" width="375" height="667"/>
         <image name="levelTwentyFourObstacle" width="150" height="100"/>
         <image name="levelTwentyLauncher" width="180" height="110"/>
-        <image name="levelTwentyNineFastro" width="335" height="550"/>
+        <image name="levelTwentyNineBackground" width="375" height="667"/>
         <image name="levelTwentyNineObstacle" width="150" height="150"/>
         <image name="levelTwentyObstacleOne" width="120" height="50"/>
         <image name="levelTwentyObstacleTwo" width="120" height="50"/>
         <image name="levelTwentyOneBackground" width="375" height="667"/>
-        <image name="levelTwentySevenFastro" width="335" height="550"/>
-        <image name="levelTwentySixFastro" width="335" height="550"/>
+        <image name="levelTwentySevenBackground" width="375" height="667"/>
+        <image name="levelTwentySixBackground" width="375" height="667"/>
         <image name="levelTwentyThreeBackground" width="375" height="667"/>
         <image name="levelTwentyThreeObstacle" width="150" height="150"/>
         <image name="levelTwentyTwoBackground" width="375" height="667"/>
@@ -3627,7 +3621,7 @@
         <image name="twentySixBottomObstacle" width="300" height="300"/>
         <image name="twentySixTopObstacle" width="300" height="300"/>
         <image name="welcomeView" width="375" height="667"/>
-        <image name="wonTheGameView" width="335" height="550"/>
+        <image name="wonTheGameView" width="375" height="667"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

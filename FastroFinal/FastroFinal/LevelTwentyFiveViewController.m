@@ -31,7 +31,6 @@ extern int redCoinPosition;
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
-@property (weak, nonatomic) IBOutlet UIImageView *topView;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomView;
 
 @property (nonatomic, strong) NSTimer *fastroTimer;
@@ -81,10 +80,6 @@ extern int redCoinPosition;
 
 
 - (void)obstacleMoving {
-    
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
@@ -154,11 +149,6 @@ extern int redCoinPosition;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     fastroFlight = 30;
-    
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.topView.frame)) {
-        
-        fastroFlight = 0;
-    }
     
 }
 
@@ -289,7 +279,7 @@ extern int redCoinPosition;
 - (void)animateView:(UIImageView *)view duration:(float)duration {
     
     
-    CGAffineTransform bigger = CGAffineTransformMakeScale(1.3, 1.3);
+    CGAffineTransform bigger = CGAffineTransformMakeScale(1.5, 1.5);
     
     [UIView animateKeyframesWithDuration:duration delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
         

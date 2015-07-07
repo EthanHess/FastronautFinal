@@ -11,11 +11,14 @@
 #import "SoundEffectsController.h"
 #import "ViewController.h"
 
+extern int astroFall;
+
 @interface WonTheGameViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *homeButton;
 @property (weak, nonatomic) IBOutlet UIImageView *fastro;
 @property (weak, nonatomic) IBOutlet UIImageView *trophy;
+@property (nonatomic, strong) NSTimer *astroTimer;
 
 @end
 
@@ -23,7 +26,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self placeFastro];
+}
+
+- (void)placeFastro {
+    
+    int frame = self.view.frame.size.height;
+    
+    self.fastro.center = CGPointMake(self.view.frame.size.width / 2, - frame);
+    
+    self.astroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fastronautMoving) userInfo:nil repeats:YES];
+}
+
+- (void)fastronautMoving {
+    
+    self.fastro.center = CGPointMake(self.fastro.center.x, self.fastro.center.y - astroFall);
+    
+    astroFall = astroFall - 10;
+    
+    if (astroFall < -15) {
+        astroFall = -15;
+    }
+    
+    if (CGRectIntersectsRect(self.fastro.frame, self.trophy.frame)) {
+        astroFall = 0;
+        
+        self.fastro.image = [UIImage imageNamed:@"greenFastroLanded"];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
