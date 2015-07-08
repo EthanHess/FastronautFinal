@@ -8,7 +8,7 @@
 //
 
 #import "WonTheGameViewController.h"
-#import "SoundEffectsController.h"
+#import "SoundController.h"
 #import "ViewController.h"
 
 extern int astroFall;
@@ -28,6 +28,7 @@ extern int astroFall;
     [super viewDidLoad];
     
     [self placeFastro];
+    [self playAudio]; 
 }
 
 - (void)placeFastro {
@@ -50,11 +51,20 @@ extern int astroFall;
     }
     
     if (CGRectIntersectsRect(self.fastro.frame, self.trophy.frame)) {
-        astroFall = 0;
+        
+        [self.astroTimer invalidate]; 
         
         self.fastro.image = [UIImage imageNamed:@"greenFastroLanded"];
+        astroFall = 0; 
     }
     
+}
+
+- (void)playAudio {
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Call to Adventure" withExtension:@"mp3"];
+    
+    [[SoundController sharedInstance]playFileAtURL:url];
 }
 
 - (void)didReceiveMemoryWarning {

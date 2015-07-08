@@ -75,6 +75,7 @@ int astroFall;
         self.instructionsButton.hidden = NO;
         self.creditsButton.hidden = NO;
         self.fastronaut.image = [UIImage imageNamed:@"FastronautLanded"];
+        [self.astroTimer invalidate]; 
     }
     
 }

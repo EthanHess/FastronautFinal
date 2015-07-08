@@ -85,6 +85,7 @@
 		27BC840E1B2E4E8300668F80 /* Killing Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */; };
 		27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */; };
 		27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */; };
+		27C7FCE51B4DD4F300F26860 /* Call to Adventure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */; };
 		27E9F0F01B27956200066878 /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0EF1B27956200066878 /* PurchasedDataController.m */; };
 		27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F21B27958700066878 /* GamePurchaseController.m */; };
 		27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */; };
@@ -224,6 +225,7 @@
 		27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Killing Time.mp3"; sourceTree = "<group>"; };
 		27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Sketch.mp3"; sourceTree = "<group>"; };
 		27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EDM Detection Mode.mp3"; sourceTree = "<group>"; };
+		27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Call to Adventure.mp3"; sourceTree = "<group>"; };
 		27E9F0EE1B27956200066878 /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
 		27E9F0EF1B27956200066878 /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
 		27E9F0F11B27958700066878 /* GamePurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePurchaseController.h; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			children = (
 				270E52081B082986001CDF3C /* FastroFinal */,
 				27B25A111B30F31A00544F52 /* One Sly Move.mp3 */,
+				27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */,
 				27B25B311B387E5900544F52 /* Son Of A Rocket.mp3 */,
 				27B25B2F1B387DBF00544F52 /* gameOver.wav */,
 				27B25B651B39C97000544F52 /* winSound.wav */,
@@ -550,6 +553,7 @@
 				27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */,
 				27B25B271B3733EE00544F52 /* Your Call.mp3 in Resources */,
 				27BC840E1B2E4E8300668F80 /* Killing Time.mp3 in Resources */,
+				27C7FCE51B4DD4F300F26860 /* Call to Adventure.mp3 in Resources */,
 				27BC83101B28F66600668F80 /* Enter the Maze.mp3 in Resources */,
 				27B25AAD1B35211700544F52 /* Disco Medusae.mp3 in Resources */,
 				27FFAC161B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 in Resources */,

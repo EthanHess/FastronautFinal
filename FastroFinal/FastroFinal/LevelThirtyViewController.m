@@ -118,7 +118,7 @@ extern int redCoinPosition;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(-110, obstaclePosition);
+    self.obstacleView.center = CGPointMake(-150, obstaclePosition);
     
     
 }
@@ -128,10 +128,10 @@ extern int redCoinPosition;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 10;
+    fastroFlight = fastroFlight - 8;
     
-    if (fastroFlight < - 20) {
-        fastroFlight = - 20;
+    if (fastroFlight < - 17) {
+        fastroFlight = - 17;
     }
     
     if (fastroFlight > 0) {
