@@ -282,7 +282,7 @@ extern int diamondPosition;
         self.fastronaut.hidden = YES;
         self.greenDiamond.hidden = YES;
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 10) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 9) {
             
             return;
         }

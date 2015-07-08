@@ -244,7 +244,7 @@ extern int coinPosition;
     
         [self playWinSound];
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 18) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 17) {
             
             return;
         }
@@ -298,7 +298,7 @@ extern int coinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Lightless Dawn" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Urban Gauntlet" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     

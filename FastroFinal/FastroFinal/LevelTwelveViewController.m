@@ -246,7 +246,7 @@ extern int score;
         
         [self playWinSound];
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 13) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 12) {
             
             return;
         }

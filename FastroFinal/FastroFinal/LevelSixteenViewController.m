@@ -245,7 +245,7 @@ extern int coinPosition;
         
         [self playWinSound];
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 17) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 16) {
             
             return;
         }

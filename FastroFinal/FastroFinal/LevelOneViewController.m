@@ -224,7 +224,7 @@ int score;
         
         [self playWinSound];
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 2) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 1) {
             
             return;
         }

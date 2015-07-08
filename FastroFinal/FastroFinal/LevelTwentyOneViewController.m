@@ -347,7 +347,7 @@ extern int diamondPosition;
         
         [self playWinSound];
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 22) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 21) {
             
             return;
         }

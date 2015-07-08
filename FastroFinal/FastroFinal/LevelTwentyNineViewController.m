@@ -357,7 +357,7 @@ int diamondPosition;
         self.homeButton.hidden = NO;
         self.diamondView.hidden = YES;
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 30) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 29) {
             
             return;
         }

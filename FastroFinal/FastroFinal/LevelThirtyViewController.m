@@ -255,7 +255,7 @@ extern int redCoinPosition;
         
         [self playWinSound];
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 31) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 30) {
             
             return;
         }
