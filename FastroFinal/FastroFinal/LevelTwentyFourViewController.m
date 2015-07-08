@@ -207,7 +207,6 @@ extern int redCoinPosition;
         self.redCoin.hidden = YES;
         [self placeRedCoin];
         [self scoreDown];
-        [self playBellSound];
     }
     
 }

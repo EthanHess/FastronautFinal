@@ -85,10 +85,6 @@ extern int redCoinPosition;
 
 - (void)obstacleMoving {
     
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
-    
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x + 1, self.obstacleView.center.y);
     
     if (self.obstacleView.center.x > 450) {

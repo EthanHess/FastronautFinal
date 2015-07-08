@@ -30,7 +30,7 @@
 - (void)playFileAtURL:(NSURL *)url {
     
     self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
-    self.player.numberOfLoops = 0;
+    self.player.numberOfLoops = 2;
     [self.player play];
     
 }

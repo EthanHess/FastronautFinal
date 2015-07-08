@@ -72,7 +72,7 @@ extern int redCoinPosition;
     
     [self placeRedCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.004 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -81,10 +81,6 @@ extern int redCoinPosition;
 
 
 - (void)obstacleMoving {
-    
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
@@ -127,7 +123,7 @@ extern int redCoinPosition;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(550, obstaclePosition);
+    self.obstacleView.center = CGPointMake(500, obstaclePosition);
     
     bottomObstaclePosition = arc4random() %frame;
     
