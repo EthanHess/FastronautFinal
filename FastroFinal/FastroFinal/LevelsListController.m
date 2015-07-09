@@ -63,8 +63,20 @@
 
 - (void)configureWithPurchases {
     
+    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
+        
+        // do stuff here
+    }
     
+    if ([PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
+        
+        // and here
+    }
     
+    if ([PurchasedDataController sharedInstance].accessAllLevels) {
+        
+        // and here
+    }
 }
 
 - (void)purchasesUpdated:(NSNotification *)notification {
@@ -386,14 +398,17 @@
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Purchase all levels?" message:@"Would you like to purchase all levels for $1.99?" preferredStyle:UIAlertControllerStyleAlert];
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        
-        // purchase code goes here.
-    }]];
-    
     [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         
         [self dismissViewControllerAnimated:YES completion:nil];
+        
+    }]];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+        // purchase code goes here.
+        
+        // don't forget levels ten and twenty!
         
     }]];
     

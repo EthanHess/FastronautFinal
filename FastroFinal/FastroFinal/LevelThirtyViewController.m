@@ -26,7 +26,6 @@ extern int redCoinPosition;
 @property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
-@property (weak, nonatomic) IBOutlet UIImageView *blowerView;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
