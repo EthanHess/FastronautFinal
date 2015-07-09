@@ -18,7 +18,6 @@ int astroFall;
 @property (weak, nonatomic) IBOutlet UIButton *levelButton;
 @property (weak, nonatomic) IBOutlet UIButton *instructionsButton;
 @property (weak, nonatomic) IBOutlet UIButton *creditsButton;
-@property (weak, nonatomic) IBOutlet UIImageView *landingView;
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
@@ -68,7 +67,7 @@ int astroFall;
         astroFall = -15;
     }
     
-    if (CGRectIntersectsRect(self.fastronaut.frame, self.landingView.frame)) {
+    if (self.fastronaut.center.y > self.view.frame.size.height - self.fastronaut.frame.size.height / 2) {
         astroFall = 0;
         self.startNewGame.hidden = NO;
         self.levelButton.hidden = NO;
