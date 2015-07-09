@@ -191,7 +191,7 @@ extern int diamondPosition;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 25;
+    fastroFlight = 30;
     
 }
 

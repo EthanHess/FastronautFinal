@@ -79,7 +79,6 @@ extern int score;
 - (void)obstacleMoving {
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x + 1, self.obstacleView.center.y);
-    //    [self animateView:self.obstacleView duration:10];
     
     if (self.obstacleView.center.x > 450) {
         
@@ -121,10 +120,10 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.fastronaut.center.x, self.fastronaut.center.y - fastroFlight);
     
-    fastroFlight = fastroFlight - 10;
+    fastroFlight = fastroFlight - 8;
     
-    if (fastroFlight < -20) {
-        fastroFlight = -20;
+    if (fastroFlight < -17) {
+        fastroFlight = -17;
     }
     
     if (fastroFlight > 0) {

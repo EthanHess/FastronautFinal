@@ -314,7 +314,8 @@ extern int score;
         
         [self.navigationController pushViewController:levelEleven animated:YES]; 
         
-        // purchase code goes here.
+        // purchase code goes here for levels eleven through twenty!
+        
     }]];
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {

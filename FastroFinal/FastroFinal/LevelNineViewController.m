@@ -51,7 +51,7 @@ extern int diamondPosition;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
 
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 50 points!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
     [[SoundController sharedInstance] cancelAudio];
@@ -266,7 +266,7 @@ extern int diamondPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 30) {
+    if (score == 50) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -307,7 +307,7 @@ extern int diamondPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score >= 30) {
+    if (score >= 50) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -325,7 +325,7 @@ extern int diamondPosition;
         
         [self playWinSound];
         
-        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 10) {
+        if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 9) {
             
             return;
         }
