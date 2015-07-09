@@ -11,5 +11,6 @@
 @interface LevelSeventeenViewController : UIViewController
 
 @property (nonatomic) BOOL isComplete;
+@property (nonatomic) BOOL isUnlocked;
 
 @end

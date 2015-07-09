@@ -44,6 +44,28 @@
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *viewControllers;
+@property (nonatomic, strong) LevelElevenViewController *elevenVC;
+@property (nonatomic, strong) LevelTwelveViewController *twelveVC;
+@property (nonatomic, strong) LevelThirteenViewController *thirteenVC;
+@property (nonatomic, strong) LevelFourteenViewController *fourteenVC;
+@property (nonatomic, strong) LevelFifteenViewController *fifteenVC;
+@property (nonatomic, strong) LevelSixteenViewController *sixteenVC;
+@property (nonatomic, strong) LevelSeventeenViewController *seventeenVC;
+@property (nonatomic, strong) LevelEighteenViewController *eighteenVC;
+@property (nonatomic, strong) LevelNineteenViewController *nineteenVC;
+@property (nonatomic, strong) LevelTwentyViewController *twentyVC;
+@property (nonatomic, strong) LevelTwentyOneViewController *twentyOne;
+@property (nonatomic, strong) LevelTwentyTwoViewController *twentyTwo;
+@property (nonatomic, strong) LevelTwentyThreeViewController *twentyThree;
+@property (nonatomic, strong) LevelTwentyFourViewController *twentyFour;
+@property (nonatomic, strong) LevelTwentyFiveViewController *twentyFive;
+@property (nonatomic, strong) LevelTwentySixViewController *twentySix;
+@property (nonatomic, strong) LevelTwentySevenViewController *twentySeven;
+@property (nonatomic, strong) LevelTwentyEightViewController *twentyEight;
+@property (nonatomic, strong) LevelTwentyNineViewController *twentyNine;
+@property (nonatomic, strong) LevelThirtyViewController *thirty;
+
 
 @end
 
@@ -56,7 +78,51 @@
     
     [self configureWithPurchases];
     [self registerForPurchaseNotifications];
-
+    
+    self.elevenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEleven"];
+    self.twelveVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwelve"];
+    self.thirteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelThirteen"];
+    self.fourteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelFourteen"];
+    self.fifteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelFifteen"];
+    self.sixteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelSixteen"];
+    self.seventeenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelSeventeen"];
+    self.eighteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEighteen"];
+    self.nineteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelNineteen"];
+    self.twentyVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwenty"];
+    self.twentyOne = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyOne"];
+    self.twentyTwo = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyTwo"];
+    self.twentyThree = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyThree"];
+    self.twentyFour = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyFour"];
+    self.twentyFive = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyFive"];
+    self.twentySix = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentySix"];
+    self.twentySeven = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentySeven"];
+    self.twentyEight = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyEight"];
+    self.twentyNine = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyNine"];
+    self.thirty = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelThirty"];
+    
+    self.viewControllers = [NSMutableArray new];
+    
+    
+    [self.viewControllers addObject:self.elevenVC];
+    [self.viewControllers addObject:self.twelveVC];
+    [self.viewControllers addObject:self.thirteenVC];
+    [self.viewControllers addObject:self.fourteenVC];
+    [self.viewControllers addObject:self.fifteenVC];
+    [self.viewControllers addObject:self.sixteenVC];
+    [self.viewControllers addObject:self.seventeenVC];
+    [self.viewControllers addObject:self.eighteenVC];
+    [self.viewControllers addObject:self.nineteenVC];
+    [self.viewControllers addObject:self.twentyVC];
+    [self.viewControllers addObject:self.twentyOne];
+    [self.viewControllers addObject:self.twentyTwo];
+    [self.viewControllers addObject:self.twentyThree];
+    [self.viewControllers addObject:self.twentyFour];
+    [self.viewControllers addObject:self.twentyFive];
+    [self.viewControllers addObject:self.twentySix];
+    [self.viewControllers addObject:self.twentySeven];
+    [self.viewControllers addObject:self.twentyEight];
+    [self.viewControllers addObject:self.twentyNine];
+    [self.viewControllers addObject:self.thirty]; 
 }
 
 #pragma ConfiguringPurchases
@@ -116,7 +182,7 @@
     cell.textLabel.textColor = [UIColor greenColor];
     cell.textLabel.font = [UIFont fontWithName:@"Chalkduster" size:24];
     cell.textLabel.text = [self levels][indexPath.row];
-    cell.backgroundColor = [UIColor blackColor];
+    cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FastroCell"]];
     
     if (indexPath.row == 0) {
         return cell;
@@ -228,166 +294,125 @@
             
         case 10:  {
             
-            LevelElevenViewController *elevenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEleven"];
-            
-            [self.navigationController pushViewController:elevenVC animated:YES];
+            [self.navigationController pushViewController:self.elevenVC animated:YES];
             
             break; }
             
         case 11:  {
             
-            LevelTwelveViewController *twelveVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwelve"];
-            
-            [self.navigationController pushViewController:twelveVC animated:YES];
+            [self.navigationController pushViewController:self.twelveVC animated:YES];
             
             break; }
     
         case 12: {
             
-            LevelThirteenViewController *thirteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelThirteen"];
-            
-            [self.navigationController pushViewController:thirteenVC animated:YES];
+            [self.navigationController pushViewController:self.thirteenVC animated:YES];
 
             
             break; }
         
         case 13: {
             
-            LevelFourteenViewController *fourteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelFourteen"];
-            
-            [self.navigationController pushViewController:fourteenVC animated:YES];
+            [self.navigationController pushViewController:self.fourteenVC animated:YES];
 
             
             break; }
             
         case 14: {
             
-            
-            LevelFifteenViewController *fifteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelFifteen"];
-            
-            [self.navigationController pushViewController:fifteenVC animated:YES];
+            [self.navigationController pushViewController:self.fifteenVC animated:YES];
             
             break; }
             
         case 15: {
             
-            LevelSixteenViewController *sixteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelSixteen"];
-            
-            [self.navigationController pushViewController:sixteenVC animated:YES];
+            [self.navigationController pushViewController:self.sixteenVC animated:YES];
             
             break; }
             
         case 16: {
-        
-            LevelSeventeenViewController *seventeenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelSeventeen"];
             
-            [self.navigationController pushViewController:seventeenVC animated:YES];
+            [self.navigationController pushViewController:self.seventeenVC animated:YES];
 
             
             break; }
         
         case 17: {
-        
-            LevelEighteenViewController *eighteenVC= [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEighteen"];
             
-            [self.navigationController pushViewController:eighteenVC animated:YES];
+            [self.navigationController pushViewController:self.eighteenVC animated:YES];
             
             break; }
             
         case 18: {
             
-            LevelNineteenViewController *nineteenVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelNineteen"];
-            
-            [self.navigationController pushViewController:nineteenVC animated:YES];
+            [self.navigationController pushViewController:self.nineteenVC animated:YES];
             
             break; }
             
         case 19: {
             
-            LevelTwentyViewController *twentyVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwenty"];
-            
-            [self.navigationController pushViewController:twentyVC animated:YES];
+            [self.navigationController pushViewController:self.twentyVC animated:YES];
         
             break; }
             
         case 20: {
-            
-        LevelTwentyOneViewController *twentyOne = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyOne"];
-            
-            [self.navigationController pushViewController:twentyOne animated:YES];
+        
+            [self.navigationController pushViewController:self.twentyOne animated:YES];
             
             break; }
             
         case 21: {
             
-        LevelTwentyTwoViewController *twentyTwo = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyTwo"];
-            
-            [self.navigationController pushViewController:twentyTwo animated:YES];
+            [self.navigationController pushViewController:self.twentyTwo animated:YES];
             
             break; }
             
         case 22: {
             
-        LevelTwentyThreeViewController *twentyThree = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyThree"];
-            
-            [self.navigationController pushViewController:twentyThree animated:YES];
+            [self.navigationController pushViewController:self.twentyThree animated:YES];
             
             break; }
             
         case 23: {
             
-        LevelTwentyFourViewController *twentyFour = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyFour"];
-            
-            [self.navigationController pushViewController:twentyFour animated:YES];
+            [self.navigationController pushViewController:self.twentyFour animated:YES];
 
             break; }
           
         case 24: {
            
-            LevelTwentyFiveViewController *twentyFive = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyFive"];
-            
-            [self.navigationController pushViewController:twentyFive animated:YES];
+            [self.navigationController pushViewController:self.twentyFive animated:YES];
             
         break; }
             
         case 25: {
             
-            LevelTwentySixViewController *twentySix = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentySix"];
-            
-            [self.navigationController pushViewController:twentySix animated:YES];
+            [self.navigationController pushViewController:self.twentySix animated:YES];
         
         break; }
             
         case 26: {
             
-            LevelTwentySevenViewController *twentySeven = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentySeven"];
-            
-            [self.navigationController pushViewController:twentySeven animated:YES];
+            [self.navigationController pushViewController:self.twentySeven animated:YES];
         
             break; }
             
         case 27: {
             
-            LevelTwentyEightViewController *twentyEight = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyEight"];
-            
-            [self.navigationController pushViewController:twentyEight animated:YES];
+            [self.navigationController pushViewController:self.twentyEight animated:YES];
             
             break; }
             
         case 28: {
-            
-            LevelTwentyNineViewController *twentyNine = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyNine"];
-            
-            [self.navigationController pushViewController:twentyNine animated:YES];
+        
+            [self.navigationController pushViewController:self.twentyNine animated:YES];
             
             break;
         }
             
         case 29: {
             
-            LevelThirtyViewController *thirty = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelThirty"];
-            
-            [self.navigationController pushViewController:thirty animated:YES]; 
+            [self.navigationController pushViewController:self.thirty animated:YES];
         }
             
         

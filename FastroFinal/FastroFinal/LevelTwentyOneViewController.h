@@ -11,5 +11,6 @@
 @interface LevelTwentyOneViewController : UIViewController
 
 @property (nonatomic) BOOL isComplete;
+@property (nonatomic) BOOL isUnlocked;
 
 @end

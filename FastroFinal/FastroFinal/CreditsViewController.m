@@ -80,7 +80,7 @@
     
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.textColor = [UIColor greenColor];
-    cell.backgroundColor = [UIColor blackColor];
+    cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FastroCell"]];
     cell.textLabel.font = [UIFont fontWithName:@"Chalkduster" size:14];
     
     if (indexPath.section == 0) {
