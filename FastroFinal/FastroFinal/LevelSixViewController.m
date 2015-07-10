@@ -13,6 +13,7 @@
 #import "ViewController.h"
 
 #define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+#define IS_IPHONE_6 ([UIScreen mainScreen].bounds.size.height == 736.0)
 
 int topObstaclePosition;
 int bottomObstaclePosition;
@@ -127,6 +128,16 @@ extern int score;
         self.topObstacleView.center = CGPointMake(380, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(380, bottomObstaclePosition);
         
+    }
+    
+    else if (IS_IPHONE_6) {
+        
+        topObstaclePosition = arc4random() %400;
+        topObstaclePosition = topObstaclePosition - 225;
+        bottomObstaclePosition = topObstaclePosition + 800;
+        
+        self.topObstacleView.center = CGPointMake(430, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(430, bottomObstaclePosition);
     }
     
     else {

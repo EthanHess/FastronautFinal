@@ -123,7 +123,7 @@ extern int score;
     
     rightObstaclePosition = arc4random() %frame;
     
-    self.rightObstacleView.center = CGPointMake(440, rightObstaclePosition);
+    self.rightObstacleView.center = CGPointMake(500, rightObstaclePosition);
     
     
 }
