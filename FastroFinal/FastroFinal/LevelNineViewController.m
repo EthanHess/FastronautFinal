@@ -13,6 +13,7 @@
 #import "ViewController.h"
 
 #define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+#define IS_IPHONE_6 ([UIScreen mainScreen].bounds.size.height == 736.0)
 
 extern int middleObstaclePosition;
 extern int topObstaclePosition;
@@ -182,6 +183,19 @@ extern int diamondPosition;
         
     }
     
+    else if (IS_IPHONE_6) {
+        
+        topObstaclePosition = arc4random() %325;
+        topObstaclePosition = topObstaclePosition - 140;
+        bottomObstaclePosition = topObstaclePosition + 905;
+        middleObstaclePosition = topObstaclePosition + 440;
+        
+        self.topObstacleView.center = CGPointMake(500, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(500, bottomObstaclePosition);
+        self.middleObstacleView.center = CGPointMake(500, middleObstaclePosition);
+        
+    }
+    
     else {
     
     topObstaclePosition = arc4random() %300;
@@ -189,9 +203,9 @@ extern int diamondPosition;
     bottomObstaclePosition = topObstaclePosition + 780;
     middleObstaclePosition = topObstaclePosition + 390;
     
-    self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
-    self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
-    self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
+    self.topObstacleView.center = CGPointMake(500, topObstaclePosition);
+    self.bottomObstacleView.center = CGPointMake(500, bottomObstaclePosition);
+    self.middleObstacleView.center = CGPointMake(500, middleObstaclePosition);
     
     }
 }
