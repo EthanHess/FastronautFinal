@@ -26,7 +26,6 @@ extern int redCoinPosition;
 @property (weak, nonatomic) IBOutlet UIButton *homeButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obstacleView;
-@property (weak, nonatomic) IBOutlet UIImageView *bounceView;
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 
 @property (weak, nonatomic) IBOutlet UIImageView *coin;
@@ -46,7 +45,7 @@ extern int redCoinPosition;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 40 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 50 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
     [[SoundController sharedInstance] cancelAudio];
@@ -80,10 +79,6 @@ extern int redCoinPosition;
 
 
 - (void)obstacleMoving {
-    
-    //    int value = arc4random_uniform(-1) + 2;
-    
-    //    float value = 0.5;
     
     self.obstacleView.center = CGPointMake(self.obstacleView.center.x - 1, self.obstacleView.center.y);
     
@@ -236,7 +231,7 @@ extern int redCoinPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 40) {
+    if (score == 50) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

@@ -12,6 +12,7 @@
 #import "ViewController.h"
 #import "LevelController.h"
 
+#define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
 
 extern int middleObstaclePosition;
 extern int topObstaclePosition;
@@ -53,7 +54,7 @@ extern int diamondPosition;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 40 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 60 points!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
     self.middleObstacleView.layer.cornerRadius = self.middleObstacleView.frame.size.height / 2;
@@ -140,6 +141,21 @@ extern int diamondPosition;
 
 - (void)placeObstacles {
     
+    if (IS_IPHONE_4) {
+        
+        topObstaclePosition = arc4random() %300;
+        topObstaclePosition = topObstaclePosition - 200;
+        bottomObstaclePosition = topObstaclePosition + 580;
+        middleObstaclePosition = topObstaclePosition + 295;
+        
+        self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
+        self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
+        
+    }
+    
+    else {
+    
     topObstaclePosition = arc4random() %380;
     topObstaclePosition = topObstaclePosition - 250;
     bottomObstaclePosition = topObstaclePosition + 750;
@@ -149,6 +165,7 @@ extern int diamondPosition;
     self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
     self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
     
+    }
 }
 
 - (void)diamondMoving {
@@ -298,7 +315,7 @@ extern int diamondPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 40) {
+    if (score == 60) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -359,7 +376,7 @@ extern int diamondPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score >= 40) {
+    if (score >= 60) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -371,6 +388,7 @@ extern int diamondPosition;
         self.coin.hidden = YES;
         self.fastronaut.hidden = YES;
         self.greenDiamond.hidden = YES;
+        self.redCoin.hidden = YES; 
         
         [self playWinSound];
         

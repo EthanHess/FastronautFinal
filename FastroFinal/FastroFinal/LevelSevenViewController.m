@@ -79,7 +79,7 @@ extern int score;
     
     self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
-    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
+    self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.004 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
     [self playAudio];
     

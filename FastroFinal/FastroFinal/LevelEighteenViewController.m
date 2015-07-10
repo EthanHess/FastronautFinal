@@ -12,6 +12,8 @@
 #import "ViewController.h"
 #import "LevelController.h"
 
+#define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+
 extern int obstaclePosition;
 extern int fastroFlight;
 extern int score;
@@ -146,7 +148,17 @@ extern int coinPosition;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 30;
+    if (IS_IPHONE_4) {
+        
+        fastroFlight = 25;
+    }
+    
+    else {
+        
+        fastroFlight = 30;
+    }
+    
+    
 
     
 }
