@@ -12,6 +12,7 @@
 #import "ViewController.h"
 #import "LevelController.h"
 
+#define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
 
 extern int topObstaclePosition;
 extern int bottomObstaclePosition;
@@ -50,7 +51,7 @@ extern int diamondPosition;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 60 points!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
     [[SoundController sharedInstance] cancelAudio];
@@ -126,6 +127,19 @@ extern int diamondPosition;
 
 - (void)placeObstacles {
     
+    if (IS_IPHONE_4) {
+        
+        topObstaclePosition = arc4random() %330;
+        topObstaclePosition = topObstaclePosition - 225;
+        bottomObstaclePosition = topObstaclePosition + 550;
+        
+        self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);
+        
+    }
+    
+    else {
+    
     topObstaclePosition = arc4random() %380;
     topObstaclePosition = topObstaclePosition - 225;
     bottomObstaclePosition = topObstaclePosition + 680;
@@ -133,6 +147,7 @@ extern int diamondPosition;
     self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);
     
+    }
 }
 
 - (void)diamondMoving {
@@ -253,7 +268,7 @@ extern int diamondPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 35) {
+    if (score == 60) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
@@ -284,7 +299,7 @@ extern int diamondPosition;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score >= 35) {
+    if (score >= 60) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

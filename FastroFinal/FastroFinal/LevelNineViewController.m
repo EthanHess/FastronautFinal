@@ -12,6 +12,8 @@
 #import "LevelController.h"
 #import "ViewController.h"
 
+#define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+
 extern int middleObstaclePosition;
 extern int topObstaclePosition;
 extern int bottomObstaclePosition;
@@ -167,6 +169,21 @@ extern int diamondPosition;
 
 - (void)placeObstacles {
     
+    if (IS_IPHONE_4) {
+        
+        topObstaclePosition = arc4random() %250;
+        topObstaclePosition = topObstaclePosition - 140;
+        bottomObstaclePosition = topObstaclePosition + 680;
+        middleObstaclePosition = topObstaclePosition + 340;
+        
+        self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
+        self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
+        
+    }
+    
+    else {
+    
     topObstaclePosition = arc4random() %300;
     topObstaclePosition = topObstaclePosition - 140;
     bottomObstaclePosition = topObstaclePosition + 780;
@@ -176,6 +193,7 @@ extern int diamondPosition;
     self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
     self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
     
+    }
 }
 
 

@@ -13,6 +13,8 @@
 #import "LevelController.h"
 #import <math.h>
 
+#define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 extern int middleObstaclePosition;
@@ -73,7 +75,7 @@ extern int score;
     
     [self placeCoin];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.008 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0075 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -129,6 +131,20 @@ extern int score;
 
 - (void)placeObstacles {
     
+    if (IS_IPHONE_4) {
+        
+        topObstaclePosition = arc4random() %200;
+        bottomObstaclePosition = topObstaclePosition + 515;
+        middleObstaclePosition = topObstaclePosition + 265;
+        
+        self.topObstacleView.center = CGPointMake(-80, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(-80, bottomObstaclePosition);
+        self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
+        
+    }
+    
+    else {
+    
     topObstaclePosition = arc4random() %230;
     bottomObstaclePosition = topObstaclePosition + 575;
     middleObstaclePosition = topObstaclePosition + 295;
@@ -137,6 +153,7 @@ extern int score;
     self.bottomObstacleView.center = CGPointMake(-80, bottomObstaclePosition);
     self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
     
+    }
 }
 
 
