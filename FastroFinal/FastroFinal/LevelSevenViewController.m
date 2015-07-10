@@ -13,6 +13,8 @@
 #import "LevelController.h"
 #import <math.h>
 
+#define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 extern int topObstaclePosition;
@@ -124,6 +126,19 @@ extern int score;
 
 - (void)placeObstacles {
     
+    if (IS_IPHONE_4) {
+        
+        topObstaclePosition = arc4random() %300;
+        topObstaclePosition = topObstaclePosition - 180;
+        bottomObstaclePosition = topObstaclePosition + 630;
+        
+        self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
+        
+    }
+    
+    else {
+    
     topObstaclePosition = arc4random() %380;
     topObstaclePosition = topObstaclePosition - 225;
     bottomObstaclePosition = topObstaclePosition + 715;
@@ -131,6 +146,7 @@ extern int score;
     self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
     
+    }
 }
 
 
