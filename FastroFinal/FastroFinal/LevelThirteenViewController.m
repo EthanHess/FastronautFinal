@@ -14,6 +14,7 @@
 #import <math.h>
 
 #define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+#define IS_IPHONE_6 ([UIScreen mainScreen].bounds.size.height == 736.0)
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
@@ -136,6 +137,18 @@ extern int score;
         topObstaclePosition = arc4random() %200;
         bottomObstaclePosition = topObstaclePosition + 515;
         middleObstaclePosition = topObstaclePosition + 265;
+        
+        self.topObstacleView.center = CGPointMake(-80, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(-80, bottomObstaclePosition);
+        self.middleObstacleView.center = CGPointMake(450, middleObstaclePosition);
+        
+    }
+    
+    else if (IS_IPHONE_6) {
+        
+        topObstaclePosition = arc4random() %230;
+        bottomObstaclePosition = topObstaclePosition + 685;
+        middleObstaclePosition = topObstaclePosition + 350;
         
         self.topObstacleView.center = CGPointMake(-80, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(-80, bottomObstaclePosition);

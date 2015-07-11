@@ -15,6 +15,7 @@
 #import <math.h>
 
 #define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
+#define IS_IPHONE_6 ([UIScreen mainScreen].bounds.size.height == 736.0)
 
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
@@ -55,7 +56,7 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
     [[SoundController sharedInstance] cancelAudio];
@@ -149,6 +150,19 @@ extern int score;
         
     }
     
+    else if (IS_IPHONE_6) {
+        
+        topObstaclePosition = arc4random() %330;
+        topObstaclePosition = topObstaclePosition - 150;
+        bottomObstaclePosition = topObstaclePosition + 910;
+        middleObstaclePosition = topObstaclePosition + 450;
+        
+        self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
+        self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
+        self.middleObstacleView.center = CGPointMake(-80, middleObstaclePosition);
+        
+    }
+    
     else {
     
     topObstaclePosition = arc4random() %300;
@@ -198,7 +212,7 @@ extern int score;
     
     coinPosition = arc4random() %frame;
     
-    self.coin.center = CGPointMake(450, coinPosition);
+    self.coin.center = CGPointMake(-50, coinPosition);
     
     self.coin.hidden = NO;
     
@@ -206,9 +220,9 @@ extern int score;
 
 - (void)coinMoving {
     
-    self.coin.center = CGPointMake(self.coin.center.x - 1, self.coin.center.y);
+    self.coin.center = CGPointMake(self.coin.center.x + 1, self.coin.center.y);
     
-    if (self.coin.center.x < - 35) {
+    if (self.coin.center.x > 470) {
         
         [self placeCoin];
     }
@@ -248,7 +262,7 @@ extern int score;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 35) {
+    if (score == 30) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];
