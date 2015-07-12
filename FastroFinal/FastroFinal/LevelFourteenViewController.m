@@ -129,7 +129,7 @@ extern int diamondPosition;
     
     topObstaclePosition = arc4random() %frame;
     
-    self.topObstacleView.center = CGPointMake(480, topObstaclePosition);
+    self.topObstacleView.center = CGPointMake(500, topObstaclePosition);
     
 }
 

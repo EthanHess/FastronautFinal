@@ -119,23 +119,9 @@ extern int coinPosition;
     
     obstaclePosition = arc4random() %frame;
     
-    self.obstacleView.center = CGPointMake(450, obstaclePosition);
+    self.obstacleView.center = CGPointMake(480, obstaclePosition);
     
 }
-
-//- (void)oceanMoving {
-//    
-//    if (self.oilOcean.center.y > 500) {
-//        
-//        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y + 1));
-//    }
-//    
-//    else {
-//        
-//        self.oilOcean.center = (CGPointMake(self.oilOcean.center.x, self.oilOcean.center.y - 1));
-//    }
-//    
-//}
 
 
 - (void)fastroMoving {
