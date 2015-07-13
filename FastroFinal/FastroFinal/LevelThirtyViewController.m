@@ -12,6 +12,8 @@
 #import "ViewController.h"
 #import "LevelController.h"
 
+#define IS_IPHONE_6 ([UIScreen mainScreen].bounds.size.height == 736.0)
+
 extern int obstaclePosition;
 extern int fastroFlight;
 extern int score;
@@ -44,6 +46,27 @@ extern int redCoinPosition;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (IS_IPHONE_6) {
+        
+        self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+        
+        self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
+        self.obstacleView.layer.masksToBounds = YES;
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+        [alert show];
+        
+        [[SoundController sharedInstance] cancelAudio];
+        
+        self.proceedButton.hidden = YES;
+        self.youDiedButton.hidden = YES;
+        self.homeButton.hidden = YES;
+        score = 0;
+        
+    }
+    
+    else {
+    
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
     self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
@@ -59,6 +82,7 @@ extern int redCoinPosition;
     self.homeButton.hidden = YES;
     score = 0;
     
+    }
 }
 
 
@@ -169,7 +193,7 @@ extern int redCoinPosition;
     
     redCoinPosition = arc4random() %frame;
     
-    self.redCoin.center = CGPointMake(400, redCoinPosition);
+    self.redCoin.center = CGPointMake(450, redCoinPosition);
     
     self.redCoin.hidden = NO;
 }
@@ -231,6 +255,45 @@ extern int redCoinPosition;
 
 - (void)scoreChange {
     
+    if (IS_IPHONE_6) {
+        
+        score = score + 1;
+        
+        self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+        
+        if (score == 30) {
+            
+            [self.fastroTimer invalidate];
+            [self.obstacleTimer invalidate];
+            [self.coinTimer invalidate];
+            
+            self.proceedButton.hidden = NO;
+            self.homeButton.hidden = NO;
+            self.obstacleView.hidden = YES;
+            self.fastronaut.hidden = YES;
+            self.coin.hidden = YES;
+            self.redCoin.hidden = YES;
+            
+            [self playWinSound];
+            
+            if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 30) {
+                
+                return;
+            }
+            
+            else {
+                
+                self.isComplete = YES;
+                
+                [[LevelController sharedInstance]saveBool:self.isComplete];
+                
+            }
+        }
+        
+    }
+    
+    else {
+    
     score = score + 1;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
@@ -263,7 +326,8 @@ extern int redCoinPosition;
             
         }
     }
-    
+        
+    }
     
 }
 
