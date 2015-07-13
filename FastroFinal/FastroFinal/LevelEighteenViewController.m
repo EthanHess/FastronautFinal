@@ -55,6 +55,26 @@ extern int coinPosition;
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 20 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
         [alert show];
         
+        self.beginButton.backgroundColor = [UIColor blueColor];
+        self.beginButton.layer.cornerRadius = 37.5;
+        self.beginButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.beginButton.layer.borderWidth = 3.0;
+        
+        self.youDiedButton.backgroundColor = [UIColor blueColor];
+        self.youDiedButton.layer.cornerRadius = 37.5;
+        self.youDiedButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.youDiedButton.layer.borderWidth = 3.0;
+        
+        self.proceedButton.backgroundColor = [UIColor blueColor];
+        self.proceedButton.layer.cornerRadius = 37.5;
+        self.proceedButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.proceedButton.layer.borderWidth = 3.0;
+        
+        self.homeButton.backgroundColor = [UIColor blueColor];
+        self.homeButton.layer.cornerRadius = 37.5;
+        self.homeButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.homeButton.layer.borderWidth = 3.0;
+        
         self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
         self.obstacleView.layer.masksToBounds = YES;
         
@@ -74,6 +94,26 @@ extern int coinPosition;
     
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 35 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
+        
+        self.beginButton.backgroundColor = [UIColor blueColor];
+        self.beginButton.layer.cornerRadius = 37.5;
+        self.beginButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.beginButton.layer.borderWidth = 3.0;
+        
+        self.youDiedButton.backgroundColor = [UIColor blueColor];
+        self.youDiedButton.layer.cornerRadius = 37.5;
+        self.youDiedButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.youDiedButton.layer.borderWidth = 3.0;
+        
+        self.proceedButton.backgroundColor = [UIColor blueColor];
+        self.proceedButton.layer.cornerRadius = 37.5;
+        self.proceedButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.proceedButton.layer.borderWidth = 3.0;
+        
+        self.homeButton.backgroundColor = [UIColor blueColor];
+        self.homeButton.layer.cornerRadius = 37.5;
+        self.homeButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+        self.homeButton.layer.borderWidth = 3.0;
     
     self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
     self.obstacleView.layer.masksToBounds = YES; 
