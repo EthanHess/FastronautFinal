@@ -12,6 +12,7 @@
 #import "ViewController.h"
 #import "LevelController.h"
 #import "LevelTwentyOneViewController.h"
+#import "PurchasedDataController.h"
 
 #define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
 
@@ -340,7 +341,17 @@ extern int score;
 
 - (IBAction)purchaseLastLevels:(id)sender {
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Purchase last ten levels?" message:@"Would you like to purchase the last levels for $.99?" preferredStyle:UIAlertControllerStyleAlert];
+    if ([PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
+        
+        LevelTwentyOneViewController *levelTOne = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyOne"];
+        
+        [self.navigationController pushViewController:levelTOne animated:YES];
+        
+    }
+    
+    else {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Purchase last ten levels? They're the best yet!" message:@"Would you like to purchase the last levels for $.99?" preferredStyle:UIAlertControllerStyleAlert];
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
@@ -358,6 +369,8 @@ extern int score;
     }]];
     
     [self presentViewController:alertController animated:YES completion:nil];
+        
+    }
 }
 
 

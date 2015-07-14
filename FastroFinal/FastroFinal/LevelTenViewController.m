@@ -12,6 +12,7 @@
 #import "ViewController.h"
 #import "LevelController.h"
 #import "LevelElevenViewController.h"
+#import "PurchasedDataController.h"
 
 #define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
 #define IS_IPHONE_6 ([UIScreen mainScreen].bounds.size.height == 736.0)
@@ -353,6 +354,15 @@ extern int score;
 
 - (IBAction)purchaseNextLevels:(id)sender {
     
+    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
+        
+        LevelElevenViewController *levelEleven = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEleven"];
+        
+        [self.navigationController pushViewController:levelEleven animated:YES];
+    }
+    
+    else {
+    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"The next ten levels are even cooler!" message:@"Would you like to purchase them for $.99?" preferredStyle:UIAlertControllerStyleAlert];
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
@@ -373,8 +383,7 @@ extern int score;
     
     [self presentViewController:alertController animated:YES completion:nil];
     
-    
-    
+    }
 }
 
 

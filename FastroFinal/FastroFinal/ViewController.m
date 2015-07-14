@@ -19,7 +19,6 @@ int astroFall;
 @property (weak, nonatomic) IBOutlet UIButton *instructionsButton;
 @property (weak, nonatomic) IBOutlet UIButton *creditsButton;
 
-
 @property (weak, nonatomic) IBOutlet UIImageView *fastronaut;
 @property (nonatomic, strong) NSTimer *astroTimer;
 

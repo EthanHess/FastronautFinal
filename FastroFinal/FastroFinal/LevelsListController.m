@@ -421,6 +421,15 @@
 
 - (IBAction)buyAllButtonClicked:(id)sender {
     
+    if ([PurchasedDataController sharedInstance].accessAllLevels) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"You've already purchased all of the levels!" message:@"" delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+        [alertView show];
+        
+    }
+    
+    else {
+    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Purchase all levels?" message:@"Would you like to purchase all levels for $1.99?" preferredStyle:UIAlertControllerStyleAlert];
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
@@ -439,8 +448,9 @@
     
     [self presentViewController:alertController animated:YES completion:nil];
     
+    }
 }
-            
+
 
 
 
