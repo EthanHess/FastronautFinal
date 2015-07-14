@@ -13,6 +13,7 @@
 #import "LevelController.h"
 #import "LevelTwentyOneViewController.h"
 #import "PurchasedDataController.h"
+#import "GamePurchaseController.h"
 
 #define IS_IPHONE_4 ([UIScreen mainScreen].bounds.size.height == 480.0)
 
@@ -355,14 +356,16 @@ extern int score;
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
+        [[GamePurchaseController sharedInstance] purchaseOptionSelectedObjectIndex:1];
+        
         LevelTwentyOneViewController *levelTOne = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyOne"];
         
         [self.navigationController pushViewController:levelTOne animated:YES];
         
-        // purchase code goes here.
+        
     }]];
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
         [self dismissViewControllerAnimated:YES completion:nil];
         

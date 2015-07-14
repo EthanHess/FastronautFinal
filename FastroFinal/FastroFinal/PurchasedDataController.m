@@ -26,6 +26,21 @@ static NSString * const kAllLevelsKey = @"allLevels";
     
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        if (![[NSUserDefaults standardUserDefaults] objectForKey:@"unlockedLevels"]) {
+            self.unlockedlevels = [[NSMutableArray alloc]init];
+        }
+        else
+        {
+            self.unlockedlevels = [[NSUserDefaults standardUserDefaults] objectForKey:@"unlockedLevels"];
+        }
+    }
+    return self;
+}
+
 - (void)registerForNotifications {
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchaseNotification:) name:kInAppPurchaseCompletedNotification object:nil];
@@ -60,8 +75,13 @@ static NSString * const kAllLevelsKey = @"allLevels";
     
     _accessElevenThroughTwenty = accessible;
     
+    NSArray *levelsUnlocked = @[@11,@12,@13,@14,@15,@16,@17,@18,@19,@20];
+    [self.unlockedlevels addObjectsFromArray:levelsUnlocked];
+    [[NSUserDefaults standardUserDefaults] setObject:self.unlockedlevels forKey:@"unlockedLevels"];
+    
     [[NSUserDefaults standardUserDefaults] setBool:accessible forKey:kLevelsElevenThroughTwentyKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
 }
 
 - (void)setTwentyOneThroughEnd:(BOOL)accessible {

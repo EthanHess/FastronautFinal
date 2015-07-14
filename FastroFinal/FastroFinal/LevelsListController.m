@@ -40,11 +40,13 @@
 #import "LevelTwentyNineViewController.h"
 #import "LevelThirtyViewController.h"
 #import "LevelController.h"
+#import "GamePurchaseController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *viewControllers;
+@property (nonatomic, strong) NSMutableArray *indexes;
 @property (nonatomic, strong) LevelElevenViewController *elevenVC;
 @property (nonatomic, strong) LevelTwelveViewController *twelveVC;
 @property (nonatomic, strong) LevelThirteenViewController *thirteenVC;
@@ -102,7 +104,6 @@
     
     self.viewControllers = [NSMutableArray new];
     
-    
     [self.viewControllers addObject:self.elevenVC];
     [self.viewControllers addObject:self.twelveVC];
     [self.viewControllers addObject:self.thirteenVC];
@@ -122,7 +123,9 @@
     [self.viewControllers addObject:self.twentySeven];
     [self.viewControllers addObject:self.twentyEight];
     [self.viewControllers addObject:self.twentyNine];
-    [self.viewControllers addObject:self.thirty]; 
+    [self.viewControllers addObject:self.thirty];
+    
+    
 }
 
 #pragma ConfiguringPurchases
@@ -131,7 +134,7 @@
     
     if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
         
-        // do stuff here
+        
     }
     
     if ([PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
@@ -189,6 +192,11 @@
     }
     else
     {
+        for (NSNumber * level in [PurchasedDataController sharedInstance].unlockedlevels) {
+            
+        
+        }
+        
         if (indexPath.row > [LevelController sharedInstance].arrayOfCompletedLevels.count) {
             [cell setUserInteractionEnabled:NO];
             [cell.textLabel setTextColor:[UIColor redColor]];
@@ -199,6 +207,8 @@
         }
         return cell;
     }
+    
+
     
     return cell; 
 
@@ -432,7 +442,7 @@
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Purchase all levels?" message:@"Would you like to purchase all levels for $1.99?" preferredStyle:UIAlertControllerStyleAlert];
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
         [self dismissViewControllerAnimated:YES completion:nil];
         
@@ -440,10 +450,8 @@
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
-        // purchase code goes here.
-        
-        // don't forget levels ten and twenty!
-        
+        [[GamePurchaseController sharedInstance] purchaseOptionSelectedObjectIndex:2];
+
     }]];
     
     [self presentViewController:alertController animated:YES completion:nil];
