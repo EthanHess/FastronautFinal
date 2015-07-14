@@ -27,6 +27,12 @@ extern int astroFall;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.homeButton.layer.backgroundColor = [[UIColor blueColor]CGColor];
+    self.homeButton.layer.cornerRadius = 37.5;
+    self.homeButton.layer.borderColor = [[UIColor yellowColor]CGColor];
+    self.homeButton.layer.borderWidth = 3.0;
+    self.homeButton.hidden = YES;
+    
     [self placeFastro];
     [self playAudio]; 
 }
@@ -55,7 +61,9 @@ extern int astroFall;
         [self.astroTimer invalidate]; 
         
         self.fastro.image = [UIImage imageNamed:@"greenFastroLanded"];
-        astroFall = 0; 
+        astroFall = 0;
+        
+        self.homeButton.hidden = NO; 
     }
     
 }

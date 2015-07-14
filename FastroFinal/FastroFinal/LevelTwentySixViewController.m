@@ -56,6 +56,26 @@ extern int redCoinPosition;
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 40 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
+    self.beginButton.backgroundColor = [UIColor cyanColor];
+    self.beginButton.layer.cornerRadius = 37.5;
+    self.beginButton.layer.borderColor = [[UIColor blackColor]CGColor];
+    self.beginButton.layer.borderWidth = 3.0;
+    
+    self.youDiedButton.backgroundColor = [UIColor cyanColor];
+    self.youDiedButton.layer.cornerRadius = 37.5;
+    self.youDiedButton.layer.borderColor = [[UIColor blackColor]CGColor];
+    self.youDiedButton.layer.borderWidth = 3.0;
+    
+    self.proceedButton.backgroundColor = [UIColor cyanColor];
+    self.proceedButton.layer.cornerRadius = 37.5;
+    self.proceedButton.layer.borderColor = [[UIColor blackColor]CGColor];
+    self.proceedButton.layer.borderWidth = 3.0;
+    
+    self.homeButton.backgroundColor = [UIColor cyanColor];
+    self.homeButton.layer.cornerRadius = 37.5;
+    self.homeButton.layer.borderColor = [[UIColor blackColor]CGColor];
+    self.homeButton.layer.borderWidth = 3.0;
+    
     [[SoundController sharedInstance] cancelAudio];
     
     self.proceedButton.hidden = YES;
