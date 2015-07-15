@@ -46,46 +46,46 @@ extern int redCoinPosition;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if (IS_IPHONE_6) {
-        
-        self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
-        
-        self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
-        self.obstacleView.layer.masksToBounds = YES;
-        
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
-        [alert show];
-        
-        self.beginButton.backgroundColor = [UIColor whiteColor];
-        self.beginButton.layer.cornerRadius = 37.5;
-        self.beginButton.layer.borderColor = [[UIColor redColor]CGColor];
-        self.beginButton.layer.borderWidth = 3.0;
-        
-        self.youDiedButton.backgroundColor = [UIColor whiteColor];
-        self.youDiedButton.layer.cornerRadius = 37.5;
-        self.youDiedButton.layer.borderColor = [[UIColor redColor]CGColor];
-        self.youDiedButton.layer.borderWidth = 3.0;
-        
-        self.proceedButton.backgroundColor = [UIColor whiteColor];
-        self.proceedButton.layer.cornerRadius = 37.5;
-        self.proceedButton.layer.borderColor = [[UIColor redColor]CGColor];
-        self.proceedButton.layer.borderWidth = 3.0;
-        
-        self.homeButton.backgroundColor = [UIColor whiteColor];
-        self.homeButton.layer.cornerRadius = 37.5;
-        self.homeButton.layer.borderColor = [[UIColor redColor]CGColor];
-        self.homeButton.layer.borderWidth = 3.0;
-        
-        [[SoundController sharedInstance] cancelAudio];
-        
-        self.proceedButton.hidden = YES;
-        self.youDiedButton.hidden = YES;
-        self.homeButton.hidden = YES;
-        score = 0;
-        
-    }
-    
-    else {
+//    if (IS_IPHONE_6) {
+//        
+//        self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
+//        
+//        self.obstacleView.layer.cornerRadius = self.obstacleView.frame.size.height / 2;
+//        self.obstacleView.layer.masksToBounds = YES;
+//        
+//        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+//        [alert show];
+//        
+//        self.beginButton.backgroundColor = [UIColor whiteColor];
+//        self.beginButton.layer.cornerRadius = 37.5;
+//        self.beginButton.layer.borderColor = [[UIColor redColor]CGColor];
+//        self.beginButton.layer.borderWidth = 3.0;
+//        
+//        self.youDiedButton.backgroundColor = [UIColor whiteColor];
+//        self.youDiedButton.layer.cornerRadius = 37.5;
+//        self.youDiedButton.layer.borderColor = [[UIColor redColor]CGColor];
+//        self.youDiedButton.layer.borderWidth = 3.0;
+//        
+//        self.proceedButton.backgroundColor = [UIColor whiteColor];
+//        self.proceedButton.layer.cornerRadius = 37.5;
+//        self.proceedButton.layer.borderColor = [[UIColor redColor]CGColor];
+//        self.proceedButton.layer.borderWidth = 3.0;
+//        
+//        self.homeButton.backgroundColor = [UIColor whiteColor];
+//        self.homeButton.layer.cornerRadius = 37.5;
+//        self.homeButton.layer.borderColor = [[UIColor redColor]CGColor];
+//        self.homeButton.layer.borderWidth = 3.0;
+//        
+//        [[SoundController sharedInstance] cancelAudio];
+//        
+//        self.proceedButton.hidden = YES;
+//        self.youDiedButton.hidden = YES;
+//        self.homeButton.hidden = YES;
+//        score = 0;
+//        
+//    }
+//    
+//    else {
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
@@ -122,7 +122,7 @@ extern int redCoinPosition;
     self.homeButton.hidden = YES;
     score = 0;
     
-    }
+//    }
 }
 
 

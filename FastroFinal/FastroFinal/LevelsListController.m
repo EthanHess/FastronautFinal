@@ -152,21 +152,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
-        
-        return 30;
-    }
+    return [self levels].count;
     
-    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
-        
-        return 20;
-    }
-    
-    else {
-    
-    return 10;
-        
-    }
+//    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
+//        
+//        return 30;
+//    }
+//    
+//    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
+//        
+//        return 20;
+//    }
+//    
+//    else {
+//    
+//    return 10;
+//        
+//    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -420,7 +422,7 @@
 
 - (IBAction)buyAllButtonClicked:(id)sender {
     
-    if ([PurchasedDataController sharedInstance].accessAllLevels) {
+    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
         
         UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"You've already purchased all of the levels!" message:@"" delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
         [alertView show];
@@ -442,6 +444,7 @@
         [[GamePurchaseController sharedInstance] purchaseOptionSelectedObjectIndex:2];
 
     }]];
+        
     
     [self presentViewController:alertController animated:YES completion:nil];
     
