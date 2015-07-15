@@ -355,7 +355,7 @@ extern int score;
 
 - (IBAction)purchaseNextLevels:(id)sender {
     
-    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
+    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty || [PurchasedDataController sharedInstance].accessAllLevels) {
         
         LevelElevenViewController *levelEleven = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelEleven"];
         

@@ -342,7 +342,7 @@ extern int score;
 
 - (IBAction)purchaseLastLevels:(id)sender {
     
-    if ([PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
+    if ([PurchasedDataController sharedInstance].accessTwentyOneThroughEnd || [PurchasedDataController sharedInstance].accessAllLevels) {
         
         LevelTwentyOneViewController *levelTOne = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyOne"];
         

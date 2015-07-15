@@ -102,29 +102,6 @@
     self.twentyNine = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelTwentyNine"];
     self.thirty = [self.storyboard instantiateViewControllerWithIdentifier:@"LevelThirty"];
     
-    self.viewControllers = [NSMutableArray new];
-    
-    [self.viewControllers addObject:self.elevenVC];
-    [self.viewControllers addObject:self.twelveVC];
-    [self.viewControllers addObject:self.thirteenVC];
-    [self.viewControllers addObject:self.fourteenVC];
-    [self.viewControllers addObject:self.fifteenVC];
-    [self.viewControllers addObject:self.sixteenVC];
-    [self.viewControllers addObject:self.seventeenVC];
-    [self.viewControllers addObject:self.eighteenVC];
-    [self.viewControllers addObject:self.nineteenVC];
-    [self.viewControllers addObject:self.twentyVC];
-    [self.viewControllers addObject:self.twentyOne];
-    [self.viewControllers addObject:self.twentyTwo];
-    [self.viewControllers addObject:self.twentyThree];
-    [self.viewControllers addObject:self.twentyFour];
-    [self.viewControllers addObject:self.twentyFive];
-    [self.viewControllers addObject:self.twentySix];
-    [self.viewControllers addObject:self.twentySeven];
-    [self.viewControllers addObject:self.twentyEight];
-    [self.viewControllers addObject:self.twentyNine];
-    [self.viewControllers addObject:self.thirty];
-    
     
 }
 
@@ -139,12 +116,12 @@
     
     if ([PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
         
-        // and here
+        
     }
     
     if ([PurchasedDataController sharedInstance].accessAllLevels) {
         
-        // and here
+        
     }
 }
 
@@ -175,7 +152,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [self levels].count;
+    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
+        
+        return 30;
+    }
+    
+    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
+        
+        return 20;
+    }
+    
+    else {
+    
+    return 10;
+        
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -188,14 +179,12 @@
     cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FastroCell"]];
     
     if (indexPath.row == 0) {
+        
         return cell;
     }
+    
     else
     {
-        for (NSNumber * level in [PurchasedDataController sharedInstance].unlockedlevels) {
-            
-        
-        }
         
         if (indexPath.row > [LevelController sharedInstance].arrayOfCompletedLevels.count) {
             [cell setUserInteractionEnabled:NO];
