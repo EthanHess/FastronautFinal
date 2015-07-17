@@ -98,6 +98,8 @@ int astroFall;
     self.instructionsButton.hidden = YES;
     self.creditsButton.hidden = YES;
     
+    self.fastronaut.image = [UIImage imageNamed:@"FastroPixel"];
+    
 }
 
 

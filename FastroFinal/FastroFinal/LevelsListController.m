@@ -56,7 +56,7 @@
     
     self.tableView.backgroundColor = [UIColor blackColor];
     
-//    [self configureWithPurchases];
+    [self configureWithPurchases];
     [self registerForPurchaseNotifications];
     
     
@@ -66,20 +66,7 @@
 
 - (void)configureWithPurchases {
     
-    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
-        
-        
-    }
-    
-    if ([PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
-        
-        
-    }
-    
-    if ([PurchasedDataController sharedInstance].accessAllLevels) {
-        
-        
-    }
+    [self.tableView reloadData];
 }
 
 - (void)purchasesUpdated:(NSNotification *)notification {
