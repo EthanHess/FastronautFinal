@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fastronaut-Final" id="w6q-Zs-bBw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FastroPixel" id="w6q-Zs-bBw">
                                 <rect key="frame" x="135" y="229" width="70" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3530,6 +3530,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FastroPixel" width="70" height="110"/>
         <image name="Fastronaut-Final" width="70" height="110"/>
         <image name="FastronautLanded" width="70" height="110"/>
         <image name="Fastrozontal" width="110" height="70"/>
