@@ -75,9 +75,9 @@ static NSString * const kAllLevelsKey = @"allLevels";
     
     _accessElevenThroughTwenty = accessible;
     
-    NSArray *levelsUnlocked = @[@11,@12,@13,@14,@15,@16,@17,@18,@19,@20];
-    [self.unlockedlevels addObjectsFromArray:levelsUnlocked];
-    [[NSUserDefaults standardUserDefaults] setObject:self.unlockedlevels forKey:@"unlockedLevels"];
+//    NSArray *levelsUnlocked = @[@11,@12,@13,@14,@15,@16,@17,@18,@19,@20];
+//    [self.unlockedlevels addObjectsFromArray:levelsUnlocked];
+//    [[NSUserDefaults standardUserDefaults] setObject:self.unlockedlevels forKey:@"unlockedLevels"];
     
     [[NSUserDefaults standardUserDefaults] setBool:accessible forKey:kLevelsElevenThroughTwentyKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
