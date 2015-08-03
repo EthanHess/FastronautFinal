@@ -805,7 +805,7 @@
                                 <rect key="frame" x="54" y="343" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentySixTopObstacle" id="dSl-vX-p8X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twentySixBottomObstacle" id="dSl-vX-p8X">
                                 <rect key="frame" x="54" y="-41" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3635,7 +3635,6 @@
         <image name="twentyOneObstacle" width="180" height="180"/>
         <image name="twentySevenObstacle" width="200" height="120"/>
         <image name="twentySixBottomObstacle" width="300" height="300"/>
-        <image name="twentySixTopObstacle" width="300" height="300"/>
         <image name="welcomeView" width="375" height="667"/>
         <image name="wonTheGameView" width="375" height="667"/>
     </resources>
