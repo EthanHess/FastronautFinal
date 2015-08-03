@@ -20,26 +20,28 @@ static NSString * const kAllLevelsKey = @"allLevels";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [PurchasedDataController new];
+        
+        [sharedInstance loadFromDefaults];
     });
     
     return sharedInstance;
     
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        if (![[NSUserDefaults standardUserDefaults] objectForKey:@"unlockedLevels"]) {
-            self.unlockedlevels = [[NSMutableArray alloc]init];
-        }
-        else
-        {
-            self.unlockedlevels = [[NSUserDefaults standardUserDefaults] objectForKey:@"unlockedLevels"];
-        }
-    }
-    return self;
-}
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        if (![[NSUserDefaults standardUserDefaults] objectForKey:@"unlockedLevels"]) {
+//            self.unlockedlevels = [[NSMutableArray alloc]init];
+//        }
+//        else
+//        {
+//            self.unlockedlevels = [[NSUserDefaults standardUserDefaults] objectForKey:@"unlockedLevels"];
+//        }
+//    }
+//    return self;
+//}
 
 - (void)registerForNotifications {
     

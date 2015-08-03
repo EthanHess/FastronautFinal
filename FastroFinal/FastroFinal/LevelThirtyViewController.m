@@ -295,44 +295,44 @@ extern int redCoinPosition;
 
 - (void)scoreChange {
     
-    if (IS_IPHONE_6) {
-        
-        score = score + 1;
-        
-        self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
-        
-        if (score == 30) {
-            
-            [self.fastroTimer invalidate];
-            [self.obstacleTimer invalidate];
-            [self.coinTimer invalidate];
-            
-            self.proceedButton.hidden = NO;
-            self.homeButton.hidden = NO;
-            self.obstacleView.hidden = YES;
-            self.fastronaut.hidden = YES;
-            self.coin.hidden = YES;
-            self.redCoin.hidden = YES;
-            
-            [self playWinSound];
-            
-            if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 30) {
-                
-                return;
-            }
-            
-            else {
-                
-                self.isComplete = YES;
-                
-                [[LevelController sharedInstance]saveBool:self.isComplete];
-                
-            }
-        }
-        
-    }
-    
-    else {
+//    if (IS_IPHONE_6) {
+//        
+//        score = score + 1;
+//        
+//        self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
+//        
+//        if (score == 30) {
+//            
+//            [self.fastroTimer invalidate];
+//            [self.obstacleTimer invalidate];
+//            [self.coinTimer invalidate];
+//            
+//            self.proceedButton.hidden = NO;
+//            self.homeButton.hidden = NO;
+//            self.obstacleView.hidden = YES;
+//            self.fastronaut.hidden = YES;
+//            self.coin.hidden = YES;
+//            self.redCoin.hidden = YES;
+//            
+//            [self playWinSound];
+//            
+//            if ([LevelController sharedInstance].arrayOfCompletedLevels.count >= 30) {
+//                
+//                return;
+//            }
+//            
+//            else {
+//                
+//                self.isComplete = YES;
+//                
+//                [[LevelController sharedInstance]saveBool:self.isComplete];
+//                
+//            }
+//        }
+//        
+//    }
+//    
+//    else {
     
     score = score + 1;
     
@@ -367,9 +367,9 @@ extern int redCoinPosition;
         }
     }
         
-    }
-    
 }
+    
+//}
 
 - (void)scoreDown {
     
