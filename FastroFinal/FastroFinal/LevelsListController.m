@@ -98,23 +98,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [self levels].count;
+//    return [self levels].count;
     
-//    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
-//        
-//        return 30;
-//    }
-//    
-//    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
-//        
-//        return 20;
-//    }
-//    
-//    else {
-//    
-//    return 10;
-//        
-//    }
+    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
+        
+        return 30;
+    }
+    
+    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
+        
+        return 20;
+    }
+    
+    else {
+    
+    return 10;
+        
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
