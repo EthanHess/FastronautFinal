@@ -1931,7 +1931,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="purchaseNextLevels:" destination="8c4-p0-DeA" eventType="touchUpInside" id="nIN-jL-E1W"/>
+                                    <segue destination="aKO-UM-pIt" kind="push" id="YNr-5O-STy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o1K-GU-SnR">
@@ -1963,7 +1963,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goHome:" destination="8c4-p0-DeA" eventType="touchUpInside" id="dv1-fs-6dD"/>
-                                    <segue destination="aKO-UM-pIt" kind="push" id="zt7-t7-X67"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3269,7 +3268,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goHome:" destination="euO-XM-Mmr" eventType="touchUpInside" id="2oR-NY-4Se"/>
-                                    <segue destination="a45-6Y-8pq" kind="push" id="Rgc-RU-0UR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pcA-nL-lnr">
@@ -3281,7 +3279,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="purchaseLastLevels:" destination="euO-XM-Mmr" eventType="touchUpInside" id="hbv-KF-DG4"/>
+                                    <segue destination="a45-6Y-8pq" kind="push" id="VdI-Dn-Z8M"/>
                                 </connections>
                             </button>
                         </subviews>
