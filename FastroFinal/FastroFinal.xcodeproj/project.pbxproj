@@ -31,7 +31,6 @@
 		275B50AE1B12442800E6896A /* LevelThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50AD1B12442800E6896A /* LevelThreeViewController.m */; };
 		275B50B11B12AF8800E6896A /* LevelFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50B01B12AF8800E6896A /* LevelFourViewController.m */; };
 		275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B50E71B13AD4100E6896A /* LevelFiveViewController.m */; };
-		27A8371F1B4720B800F02B14 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = 27A8371E1B4720B800F02B14 /* Products.json */; };
 		27B127541B2393E1007BACD1 /* LevelFifteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */; };
 		27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */; };
 		27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */; };
@@ -86,8 +85,6 @@
 		27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */; };
 		27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */; };
 		27C7FCE51B4DD4F300F26860 /* Call to Adventure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */; };
-		27E9F0F01B27956200066878 /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0EF1B27956200066878 /* PurchasedDataController.m */; };
-		27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F21B27958700066878 /* GamePurchaseController.m */; };
 		27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */; };
 		27E9F0FC1B2795E100066878 /* LevelEighteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0FB1B2795E100066878 /* LevelEighteenViewController.m */; };
 		27F9A9561B1F932F00CD4BEF /* LevelFourteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A9551B1F932F00CD4BEF /* LevelFourteenViewController.m */; };
@@ -156,7 +153,6 @@
 		275B50B01B12AF8800E6896A /* LevelFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFourViewController.m; sourceTree = "<group>"; };
 		275B50E61B13AD4100E6896A /* LevelFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFiveViewController.h; sourceTree = "<group>"; };
 		275B50E71B13AD4100E6896A /* LevelFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFiveViewController.m; sourceTree = "<group>"; };
-		27A8371E1B4720B800F02B14 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		27B127521B2393E1007BACD1 /* LevelFifteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelFifteenViewController.h; sourceTree = "<group>"; };
 		27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelFifteenViewController.m; sourceTree = "<group>"; };
 		27B25A0B1B30B82100544F52 /* LevelTwentyOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyOneViewController.h; sourceTree = "<group>"; };
@@ -226,10 +222,6 @@
 		27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Sketch.mp3"; sourceTree = "<group>"; };
 		27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EDM Detection Mode.mp3"; sourceTree = "<group>"; };
 		27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Call to Adventure.mp3"; sourceTree = "<group>"; };
-		27E9F0EE1B27956200066878 /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
-		27E9F0EF1B27956200066878 /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
-		27E9F0F11B27958700066878 /* GamePurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePurchaseController.h; sourceTree = "<group>"; };
-		27E9F0F21B27958700066878 /* GamePurchaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePurchaseController.m; sourceTree = "<group>"; };
 		27E9F0F71B2795C900066878 /* LevelSeventeenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSeventeenViewController.h; sourceTree = "<group>"; };
 		27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSeventeenViewController.m; sourceTree = "<group>"; };
 		27E9F0FA1B2795E100066878 /* LevelEighteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelEighteenViewController.h; sourceTree = "<group>"; };
@@ -409,11 +401,6 @@
 				27B25B2D1B387C3D00544F52 /* SoundEffectsController.m */,
 				27F9A9571B1F9D7F00CD4BEF /* LevelController.h */,
 				27F9A9581B1F9D7F00CD4BEF /* LevelController.m */,
-				27E9F0EE1B27956200066878 /* PurchasedDataController.h */,
-				27E9F0EF1B27956200066878 /* PurchasedDataController.m */,
-				27E9F0F11B27958700066878 /* GamePurchaseController.h */,
-				27E9F0F21B27958700066878 /* GamePurchaseController.m */,
-				27A8371E1B4720B800F02B14 /* Products.json */,
 				270E52161B082986001CDF3C /* Images.xcassets */,
 				270E52181B082986001CDF3C /* LaunchScreen.xib */,
 				270E52091B082986001CDF3C /* Supporting Files */,
@@ -511,6 +498,11 @@
 					270E52051B082986001CDF3C = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 63ARTNG4RQ;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					270E521E1B082986001CDF3C = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -576,7 +568,6 @@
 				27B25AAB1B34A1D600544F52 /* Unwritten Return.mp3 in Resources */,
 				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
 				27B25B661B39C97000544F52 /* winSound.wav in Resources */,
-				27A8371F1B4720B800F02B14 /* Products.json in Resources */,
 				27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */,
@@ -630,7 +621,6 @@
 				27BC836A1B2B722900668F80 /* LevelTwentyViewController.m in Sources */,
 				27B25B2E1B387C3D00544F52 /* SoundEffectsController.m in Sources */,
 				274E52F11B178DD300C9B004 /* LevelEightViewController.m in Sources */,
-				27E9F0F31B27958700066878 /* GamePurchaseController.m in Sources */,
 				274E52EE1B16714800C9B004 /* LevelSevenViewController.m in Sources */,
 				27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */,
 				27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */,
@@ -640,7 +630,6 @@
 				27B25A2D1B32097900544F52 /* LevelTwentyNineViewController.m in Sources */,
 				272A853C1B1CFA4D00C15F41 /* LevelTwelveViewController.m in Sources */,
 				270E52311B082D83001CDF3C /* LaunchViewController.m in Sources */,
-				27E9F0F01B27956200066878 /* PurchasedDataController.m in Sources */,
 				27B25A271B32094D00544F52 /* LevelTwentySevenViewController.m in Sources */,
 				272A84D51B1BC78B00C15F41 /* LevelElevenViewController.m in Sources */,
 				2703E55C1B2636AB005F82FE /* LevelSixteenViewController.m in Sources */,

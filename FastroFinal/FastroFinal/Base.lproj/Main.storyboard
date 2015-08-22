@@ -162,14 +162,6 @@
                                             <segue destination="Azq-pJ-YKN" kind="unwind" unwindAction="unwindToMainMenu:" id="qtZ-OP-ewo"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dLW-tz-VO5"/>
-                                    <barButtonItem title="Buy All" id="lQc-nf-UpI">
-                                        <connections>
-                                            <action selector="buyAllButtonClicked:" destination="6mI-nW-S3u" id="tfJ-q6-2V8"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PnS-e6-GLj"/>
-                                    <barButtonItem title="Restore Purchases" id="WGM-lo-wft"/>
                                 </items>
                                 <color key="tintColor" red="0.1173854185" green="1" blue="0.064216489069999994" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1971,6 +1963,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goHome:" destination="8c4-p0-DeA" eventType="touchUpInside" id="dv1-fs-6dD"/>
+                                    <segue destination="aKO-UM-pIt" kind="push" id="zt7-t7-X67"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3276,6 +3269,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goHome:" destination="euO-XM-Mmr" eventType="touchUpInside" id="2oR-NY-4Se"/>
+                                    <segue destination="a45-6Y-8pq" kind="push" id="Rgc-RU-0UR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pcA-nL-lnr">

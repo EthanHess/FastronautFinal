@@ -8,7 +8,6 @@
 
 #import "LevelsListController.h"
 #import "ViewController.h"
-#import "PurchasedDataController.h"
 #import "LevelOneViewController.h"
 #import "LevelTwoViewController.h"
 #import "LevelThreeViewController.h"
@@ -40,7 +39,6 @@
 #import "LevelTwentyNineViewController.h"
 #import "LevelThirtyViewController.h"
 #import "LevelController.h"
-#import "GamePurchaseController.h"
 
 @interface LevelsListController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -56,35 +54,9 @@
     
     self.tableView.backgroundColor = [UIColor blackColor];
     
-    [self configureWithPurchases];
-    [self registerForPurchaseNotifications];
-    
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     
-}
-
-#pragma ConfiguringPurchases
-
-- (void)configureWithPurchases {
-    
-    [self.tableView reloadData];
-}
-
-- (void)purchasesUpdated:(NSNotification *)notification {
-    
-    [self configureWithPurchases];
-}
-
-- (void)registerForPurchaseNotifications {
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchasesUpdated:) name:kPurchasedContentUpdated object:nil];
-    
-}
-
-- (void)dealloc {
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kPurchasedContentUpdated object:nil];
 }
 
 
@@ -98,23 +70,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-//    return [self levels].count;
+    return [self levels].count;
     
-    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
-        
-        return 30;
-    }
-    
-    if ([PurchasedDataController sharedInstance].accessElevenThroughTwenty) {
-        
-        return 20;
-    }
-    
-    else {
-    
-    return 10;
-        
-    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -129,12 +86,6 @@
     if (indexPath.row == 0) {
         
         return cell;
-    }
-    
-    else if ([PurchasedDataController sharedInstance].accessAllLevels) {
-        
-        return cell;
-        
     }
     
     else
@@ -406,37 +357,6 @@
         }
             
         
-    }
-}
-
-- (IBAction)buyAllButtonClicked:(id)sender {
-    
-    if ([PurchasedDataController sharedInstance].accessAllLevels || [PurchasedDataController sharedInstance].accessTwentyOneThroughEnd) {
-        
-        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"You've already purchased all of the levels!" message:@"" delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
-        [alertView show];
-        
-    }
-    
-    else {
-    
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Purchase all levels?" message:@"Would you like to purchase all levels for $1.99?" preferredStyle:UIAlertControllerStyleAlert];
-    
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Not now" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        
-        [self dismissViewControllerAnimated:YES completion:nil];
-        
-    }]];
-    
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Sure!" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        
-        [[GamePurchaseController sharedInstance] purchaseOptionSelectedObjectIndex:2];
-
-    }]];
-        
-    
-    [self presentViewController:alertController animated:YES completion:nil];
-    
     }
 }
 
