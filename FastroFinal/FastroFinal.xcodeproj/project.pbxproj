@@ -84,6 +84,13 @@
 		27BC840E1B2E4E8300668F80 /* Killing Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */; };
 		27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */; };
 		27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */; };
+		27C315A71BB5E904008BD458 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315A61BB5E904008BD458 /* PageViewController.m */; };
+		27C315AA1BB5E9F6008BD458 /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315A91BB5E9F6008BD458 /* ViewControllerOne.m */; };
+		27C315AD1BB5EA05008BD458 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315AC1BB5EA05008BD458 /* ViewControllerTwo.m */; };
+		27C315B01BB5EA29008BD458 /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315AF1BB5EA29008BD458 /* ViewControllerThree.m */; };
+		27C315B31BBC4DF2008BD458 /* FirstOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B21BBC4DF2008BD458 /* FirstOnboardingVC.m */; };
+		27C315B61BBC4E82008BD458 /* SecondOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B51BBC4E82008BD458 /* SecondOnboardingVC.m */; };
+		27C315B91BBC4FE3008BD458 /* ThirdOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B81BBC4FE3008BD458 /* ThirdOnboardingVC.m */; };
 		27C7FCE51B4DD4F300F26860 /* Call to Adventure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */; };
 		27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */; };
 		27E9F0FC1B2795E100066878 /* LevelEighteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0FB1B2795E100066878 /* LevelEighteenViewController.m */; };
@@ -221,6 +228,20 @@
 		27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Killing Time.mp3"; sourceTree = "<group>"; };
 		27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Sketch.mp3"; sourceTree = "<group>"; };
 		27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EDM Detection Mode.mp3"; sourceTree = "<group>"; };
+		27C315A51BB5E904008BD458 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		27C315A61BB5E904008BD458 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		27C315A81BB5E9F6008BD458 /* ViewControllerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerOne.h; sourceTree = "<group>"; };
+		27C315A91BB5E9F6008BD458 /* ViewControllerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerOne.m; sourceTree = "<group>"; };
+		27C315AB1BB5EA05008BD458 /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
+		27C315AC1BB5EA05008BD458 /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
+		27C315AE1BB5EA29008BD458 /* ViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
+		27C315AF1BB5EA29008BD458 /* ViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
+		27C315B11BBC4DF2008BD458 /* FirstOnboardingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstOnboardingVC.h; sourceTree = "<group>"; };
+		27C315B21BBC4DF2008BD458 /* FirstOnboardingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstOnboardingVC.m; sourceTree = "<group>"; };
+		27C315B41BBC4E82008BD458 /* SecondOnboardingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondOnboardingVC.h; sourceTree = "<group>"; };
+		27C315B51BBC4E82008BD458 /* SecondOnboardingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondOnboardingVC.m; sourceTree = "<group>"; };
+		27C315B71BBC4FE3008BD458 /* ThirdOnboardingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdOnboardingVC.h; sourceTree = "<group>"; };
+		27C315B81BBC4FE3008BD458 /* ThirdOnboardingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdOnboardingVC.m; sourceTree = "<group>"; };
 		27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Call to Adventure.mp3"; sourceTree = "<group>"; };
 		27E9F0F71B2795C900066878 /* LevelSeventeenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSeventeenViewController.h; sourceTree = "<group>"; };
 		27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSeventeenViewController.m; sourceTree = "<group>"; };
@@ -330,7 +351,22 @@
 				271B77F41B1E638F0028A554 /* CreditsViewController.m */,
 				271B77F61B1E63AA0028A554 /* InstructionsViewController.h */,
 				271B77F71B1E63AA0028A554 /* InstructionsViewController.m */,
+				27C315B11BBC4DF2008BD458 /* FirstOnboardingVC.h */,
+				27C315B21BBC4DF2008BD458 /* FirstOnboardingVC.m */,
+				27C315B41BBC4E82008BD458 /* SecondOnboardingVC.h */,
+				27C315B51BBC4E82008BD458 /* SecondOnboardingVC.m */,
+				27C315B71BBC4FE3008BD458 /* ThirdOnboardingVC.h */,
+				27C315B81BBC4FE3008BD458 /* ThirdOnboardingVC.m */,
 				270E52131B082986001CDF3C /* Main.storyboard */,
+				27C315A11BB5E7C0008BD458 /* Onboarding */,
+				27C315A51BB5E904008BD458 /* PageViewController.h */,
+				27C315A61BB5E904008BD458 /* PageViewController.m */,
+				27C315A81BB5E9F6008BD458 /* ViewControllerOne.h */,
+				27C315A91BB5E9F6008BD458 /* ViewControllerOne.m */,
+				27C315AB1BB5EA05008BD458 /* ViewControllerTwo.h */,
+				27C315AC1BB5EA05008BD458 /* ViewControllerTwo.m */,
+				27C315AE1BB5EA29008BD458 /* ViewControllerThree.h */,
+				27C315AF1BB5EA29008BD458 /* ViewControllerThree.m */,
 				270E52351B08350A001CDF3C /* Levels */,
 				270E52321B0834FE001CDF3C /* LevelOneViewController.h */,
 				270E52331B0834FE001CDF3C /* LevelOneViewController.m */,
@@ -446,6 +482,13 @@
 			children = (
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		27C315A11BB5E7C0008BD458 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,6 +646,7 @@
 				270E52341B0834FE001CDF3C /* LevelOneViewController.m in Sources */,
 				27FFABCB1B17B6A100F2E4D3 /* LevelNineViewController.m in Sources */,
 				27F9A9561B1F932F00CD4BEF /* LevelFourteenViewController.m in Sources */,
+				27C315B31BBC4DF2008BD458 /* FirstOnboardingVC.m in Sources */,
 				274E520D1B15117E00C9B004 /* LevelSixViewController.m in Sources */,
 				272A85AF1B1E437B00C15F41 /* LevelThirteenViewController.m in Sources */,
 				270E52381B095F20001CDF3C /* LevelsListController.m in Sources */,
@@ -613,7 +657,11 @@
 				275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */,
 				275B50771B10FDE900E6896A /* LevelTwoViewController.m in Sources */,
 				271B77F51B1E638F0028A554 /* CreditsViewController.m in Sources */,
+				27C315B01BB5EA29008BD458 /* ViewControllerThree.m in Sources */,
 				27F9A9591B1F9D7F00CD4BEF /* LevelController.m in Sources */,
+				27C315B91BBC4FE3008BD458 /* ThirdOnboardingVC.m in Sources */,
+				27C315AD1BB5EA05008BD458 /* ViewControllerTwo.m in Sources */,
+				27C315B61BBC4E82008BD458 /* SecondOnboardingVC.m in Sources */,
 				27B25A2A1B32096400544F52 /* LevelTwentyEightViewController.m in Sources */,
 				270E520C1B082986001CDF3C /* main.m in Sources */,
 				27BC83671B2A41ED00668F80 /* LevelNineteenViewController.m in Sources */,
@@ -623,6 +671,7 @@
 				274E52F11B178DD300C9B004 /* LevelEightViewController.m in Sources */,
 				274E52EE1B16714800C9B004 /* LevelSevenViewController.m in Sources */,
 				27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */,
+				27C315AA1BB5E9F6008BD458 /* ViewControllerOne.m in Sources */,
 				27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */,
 				27B25A1E1B31FBB800544F52 /* LevelTwentyFourViewController.m in Sources */,
 				27B25A211B32090D00544F52 /* LevelTwentyFiveViewController.m in Sources */,
@@ -636,6 +685,7 @@
 				27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */,
 				270E523C1B098D35001CDF3C /* SoundController.m in Sources */,
 				27B127541B2393E1007BACD1 /* LevelFifteenViewController.m in Sources */,
+				27C315A71BB5E904008BD458 /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

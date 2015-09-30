@@ -44,7 +44,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-
 @end
 
 @implementation LevelsListController
@@ -55,7 +54,6 @@
     self.tableView.backgroundColor = [UIColor blackColor];
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
     
 }
 

@@ -7,7 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "FirstOnboardingVC.h"
+#import "SecondOnboardingVC.h"
+#import "ThirdOnboardingVC.h"
 
 @interface InstructionsViewController : ViewController
+
+@property (nonatomic, strong) FirstOnboardingVC *vcOne;
+@property (nonatomic, strong) SecondOnboardingVC *vcTwo;
+@property (nonatomic, strong) ThirdOnboardingVC *vcThree;
 
 @end
