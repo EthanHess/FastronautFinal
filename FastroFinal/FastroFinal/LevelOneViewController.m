@@ -154,8 +154,8 @@ int score;
     
     fastroFlight = fastroFlight - 5;
     
-    if (fastroFlight < -12) {
-        fastroFlight = -12;
+    if (fastroFlight < -10) {
+        fastroFlight = -10;
     }
     
     if (fastroFlight > 0) {

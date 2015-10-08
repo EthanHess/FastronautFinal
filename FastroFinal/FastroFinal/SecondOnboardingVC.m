@@ -10,13 +10,19 @@
 
 @interface SecondOnboardingVC ()
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 @end
 
 @implementation SecondOnboardingVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    self.imageView.image = [UIImage imageNamed:@"secondOnboardImage"];
+    
+    [self.view addSubview:self.imageView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,13 +10,20 @@
 
 @interface FirstOnboardingVC ()
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 @end
 
 @implementation FirstOnboardingVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    self.imageView.image = [UIImage imageNamed:@"firstOnboardImage"];
+    
+    [self.view addSubview:self.imageView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

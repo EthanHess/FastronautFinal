@@ -86,7 +86,7 @@ extern int score;
     
     [self placeCoin]; 
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.008 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.009 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.005 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -145,8 +145,8 @@ extern int score;
     
     fastroFlight = fastroFlight - 5;
     
-    if (fastroFlight < -15) {
-        fastroFlight = -15;
+    if (fastroFlight < - 12) {
+        fastroFlight = - 12;
     }
     
     if (fastroFlight > 0) {
@@ -162,7 +162,7 @@ extern int score;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    fastroFlight = 30;
+    fastroFlight = 25;
     
 }
 

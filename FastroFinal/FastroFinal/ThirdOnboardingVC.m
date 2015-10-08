@@ -7,8 +7,11 @@
 //
 
 #import "ThirdOnboardingVC.h"
+#import "ViewController.h"
 
 @interface ThirdOnboardingVC ()
+
+@property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
@@ -16,7 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    self.imageView.image = [UIImage imageNamed:@"thirdOnboardImage"];
+    
+    [self.view addSubview:self.imageView];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
