@@ -272,7 +272,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Secrets of the Schoolyard" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Disco Medusae" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url]; 
     

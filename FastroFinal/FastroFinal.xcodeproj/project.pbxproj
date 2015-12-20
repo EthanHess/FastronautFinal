@@ -34,7 +34,6 @@
 		27B127541B2393E1007BACD1 /* LevelFifteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B127531B2393E1007BACD1 /* LevelFifteenViewController.m */; };
 		27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */; };
 		27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */; };
-		27B25A121B30F31A00544F52 /* One Sly Move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A111B30F31A00544F52 /* One Sly Move.mp3 */; };
 		27B25A1B1B31E92C00544F52 /* LevelTwentyThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A1A1B31E92C00544F52 /* LevelTwentyThreeViewController.m */; };
 		27B25A1E1B31FBB800544F52 /* LevelTwentyFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A1D1B31FBB800544F52 /* LevelTwentyFourViewController.m */; };
 		27B25A211B32090D00544F52 /* LevelTwentyFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A201B32090D00544F52 /* LevelTwentyFiveViewController.m */; };
@@ -45,53 +44,30 @@
 		27B25A301B32099800544F52 /* LevelThirtyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A2F1B32099800544F52 /* LevelThirtyViewController.m */; };
 		27B25A331B3209B000544F52 /* WonTheGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A321B3209B000544F52 /* WonTheGameViewController.m */; };
 		27B25A361B320B5500544F52 /* Shiny Tech2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */; };
-		27B25A371B320B5500544F52 /* Super Friendly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A351B320B5500544F52 /* Super Friendly.mp3 */; };
 		27B25A751B336A0400544F52 /* Skye Cuillin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */; };
-		27B25A771B33782600544F52 /* Severe Tire Damage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A761B33782600544F52 /* Severe Tire Damage.mp3 */; };
 		27B25AAB1B34A1D600544F52 /* Unwritten Return.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25AAA1B34A1D600544F52 /* Unwritten Return.mp3 */; };
 		27B25AAD1B35211700544F52 /* Disco Medusae.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25AAC1B35211700544F52 /* Disco Medusae.mp3 */; };
-		27B25AAF1B35301B00544F52 /* Carnivale Intrigue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25AAE1B35301B00544F52 /* Carnivale Intrigue.mp3 */; };
 		27B25B271B3733EE00544F52 /* Your Call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B261B3733EE00544F52 /* Your Call.mp3 */; };
 		27B25B291B3876CB00544F52 /* Electro Cabello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B281B3876CB00544F52 /* Electro Cabello.mp3 */; };
 		27B25B2B1B387B8600544F52 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B2A1B387B8600544F52 /* ding.wav */; };
 		27B25B2E1B387C3D00544F52 /* SoundEffectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25B2D1B387C3D00544F52 /* SoundEffectsController.m */; };
 		27B25B301B387DBF00544F52 /* gameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B2F1B387DBF00544F52 /* gameOver.wav */; };
-		27B25B321B387E5900544F52 /* Son Of A Rocket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B311B387E5900544F52 /* Son Of A Rocket.mp3 */; };
 		27B25B661B39C97000544F52 /* winSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B651B39C97000544F52 /* winSound.wav */; };
 		27B25B681B39CFB700544F52 /* ceramicBell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B671B39CFB700544F52 /* ceramicBell.wav */; };
-		27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
 		27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */; };
 		27BACAF61B1FF09100FA26E2 /* Exit the Premises.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */; };
-		27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */; };
 		27BACAFA1B1FF0B300FA26E2 /* Zanzibar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */; };
-		27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */; };
-		27BC830F1B28F66600668F80 /* Controlled Chaos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83041B28F66600668F80 /* Controlled Chaos.mp3 */; };
-		27BC83101B28F66600668F80 /* Enter the Maze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83051B28F66600668F80 /* Enter the Maze.mp3 */; };
 		27BC83111B28F66600668F80 /* Five Armies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83061B28F66600668F80 /* Five Armies.mp3 */; };
-		27BC83121B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83071B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 */; };
-		27BC83131B28F66600668F80 /* Hero Down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83081B28F66600668F80 /* Hero Down.mp3 */; };
-		27BC83141B28F66600668F80 /* Hit the Streets v2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83091B28F66600668F80 /* Hit the Streets v2.mp3 */; };
 		27BC83151B28F66600668F80 /* Ibn Al-Noor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */; };
-		27BC83161B28F66600668F80 /* Rising.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830B1B28F66600668F80 /* Rising.mp3 */; };
-		27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */; };
-		27BC83181B28F66600668F80 /* The Whip Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */; };
-		27BC83191B28F66600668F80 /* Who Likes to Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */; };
 		27BC83671B2A41ED00668F80 /* LevelNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */; };
 		27BC836A1B2B722900668F80 /* LevelTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83691B2B722900668F80 /* LevelTwentyViewController.m */; };
-		27BC840C1B2E4E6100668F80 /* Lightless Dawn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840B1B2E4E6100668F80 /* Lightless Dawn.mp3 */; };
-		27BC840E1B2E4E8300668F80 /* Killing Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */; };
 		27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */; };
 		27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */; };
-		27C315A71BB5E904008BD458 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315A61BB5E904008BD458 /* PageViewController.m */; };
-		27C315AA1BB5E9F6008BD458 /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315A91BB5E9F6008BD458 /* ViewControllerOne.m */; };
-		27C315AD1BB5EA05008BD458 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315AC1BB5EA05008BD458 /* ViewControllerTwo.m */; };
-		27C315B01BB5EA29008BD458 /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315AF1BB5EA29008BD458 /* ViewControllerThree.m */; };
 		27C315B31BBC4DF2008BD458 /* FirstOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B21BBC4DF2008BD458 /* FirstOnboardingVC.m */; };
 		27C315B61BBC4E82008BD458 /* SecondOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B51BBC4E82008BD458 /* SecondOnboardingVC.m */; };
 		27C315B91BBC4FE3008BD458 /* ThirdOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B81BBC4FE3008BD458 /* ThirdOnboardingVC.m */; };
-		27C7FCE51B4DD4F300F26860 /* Call to Adventure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */; };
 		27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */; };
 		27E9F0FC1B2795E100066878 /* LevelEighteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9F0FB1B2795E100066878 /* LevelEighteenViewController.m */; };
 		27F9A9561B1F932F00CD4BEF /* LevelFourteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A9551B1F932F00CD4BEF /* LevelFourteenViewController.m */; };
@@ -99,7 +75,6 @@
 		27FFABCB1B17B6A100F2E4D3 /* LevelNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFABCA1B17B6A100F2E4D3 /* LevelNineViewController.m */; };
 		27FFAC0F1B190BD200F2E4D3 /* LevelTenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFAC0E1B190BD200F2E4D3 /* LevelTenViewController.m */; };
 		27FFAC151B1AB5B400F2E4D3 /* The Curtain Rises.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */; };
-		27FFAC161B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27FFAC141B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,7 +141,6 @@
 		27B25A0C1B30B82100544F52 /* LevelTwentyOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyOneViewController.m; sourceTree = "<group>"; };
 		27B25A0E1B30E9D100544F52 /* LevelTwentyTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyTwoViewController.h; sourceTree = "<group>"; };
 		27B25A0F1B30E9D100544F52 /* LevelTwentyTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyTwoViewController.m; sourceTree = "<group>"; };
-		27B25A111B30F31A00544F52 /* One Sly Move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Sly Move.mp3"; sourceTree = "<group>"; };
 		27B25A191B31E92C00544F52 /* LevelTwentyThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyThreeViewController.h; sourceTree = "<group>"; };
 		27B25A1A1B31E92C00544F52 /* LevelTwentyThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyThreeViewController.m; sourceTree = "<group>"; };
 		27B25A1C1B31FBB800544F52 /* LevelTwentyFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyFourViewController.h; sourceTree = "<group>"; };
@@ -186,63 +160,36 @@
 		27B25A311B3209B000544F52 /* WonTheGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WonTheGameViewController.h; sourceTree = "<group>"; };
 		27B25A321B3209B000544F52 /* WonTheGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WonTheGameViewController.m; sourceTree = "<group>"; };
 		27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Shiny Tech2.mp3"; path = "FastroFinal/Shiny Tech2.mp3"; sourceTree = "<group>"; };
-		27B25A351B320B5500544F52 /* Super Friendly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Super Friendly.mp3"; path = "FastroFinal/Super Friendly.mp3"; sourceTree = "<group>"; };
 		27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Skye Cuillin.mp3"; sourceTree = "<group>"; };
-		27B25A761B33782600544F52 /* Severe Tire Damage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Severe Tire Damage.mp3"; sourceTree = "<group>"; };
 		27B25AAA1B34A1D600544F52 /* Unwritten Return.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Unwritten Return.mp3"; sourceTree = "<group>"; };
 		27B25AAC1B35211700544F52 /* Disco Medusae.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Disco Medusae.mp3"; sourceTree = "<group>"; };
-		27B25AAE1B35301B00544F52 /* Carnivale Intrigue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Carnivale Intrigue.mp3"; sourceTree = "<group>"; };
 		27B25B261B3733EE00544F52 /* Your Call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Your Call.mp3"; sourceTree = "<group>"; };
 		27B25B281B3876CB00544F52 /* Electro Cabello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Cabello.mp3"; sourceTree = "<group>"; };
 		27B25B2A1B387B8600544F52 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		27B25B2C1B387C3D00544F52 /* SoundEffectsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffectsController.h; sourceTree = "<group>"; };
 		27B25B2D1B387C3D00544F52 /* SoundEffectsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffectsController.m; sourceTree = "<group>"; };
 		27B25B2F1B387DBF00544F52 /* gameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameOver.wav; sourceTree = "<group>"; };
-		27B25B311B387E5900544F52 /* Son Of A Rocket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Son Of A Rocket.mp3"; sourceTree = "<group>"; };
 		27B25B651B39C97000544F52 /* winSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = winSound.wav; sourceTree = "<group>"; };
 		27B25B671B39CFB700544F52 /* ceramicBell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ceramicBell.wav; sourceTree = "<group>"; };
-		27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Secrets of the Schoolyard.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
 		27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Discovery Hit.mp3"; sourceTree = "<group>"; };
 		27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Exit the Premises.mp3"; sourceTree = "<group>"; };
-		27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nano Hoedown.mp3"; sourceTree = "<group>"; };
 		27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zanzibar.mp3; sourceTree = "<group>"; };
-		27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sunflower Dance Party.mp3"; sourceTree = "<group>"; };
-		27BC83041B28F66600668F80 /* Controlled Chaos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Controlled Chaos.mp3"; sourceTree = "<group>"; };
-		27BC83051B28F66600668F80 /* Enter the Maze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Enter the Maze.mp3"; sourceTree = "<group>"; };
 		27BC83061B28F66600668F80 /* Five Armies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Five Armies.mp3"; sourceTree = "<group>"; };
-		27BC83071B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ghostpocalypse - 7 Master.mp3"; sourceTree = "<group>"; };
-		27BC83081B28F66600668F80 /* Hero Down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hero Down.mp3"; sourceTree = "<group>"; };
-		27BC83091B28F66600668F80 /* Hit the Streets v2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hit the Streets v2.mp3"; sourceTree = "<group>"; };
 		27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ibn Al-Noor.mp3"; sourceTree = "<group>"; };
-		27BC830B1B28F66600668F80 /* Rising.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rising.mp3; sourceTree = "<group>"; };
-		27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Space Fighter Loop.mp3"; sourceTree = "<group>"; };
-		27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Whip Theme.mp3"; sourceTree = "<group>"; };
-		27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Who Likes to Party.mp3"; sourceTree = "<group>"; };
 		27BC83651B2A41ED00668F80 /* LevelNineteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelNineteenViewController.h; sourceTree = "<group>"; };
 		27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelNineteenViewController.m; sourceTree = "<group>"; };
 		27BC83681B2B722900668F80 /* LevelTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyViewController.h; sourceTree = "<group>"; };
 		27BC83691B2B722900668F80 /* LevelTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyViewController.m; sourceTree = "<group>"; };
-		27BC840B1B2E4E6100668F80 /* Lightless Dawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lightless Dawn.mp3"; sourceTree = "<group>"; };
-		27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Killing Time.mp3"; sourceTree = "<group>"; };
 		27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Sketch.mp3"; sourceTree = "<group>"; };
 		27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EDM Detection Mode.mp3"; sourceTree = "<group>"; };
-		27C315A51BB5E904008BD458 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
-		27C315A61BB5E904008BD458 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
-		27C315A81BB5E9F6008BD458 /* ViewControllerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerOne.h; sourceTree = "<group>"; };
-		27C315A91BB5E9F6008BD458 /* ViewControllerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerOne.m; sourceTree = "<group>"; };
-		27C315AB1BB5EA05008BD458 /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
-		27C315AC1BB5EA05008BD458 /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
-		27C315AE1BB5EA29008BD458 /* ViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
-		27C315AF1BB5EA29008BD458 /* ViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
 		27C315B11BBC4DF2008BD458 /* FirstOnboardingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstOnboardingVC.h; sourceTree = "<group>"; };
 		27C315B21BBC4DF2008BD458 /* FirstOnboardingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstOnboardingVC.m; sourceTree = "<group>"; };
 		27C315B41BBC4E82008BD458 /* SecondOnboardingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondOnboardingVC.h; sourceTree = "<group>"; };
 		27C315B51BBC4E82008BD458 /* SecondOnboardingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondOnboardingVC.m; sourceTree = "<group>"; };
 		27C315B71BBC4FE3008BD458 /* ThirdOnboardingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdOnboardingVC.h; sourceTree = "<group>"; };
 		27C315B81BBC4FE3008BD458 /* ThirdOnboardingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdOnboardingVC.m; sourceTree = "<group>"; };
-		27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Call to Adventure.mp3"; sourceTree = "<group>"; };
 		27E9F0F71B2795C900066878 /* LevelSeventeenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSeventeenViewController.h; sourceTree = "<group>"; };
 		27E9F0F81B2795C900066878 /* LevelSeventeenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSeventeenViewController.m; sourceTree = "<group>"; };
 		27E9F0FA1B2795E100066878 /* LevelEighteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelEighteenViewController.h; sourceTree = "<group>"; };
@@ -256,7 +203,6 @@
 		27FFAC0D1B190BD200F2E4D3 /* LevelTenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTenViewController.h; sourceTree = "<group>"; };
 		27FFAC0E1B190BD200F2E4D3 /* LevelTenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTenViewController.m; sourceTree = "<group>"; };
 		27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Curtain Rises.mp3"; sourceTree = "<group>"; };
-		27FFAC141B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Urban Gauntlet.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,9 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				270E52081B082986001CDF3C /* FastroFinal */,
-				27B25A111B30F31A00544F52 /* One Sly Move.mp3 */,
-				27C7FCE41B4DD4F300F26860 /* Call to Adventure.mp3 */,
-				27B25B311B387E5900544F52 /* Son Of A Rocket.mp3 */,
 				27B25B2F1B387DBF00544F52 /* gameOver.wav */,
 				27B25B651B39C97000544F52 /* winSound.wav */,
 				27B25B2A1B387B8600544F52 /* ding.wav */,
@@ -291,37 +234,19 @@
 				27B25B261B3733EE00544F52 /* Your Call.mp3 */,
 				27B25B671B39CFB700544F52 /* ceramicBell.wav */,
 				27B25B281B3876CB00544F52 /* Electro Cabello.mp3 */,
-				27B25AAE1B35301B00544F52 /* Carnivale Intrigue.mp3 */,
-				27B25A761B33782600544F52 /* Severe Tire Damage.mp3 */,
 				27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */,
 				27B25AAC1B35211700544F52 /* Disco Medusae.mp3 */,
-				27B25A351B320B5500544F52 /* Super Friendly.mp3 */,
 				27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */,
-				27BACAFB1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 */,
 				27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */,
 				27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */,
-				27BACAF71B1FF09C00FA26E2 /* Nano Hoedown.mp3 */,
 				27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */,
 				27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */,
-				27BC840B1B2E4E6100668F80 /* Lightless Dawn.mp3 */,
 				27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */,
 				27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */,
 				27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */,
-				27BACAED1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 */,
 				27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */,
-				27BC840D1B2E4E8300668F80 /* Killing Time.mp3 */,
-				27FFAC141B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 */,
-				27BC83041B28F66600668F80 /* Controlled Chaos.mp3 */,
-				27BC83051B28F66600668F80 /* Enter the Maze.mp3 */,
 				27BC83061B28F66600668F80 /* Five Armies.mp3 */,
-				27BC83071B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 */,
-				27BC83081B28F66600668F80 /* Hero Down.mp3 */,
-				27BC83091B28F66600668F80 /* Hit the Streets v2.mp3 */,
 				27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */,
-				27BC830B1B28F66600668F80 /* Rising.mp3 */,
-				27BC830C1B28F66600668F80 /* Space Fighter Loop.mp3 */,
-				27BC830D1B28F66600668F80 /* The Whip Theme.mp3 */,
-				27BC830E1B28F66600668F80 /* Who Likes to Party.mp3 */,
 				270E52221B082986001CDF3C /* FastroFinalTests */,
 				270E52071B082986001CDF3C /* Products */,
 			);
@@ -358,15 +283,6 @@
 				27C315B71BBC4FE3008BD458 /* ThirdOnboardingVC.h */,
 				27C315B81BBC4FE3008BD458 /* ThirdOnboardingVC.m */,
 				270E52131B082986001CDF3C /* Main.storyboard */,
-				27C315A11BB5E7C0008BD458 /* Onboarding */,
-				27C315A51BB5E904008BD458 /* PageViewController.h */,
-				27C315A61BB5E904008BD458 /* PageViewController.m */,
-				27C315A81BB5E9F6008BD458 /* ViewControllerOne.h */,
-				27C315A91BB5E9F6008BD458 /* ViewControllerOne.m */,
-				27C315AB1BB5EA05008BD458 /* ViewControllerTwo.h */,
-				27C315AC1BB5EA05008BD458 /* ViewControllerTwo.m */,
-				27C315AE1BB5EA29008BD458 /* ViewControllerThree.h */,
-				27C315AF1BB5EA29008BD458 /* ViewControllerThree.m */,
 				270E52351B08350A001CDF3C /* Levels */,
 				270E52321B0834FE001CDF3C /* LevelOneViewController.h */,
 				270E52331B0834FE001CDF3C /* LevelOneViewController.m */,
@@ -484,13 +400,6 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		27C315A11BB5E7C0008BD458 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Onboarding;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -577,41 +486,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B25A771B33782600544F52 /* Severe Tire Damage.mp3 in Resources */,
 				27B25B681B39CFB700544F52 /* ceramicBell.wav in Resources */,
-				27BC83141B28F66600668F80 /* Hit the Streets v2.mp3 in Resources */,
 				27BACAF61B1FF09100FA26E2 /* Exit the Premises.mp3 in Resources */,
-				27BC83121B28F66600668F80 /* Ghostpocalypse - 7 Master.mp3 in Resources */,
-				27BC83161B28F66600668F80 /* Rising.mp3 in Resources */,
-				27BACAEE1B1FF05000FA26E2 /* Secrets of the Schoolyard.mp3 in Resources */,
-				27BC840C1B2E4E6100668F80 /* Lightless Dawn.mp3 in Resources */,
 				27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */,
 				27B25B271B3733EE00544F52 /* Your Call.mp3 in Resources */,
-				27BC840E1B2E4E8300668F80 /* Killing Time.mp3 in Resources */,
-				27C7FCE51B4DD4F300F26860 /* Call to Adventure.mp3 in Resources */,
-				27BC83101B28F66600668F80 /* Enter the Maze.mp3 in Resources */,
 				27B25AAD1B35211700544F52 /* Disco Medusae.mp3 in Resources */,
-				27FFAC161B1AB5B400F2E4D3 /* Urban Gauntlet.mp3 in Resources */,
-				27B25AAF1B35301B00544F52 /* Carnivale Intrigue.mp3 in Resources */,
 				27B25B301B387DBF00544F52 /* gameOver.wav in Resources */,
-				27BACAF81B1FF09C00FA26E2 /* Nano Hoedown.mp3 in Resources */,
 				27B25B2B1B387B8600544F52 /* ding.wav in Resources */,
-				27B25A121B30F31A00544F52 /* One Sly Move.mp3 in Resources */,
-				27BC83181B28F66600668F80 /* The Whip Theme.mp3 in Resources */,
 				27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */,
-				27BACAFC1B1FF0BE00FA26E2 /* Sunflower Dance Party.mp3 in Resources */,
-				27BC830F1B28F66600668F80 /* Controlled Chaos.mp3 in Resources */,
-				27BC83131B28F66600668F80 /* Hero Down.mp3 in Resources */,
-				27BC83191B28F66600668F80 /* Who Likes to Party.mp3 in Resources */,
 				27BC83111B28F66600668F80 /* Five Armies.mp3 in Resources */,
-				27B25A371B320B5500544F52 /* Super Friendly.mp3 in Resources */,
 				27FFAC151B1AB5B400F2E4D3 /* The Curtain Rises.mp3 in Resources */,
 				27B25B291B3876CB00544F52 /* Electro Cabello.mp3 in Resources */,
-				27B25B321B387E5900544F52 /* Son Of A Rocket.mp3 in Resources */,
 				27B25AAB1B34A1D600544F52 /* Unwritten Return.mp3 in Resources */,
 				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
 				27B25B661B39C97000544F52 /* winSound.wav in Resources */,
-				27BC83171B28F66600668F80 /* Space Fighter Loop.mp3 in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
 				27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */,
 				27B25A361B320B5500544F52 /* Shiny Tech2.mp3 in Resources */,
@@ -657,10 +545,8 @@
 				275B50E81B13AD4100E6896A /* LevelFiveViewController.m in Sources */,
 				275B50771B10FDE900E6896A /* LevelTwoViewController.m in Sources */,
 				271B77F51B1E638F0028A554 /* CreditsViewController.m in Sources */,
-				27C315B01BB5EA29008BD458 /* ViewControllerThree.m in Sources */,
 				27F9A9591B1F9D7F00CD4BEF /* LevelController.m in Sources */,
 				27C315B91BBC4FE3008BD458 /* ThirdOnboardingVC.m in Sources */,
-				27C315AD1BB5EA05008BD458 /* ViewControllerTwo.m in Sources */,
 				27C315B61BBC4E82008BD458 /* SecondOnboardingVC.m in Sources */,
 				27B25A2A1B32096400544F52 /* LevelTwentyEightViewController.m in Sources */,
 				270E520C1B082986001CDF3C /* main.m in Sources */,
@@ -671,7 +557,6 @@
 				274E52F11B178DD300C9B004 /* LevelEightViewController.m in Sources */,
 				274E52EE1B16714800C9B004 /* LevelSevenViewController.m in Sources */,
 				27B25A101B30E9D100544F52 /* LevelTwentyTwoViewController.m in Sources */,
-				27C315AA1BB5E9F6008BD458 /* ViewControllerOne.m in Sources */,
 				27E9F0F91B2795C900066878 /* LevelSeventeenViewController.m in Sources */,
 				27B25A1E1B31FBB800544F52 /* LevelTwentyFourViewController.m in Sources */,
 				27B25A211B32090D00544F52 /* LevelTwentyFiveViewController.m in Sources */,
@@ -685,7 +570,6 @@
 				27B25A0D1B30B82100544F52 /* LevelTwentyOneViewController.m in Sources */,
 				270E523C1B098D35001CDF3C /* SoundController.m in Sources */,
 				27B127541B2393E1007BACD1 /* LevelFifteenViewController.m in Sources */,
-				27C315A71BB5E904008BD458 /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

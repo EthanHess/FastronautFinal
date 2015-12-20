@@ -97,7 +97,7 @@ extern int diamondPosition;
     
     [self placeDiamond];
     
-    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.0065 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
+    self.obstacleTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(obstacleMoving) userInfo:nil repeats:YES];
     
     self.coinTimer = [NSTimer scheduledTimerWithTimeInterval:0.003 target:self selector:@selector(coinMoving) userInfo:nil repeats:YES];
     
@@ -152,7 +152,7 @@ extern int diamondPosition;
         
         topObstaclePosition = arc4random() %330;
         topObstaclePosition = topObstaclePosition - 225;
-        bottomObstaclePosition = topObstaclePosition + 550;
+        bottomObstaclePosition = topObstaclePosition + 560;
         
         self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);
@@ -163,7 +163,7 @@ extern int diamondPosition;
         
         topObstaclePosition = arc4random() %400;
         topObstaclePosition = topObstaclePosition - 225;
-        bottomObstaclePosition = topObstaclePosition + 790;
+        bottomObstaclePosition = topObstaclePosition + 810;
         
         self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);

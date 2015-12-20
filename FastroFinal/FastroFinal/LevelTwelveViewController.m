@@ -56,7 +56,7 @@ extern int score;
     
     self.fastronaut.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height /2);
     
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 30 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Get 20 coins!" message:nil delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
     [alert show];
     
     self.beginButton.backgroundColor = [UIColor blueColor];
@@ -282,7 +282,7 @@ extern int score;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", score];
     
-    if (score == 30) {
+    if (score == 20) {
         
         [self.fastroTimer invalidate];
         [self.obstacleTimer invalidate];

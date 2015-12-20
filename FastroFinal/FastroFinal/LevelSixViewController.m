@@ -313,7 +313,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Controlled Chaos" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"EDM Detection Mode" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     
