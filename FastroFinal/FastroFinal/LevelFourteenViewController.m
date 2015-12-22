@@ -399,7 +399,7 @@ extern int diamondPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"The Whip Theme" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Exit the Premises" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     

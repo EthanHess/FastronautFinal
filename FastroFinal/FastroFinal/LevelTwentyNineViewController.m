@@ -417,7 +417,7 @@ int diamondPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Your Call" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Electro Sketch" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     

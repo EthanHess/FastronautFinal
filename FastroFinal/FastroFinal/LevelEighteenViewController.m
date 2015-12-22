@@ -375,7 +375,7 @@ extern int coinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Killing Time" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Shiny Tech2" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     

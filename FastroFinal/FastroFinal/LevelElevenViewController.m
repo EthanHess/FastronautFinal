@@ -387,7 +387,7 @@ extern int diamondPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Ghostpocalypse - 7 Master" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"The Complex" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     

@@ -54,6 +54,7 @@
 		27B25B301B387DBF00544F52 /* gameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B2F1B387DBF00544F52 /* gameOver.wav */; };
 		27B25B661B39C97000544F52 /* winSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B651B39C97000544F52 /* winSound.wav */; };
 		27B25B681B39CFB700544F52 /* ceramicBell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B671B39CFB700544F52 /* ceramicBell.wav */; };
+		27B7B4391C28FC7600ECD03E /* Call to Adventure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B7B4381C28FC7600ECD03E /* Call to Adventure.mp3 */; settings = {ASSET_TAGS = (); }; };
 		27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */; };
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
 		27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */; };
@@ -171,6 +172,7 @@
 		27B25B2F1B387DBF00544F52 /* gameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameOver.wav; sourceTree = "<group>"; };
 		27B25B651B39C97000544F52 /* winSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = winSound.wav; sourceTree = "<group>"; };
 		27B25B671B39CFB700544F52 /* ceramicBell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ceramicBell.wav; sourceTree = "<group>"; };
+		27B7B4381C28FC7600ECD03E /* Call to Adventure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Call to Adventure.mp3"; sourceTree = "<group>"; };
 		27BACAEF1B1FF05D00FA26E2 /* The Complex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Complex.mp3"; sourceTree = "<group>"; };
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
 		27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Discovery Hit.mp3"; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				27FFAC131B1AB5B400F2E4D3 /* The Curtain Rises.mp3 */,
 				27BC83061B28F66600668F80 /* Five Armies.mp3 */,
 				27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */,
+				27B7B4381C28FC7600ECD03E /* Call to Adventure.mp3 */,
 				270E52221B082986001CDF3C /* FastroFinalTests */,
 				270E52071B082986001CDF3C /* Products */,
 			);
@@ -494,6 +497,7 @@
 				27B25B301B387DBF00544F52 /* gameOver.wav in Resources */,
 				27B25B2B1B387B8600544F52 /* ding.wav in Resources */,
 				27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */,
+				27B7B4391C28FC7600ECD03E /* Call to Adventure.mp3 in Resources */,
 				27BC83111B28F66600668F80 /* Five Armies.mp3 in Resources */,
 				27FFAC151B1AB5B400F2E4D3 /* The Curtain Rises.mp3 in Resources */,
 				27B25B291B3876CB00544F52 /* Electro Cabello.mp3 in Resources */,

@@ -412,7 +412,7 @@ extern int redCoinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Electro Cabello" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Skye Cuillin" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     

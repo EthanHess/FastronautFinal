@@ -413,7 +413,7 @@ extern int diamondPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"One Sly Move" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Zanzibar" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     
