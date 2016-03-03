@@ -161,8 +161,8 @@ extern int score;
         
         topObstaclePosition = arc4random() %250;
         topObstaclePosition = topObstaclePosition - 150;
-        bottomObstaclePosition = topObstaclePosition + 670;
-        middleObstaclePosition = topObstaclePosition + 340;
+        bottomObstaclePosition = topObstaclePosition + 680;
+        middleObstaclePosition = topObstaclePosition + 350;
         
         self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
@@ -174,8 +174,8 @@ extern int score;
         
         topObstaclePosition = arc4random() %330;
         topObstaclePosition = topObstaclePosition - 150;
-        bottomObstaclePosition = topObstaclePosition + 910;
-        middleObstaclePosition = topObstaclePosition + 450;
+        bottomObstaclePosition = topObstaclePosition + 920;
+        middleObstaclePosition = topObstaclePosition + 455;
         
         self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);
@@ -187,8 +187,8 @@ extern int score;
     
     topObstaclePosition = arc4random() %300;
     topObstaclePosition = topObstaclePosition - 150;
-    bottomObstaclePosition = topObstaclePosition + 790;
-    middleObstaclePosition = topObstaclePosition + 395;
+    bottomObstaclePosition = topObstaclePosition + 800;
+    middleObstaclePosition = topObstaclePosition + 400;
     
     self.topObstacleView.center = CGPointMake(450, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(450, bottomObstaclePosition);

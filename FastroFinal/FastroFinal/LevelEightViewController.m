@@ -334,7 +334,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Five Armies" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Your Call" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     

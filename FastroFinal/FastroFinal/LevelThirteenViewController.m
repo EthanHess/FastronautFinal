@@ -345,7 +345,7 @@ extern int score;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Electro Sketch" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Shiny Tech2" withExtension:@"mp3"];
     
     [[SoundController sharedInstance]playFileAtURL:url];
     

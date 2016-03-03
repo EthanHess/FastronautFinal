@@ -152,7 +152,7 @@ extern int diamondPosition;
         
         topObstaclePosition = arc4random() %330;
         topObstaclePosition = topObstaclePosition - 225;
-        bottomObstaclePosition = topObstaclePosition + 560;
+        bottomObstaclePosition = topObstaclePosition + 570;
         
         self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);
@@ -163,7 +163,7 @@ extern int diamondPosition;
         
         topObstaclePosition = arc4random() %400;
         topObstaclePosition = topObstaclePosition - 225;
-        bottomObstaclePosition = topObstaclePosition + 810;
+        bottomObstaclePosition = topObstaclePosition + 820;
         
         self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
         self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);
@@ -174,7 +174,7 @@ extern int diamondPosition;
     
     topObstaclePosition = arc4random() %380;
     topObstaclePosition = topObstaclePosition - 225;
-    bottomObstaclePosition = topObstaclePosition + 680;
+    bottomObstaclePosition = topObstaclePosition + 690;
     
     self.topObstacleView.center = CGPointMake(520, topObstaclePosition);
     self.bottomObstacleView.center = CGPointMake(-140, bottomObstaclePosition);

@@ -348,7 +348,7 @@ extern int redCoinPosition;
 
 - (void)playAudio {
     
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Five Armies" withExtension:@"mp3"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Exit the Premises" withExtension:@"mp3"];
     
     [[SoundController sharedInstance] playFileAtURL:url];
     

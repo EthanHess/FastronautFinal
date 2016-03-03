@@ -45,10 +45,8 @@
 		27B25A331B3209B000544F52 /* WonTheGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25A321B3209B000544F52 /* WonTheGameViewController.m */; };
 		27B25A361B320B5500544F52 /* Shiny Tech2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */; };
 		27B25A751B336A0400544F52 /* Skye Cuillin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */; };
-		27B25AAB1B34A1D600544F52 /* Unwritten Return.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25AAA1B34A1D600544F52 /* Unwritten Return.mp3 */; };
 		27B25AAD1B35211700544F52 /* Disco Medusae.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25AAC1B35211700544F52 /* Disco Medusae.mp3 */; };
 		27B25B271B3733EE00544F52 /* Your Call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B261B3733EE00544F52 /* Your Call.mp3 */; };
-		27B25B291B3876CB00544F52 /* Electro Cabello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B281B3876CB00544F52 /* Electro Cabello.mp3 */; };
 		27B25B2B1B387B8600544F52 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B2A1B387B8600544F52 /* ding.wav */; };
 		27B25B2E1B387C3D00544F52 /* SoundEffectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B25B2D1B387C3D00544F52 /* SoundEffectsController.m */; };
 		27B25B301B387DBF00544F52 /* gameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27B25B2F1B387DBF00544F52 /* gameOver.wav */; };
@@ -59,12 +57,10 @@
 		27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */; };
 		27BACAF41B1FF07E00FA26E2 /* Discovery Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */; };
 		27BACAF61B1FF09100FA26E2 /* Exit the Premises.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */; };
-		27BACAFA1B1FF0B300FA26E2 /* Zanzibar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */; };
 		27BC83111B28F66600668F80 /* Five Armies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC83061B28F66600668F80 /* Five Armies.mp3 */; };
 		27BC83151B28F66600668F80 /* Ibn Al-Noor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */; };
 		27BC83671B2A41ED00668F80 /* LevelNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */; };
 		27BC836A1B2B722900668F80 /* LevelTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC83691B2B722900668F80 /* LevelTwentyViewController.m */; };
-		27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */; };
 		27BC84121B2E4EE000668F80 /* EDM Detection Mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */; };
 		27C315B31BBC4DF2008BD458 /* FirstOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B21BBC4DF2008BD458 /* FirstOnboardingVC.m */; };
 		27C315B61BBC4E82008BD458 /* SecondOnboardingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C315B51BBC4E82008BD458 /* SecondOnboardingVC.m */; };
@@ -162,10 +158,8 @@
 		27B25A321B3209B000544F52 /* WonTheGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WonTheGameViewController.m; sourceTree = "<group>"; };
 		27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Shiny Tech2.mp3"; path = "FastroFinal/Shiny Tech2.mp3"; sourceTree = "<group>"; };
 		27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Skye Cuillin.mp3"; sourceTree = "<group>"; };
-		27B25AAA1B34A1D600544F52 /* Unwritten Return.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Unwritten Return.mp3"; sourceTree = "<group>"; };
 		27B25AAC1B35211700544F52 /* Disco Medusae.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Disco Medusae.mp3"; sourceTree = "<group>"; };
 		27B25B261B3733EE00544F52 /* Your Call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Your Call.mp3"; sourceTree = "<group>"; };
-		27B25B281B3876CB00544F52 /* Electro Cabello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Cabello.mp3"; sourceTree = "<group>"; };
 		27B25B2A1B387B8600544F52 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		27B25B2C1B387C3D00544F52 /* SoundEffectsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffectsController.h; sourceTree = "<group>"; };
 		27B25B2D1B387C3D00544F52 /* SoundEffectsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffectsController.m; sourceTree = "<group>"; };
@@ -177,14 +171,12 @@
 		27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take a Chance.mp3"; sourceTree = "<group>"; };
 		27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Discovery Hit.mp3"; sourceTree = "<group>"; };
 		27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Exit the Premises.mp3"; sourceTree = "<group>"; };
-		27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zanzibar.mp3; sourceTree = "<group>"; };
 		27BC83061B28F66600668F80 /* Five Armies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Five Armies.mp3"; sourceTree = "<group>"; };
 		27BC830A1B28F66600668F80 /* Ibn Al-Noor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ibn Al-Noor.mp3"; sourceTree = "<group>"; };
 		27BC83651B2A41ED00668F80 /* LevelNineteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelNineteenViewController.h; sourceTree = "<group>"; };
 		27BC83661B2A41ED00668F80 /* LevelNineteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelNineteenViewController.m; sourceTree = "<group>"; };
 		27BC83681B2B722900668F80 /* LevelTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTwentyViewController.h; sourceTree = "<group>"; };
 		27BC83691B2B722900668F80 /* LevelTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelTwentyViewController.m; sourceTree = "<group>"; };
-		27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electro Sketch.mp3"; sourceTree = "<group>"; };
 		27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "EDM Detection Mode.mp3"; sourceTree = "<group>"; };
 		27C315B11BBC4DF2008BD458 /* FirstOnboardingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstOnboardingVC.h; sourceTree = "<group>"; };
 		27C315B21BBC4DF2008BD458 /* FirstOnboardingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstOnboardingVC.m; sourceTree = "<group>"; };
@@ -232,16 +224,12 @@
 				27B25B2F1B387DBF00544F52 /* gameOver.wav */,
 				27B25B651B39C97000544F52 /* winSound.wav */,
 				27B25B2A1B387B8600544F52 /* ding.wav */,
-				27B25AAA1B34A1D600544F52 /* Unwritten Return.mp3 */,
 				27B25B261B3733EE00544F52 /* Your Call.mp3 */,
 				27B25B671B39CFB700544F52 /* ceramicBell.wav */,
-				27B25B281B3876CB00544F52 /* Electro Cabello.mp3 */,
 				27B25A741B336A0400544F52 /* Skye Cuillin.mp3 */,
 				27B25AAC1B35211700544F52 /* Disco Medusae.mp3 */,
 				27B25A341B320B5500544F52 /* Shiny Tech2.mp3 */,
-				27BACAF91B1FF0B300FA26E2 /* Zanzibar.mp3 */,
 				27BC84111B2E4EE000668F80 /* EDM Detection Mode.mp3 */,
-				27BC840F1B2E4E9900668F80 /* Electro Sketch.mp3 */,
 				27BACAF31B1FF07E00FA26E2 /* Discovery Hit.mp3 */,
 				27BACAF51B1FF09100FA26E2 /* Exit the Premises.mp3 */,
 				27BACAF11B1FF06D00FA26E2 /* Take a Chance.mp3 */,
@@ -496,12 +484,9 @@
 				27B25AAD1B35211700544F52 /* Disco Medusae.mp3 in Resources */,
 				27B25B301B387DBF00544F52 /* gameOver.wav in Resources */,
 				27B25B2B1B387B8600544F52 /* ding.wav in Resources */,
-				27BC84101B2E4E9900668F80 /* Electro Sketch.mp3 in Resources */,
 				27B7B4391C28FC7600ECD03E /* Call to Adventure.mp3 in Resources */,
 				27BC83111B28F66600668F80 /* Five Armies.mp3 in Resources */,
 				27FFAC151B1AB5B400F2E4D3 /* The Curtain Rises.mp3 in Resources */,
-				27B25B291B3876CB00544F52 /* Electro Cabello.mp3 in Resources */,
-				27B25AAB1B34A1D600544F52 /* Unwritten Return.mp3 in Resources */,
 				27BACAF01B1FF05D00FA26E2 /* The Complex.mp3 in Resources */,
 				27B25B661B39C97000544F52 /* winSound.wav in Resources */,
 				270E52151B082986001CDF3C /* Main.storyboard in Resources */,
@@ -512,7 +497,6 @@
 				270E52171B082986001CDF3C /* Images.xcassets in Resources */,
 				27BACAF21B1FF06D00FA26E2 /* Take a Chance.mp3 in Resources */,
 				27BC83151B28F66600668F80 /* Ibn Al-Noor.mp3 in Resources */,
-				27BACAFA1B1FF0B300FA26E2 /* Zanzibar.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
