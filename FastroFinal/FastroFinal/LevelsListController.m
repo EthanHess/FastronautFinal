@@ -77,9 +77,18 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     cell.textLabel.textColor = [UIColor greenColor];
-    cell.textLabel.font = [UIFont fontWithName:@"Chalkduster" size:24];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:36];
     cell.textLabel.text = [self levels][indexPath.row];
-    cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FastroCell"]];
+    cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FastroCellComplete"]];
+    
+    cell.imageView.image = [UIImage imageNamed:@"SmileyFace"];
+    //CGRect imageFrame = cell.bounds;
+    
+//    UIImageView *cellImageView = [[UIImageView alloc]initWithFrame:imageFrame];
+//    
+//    cellImageView.image = [UIImage imageNamed:@"FastroCellComplete"]; //the default
+//    
+//    [cell addSubview:cellImageView];
     
     if (indexPath.row == 0) {
         
@@ -90,8 +99,13 @@
     {
         
         if (indexPath.row > [LevelController sharedInstance].arrayOfCompletedLevels.count) {
+            
             [cell setUserInteractionEnabled:NO];
             [cell.textLabel setTextColor:[UIColor redColor]];
+            
+            cell.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"FastroCellIncomplete"]]; //if level is not accesible
+            
+            cell.imageView.image = [UIImage imageNamed:@"Lock"]; 
         }
         else
         {
